@@ -5,6 +5,10 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-12 — Session 3: domain purchased
+- Human bought **eventrentalcosts.com** for $9. First real spend — budget now $9/$30 used, $21 left.
+- Site identity now fixed: eventrentalcosts.com, flagship city Charlotte NC, niche party/event equipment rental (tents/tables/chairs).
+
 ### 2026-07-11 — Session 2: niche PIVOT — pickleball rejected, party/event rental locked in
 - Deep multi-agent verification (WebSearch + Firecrawl, 2 rounds, 7 agents total) found pickleball court builders has a real incumbent: **PickleballCosts.com** already runs 50-state + city pricing, a cost calculator, and a contractor directory with a "3 free quotes" lead-gen funnel — likely templated/unverified data (same publisher family as sportsvenuecalculator.com), but a real live competitor, not empty space. Human chose to pivot rather than build against it.
 - Human supplied 5 alternative candidates. Verified all 5 independently (parallel agents, Firecrawl + WebSearch, not taken on faith):
@@ -40,7 +44,7 @@ _Living source of truth. Update every session. Never let this drift from actual 
 2. ~~Exa API key~~ — **DONE 2026-07-11.** In `.env`, gitignored.
 3. **Playwright MCP not installed.** Not needed yet (no JS-heavy scraping until data pipeline phase). Install instructions in §4 when needed.
 4. ~~Maps data source~~ — **DONE 2026-07-11.** Apify `compass/crawler-google-places` approved, ~$0-5 expected spend. Not yet signed up / actually purchased — that's still a next step.
-5. **Domain name — human checking prices directly at registrar.** Top 5 shortlist handed off: `partyrentalprices.com`, `eventrentalcosts.com`, `comparepartyrentals.com`, `truetentprices.com`, `clearrentalpricing.com` (3 more backups if all taken: `rentalpricehq.com`, `partyrentalquotes.com`, `rentalratehub.com`). DNS-clear as of 2026-07-12 but not WHOIS-verified — human will confirm actual availability/price before purchase (needs approval per $30 cap regardless).
+5. ~~Domain name~~ — **DONE 2026-07-12.** Purchased `eventrentalcosts.com` for $9.
 6. ~~Target flagship city~~ — **DONE 2026-07-12.** Charlotte, NC confirmed. Full multi-city rollout list still to be built once flagship is validated.
 7. **Reventals.com competitive risk — needs ongoing awareness, not a blocker.** It's a funded 34-metro marketplace but hides real pricing behind a quote flow — our verified-pricing moat still applies even in cities where it operates. Noted so future sessions don't re-discover this from scratch.
 
@@ -204,24 +208,24 @@ Lead-referral to local party/event rental companies (tent/table/chair quote requ
 
 | Date | Item | Cost | Running Total |
 |---|---|---|---|
-| — | Nothing spent yet | $0 | **$0 / $30** |
+| 2026-07-12 | Domain: eventrentalcosts.com | $9 | **$9 / $30** |
 
 ## 13. Security Notes
 - `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY (free-tier, human-provided 2026-07-11). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
 - `.gitignore` covers `.env*`, `node_modules/`, `dist/`, `.astro/`, `*.db` from commit #1.
-- No secrets in any tracked file (repo tracks only: this doc, `.gitignore`, `.env.example`).
-- No remote configured. Will NOT push until explicitly confirmed secrets-clean (re-verify before every push per brief — prior project leaked secrets to a public repo this way).
+- No secrets in any tracked file (repo tracks only: this doc, `.gitignore`, `.env.example`, `README.md`).
+- Public GitHub remote live (see §14) — pushed only after confirming `.env` excluded via `git check-ignore`; re-verify before every future push.
 
 ## 14. Deployment State
-Website: not deployed. No domain purchased. No Cloudflare Pages project. No Search Console.
-GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-Website. Initial commit pushed 2026-07-12 (`.env` confirmed excluded, only `.env.example` tracked). Going forward, commit as work lands each session rather than batching.
+Website: not deployed. **Domain purchased: eventrentalcosts.com** ($9, 2026-07-12). No Cloudflare Pages project yet. No Search Console.
+GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-Website. Commits pushed 2026-07-12 (`.env` confirmed excluded, only `.env.example` tracked).
 
 ## 15. Roadmap / Next Steps (ordered)
-1. ~~Get human sign-off on niche~~ — DONE, then pivoted, now DONE again (party/event rental).
+1. ~~Get human sign-off on niche~~ — DONE (party/event rental, after pivot from pickleball).
 2. ~~Get Exa API key~~ — DONE.
 3. ~~Evaluate + approve Maps data source~~ — DONE (Apify).
-4. **Pick target city/metro list** (Open Questions item 6) — propose a shortlist of large-wedding-market metros next session.
-5. **Pick domain name** (Open Questions item 5).
+4. ~~Pick flagship city~~ — DONE (Charlotte, NC).
+5. ~~Pick + buy domain~~ — DONE (eventrentalcosts.com, $9).
 6. Sign up for Apify, get API key into `.env` as `MAPS_DATA_API_KEY`.
 7. Install Playwright MCP if/when JS-heavy scraping is needed (most rental-company sites are likely simple enough for Firecrawl alone — assess during web_enrich).
 8. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
