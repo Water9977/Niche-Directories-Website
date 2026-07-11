@@ -6,4 +6,7 @@ dist/
 .astro/
 *.db
 *.db-journal
+pipeline/.venv/
+__pycache__/
+*.pyc
 .DS_Store

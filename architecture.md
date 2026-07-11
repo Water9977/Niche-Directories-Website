@@ -5,6 +5,14 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-12 — Session 4: real Maps data ingested for Charlotte metro
+- Signed up for Apify, wired `MAPS_DATA_API_KEY` into `.env`. Confirmed actor ID `nwua9Gu5YrADL7ZDj` = `compass/crawler-google-places`.
+- Built `pipeline/` — `db_setup.py` (schema: target_cities, raw_listings, scraped_pages, listings, listing_pricing) and `maps_ingest.py` (calls the Apify actor, upserts into raw_listings deduped on real `place_id`, `ON CONFLICT` refreshes rating/reviews/hours on re-run). Isolated venv at `pipeline/.venv` (gitignored) since the system Python lacked pip.
+- **Corrected a cost assumption from session 2:** full detail scraping (needed for phone/rating/review_count/hours — all required fields) costs ~$7-8/1,000 places, not the base $1.50/1k quoted on Apify's pricing page (that rate excludes the detail-page add-on). Verified via real account usage API after a 5-place test run, before committing to the full pull — this is why the test-first approach mattered.
+- Ran ingest across all 8 Charlotte-metro target cities (search terms: "tent rental", "party rental", "table and chair rental"). **Result: 209 unique real businesses**, each with a genuine Google `place_id`, address, phone, rating, review count, category, lat/lng. Total Apify spend: $1.65 of the $5/month free credit — $0 actual out-of-pocket. Per-city counts: Charlotte 45, Concord 38, Gastonia 27, Mooresville 22, Matthews 21, Indian Trail 20, Huntersville 19, Monroe 17.
+- Spot-checked output quality: real addresses, real phone numbers, real websites (e.g. Charlotte Party Rentals, Thomas Equipment & Party Rentals, RentMeUSA). One loosely-related result ("Sweet Dreams Glamping") surfaced under the "tent rental" search term — expected noise, to be filtered in geo_validate/category-cleanup, not a data-integrity problem.
+- Not yet done: geo_validate (confirm each listing's real city matches its target city), web_enrich (scrape each business's own site for real pricing), ai_extract, export_json, Astro scaffold.
+
 ### 2026-07-12 — Session 3: domain purchased
 - Human bought **eventrentalcosts.com** for $9. First real spend — budget now $9/$30 used, $21 left.
 - Site identity now fixed: eventrentalcosts.com, flagship city Charlotte NC, niche party/event equipment rental (tents/tables/chairs).
@@ -170,21 +178,34 @@ Verified via 5 parallel research agents (WebSearch + Firecrawl, live scrapes of 
 
 ---
 
-## 6. Database Schema [PLANNED — not yet built]
-Will follow brief §5 spec: `raw_listings`, `scraped_pages`, `listings`, `target_cities`. DDL to be added once niche confirmed and `db_setup` script is written.
+## 6. Database Schema
 
-## 7. Data Pipeline [PLANNED]
-Scripts per brief §5 (`maps_ingest`, `geo_validate`, `web_enrich`, `ai_extract`, `export_json`) — not started.
+**BUILT 2026-07-12** — `pipeline/db_setup.py`. Live DDL (SQLite, build-time only, matches brief §5 spec plus a `listing_pricing` table for the moat data):
+
+- `target_cities` — city, state, metro, lat/lng, active flag. Seeded with the 8 Charlotte-metro cities.
+- `raw_listings` — one row per real Maps business, unique on `place_id`. Includes `geo_status` (default `'unchecked'`) for the geo_validate step.
+- `scraped_pages` — one row per business-website page scraped in web_enrich (not yet populated).
+- `listings` — the enriched/published table. Three-state fields (`delivery_available`, `setup_included`, `weekend_surcharge`) stored as TEXT `'yes'/'no'/'unknown'`, never coerced to boolean. Has a `published` gate flag.
+- `listing_pricing` — the actual moat: per-item real pricing (`item_type`, `price_low/high`, `unit`, `source_snippet`, `source_url`, `extracted_by_model`, `last_checked`). Not yet populated (needs web_enrich + ai_extract).
+
+Run `python pipeline/db_setup.py` to (re)create. DB file (`pipeline/directory.db`) is gitignored — build artifact, not source.
+
+## 7. Data Pipeline
+
+Scripts per brief §5 (`maps_ingest`, `geo_validate`, `web_enrich`, `ai_extract`, `export_json`).
+
+- **`maps_ingest.py` — BUILT and RUN 2026-07-12.** Calls Apify's `compass/crawler-google-places` actor, upserts into `raw_listings` deduped on real `place_id` (`ON CONFLICT` refreshes rating/reviews/hours so re-running stays current — this is the freshness-cadence mechanism). Has a `--test` mode (1 city, 1 term, 5 places) used before the full run to verify real data and real cost before committing spend. **Result: 209 unique real Charlotte-metro businesses ingested, $1.65 of Apify's $5/mo free credit used, $0 out-of-pocket.** See changelog for per-city counts and spot-check notes.
+- `geo_validate.py`, `web_enrich.py`, `ai_extract.py`, `export_json.py` — not built yet, next up.
 
 ## 8. Maps Data Source
 
-**DECIDED 2026-07-11: Apify — `compass/crawler-google-places` (Google Maps Scraper).** Not yet signed up/purchased — decision made, execution pending.
+**DECIDED 2026-07-11, EXECUTED 2026-07-12: Apify — `compass/crawler-google-places` (Google Maps Scraper).**
 
 Comparison researched live (pricing pages scraped 2026-07-11):
 
 | Provider | Price/1k | Fields | Free tier | Verdict |
 |---|---|---|---|---|
-| **Apify `compass/crawler-google-places`** | $1.50 | ALL: place_id, name, address, phone, lat/lng, rating, review_count, category, hours, photos | $5/mo free credit (no card) ≈ 3,300 places/mo | **Chosen.** ~1,500-business ingest ≈ $2.25, fully covered by free credit → ~$0 net. |
+| **Apify `compass/crawler-google-places`** | $1.50 base, **~$7-8/1k with full detail scraping actually enabled** (corrected 2026-07-12 — see below) | ALL: place_id, name, address, phone, lat/lng, rating, review_count, category, hours, photos | $5/mo free credit (no card) | **Chosen.** Real run: 209 places, $1.65 spent — well inside free credit, $0 net. |
 | Outscraper | $3 (500/mo free) | Same full field set | 500 free/mo | Close 2nd, declined as backup by human for simplicity. |
 | SerpApi (Maps engine) | $25/mo or free | Same, incl. reviews/thumbnails | 250 free searches/mo forever | Viable, more complex free-tier math (searches vs listings). |
 | SearchApi.io | $4/1k | Same | 100 free (one-time) | No small PAYG plan below $40/mo — likely exceeds budget. |
@@ -193,7 +214,9 @@ Comparison researched live (pricing pages scraped 2026-07-11):
 
 All scraper-based options (Apify/Outscraper/SerpApi/SearchApi) operate in the same standard gray-area relative to Google's Maps ToS that essentially all directory-site data pipelines of this kind use; not flagged as a blocker.
 
-**Next action:** sign up for Apify, wire `MAPS_DATA_API_KEY` into `.env`, write `maps_ingest.py` targeting the party/event rental niche once target city list is set (§Open Questions item 6).
+**Cost correction (2026-07-12):** the $1.50/1k figure on Apify's pricing page is the base search rate; it does not include `scrapePlaceDetailPage`, which is required to reliably get `review_count`/`hours`/full `phone` (confirmed via Apify's own input-schema docs: "Enabling this also ensures that reviewsCount will be scraped"). With detail scraping on, real measured cost was ~$7-8/1,000 places (verified via Apify's account usage API after a small test run, before committing to the full pull). Still cheap in absolute terms — 209 real places cost $1.65 — but future volume estimates should use ~$8/1k, not $1.50/1k.
+
+**Executed:** signed up for Apify 2026-07-12, `MAPS_DATA_API_KEY` in `.env`, `maps_ingest.py` built and run across all 8 Charlotte-metro cities. See §7 and changelog for results.
 
 ## 9. Website Architecture [PLANNED]
 Routes/SEO/schema.org per brief §6 — not started.
@@ -209,6 +232,8 @@ Lead-referral to local party/event rental companies (tent/table/chair quote requ
 | Date | Item | Cost | Running Total |
 |---|---|---|---|
 | 2026-07-12 | Domain: eventrentalcosts.com | $9 | **$9 / $30** |
+
+Apify usage ($1.65 of the $5/mo free credit, 209 places ingested) is tracked separately — it's inside the free tier, not a real charge against the $30 cash cap. Will move into this ledger for real if/when usage ever exceeds $5/mo.
 
 ## 13. Security Notes
 - `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY (free-tier, human-provided 2026-07-11). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
@@ -226,11 +251,12 @@ GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-
 3. ~~Evaluate + approve Maps data source~~ — DONE (Apify).
 4. ~~Pick flagship city~~ — DONE (Charlotte, NC).
 5. ~~Pick + buy domain~~ — DONE (eventrentalcosts.com, $9).
-6. Sign up for Apify, get API key into `.env` as `MAPS_DATA_API_KEY`.
-7. Install Playwright MCP if/when JS-heavy scraping is needed (most rental-company sites are likely simple enough for Firecrawl alone — assess during web_enrich).
-8. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
-9. Design DB schema, write `db_setup`.
-10. Build data pipeline scripts in order (maps_ingest → geo_validate → web_enrich → ai_extract → export_json).
-11. Build website routes + SEO scaffolding.
-12. Deploy to Cloudflare Pages, submit sitemap to Search Console.
-13. Month-6 kill-switch check.
+6. ~~Sign up for Apify, wire key, build + run maps_ingest~~ — DONE (209 real Charlotte-metro businesses, $1.65/$5 free credit).
+7. **Build `geo_validate.py`** — confirm each raw_listing's real city matches its assigned target_city (catches the "Sweet Dreams Glamping" type noise), sets `geo_status`.
+8. **Build `web_enrich.py`** — scrape each validated business's own site (Firecrawl) for pricing/rates pages, store in `scraped_pages`. Install Playwright MCP only if a site turns out to be JS-heavy enough that Firecrawl can't get it.
+9. Build `ai_extract.py` (Gemini) — pull real per-item pricing into `listing_pricing`, three-state fields into `listings`, record actual model string used, null ≠ false.
+10. Build `export_json.py` — quality gate (require address + at least one real moat field) before `published=1`.
+11. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
+12. Build website routes + SEO scaffolding.
+13. Deploy to Cloudflare Pages, submit sitemap to Search Console.
+14. Month-6 kill-switch check.
