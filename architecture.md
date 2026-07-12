@@ -5,6 +5,23 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-12 — Session 6: ai_extract built, LLM provider saga, first published listings
+- Built `ai_extract.py` and ran it across all 43 enriched businesses. Hit a real wall: **Gemini's free tier caps at a hard 20 requests/day PER MODEL** (confirmed via the AI Studio dashboard — `gemini-2.5-flash` showed 21/20, `gemini-2.5-flash-lite` also capped at 20/day). This isn't a per-minute throttle, it's a daily quota tied to the Google Cloud project; retrying doesn't help until midnight Pacific reset. Burned through both models' daily allowances mid-run.
+- Human provided two more free-tier keys (OpenRouter, NVIDIA NIM) and asked for real doc research before picking, not another guess. Read OpenRouter's and Google's actual rate-limit docs via Firecrawl, and NVIDIA NIM's via forum threads (no clean official page found, but consistent 40 RPM reports with no daily cap mentioned).
+  - **OpenRouter free (`:free`) models**: 20 RPM / 50 RPD account-wide (not per-model) if <10 lifetime credits purchased, 1000 RPD if ≥10 purchased. Tested `openai/gpt-oss-120b:free` (garbled output, flaky provider) and `meta-llama/llama-3.3-70b-instruct:free` (real requests, but hit consistent ~28s upstream-provider rate limits — confirmed via `GET /api/v1/key` that our own account usage was 0, so this was shared free-tier congestion on OpenRouter's third-party inference hosts, not our own cap).
+  - **NVIDIA NIM**: tested `meta/llama-3.3-70b-instruct` first — timed out repeatedly (60s+, likely cold-start or capacity on that specific model). Switched to `meta/llama-3.1-8b-instruct` — responded in <1s, reliable. Good enough for a structured-JSON extraction task (not complex reasoning).
+- **Final provider chain in `ai_extract.py`**: NVIDIA `meta/llama-3.1-8b-instruct` (primary) → NVIDIA `meta/llama-3.3-70b-instruct` → OpenRouter `llama-3.3-70b-instruct:free` → OpenRouter `qwen3-next-80b-a3b-instruct:free`, each with short retry-then-fallback. `extracted_by_model` is recorded per-row (not hardcoded) exactly as the brief requires, since which provider actually served a given extraction now varies row to row.
+- **Result: 42/43 businesses processed** (1 failure — `K's Bounce n Play` — repeatedly produced malformed/truncated JSON across all 4 providers, likely a scraped-content quirk; accepted as an acceptable single-row loss rather than over-engineering a fix). **12 businesses had real extractable pricing** (~29%, matching the ~1/3 rate predicted from the dollar-sign spot-check last session), 172 total pricing line items.
+- Built `export_json.py` — the actual publish quality gate. Requires: real address, `geo_status='confirmed'`, at least one real `listing_pricing` row. Also excludes off-niche category leaks by name keyword (`glamping` — catches the "Sweet Dreams Glamping" edge case found last session; Google itself categorizes it as "Tent rental service" so the category filter alone couldn't catch it). **Result: 11 real, publishable listings** across 5 of the 8 target cities (Charlotte, Gastonia, Matthews, Indian Trail, Monroe — Concord, Huntersville, Mooresville had zero businesses clear the bar), 151 pricing items, written to `pipeline/export/charlotte-metro-listings.json`.
+- Honest read on this number: 11 listings from 209 raw Maps businesses is a real, defensible dataset — not padded, not fabricated — but it's thin for a full 8-city launch. Concord/Huntersville/Mooresville currently have zero publishable listings. Next session should decide whether to re-run enrichment with a wider pricing-link detection net (many businesses likely publish real prices under nav labels our `PRICING_KEYWORDS` list didn't catch — "Shop", "Rentals", "Catalog", "Products") before declaring the pilot city "done," rather than launching with visible city-page gaps.
+
+### 2026-07-12 — Session 5: geo_validate + web_enrich, and a real quality-gate finding
+- Built `geo_validate.py`: labels each raw_listing's `geo_status` (`confirmed`/`mismatch`/`unknown`) against its target city — never drops silently. Result on the 209 rows: 191 confirmed, 3 real mismatches (e.g. a Kannapolis business surfaced under a Concord search — real business, just outside that city's polygon), 15 unknown (missing city field). Per the brief, mismatches stay in the data with a label; export_json's quality gate decides what publishes.
+- **Found a category-relevance problem the hard way:** initial `web_enrich.py` test ordered candidates by review_count and hit Costco, Camping World, a bowling alley, and a furniture outlet — Google Maps' matching on generic terms like "party rental" and "table and chair rental" pulls in venues, DJs, bridal shops, retail stores, not just actual rental businesses. Checked the full category breakdown (209 rows spanned 60+ distinct categories) and added an `ALLOWED_CATEGORIES` filter (Party equipment rental service, Tent rental service, Equipment rental agency, Furniture rental service, Audiovisual equipment rental service) — cut the enrichment pool to the ~63 rows that are actually rental businesses.
+- Built `web_enrich.py`: scrapes each business's own site directly via Firecrawl's REST API (not the MCP tool — the pipeline is a standalone script, same pattern as maps_ingest calling Apify directly), skips a hardcoded aggregator-domain list (Facebook, Yelp, Angi, Thumbtack, WeddingWire, TheKnot, Reventals, Instagram, Google), follows one auto-detected pricing-keyword link per homepage. Hit the same Windows console emoji-encoding crash as the geo_validate spot-check earlier — data was safe (commits are per-record) but fixed with `sys.stdout.reconfigure(encoding="utf-8")` so it doesn't happen again.
+- **Result: 43 businesses enriched** (homepage + pricing page where found), 6 with a dedicated pricing page auto-detected, 2 failed (no scrapable content), 1 skipped (Instagram-only "website"). **Real finding: only 14/43 scraped homepages actually contain a dollar amount.** Spot-checked "Party Reflections" — a 31KB product catalog page, zero real prices — likely a request-quote/login-to-see-pricing model, same pattern as Reventals and WeddingWire found in earlier competitor research. This is not a pipeline bug — it's the moat's quality gate doing its job: most local rental businesses simply don't publish real prices publicly, and the site should only ever list ones that do. Expect the eventual `published=1` set to be a real minority of the 209 raw businesses, not all of them.
+- Not yet done: ai_extract (pull structured pricing from the ~14-20 businesses with real dollar signals into `listing_pricing`), export_json, Astro scaffold.
+
 ### 2026-07-12 — Session 4: real Maps data ingested for Charlotte metro
 - Signed up for Apify, wired `MAPS_DATA_API_KEY` into `.env`. Confirmed actor ID `nwua9Gu5YrADL7ZDj` = `compass/crawler-google-places`.
 - Built `pipeline/` — `db_setup.py` (schema: target_cities, raw_listings, scraped_pages, listings, listing_pricing) and `maps_ingest.py` (calls the Apify actor, upserts into raw_listings deduped on real `place_id`, `ON CONFLICT` refreshes rating/reviews/hours on re-run). Isolated venv at `pipeline/.venv` (gitignored) since the system Python lacked pip.
@@ -236,9 +253,9 @@ Lead-referral to local party/event rental companies (tent/table/chair quote requ
 Apify usage ($1.65 of the $5/mo free credit, 209 places ingested) is tracked separately — it's inside the free tier, not a real charge against the $30 cash cap. Will move into this ledger for real if/when usage ever exceeds $5/mo.
 
 ## 13. Security Notes
-- `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY (free-tier, human-provided 2026-07-11). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
-- `.gitignore` covers `.env*`, `node_modules/`, `dist/`, `.astro/`, `*.db` from commit #1.
-- No secrets in any tracked file (repo tracks only: this doc, `.gitignore`, `.env.example`, `README.md`).
+- `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY, MAPS_DATA_API_KEY (Apify), OPENROUTER_API_KEY, NVIDIA_API_KEY (all free-tier, human-provided across sessions). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
+- `.gitignore` covers `.env*`, `node_modules/`, `dist/`, `.astro/`, `*.db`, `pipeline/.venv/`, `__pycache__/` from commit #1.
+- No secrets in any tracked file (repo tracks only: this doc, `.gitignore`, `.env.example`, `README.md`, `pipeline/*.py`, `pipeline/requirements.txt`).
 - Public GitHub remote live (see §14) — pushed only after confirming `.env` excluded via `git check-ignore`; re-verify before every future push.
 
 ## 14. Deployment State
@@ -252,11 +269,12 @@ GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-
 4. ~~Pick flagship city~~ — DONE (Charlotte, NC).
 5. ~~Pick + buy domain~~ — DONE (eventrentalcosts.com, $9).
 6. ~~Sign up for Apify, wire key, build + run maps_ingest~~ — DONE (209 real Charlotte-metro businesses, $1.65/$5 free credit).
-7. **Build `geo_validate.py`** — confirm each raw_listing's real city matches its assigned target_city (catches the "Sweet Dreams Glamping" type noise), sets `geo_status`.
-8. **Build `web_enrich.py`** — scrape each validated business's own site (Firecrawl) for pricing/rates pages, store in `scraped_pages`. Install Playwright MCP only if a site turns out to be JS-heavy enough that Firecrawl can't get it.
-9. Build `ai_extract.py` (Gemini) — pull real per-item pricing into `listing_pricing`, three-state fields into `listings`, record actual model string used, null ≠ false.
-10. Build `export_json.py` — quality gate (require address + at least one real moat field) before `published=1`.
-11. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
-12. Build website routes + SEO scaffolding.
-13. Deploy to Cloudflare Pages, submit sitemap to Search Console.
-14. Month-6 kill-switch check.
+7. ~~Build `geo_validate.py`~~ — DONE (191 confirmed / 3 mismatch / 15 unknown of 209).
+8. ~~Build `web_enrich.py`~~ — DONE (43 businesses enriched after category filtering).
+9. ~~Build `ai_extract.py`~~ — DONE (NVIDIA NIM primary, OpenRouter fallback, after Gemini's 20/day/model cap forced a provider switch — see changelog). 42/43 processed, 12 with real pricing.
+10. ~~Build `export_json.py`~~ — DONE. **11 publishable listings live in `pipeline/export/charlotte-metro-listings.json`.**
+11. **Decide: widen pricing-link detection and re-run web_enrich/ai_extract before scaffolding the site, or proceed with 11 listings / 5-of-8 cities as the MVP dataset.** Concord, Huntersville, Mooresville currently have zero publishable listings — a live city page with nothing on it would violate the brief's "no page with no real value" rule, so this needs a decision before building those city pages.
+12. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
+13. Build website routes + SEO scaffolding.
+14. Deploy to Cloudflare Pages, submit sitemap to Search Console.
+15. Month-6 kill-switch check.

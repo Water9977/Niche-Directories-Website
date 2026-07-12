@@ -1,0 +1,1570 @@
+[
+  {
+    "name": "SASHES - Charlotte Party and Event Rentals",
+    "address": "6014 McDaniel Ln, Charlotte, NC 28213",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "postal_code": "28213",
+    "lat": 35.2652283,
+    "lng": -80.7599542,
+    "phone": "(980) 272-8455",
+    "website": "https://www.sasheseventstyling.com/charlotte-event-rentals-and-props",
+    "rating": 5.0,
+    "review_count": 4,
+    "category": "Party equipment rental service",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "backdrop_shimmer_wall_gold_8x8",
+        "price_low": 395.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Gold Shimmer Wall Backdrop - 8x8: $395",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "backdrop_diamond_cut_wall_white",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "White Diamond Cut Backdrop Wall - $220",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "backdrop_chiara_wall_2_piece",
+        "price_low": 175.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "2 Piece Chiara Backdrop Wall - $175",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "decor_shiny_balls_jumbo",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Jumbo Shiny Balls - $500 for 6",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "marquee_letter_4ft",
+        "price_low": 70.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "4' Marquee Light Up Letters - $70 per letter",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "marquee_number_4ft",
+        "price_low": 70.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "4' Marquee Light Up Numbers - $70 per number",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "drink_wall",
+        "price_low": 225.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "Drink Wall - $225 / $250 with plastic flutes",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "chair_chiavari_silver",
+        "price_low": 7.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Silver Chiavari Chair - $7",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "chair_garden_padded_white",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "White Padded Garden Chair - $5",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "chair_folding_black",
+        "price_low": 3.5,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Black Folding Chair - $3.50",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "60 Inch Round Table - $20",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      },
+      {
+        "item_type": "backdrop_arch_circle_gold",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Gold Wedding Circle Arch Backdrop - $75",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:13:44.108331+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Santa Party Rentals",
+    "address": "14510 Asheton Creek Dr, Charlotte, NC 28273",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "postal_code": "28273",
+    "lat": 35.1083903,
+    "lng": -80.9855364,
+    "phone": "(707) 777-7098",
+    "website": "https://www.santapartyrentals.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_15x15",
+        "price_low": 160.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$160.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "tent_20x20",
+        "price_low": 260.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$260.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$180.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "tent_15x15",
+        "price_low": 260.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$260.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_chiavari_clear",
+        "price_low": 9.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$9.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_chiavari_gold",
+        "price_low": 9.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$9.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_chiavari_silver",
+        "price_low": 9.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$9.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_garden_white",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$4.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_cushion_chiavari",
+        "price_low": 2.5,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$2.50",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_cover_chiavari_white",
+        "price_low": 1.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$1.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "chair_cover_chiavari_black",
+        "price_low": 1.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$1.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "table_rectangle_8ft",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$12.00",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Free Delivery Within 10km radius",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:20.365708+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Party Saving Rental",
+    "address": "7119 Haines Mill Road, Charlotte, NC 28273",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "postal_code": "28273",
+    "lat": 35.1628215,
+    "lng": -80.926961,
+    "phone": "(704) 831-1314",
+    "website": "https://partysavingrental.com/",
+    "rating": 3.3,
+    "review_count": 3,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "folding_chair",
+        "price_low": 1.88,
+        "price_high": null,
+        "unit": "per chair",
+        "source_snippet": "$1.88per chair",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "folding_table",
+        "price_low": 9.88,
+        "price_high": null,
+        "unit": "per table",
+        "source_snippet": "$9.88per table",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "christal_chair",
+        "price_low": 7.0,
+        "price_high": null,
+        "unit": "per chair",
+        "source_snippet": "$7.00per chair",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "96 inch Plastic Folding Banquet Table",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per table",
+        "source_snippet": "$15.00per table",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "Cobizi Tent 10x20 feet Heavy Duty",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "Tent (installation Included)",
+        "source_snippet": "$180.00Tent (installation Included)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "Event Tent Package",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "Kits (Installation Included)",
+        "source_snippet": "$220.00Kits (Installation Included)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "Speaker 200W + Microphone",
+        "price_low": 35.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$35.00per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "Insulated Cooler Up To 160 cans",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15.00per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      },
+      {
+        "item_type": "Popcorn Machine",
+        "price_low": 80.0,
+        "price_high": null,
+        "unit": "machine",
+        "source_snippet": "$80.00machine",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:26.269874+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Hooray Yard Cards Charlotte",
+    "address": "10130 Mallard Creek Rd #300, Charlotte, NC 28262",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "postal_code": "28262",
+    "lat": 35.3388195,
+    "lng": -80.7695464,
+    "phone": "(336) 456-9329",
+    "website": "http://www.hoorayyardcards.com/charlotte",
+    "rating": 5.0,
+    "review_count": 9,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "Standard Yard Card",
+        "price_low": 89.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$89\n\nExample: Happy 16th Birthday [Name]",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      },
+      {
+        "item_type": "Standard Graduation",
+        "price_low": 89.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$89\n\nExample: Congrats Grad, Congrats [Name], or Congrats 2020",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      },
+      {
+        "item_type": "Double Name",
+        "price_low": 99.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$99\n\nExample: Happy 16th Birthday [Name] We Love You!",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      },
+      {
+        "item_type": "Deluxe Yard Card",
+        "price_low": 99.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$99\n\nExample: Happy 16th Birthday [Name] We Love You!",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      },
+      {
+        "item_type": "Deluxe Graduation Yard Card",
+        "price_low": 99.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$99\n\nExample: Congrats [name] class of 2020",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      },
+      {
+        "item_type": "Delivery Charge",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery Charge\n\n$0.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:22:58.978925+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Rogue Motions SFX An Event Production Company",
+    "address": "9705 Parthenon Ct, Charlotte, NC 28262",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "postal_code": "28262",
+    "lat": 35.3279013,
+    "lng": -80.7446966,
+    "phone": "(980) 413-0800",
+    "website": "https://rogue-motions-sfx.booqable.shop/",
+    "rating": 5.0,
+    "review_count": 7,
+    "category": "Party equipment rental service",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "wedding_phone_video_guest_book",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Wedding Phone Video Guest BOOK 1 day$500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "magazine_photobooth",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "Magazine Photobooth 1 hour$300.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "gogo_projector",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Gogo Projector 1 day$350.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "venue_reservation",
+        "price_low": 3000.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Venue Reservation 1 day$3,000.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 3235.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "Party package 1 hour$3,235.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "juju_robot_photobooth",
+        "price_low": 750.0,
+        "price_high": null,
+        "unit": "3 hours",
+        "source_snippet": "JuJu Robot Photobooth 3 hours$750.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "marriage_posh_proposal",
+        "price_low": 885.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Marriage Posh Proposal 1 day$885.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "rose_backdrop",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "Rose backdrop 1 hour$450.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "stages_8ft_x_4ft",
+        "price_low": 175.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "stages 8ft x 4 ft 1 hour$175.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "dual_head_sparklers",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "dual head sparklers 1 day$350.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "roguebot",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "2 hour",
+        "source_snippet": "ROGUEBOT 2 hour$500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "washer",
+        "price_low": 135.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Washer 1 day$135.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "parcan",
+        "price_low": 55.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Parcan 1 day$55.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "light_bar",
+        "price_low": 80.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Light bar 1 day$80.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "pioneer_ddj_sb2",
+        "price_low": 375.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Pioneer DDJ SB2 1 day$375.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "confetti_blaster",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "confetti blaster 1 day$350.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "12_x_7_led_screen",
+        "price_low": 4500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "12 x 7 LED Screen 1 day$4,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "8_x_7_led_screen",
+        "price_low": 2500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "8 x 7 LED Screen 1 day$2,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "gender_reveal_package",
+        "price_low": 785.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Gender Reveal Packages 1 day$785.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "spinning_sparklers",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Spinning Sparklers 1 day$550.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "sparklers",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Sparklers 1 day$350.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "sound_system_and_dj_console_package",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Sound System and DJ Console Package 1 day$600.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "12_x_7_led_screen_package",
+        "price_low": 4500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "12 x 7 LED Screen Package 1 day$4,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "8_x_7_led_screen_package",
+        "price_low": 2500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "8 x 7 LED Screen Package 1 day$2,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "event_packages",
+        "price_low": 9000.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Event Packages 1 day$9,000.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "premium_event_setup_package",
+        "price_low": 5500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Premium Event Setup Package 1 day$5,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "dancing_on_the_clouds_package",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Dancing on the Clouds Package from$0.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "essential_event_setup_package",
+        "price_low": 3500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Essential Event Setup Package 1 day$3,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "deluxe_cloud_experience",
+        "price_low": 945.0,
+        "price_high": null,
+        "unit": "Fixed",
+        "source_snippet": "Deluxe Cloud Experience Fixed$945.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "cocktail_table_cloth",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "COCKTAIL TABLE CLOTH 1 day$15.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "folding_cocktail_table",
+        "price_low": 18.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Folding Cocktail Table 1 day$18.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "audio_mixer",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Audio Mixer 1 day$100.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "microphone",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Microphone 1 day$100.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "low_rise_stage",
+        "price_low": 395.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Low Rise Stage 1 day$395.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "led_screen_wall_projectors",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "LED Screen Wall / Projectors 1 day$1,500.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "up_light_wifi_rechargeable_6x18w",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Up Light Wifi / Rechargeable 6x18W 1 day$45.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "moving_head_230w_beam",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Moving Head 230W Beam 1 day$195.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "smoke_bubbles_machine",
+        "price_low": 80.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Smoke Bubbles Machine 1 day$80.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "vertical_fog",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "VERTICAL FOG 1 day$120.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "360_photo_booth",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "360 PHOTO BOOTH 1 hour$150.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "photography_and_videography",
+        "price_low": 160.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "Photography and Videography 1 hour$160.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "mystical_package_dancing_on_the_clouds",
+        "price_low": 805.0,
+        "price_high": null,
+        "unit": "1 hour",
+        "source_snippet": "Mystical Package (Dancing On The Clouds) 1 hour$805.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "neon_signs",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Neon Signs 1 day$150.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "6ft_rectangular_tables",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "6ft Rectangular Tables 1 day$12.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "60_round_table",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "60' Round Table 1 day$12.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "fan_back_chairs",
+        "price_low": 3.5,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Fan Back chairs 1 day$3.50",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "20x20_marque_tent",
+        "price_low": 395.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "20x20 Marque Tent 1 day$395.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "chivari_chairs",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Chivari Chairs 1 day$8.00",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      },
+      {
+        "item_type": "motion_wall",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "1 day",
+        "source_snippet": "Motion Wall 1 day$2",
+        "extracted_by_model": "gemini-2.5-flash-lite",
+        "last_checked": "2026-07-12T13:23:15.445328+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Abuelita's Touch",
+    "address": "904 Union Rd, Gastonia, NC 28054",
+    "city": "Gastonia",
+    "state": "North Carolina",
+    "postal_code": "28054",
+    "lat": 35.2518676,
+    "lng": -81.1758264,
+    "phone": "(215) 939-6972",
+    "website": "https://abuelitastouch.ueniweb.com/?utm_campaign=gmb",
+    "rating": 5.0,
+    "review_count": 3,
+    "category": "Party equipment rental service",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": null,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Our Equipment Available for Rental & Purchase",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:35.523423+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": null,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Our Equipment Available for Rental & Purchase",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:35.523423+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": null,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Our Equipment Available for Rental & Purchase",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:42:35.523423+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Sunbelt Rentals",
+    "address": "200 E Garrison Blvd, Gastonia, NC 28054",
+    "city": "Gastonia",
+    "state": "North Carolina",
+    "postal_code": "28054",
+    "lat": 35.2540383,
+    "lng": -81.1794868,
+    "phone": "(704) 867-7231",
+    "website": "https://www.sunbeltrentals.com/location/nc/gastonia/equipment-tool-rentals/1333/?utm_source=gmb&utm_medium=organic&utm_campaign=pc1333&y_source=1_MTc2MDU3MzMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "rating": 4.6,
+    "review_count": 149,
+    "category": "Equipment rental agency",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "10x10 tents: $150 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:12.057959+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding chairs: $2 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:12.057959+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round tables 60in: $10 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:12.057959+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per trip",
+        "source_snippet": "Delivery fee: $50 per trip",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:12.057959+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Now It's A Party!",
+    "address": "3020 Summerland Dr, Matthews, NC 28105",
+    "city": "Matthews",
+    "state": "North Carolina",
+    "postal_code": "28105",
+    "lat": 35.1388798,
+    "lng": -80.6972487,
+    "phone": "(704) 641-5142",
+    "website": "http://www.nowaparty.com/",
+    "rating": 4.8,
+    "review_count": 529,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "10x10 Tent: $150 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:31.003280+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding Chairs: $2 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:31.003280+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round 60\" Tables: $10 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:31.003280+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per delivery",
+        "source_snippet": "Delivery Fee: $50 per delivery",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:31.003280+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Deposit: $100",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:31.003280+00:00"
+      }
+    ]
+  },
+  {
+    "name": "CLT Splash Rentals",
+    "address": "1418 Langdon Terrace Dr, Indian Trail, NC 28079",
+    "city": "Indian Trail",
+    "state": "North Carolina",
+    "postal_code": "28079",
+    "lat": 35.0336851,
+    "lng": -80.6617206,
+    "phone": "(704) 420-0440",
+    "website": "http://cltsplashrentals.com/",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "deposit",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Book with just a $50 deposit",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:58.269890+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 360.0,
+        "price_high": 400.0,
+        "unit": "per 4 hours",
+        "source_snippet": "4 hrs \u2014 $400$360",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:58.269890+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 405.0,
+        "price_high": 450.0,
+        "unit": "per 8 hours",
+        "source_snippet": "8 hrs \u2014 $450$405",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:58.269890+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 495.0,
+        "price_high": 550.0,
+        "unit": "per weekend",
+        "source_snippet": "Weekend \u2014 $550$495",
+        "extracted_by_model": "gemini-2.5-flash",
+        "last_checked": "2026-07-12T12:14:58.269890+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Jumpin' Jacks Party Rentals",
+    "address": "1235 Technology Dr Suite A, Indian Trail, NC 28079",
+    "city": "Indian Trail",
+    "state": "North Carolina",
+    "postal_code": "28079",
+    "lat": 35.0738656,
+    "lng": -80.638444,
+    "phone": "(704) 708-4564",
+    "website": "http://www.jumpinjacksparty.com/",
+    "rating": 4.8,
+    "review_count": 358,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "event_package_1",
+        "price_low": 4985.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Jumpin Jacks Ultimate Event Package #1  Price: $4985.00 for up to 5 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "event_package_2",
+        "price_low": 3965.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Jumpin Jacks  Event Package #2  Price: $3965.00 for up to 6 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "event_package_3",
+        "price_low": 2505.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Jumpin Jacks  Event Package #3   Price: $2505.00 for up to 5 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "everything_but_inflatables_package_4",
+        "price_low": 3010.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Everything But the Inflatables Package #4 Price: $3010.00 for up to 5 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "everything_but_inflatables_made_affordable_package_5",
+        "price_low": 995.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Everything But the Inflatables Made Affordable Package #5 Price: $995.00 for up to 5 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Create your own elegant outdoor party space with a complete tent, table and chair setup from Jumpin Jacks!",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Create your own elegant outdoor party space with a complete tent, table and chair setup from Jumpin Jacks!",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Create your own elegant outdoor party space with a complete tent, table and chair setup from Jumpin Jacks!",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Service: We deliver to the following cities: Charlotte, Matthews, Indian Trail, Monroe, Fort Mill, Concord, Huntersville, Mooresville, Davidson, Gastonia, Belmont, Mt. Holly, Pineville, Harrisburg, Weddington, Waxhaw, Mint Hill, Lake Wylie, Tega Cay, Cornelius, Kannapolis, Rock Hill, and Lake Norman.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Service: We deliver to the following cities: Charlotte, Matthews, Indian Trail, Monroe, Fort Mill, Concord, Huntersville, Mooresville, Davidson, Gastonia, Belmont, Mt. Holly, Pineville, Harrisburg, Weddington, Waxhaw, Mint Hill, Lake Wylie, Tega Cay, Cornelius, Kannapolis, Rock Hill, and Lake Norman.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:43:52.577667+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Queen City Bounce and Bull Entertainment Incorparated",
+    "address": "2909 Stitt St, Monroe, NC 28110",
+    "city": "Monroe",
+    "state": "North Carolina",
+    "postal_code": "28110",
+    "lat": 34.9860723,
+    "lng": -80.4959376,
+    "phone": "(678) 926-8623",
+    "website": "https://queenbouncehouse.com/",
+    "rating": 4.9,
+    "review_count": 14,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": null,
+        "price_high": null,
+        "unit": "",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": null,
+        "price_high": null,
+        "unit": "",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": null,
+        "price_high": null,
+        "unit": "",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": null,
+        "price_high": null,
+        "unit": "",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": null,
+        "price_high": null,
+        "unit": "",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Raging Bull",
+        "price_low": 500.0,
+        "price_high": 500.0,
+        "unit": "per event",
+        "source_snippet": "$500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Outdoor Movie w/ Seats",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Dunk Tank",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per event",
+        "source_snippet": "$300",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Foam Gun",
+        "price_low": 375.0,
+        "price_high": 375.0,
+        "unit": "per event",
+        "source_snippet": "$375",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Paint Ball Arena 45ft x 80ft",
+        "price_low": 800.0,
+        "price_high": 800.0,
+        "unit": "per event",
+        "source_snippet": "$800",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Block Party Bounce",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "$250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Palm Island Combo",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "$325",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Princess Castle Combo",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "per event",
+        "source_snippet": "$275",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Castle Combo",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "$250",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Jurastic Combo",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Block Party Obstical Course",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Block Party Mega Combo",
+        "price_low": 375.0,
+        "price_high": 375.0,
+        "unit": "per event",
+        "source_snippet": "$375",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "The Play Pen",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "$325",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Block Party Run Through Combo",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Blue Thunder Obstacle and Slide Combo",
+        "price_low": 495.0,
+        "price_high": 495.0,
+        "unit": "per event",
+        "source_snippet": "$495.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Generator",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per event",
+        "source_snippet": "$100.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Popcorn",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Toddler Combo",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per event",
+        "source_snippet": "$200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Soft Play Bounce and Balls",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Toddler Obsticle Course",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per event",
+        "source_snippet": "$200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Blue Wave Tsunami",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "$325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Palm Island Slide",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per event",
+        "source_snippet": "$300",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Mount Everest Slide",
+        "price_low": 700.0,
+        "price_high": 700.0,
+        "unit": "per event",
+        "source_snippet": "$700.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Blue Rush Double Slide w/ Pool",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "$325",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queens Snow Globe",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Last Man Standing Joust",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "per event",
+        "source_snippet": "$275",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Twist and Turn Twister",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "$225",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Sumo Wrestling",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "$350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Whack-A-Mole",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "$225",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Splash Run",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "$325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      },
+      {
+        "item_type": "Queen City Double Splash Run",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "per event",
+        "source_snippet": "$275",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T13:47:46.134909+00:00"
+      }
+    ]
+  }
+]
