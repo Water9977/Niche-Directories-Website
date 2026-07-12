@@ -30,6 +30,18 @@ SEARCH_TERMS = [
     "table and chair rental",
 ]
 
+# Added session 8 to widen supply for small towns where the original 3 broad
+# terms were already returning fewer results than the max_places cap (i.e. we
+# were hitting real supply limits, not our own capture ceiling) — distinct
+# search terms surface distinct businesses Google Maps didn't return for the
+# broader queries.
+EXTRA_SEARCH_TERMS = [
+    "bounce house rental",
+    "linen rental",
+    "wedding decor rental",
+    "chair rental",
+]
+
 
 def run_actor(search_terms, city, state, max_places, scrape_details=True):
     if not APIFY_TOKEN:
@@ -112,6 +124,7 @@ def main():
     parser.add_argument("--city", default="Charlotte")
     parser.add_argument("--state", default="NC")
     parser.add_argument("--max-places", type=int, default=None)
+    parser.add_argument("--extra-terms", action="store_true", help="run only EXTRA_SEARCH_TERMS (supply-widening pass)")
     args = parser.parse_args()
 
     conn = sqlite3.connect(DB_PATH)
@@ -125,6 +138,9 @@ def main():
     if args.test:
         terms = [SEARCH_TERMS[0]]
         max_places = 5
+    elif args.extra_terms:
+        terms = EXTRA_SEARCH_TERMS
+        max_places = args.max_places or 20
     else:
         terms = SEARCH_TERMS
         max_places = args.max_places or 30
