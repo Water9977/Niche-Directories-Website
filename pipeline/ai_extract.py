@@ -79,14 +79,14 @@ WEBSITE CONTENT:
 
 
 def call_model(provider, model, content):
-    prompt_text = PROMPT.format(shape=JSON_SHAPE_INSTRUCTIONS, content=content[:20000])
+    prompt_text = PROMPT.format(shape=JSON_SHAPE_INSTRUCTIONS, content=content[:40000])
     if provider == "nvidia":
         endpoint, key = NVIDIA_ENDPOINT, NVIDIA_KEY
         body = {
             "model": model,
             "messages": [{"role": "user", "content": prompt_text}],
             "temperature": 0,
-            "max_tokens": 2048,
+            "max_tokens": 6000,
         }
     else:
         endpoint, key = OPENROUTER_ENDPOINT, OPENROUTER_KEY

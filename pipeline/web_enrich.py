@@ -1,10 +1,16 @@
 """Scrapes each validated business's OWN website (never aggregators) for
-pricing/rates/about pages, storing raw markdown in scraped_pages.
+pricing/catalog/shop pages, storing raw markdown in scraped_pages.
 
 This only follows real business websites, never Yelp/Facebook/Angi/etc
 profile pages that happen to be in the `website` field. Run small first
 with --limit before committing to the full batch — Firecrawl credits
 aren't unlimited either.
+
+v2: widened the nav-label keyword net (session 6 only followed literal
+"pricing"/"rates" links and missed sites that publish real prices under
+"Shop"/"Catalog"/"Rentals"/"Products" nav labels instead), follows up to
+3 candidate pages per business instead of 1, and probes a fixed list of
+common paths directly when no nav link matches at all.
 """
 import argparse
 import sqlite3
@@ -39,12 +45,26 @@ EXCLUDED_HOSTS = {
     "maps.google.com", "business.google.com",
 }
 
-PRICING_KEYWORDS = ["pricing", "price", "rates", "rate", "cost", "catalog", "inventory", "menu"]
+# Ordered roughly by how likely the label is to lead straight to real prices.
+PRICING_KEYWORDS = [
+    "pricing", "price", "prices", "rates", "rate", "cost", "costs",
+    "catalog", "catalogue", "inventory", "menu",
+    "shop", "store", "products", "product",
+    "rentals", "rental", "rent",
+    "book", "booking", "order", "reserve", "reservation",
+    "browse", "collection", "items", "gallery",
+]
 
-# Google Maps' category matching is loose — generic search terms like "party rental"
-# and "table and chair rental" pull in venues, DJs, bridal shops, furniture stores,
-# even Costco and Camping World. Only actual equipment-rental businesses match our
-# niche; everything else is noise regardless of rating/review count.
+# Tried directly when the homepage's own nav doesn't surface a matching link —
+# some catalog pages sit outside <main> (header/footer nav) and Firecrawl's
+# onlyMainContent extraction can miss them.
+COMMON_PATH_GUESSES = [
+    "/shop", "/store", "/catalog", "/rentals", "/products", "/pricing",
+    "/price-list", "/rates", "/inventory", "/book-now",
+]
+
+MAX_PAGES_PER_BUSINESS = 3
+
 ALLOWED_CATEGORIES = {
     "Party equipment rental service",
     "Tent rental service",
@@ -68,16 +88,22 @@ def firecrawl_scrape(url):
     )
     if resp.status_code != 200:
         return None
-    data = resp.json().get("data", {})
-    return data
+    return resp.json().get("data", {})
 
 
-def find_pricing_link(base_url, links):
-    for link in links or []:
-        low = link.lower()
-        if any(kw in low for kw in PRICING_KEYWORDS) and not is_excluded(link):
-            return urljoin(base_url, link)
-    return None
+def find_pricing_links(base_url, links, max_links):
+    seen, found = set(), []
+    for kw in PRICING_KEYWORDS:
+        for link in links or []:
+            low = link.lower()
+            if kw in low and not is_excluded(link):
+                full = urljoin(base_url, link)
+                if full not in seen and full != base_url:
+                    seen.add(full)
+                    found.append(full)
+                    if len(found) >= max_links:
+                        return found
+    return found
 
 
 def store_page(conn, raw_listing_id, url, page_type, markdown):
@@ -86,6 +112,37 @@ def store_page(conn, raw_listing_id, url, page_type, markdown):
         (raw_listing_id, url, page_type, markdown, datetime.now(timezone.utc).isoformat()),
     )
     conn.commit()
+
+
+def enrich_one(conn, raw_id, name, website):
+    home = firecrawl_scrape(website)
+    if not home or not home.get("markdown"):
+        return "fail"
+
+    store_page(conn, raw_id, website, "homepage", home["markdown"])
+    pages_found = 1
+
+    link_urls = [l.get("href", l) if isinstance(l, dict) else l for l in home.get("links", [])]
+    candidates = find_pricing_links(website, link_urls, MAX_PAGES_PER_BUSINESS - 1)
+
+    if not candidates:
+        for path in COMMON_PATH_GUESSES:
+            guess = urljoin(website, path)
+            if is_excluded(guess):
+                continue
+            page = firecrawl_scrape(guess)
+            if page and page.get("markdown") and len(page["markdown"]) > 200:
+                store_page(conn, raw_id, guess, "pricing_guess", page["markdown"])
+                pages_found += 1
+                break
+    else:
+        for url in candidates:
+            page = firecrawl_scrape(url)
+            if page and page.get("markdown"):
+                store_page(conn, raw_id, url, "pricing", page["markdown"])
+                pages_found += 1
+
+    return pages_found
 
 
 def main():
@@ -107,7 +164,7 @@ def main():
         (*ALLOWED_CATEGORIES, args.limit),
     ).fetchall()
 
-    print(f"Enriching {len(candidates)} businesses...")
+    print(f"Enriching {len(candidates)} businesses (up to {MAX_PAGES_PER_BUSINESS} pages each)...")
     done, skipped_excluded, failed = 0, 0, 0
 
     for raw_id, name, website in candidates:
@@ -116,26 +173,13 @@ def main():
             skipped_excluded += 1
             continue
 
-        home = firecrawl_scrape(website)
-        if not home or not home.get("markdown"):
+        result = enrich_one(conn, raw_id, name, website)
+        if result == "fail":
             print(f"  FAIL (no content): {name} -> {website}")
             failed += 1
-            continue
-
-        store_page(conn, raw_id, website, "homepage", home["markdown"])
-
-        link_urls = [l.get("href", l) if isinstance(l, dict) else l for l in home.get("links", [])]
-        pricing_url = find_pricing_link(website, link_urls)
-        if pricing_url and pricing_url != website:
-            pricing_page = firecrawl_scrape(pricing_url)
-            if pricing_page and pricing_page.get("markdown"):
-                store_page(conn, raw_id, pricing_url, "pricing", pricing_page["markdown"])
-                print(f"  OK: {name} -> homepage + pricing page found")
-            else:
-                print(f"  OK: {name} -> homepage only (pricing link found but scrape failed)")
         else:
-            print(f"  OK: {name} -> homepage only (no pricing link found)")
-        done += 1
+            print(f"  OK: {name} -> {result} page(s) scraped")
+            done += 1
 
     print(f"\nDone: {done}, skipped (excluded domain): {skipped_excluded}, failed: {failed}")
     conn.close()
