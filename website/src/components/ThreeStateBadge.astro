@@ -1,0 +1,14 @@
+---
+// Three-state rendering: yes / no / not published. Never coerce "unknown" to a
+// negative claim about a real business — that was a real bug in a prior version
+// of this project and caused false statements about real businesses.
+export interface Props {
+  value: 'yes' | 'no' | 'unknown';
+  labelYes: string;
+  labelNo: string;
+}
+const { value, labelYes, labelNo } = Astro.props;
+---
+{value === 'yes' && <span class="badge badge-yes">{labelYes}</span>}
+{value === 'no' && <span class="badge badge-no">{labelNo}</span>}
+{value === 'unknown' && <span class="badge badge-unknown">Not published</span>}

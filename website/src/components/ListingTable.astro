@@ -1,0 +1,72 @@
+---
+import { lowestPrice, type Listing } from '../lib/listings';
+import ThreeStateBadge from './ThreeStateBadge.astro';
+
+export interface Props {
+  listings: Listing[];
+}
+const { listings } = Astro.props;
+const sorted = [...listings].sort((a, b) => {
+  const pa = lowestPrice(a);
+  const pb = lowestPrice(b);
+  if (pa == null && pb == null) return 0;
+  if (pa == null) return 1;
+  if (pb == null) return -1;
+  return pa - pb;
+});
+---
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Rating</th>
+        <th>Starting price</th>
+        <th>Delivery</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {sorted.map((listing) => {
+        const low = lowestPrice(listing);
+        return (
+          <tr>
+            <td>
+              <a href={`/listing/${listing.slug}/`}>{listing.name}</a>
+              <div class="muted">{listing.city}, {listing.state}</div>
+            </td>
+            <td>
+              {listing.rating != null && listing.review_count ? (
+                <>{listing.rating.toFixed(1)}★ <span class="muted">({listing.review_count})</span></>
+              ) : (
+                <span class="muted">—</span>
+              )}
+            </td>
+            <td>
+              {low != null ? <>${low.toFixed(0)}+</> : <span class="muted">See listing</span>}
+            </td>
+            <td>
+              <ThreeStateBadge value={listing.delivery_available} labelYes="Yes" labelNo="No" />
+            </td>
+            <td>
+              <a href={`/listing/${listing.slug}/`} class="button button-secondary table-cta">View pricing</a>
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+  table { min-width: 560px; }
+  .muted { color: var(--color-text-muted); font-size: 0.82rem; }
+  .table-cta { white-space: nowrap; font-size: 0.85rem; padding: var(--space-2) var(--space-4); }
+</style>

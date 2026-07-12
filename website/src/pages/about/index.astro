@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getAllListings } from '../../lib/listings';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const listings = getAllListings();
+const withPricing = listings.filter((l) => l.pricing.length > 0);
+
+const title = 'About & Methodology | EventRentalCosts.com';
+const description = 'How we collect and verify real party and event rental pricing data — no fabricated numbers, no fake reviews.';
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'About & Methodology', href: '/about/' },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
+---
+<BaseLayout title={title} description={description} path="/about/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>About &amp; Methodology</h1>
+
+    <p>
+      EventRentalCosts.com is an independent comparison site for party and event equipment
+      rental pricing in the Charlotte, NC metro area. We are not affiliated with, and don't
+      receive payment from, any company listed here as of this writing.
+    </p>
+
+    <h2>How we find companies</h2>
+    <p>
+      We identify real party, tent, table, and chair rental businesses using Google Maps data —
+      name, address, phone, rating, and review count. We manually filter out businesses that
+      Google's broad category matching pulls in by accident (venues, DJs, caterers, retail
+      stores) and only include businesses actually in the equipment rental business.
+    </p>
+
+    <h2>How we collect pricing</h2>
+    <p>
+      For each business, we scrape their own website directly — never a third-party directory
+      or marketplace — looking for a real, published dollar figure. We do not estimate, average,
+      or guess at pricing. Of the {listings.length} verified rental businesses we've checked in this
+      metro area, {withPricing.length} currently publish real pricing on their own site; the rest
+      require a phone call or quote request, so we don't list pricing for them (we'd rather list
+      nothing than a fabricated number).
+    </p>
+
+    <h2>What "not published" means</h2>
+    <p>
+      For details like delivery availability, setup service, or weekend surcharges, we only mark
+      "Yes" or "No" when a business explicitly states it on their website. If a business doesn't
+      mention something at all, we mark it "Not published" — we never assume a missing detail
+      means "no." That distinction matters: silence isn't the same as a real answer.
+    </p>
+
+    <h2>How current is this data?</h2>
+    <p>
+      Each listing shows the date its pricing was last checked. Rental pricing can change,
+      especially seasonally, so always confirm current pricing directly with the business before
+      booking.
+    </p>
+
+    <h2>How this site makes money</h2>
+    <p>
+      We plan to earn through referral relationships with listed businesses and, once traffic
+      justifies it, display advertising. As of this writing we have no paid placements — company
+      order in comparison tables is based on price, not payment.
+    </p>
+
+    <h2>Found an error?</h2>
+    <p>
+      If pricing on this site is wrong or a business wants a correction, contact us and we'll fix
+      it — real accuracy is the entire point of this site.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 720px; }
+  h2 { margin-top: var(--space-8); }
+</style>

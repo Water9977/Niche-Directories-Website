@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const title = 'Privacy Policy | EventRentalCosts.com';
+const description = 'How EventRentalCosts.com handles visitor data.';
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Privacy Policy', href: '/privacy/' },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
+const lastUpdated = 'July 12, 2026';
+---
+<BaseLayout title={title} description={description} path="/privacy/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: {lastUpdated}</p>
+
+    <p>
+      EventRentalCosts.com ("we," "us") publishes comparison pricing data for party and event
+      rental businesses. This policy explains what information we collect from visitors and how
+      we use it.
+    </p>
+
+    <h2>Information we collect</h2>
+    <p>
+      This site does not require account creation and does not collect personal information
+      through forms at this time. If we add a quote-request or contact form in the future, this
+      policy will be updated before that feature goes live, and it will state exactly what's
+      collected and how it's used.
+    </p>
+
+    <h2>Analytics</h2>
+    <p>
+      We use privacy-focused, cookie-free analytics to understand aggregate traffic (which pages
+      are visited, roughly how many people, and from where) — this does not identify individual
+      visitors and does not use tracking cookies or cross-site tracking.
+    </p>
+
+    <h2>Third-party links</h2>
+    <p>
+      Listing pages link out to the websites and phone numbers of real rental businesses. We
+      don't control those sites' privacy practices — check their own policies before sharing
+      information with them.
+    </p>
+
+    <h2>Advertising</h2>
+    <p>
+      This site currently displays no ads. If we add display advertising in the future (e.g.
+      Google AdSense), this policy will be updated to disclose what data the ad network collects
+      and how to opt out, before ads go live.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We'll update the "last updated" date above whenever this policy changes materially.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 720px; }
+  h2 { margin-top: var(--space-8); }
+  .muted { color: var(--color-text-muted); }
+</style>

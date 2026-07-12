@@ -1,0 +1,56 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import AdSlot from '../components/AdSlot.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  /** Path only, e.g. "/charlotte-nc/" — canonical is computed from Astro.site */
+  path: string;
+  /** JSON-LD objects to inject (LocalBusiness, ItemList, BreadcrumbList, etc). */
+  jsonLd?: Record<string, unknown>[];
+  /** Set false on the quote-request flow — a clicked ad there is a lost lead. */
+  showAds?: boolean;
+  noindex?: boolean;
+}
+
+const { title, description, path, jsonLd = [], showAds = true, noindex = false } = Astro.props;
+const canonicalURL = new URL(path, Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="EventRentalCosts.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {jsonLd.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    {showAds && <AdSlot variant="anchor" />}
+  </body>
+</html>

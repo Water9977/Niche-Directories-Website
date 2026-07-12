@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCharlotteListings, getMetroSuburbListings } from '../lib/listings';
+
+const charlotteCount = getCharlotteListings().length;
+const suburbCount = getMetroSuburbListings().length;
+
+const title = 'Party & Event Rental Prices in Charlotte, NC | EventRentalCosts.com';
+const description = `Compare real, published prices from ${charlotteCount + suburbCount} verified tent, table, and chair rental companies across the Charlotte, NC metro area.`;
+---
+<BaseLayout title={title} description={description} path="/">
+  <section class="hero">
+    <div class="container">
+      <h1>Real party &amp; event rental prices in the Charlotte, NC metro</h1>
+      <p class="lede">
+        We collect actual published pricing directly from local tent, table, and chair rental
+        companies — not vague "call for quote" estimates. Compare real numbers before you book.
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Choose your area</h2>
+    <div class="area-grid">
+      <a href="/charlotte-nc/" class="card area-card">
+        <h3>Charlotte, NC</h3>
+        <p>{charlotteCount} verified rental companies with real published pricing.</p>
+        <span class="area-cta">View pricing &rarr;</span>
+      </a>
+      <a href="/charlotte-metro-nc/" class="card area-card">
+        <h3>Charlotte Metro Suburbs</h3>
+        <p>Concord, Huntersville, Mooresville, Indian Trail &amp; Monroe — {suburbCount} verified companies.</p>
+        <span class="area-cta">View pricing &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="container about-strip">
+    <h2>Why prices, not just a directory</h2>
+    <p>
+      Google Maps shows you a business's name and phone number. It doesn't show you what a
+      10x10 tent actually costs, whether delivery is included, or what a Saturday surcharge
+      looks like. We scrape each company's own website for real, dated pricing — and we only
+      list companies that actually publish real numbers. <a href="/about/">Read our methodology</a>.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-block: var(--space-12) var(--space-8);
+    background: linear-gradient(180deg, rgba(181, 80, 47, 0.06), transparent);
+  }
+  .lede { font-size: 1.1rem; color: var(--color-text-muted); max-width: 640px; }
+  .area-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+  }
+  .area-card { padding: var(--space-6); }
+  .area-card:hover { text-decoration: none; border-color: var(--color-primary); }
+  .area-card h3 { margin-bottom: var(--space-2); }
+  .area-card p { color: var(--color-text-muted); font-size: 0.92rem; }
+  .area-cta { font-weight: 600; color: var(--color-primary); }
+  .about-strip { padding-bottom: var(--space-16); color: var(--color-text-muted); }
+</style>

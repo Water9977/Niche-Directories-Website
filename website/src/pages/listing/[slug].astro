@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ThreeStateBadge from '../../components/ThreeStateBadge.astro';
+import { getAllListings } from '../../lib/listings';
+import { breadcrumbJsonLd, localBusinessJsonLd } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return getAllListings().map((listing) => ({
+    params: { slug: listing.slug },
+    props: { listing },
+  }));
+}
+
+const { listing } = Astro.props;
+const areaHref = listing.city === 'Charlotte' ? '/charlotte-nc/' : '/charlotte-metro-nc/';
+const areaLabel = listing.city === 'Charlotte' ? 'Charlotte, NC' : 'Charlotte Metro Suburbs';
+
+const title = `${listing.name} Pricing — ${listing.city}, NC | EventRentalCosts.com`;
+const description = `Real published pricing for ${listing.name} in ${listing.city}, NC — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their website.`;
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: areaLabel, href: areaHref },
+  { label: listing.name, href: `/listing/${listing.slug}/` },
+];
+
+const url = `https://eventrentalcosts.com/listing/${listing.slug}/`;
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), localBusinessJsonLd(listing, url)];
+
+const lastChecked = listing.pricing
+  .map((p) => p.last_checked)
+  .filter(Boolean)
+  .sort()
+  .at(-1);
+---
+<BaseLayout title={title} description={description} path={`/listing/${listing.slug}/`} jsonLd={jsonLd} showAds={false}>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>{listing.name}</h1>
+    <p class="location">{listing.address}</p>
+
+    <div class="contact-row">
+      {listing.phone && <a href={`tel:${listing.phone.replace(/[^0-9+]/g, '')}`} class="button">Call {listing.phone}</a>}
+      {listing.website && <a href={listing.website} class="button button-secondary" rel="nofollow noopener" target="_blank">Visit website</a>}
+    </div>
+
+    <div class="meta-row">
+      {listing.rating != null && listing.review_count ? (
+        <span>{listing.rating.toFixed(1)}★ ({listing.review_count} Google reviews)</span>
+      ) : null}
+      {listing.category && <span class="muted">{listing.category}</span>}
+    </div>
+
+    <section class="policies">
+      <h2>Policies</h2>
+      <dl>
+        <dt>Delivery available</dt>
+        <dd><ThreeStateBadge value={listing.delivery_available} labelYes="Yes" labelNo="No" /></dd>
+        <dt>Setup included</dt>
+        <dd><ThreeStateBadge value={listing.setup_included} labelYes="Yes" labelNo="No" /></dd>
+        <dt>Weekend surcharge</dt>
+        <dd><ThreeStateBadge value={listing.weekend_surcharge} labelYes="Yes" labelNo="No" /></dd>
+      </dl>
+    </section>
+
+    <section class="pricing">
+      <h2>Published pricing</h2>
+      {lastChecked && <p class="muted small">Last checked {new Date(lastChecked).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>}
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Price</th><th>Unit</th></tr>
+          </thead>
+          <tbody>
+            {listing.pricing.map((p) => (
+              <tr>
+                <td>{p.item_type.replace(/_/g, ' ')}</td>
+                <td>
+                  {p.price_low != null ? (
+                    p.price_high != null && p.price_high !== p.price_low
+                      ? <>${p.price_low.toFixed(0)}–${p.price_high.toFixed(0)}</>
+                      : <>${p.price_low.toFixed(0)}</>
+                  ) : '—'}
+                </td>
+                <td class="muted">{p.unit ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">
+        Pricing sourced directly from {listing.name}'s own website. Always confirm current
+        pricing and availability with the business before booking — rates can change.
+      </p>
+    </section>
+
+    <p class="back-link"><a href={areaHref}>&larr; Back to all {areaLabel} rental companies</a></p>
+  </div>
+</BaseLayout>
+
+<style>
+  .location { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+  .contact-row { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-4); }
+  .meta-row { display: flex; gap: var(--space-4); font-size: 0.9rem; margin-bottom: var(--space-8); }
+  .muted { color: var(--color-text-muted); }
+  .small { font-size: 0.82rem; }
+  .policies { margin-bottom: var(--space-8); }
+  dl { display: grid; grid-template-columns: auto auto; gap: var(--space-2) var(--space-6); align-items: center; }
+  dt { color: var(--color-text-muted); font-size: 0.9rem; }
+  dd { margin: 0; }
+  .pricing { margin-bottom: var(--space-8); }
+  .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-block: var(--space-3);
+  }
+  .back-link { margin-top: var(--space-8); }
+</style>

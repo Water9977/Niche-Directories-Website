@@ -1,0 +1,51 @@
+---
+// Reserved ad space only — no ad network wired up yet (site has zero traffic;
+// applying to AdSense/Mediavine is a later-stage decision, see architecture.md).
+// Space is reserved via CSS min-height now so turning ads on later never causes
+// layout shift or requires a redesign. Per research: never reserve space with
+// JS, always CSS. Never render this on the quote-request flow — a clicked ad
+// there is a lost lead, not incremental revenue.
+export interface Props {
+  variant?: 'in-content' | 'anchor';
+}
+const { variant = 'in-content' } = Astro.props;
+---
+
+{variant === 'in-content' && (
+  <div class="ad-slot ad-slot--in-content" aria-hidden="true">
+    Ad space reserved
+  </div>
+)}
+
+{variant === 'anchor' && (
+  <div class="ad-slot ad-slot--anchor" aria-hidden="true">
+    Ad space reserved
+  </div>
+)}
+
+<style>
+  .ad-slot--in-content {
+    width: 100%;
+    max-width: 336px;
+    min-height: 280px;
+  }
+  .ad-slot--anchor {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    margin: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .ad-slot--anchor { display: flex; }
+  }
+</style>

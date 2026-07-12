@@ -1,0 +1,39 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="disclosure">
+      EventRentalCosts.com is an independent comparison directory. We are not affiliated with,
+      endorsed by, or operated by any rental company listed on this site. Pricing is collected
+      directly from each business's own website and dated per listing — always confirm current
+      pricing with the business before booking.
+    </p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about/">About &amp; Methodology</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+    <p class="copyright">&copy; {year} EventRentalCosts.com</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+    margin-top: var(--space-16);
+    padding-block: var(--space-8);
+  }
+  .footer-inner { display: flex; flex-direction: column; gap: var(--space-4); }
+  .disclosure {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    max-width: 640px;
+    margin: 0;
+  }
+  .footer-nav { display: flex; gap: var(--space-4); font-size: 0.85rem; font-weight: 600; }
+  .footer-nav a { color: var(--color-text-muted); }
+  .footer-nav a:hover { color: var(--color-primary); }
+  .copyright { font-size: 0.78rem; color: var(--color-text-muted); margin: 0; }
+</style>

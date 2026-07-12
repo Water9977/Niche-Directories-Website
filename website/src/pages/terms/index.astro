@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const title = 'Terms of Use | EventRentalCosts.com';
+const description = 'Terms of use for EventRentalCosts.com.';
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Terms', href: '/terms/' },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
+const lastUpdated = 'July 12, 2026';
+---
+<BaseLayout title={title} description={description} path="/terms/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>Terms of Use</h1>
+    <p class="muted">Last updated: {lastUpdated}</p>
+
+    <h2>What this site is</h2>
+    <p>
+      EventRentalCosts.com is an independent, informational comparison resource for party and
+      event equipment rental pricing in the Charlotte, NC metro area. We are not a rental
+      company, we do not process bookings or payments, and we are not a party to any transaction
+      between you and a listed business.
+    </p>
+
+    <h2>Accuracy of pricing</h2>
+    <p>
+      We collect real pricing directly from each business's own website and note when it was
+      last checked. Pricing can change without notice. We make no guarantee that the prices
+      shown are current, and you should always confirm pricing, availability, and terms directly
+      with the business before booking.
+    </p>
+
+    <h2>No endorsement</h2>
+    <p>
+      Inclusion of a business on this site is not an endorsement, and order in a comparison
+      table reflects price, not payment or preference. We are not responsible for the quality,
+      safety, or reliability of any listed business's products or services.
+    </p>
+
+    <h2>Limitation of liability</h2>
+    <p>
+      This site is provided "as is" without warranties of any kind. We are not liable for any
+      loss or damage arising from your use of this site or your dealings with any business
+      listed here.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      We may update these terms as the site evolves. We'll update the "last updated" date above
+      when we do.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 720px; }
+  h2 { margin-top: var(--space-8); }
+  .muted { color: var(--color-text-muted); }
+</style>

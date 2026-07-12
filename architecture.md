@@ -5,6 +5,20 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-12 — Session 9: Astro site built and launched (Charlotte + Metro Suburbs), found and fixed a real hallucination bug
+- Confirmed launch structure: Charlotte as a deep flagship city page, the other 5 towns combined into one honest "Charlotte Metro Suburbs" page rather than 5 thin URLs — matches the research from session 8.
+- Scaffolded the Astro site at `website/` (Astro 5, `@astrojs/sitemap`, vanilla CSS design tokens, no Tailwind, `site` set to `https://eventrentalcosts.com` from the first commit). Structure: `BaseLayout` (canonical/OG/JSON-LD per page), `Header`/`Footer`, `AdSlot` (CSS `min-height`-reserved, anchor + in-content variants per session 8's ad research, absent on listing detail pages), `Breadcrumbs`, `ListingTable`, `ThreeStateBadge` (yes/no/"Not published" — never coerces unknown to a negative claim).
+- Routes built: homepage (real area selector generated from data, not hardcoded), `/charlotte-nc/` (flagship), `/charlotte-metro-nc/` (combined suburbs, sectioned by town), `/listing/[slug]/` (one per business, `getStaticPaths` from real data), `/about/` (honest methodology disclosure — states the real pass/fail count of businesses with real pricing), `/privacy/`, `/terms/`, custom `/404` (noindex).
+- SEO baked in per the `seo-s` skill checklist + brief §6: per-page self-referencing canonicals, sitemap via `@astrojs/sitemap`, `robots.txt` with explicit AI-crawler allow blocks (GPTBot/ClaudeBot/PerplexityBot/OAI-SearchBot/Google-Extended) + sitemap reference, `llms.txt`, `BreadcrumbList`/`ItemList`/`LocalBusiness` JSON-LD (aggregateRating only emitted when a listing has real rating+review_count, never fabricated), unique title/description per page. **Open gap: no real OG image** — no image-generation tooling available in this session (ffmpeg can't rasterize SVG, no ImageMagick/canvas lib); omitted the `og:image` tag entirely rather than ship a broken or unreliable one. Needs a real designed 1200x630 PNG before this checklist item is actually done.
+- **Found and fixed a real data-integrity bug while spot-checking the built site**, not before: several listings showed "$0+" or "$1+" as their starting price. Investigated the raw `listing_pricing` rows and found the 8B extraction model had hallucinated ~20% of them (72 of 353) — inventing prices for generic marketing copy with no real number, misreading a shopping-cart "0 items" counter as a price, and in one case assigning 5 different fabricated prices (\$1000/\$2500/\$5000) to 5 different "features" all sourced from one unrelated "Minimum project size: \$1,000" sentence. One business (`Thomas Equipment & Party Rentals`) had literally "Contact us for price." as its source text for 15 line items, all still fabricated with numbers by the model.
+- Built `pipeline/validate_pricing.py`: verifies every `price_low`/`price_high` actually appears as a real dollar figure in its own `source_snippet` before it's allowed to stay; also rejects any `$0` price outright (real rental items are never free — a `$0.00` that's technically quoted verbatim in a snippet is virtually always a broken JS price-widget placeholder on the business's own site, not a real price). Removed 73 of 353 rows total. 4 listings lost their only real pricing and dropped out of the published set entirely as a result (`Thomas Equipment & Party Rentals`, `RentmeUSA Party Rentals`, `Country Roads Party Rentals LLC`, `Tent Guys`) — correct behavior, not a bug: a listing with no verified real pricing shouldn't be published.
+- **Final published count after validation: 22 real, verified listings** (down from the pre-validation 26 — the 4 fewer are the honest number), 261 verified pricing rows, across Charlotte (13) + 5 metro suburb towns (9 combined: Concord 2, Huntersville 1, Mooresville 2, Indian Trail 2, Monroe 2).
+- Site builds cleanly (`npm run build` in `website/`, 29 pages, zero errors) and was spot-checked live via the dev server — homepage, Charlotte page, Metro Suburbs page, and a listing detail page all read correctly with real data, correct three-state badges, and no console errors.
+- Also fixed a real slug-collision bug caught during the first build: two genuinely different real businesses (`RentMeUSA Party Rentals` and `RentmeUSA Party Rentals`, different addresses/place_ids) produced the same URL slug from name+city alone. Fixed by disambiguating with postal code on collision rather than silently dropping either listing.
+- **Not yet done:** real OG image, AdSense/analytics not wired up (slots are empty placeholders only, correctly so per the brief — applying to ad networks is a month-6+ concern), no deploy yet (still local `dist/`), Search Console not set up, no quote-request lead-capture form yet (individual listings currently link directly to the business's own real phone/website — honest and functional, but doesn't capture leads for the site's own referral-fee model; needs a Web3Forms or similar key before building a real form).
+
+
+
 ### 2026-07-12 — Session 8: SEO/ads research, confirmed real data ceiling, launch-structure decision pending
 - Loaded local skill `E:\Claude\Claude Skills\seo-s` (Next.js/Vercel-specific audit skill, not directly runnable here, but its technical checklist transfers: canonical tags, sitemap gotchas, robots.txt + explicit AI-crawler allowlist, `llms.txt`, structured data validity, meta completeness, soft-404 handling). Will bake this checklist into the Astro build.
 - Ran 2 parallel research agents (Reddit/Twitter/YouTube via Firecrawl + WebSearch) on (a) local-directory SEO tactics for the 2025/2026 "anti-thin-directory" Google updates, and (b) ad-placement best practices for lead-gen sites.
@@ -254,11 +268,37 @@ All scraper-based options (Apify/Outscraper/SerpApi/SearchApi) operate in the sa
 
 **Executed:** signed up for Apify 2026-07-12, `MAPS_DATA_API_KEY` in `.env`, `maps_ingest.py` built and run across all 8 Charlotte-metro cities. See §7 and changelog for results.
 
-## 9. Website Architecture [PLANNED]
-Routes/SEO/schema.org per brief §6 — not started.
+## 9. Website Architecture
 
-## 10. SEO Checklist [PLANNED]
-All items from brief §6 — none yet applicable, nothing built.
+**BUILT 2026-07-12** — Astro 5 static site at `website/`. Routes:
+
+| Route | Purpose |
+|---|---|
+| `/` | Homepage — area selector generated from real data (2 areas: Charlotte, Metro Suburbs), no hardcoded links to non-existent pages |
+| `/charlotte-nc/` | Flagship city page — 13 real listings, comparison table, real local context, FAQ |
+| `/charlotte-metro-nc/` | Combined suburbs page — 9 listings across 5 towns, sectioned, avoids 5 separate thin pages |
+| `/listing/[slug]/` | One per business (22 total) — full pricing table, policies, real phone/website CTA, no ads |
+| `/about/` | Honest methodology — states the real pass/fail count of businesses checked vs. published |
+| `/privacy/`, `/terms/` | Required for lead-gen/ads |
+| `/404` | Custom, `noindex` |
+
+Data flow: `pipeline/export/charlotte-metro-listings.json` → manually copied to `website/src/data/listings.json` (no automated sync yet — a build script to do this automatically is a good next-session addition once the pipeline is re-run regularly).
+
+## 10. SEO Checklist
+
+- [x] Per-page correct canonical (self-referencing, computed from `Astro.site` + path — never all-homepage)
+- [x] `@astrojs/sitemap` generating; `site` set in `astro.config.mjs`; `robots.txt` references `sitemap-index.xml`
+- [x] Unique title + meta description per page
+- [x] Valid structured data: `BreadcrumbList` (all pages), `ItemList` (city pages), `LocalBusiness` (listing pages) — `aggregateRating` only emitted when a listing has a real `rating` + `review_count`, never fabricated
+- [ ] **Real OpenGraph image — NOT done.** No image-rasterization tooling available this session (ffmpeg can't decode SVG, no ImageMagick/canvas lib installed). `og:image` tag omitted entirely rather than reference something broken. Needs a real 1200x630 PNG before this is actually complete.
+- [x] No AI-slop copy — reviewed page content for invented stats/unverifiable "we verify" claims; About page states real counts, not marketing fluff
+- [x] Three-state rendering (yes/no/"Not published") — never coerces missing data to a negative claim
+- [x] Ad slots reserved as empty CSS-`min-height` space (anchor + in-content), no ad network applied yet (correct per brief — month-6+ concern)
+- [x] Mobile-first, responsive (`clamp()` typography, anchor ad slot mobile-only)
+- [x] `robots.txt` with explicit AI-crawler allow blocks (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended)
+- [x] `llms.txt` present with honest, factual site summary
+- [ ] Accessibility — basic (`aria-label`s present) but not formally audited
+- [ ] Not yet deployed — everything above verified against the local build/dev server only, not a live URL
 
 ## 11. Monetization Plan
 Lead-referral to local party/event rental companies (tent/table/chair quote requests) + featured listing slots for rental businesses wanting visibility for their off-season/weekday capacity + reserved (empty) ad space until traffic justifies Mediavine (~month 6+). Honest expectation: plan for $0-300/mo outcome per brief's realistic distribution; treat anything above as upside. Ticket size ($1,500-6,000/wedding) is smaller than the rejected pickleball niche ($8k-50k) — referral fee per lead will be proportionally smaller; volume of weddings/events searched is the offsetting factor.
@@ -292,8 +332,12 @@ GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-
 8. ~~Build `web_enrich.py`~~ — DONE (43 businesses enriched after category filtering).
 9. ~~Build `ai_extract.py`~~ — DONE (NVIDIA NIM primary, OpenRouter fallback, after Gemini's 20/day/model cap forced a provider switch — see changelog). 42/43 processed, 12 with real pricing.
 10. ~~Build `export_json.py`~~ — DONE. **11 publishable listings live in `pipeline/export/charlotte-metro-listings.json`.**
-11. ~~Widen pricing detection, gather full data~~ — DONE. **26 published listings, 333 pricing items, 6 of 8 cities covered.** Gastonia and Matthews confirmed to have no viable candidates left (no website / dead domains) — decide next session whether to build city pages for all 8 (with 2 honestly empty, or excluded from the state page's city list entirely) or scope the initial launch to the 6 covered cities.
-12. Scaffold Astro project, config (`site`, sitemap, robots.txt) from the first commit.
-13. Build website routes + SEO scaffolding.
-14. Deploy to Cloudflare Pages, submit sitemap to Search Console.
-15. Month-6 kill-switch check.
+11. ~~Widen pricing detection, gather full data~~ — DONE. 26 published listings before the session 9 validation-bug fix; see below for the corrected honest number.
+12. ~~Scaffold Astro project, config (`site`, sitemap, robots.txt)~~ — DONE.
+13. ~~Build website routes + SEO scaffolding~~ — DONE. See §9/§10.
+14. ~~Build `validate_pricing.py`, fix hallucinated pricing~~ — DONE. **22 published listings, 261 verified pricing rows** — the honest, spot-checked-clean number. See changelog for the bug found and how it was caught.
+15. **Get a real OG image** (1200x630 PNG) — no tooling available this session, needs either a design tool or an image-generation MCP.
+16. **Get a Web3Forms (or similar) key** so listing pages can carry a real multi-quote lead-capture form instead of just linking to each business's own contact info directly.
+17. Deploy to Cloudflare Pages, submit sitemap to Search Console.
+18. Build a proper sync step from `pipeline/export/*.json` into `website/src/data/` (currently a manual copy).
+19. Month-6 kill-switch check.

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Page Not Found | EventRentalCosts.com';
+const description = 'The page you were looking for does not exist.';
+---
+<BaseLayout title={title} description={description} path="/404/" noindex={true} showAds={false}>
+  <div class="container not-found">
+    <h1>Page not found</h1>
+    <p>That page doesn't exist. Try one of these instead:</p>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/charlotte-nc/">Charlotte, NC rental prices</a></li>
+      <li><a href="/charlotte-metro-nc/">Charlotte Metro Suburbs rental prices</a></li>
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found { padding-block: var(--space-16); text-align: center; }
+</style>
