@@ -1,37 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCharlotteListings, getMetroSuburbListings } from '../lib/listings';
+import { getPublishedMetros, getAllListings } from '../lib/listings';
 
-const charlotteCount = getCharlotteListings().length;
-const suburbCount = getMetroSuburbListings().length;
+const metros = getPublishedMetros();
+const totalListings = metros.reduce((sum, m) => sum + m.listings.length, 0);
 
-const title = 'Party & Event Rental Prices in Charlotte, NC | EventRentalCosts.com';
-const description = `Compare real, published prices from ${charlotteCount + suburbCount} verified tent, table, and chair rental companies across the Charlotte, NC metro area.`;
+const title = 'Real Party & Event Rental Prices, Compared | EventRentalCosts.com';
+const description = `Compare real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metro areas — actual numbers, not "call for a quote."`;
 ---
 <BaseLayout title={title} description={description} path="/">
   <section class="hero">
     <div class="container">
-      <h1>Real party &amp; event rental prices in the Charlotte, NC metro</h1>
+      <h1>Real party &amp; event rental prices, compared</h1>
       <p class="lede">
         We collect actual published pricing directly from local tent, table, and chair rental
-        companies — not vague "call for quote" estimates. Compare real numbers before you book.
+        companies — not vague "call for quote" estimates. {totalListings} verified companies across
+        {metros.length} metro areas, and growing.
       </p>
     </div>
   </section>
 
   <section class="container">
-    <h2>Choose your area</h2>
-    <div class="area-grid">
-      <a href="/charlotte-nc/" class="card area-card">
-        <h3>Charlotte, NC</h3>
-        <p>{charlotteCount} verified rental companies with real published pricing.</p>
-        <span class="area-cta">View pricing &rarr;</span>
-      </a>
-      <a href="/charlotte-metro-nc/" class="card area-card">
-        <h3>Charlotte Metro Suburbs</h3>
-        <p>Concord, Huntersville, Mooresville, Indian Trail &amp; Monroe — {suburbCount} verified companies.</p>
-        <span class="area-cta">View pricing &rarr;</span>
-      </a>
+    <h2>Choose your metro area</h2>
+    <div class="metro-grid">
+      {metros.map(({ meta, listings }) => (
+        <a href={`/${meta.slug}/`} class="card metro-card">
+          <h3>{meta.name}</h3>
+          <p class="count">{listings.length} verified rental companies</p>
+          <span class="metro-cta">View pricing &rarr;</span>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -51,17 +49,17 @@ const description = `Compare real, published prices from ${charlotteCount + subu
     padding-block: var(--space-12) var(--space-8);
     background: linear-gradient(180deg, rgba(181, 80, 47, 0.06), transparent);
   }
-  .lede { font-size: 1.1rem; color: var(--color-text-muted); max-width: 640px; }
-  .area-grid {
+  .lede { font-size: 1.1rem; color: var(--color-text-muted); max-width: 660px; }
+  .metro-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: var(--space-6);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
     margin-bottom: var(--space-12);
   }
-  .area-card { padding: var(--space-6); }
-  .area-card:hover { text-decoration: none; border-color: var(--color-primary); }
-  .area-card h3 { margin-bottom: var(--space-2); }
-  .area-card p { color: var(--color-text-muted); font-size: 0.92rem; }
-  .area-cta { font-weight: 600; color: var(--color-primary); }
+  .metro-card { padding: var(--space-6); }
+  .metro-card:hover { text-decoration: none; border-color: var(--color-primary); }
+  .metro-card h3 { margin-bottom: var(--space-2); font-size: 1.1rem; }
+  .metro-card .count { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--space-3); }
+  .metro-cta { font-weight: 600; color: var(--color-primary); font-size: 0.9rem; }
   .about-strip { padding-bottom: var(--space-16); color: var(--color-text-muted); }
 </style>

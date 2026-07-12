@@ -27,8 +27,9 @@ def main():
 
     candidates = conn.execute(
         """
-        SELECT l.*, rl.geo_status FROM listings l
+        SELECT l.*, rl.geo_status, tc.metro FROM listings l
         JOIN raw_listings rl ON l.raw_listing_id = rl.id
+        JOIN target_cities tc ON rl.target_city_id = tc.id
         WHERE l.address IS NOT NULL
         AND rl.geo_status = 'confirmed'
         AND EXISTS (SELECT 1 FROM listing_pricing lp WHERE lp.listing_id = l.id)
@@ -59,6 +60,7 @@ def main():
         ).fetchall()
         output.append({
             "name": row["name"],
+            "metro": row["metro"],
             "address": row["address"],
             "city": row["city"],
             "state": row["state"],

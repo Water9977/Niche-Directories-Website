@@ -2,7 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ThreeStateBadge from '../../components/ThreeStateBadge.astro';
-import { getAllListings } from '../../lib/listings';
+import { getAllListings, getMetroForListing } from '../../lib/listings';
+import { metroByKey } from '../../lib/metros';
 import { breadcrumbJsonLd, localBusinessJsonLd } from '../../lib/seo';
 
 export function getStaticPaths() {
@@ -13,8 +14,10 @@ export function getStaticPaths() {
 }
 
 const { listing } = Astro.props;
-const areaHref = listing.city === 'Charlotte' ? '/charlotte-nc/' : '/charlotte-metro-nc/';
-const areaLabel = listing.city === 'Charlotte' ? 'Charlotte, NC' : 'Charlotte Metro Suburbs';
+const metro = getMetroForListing(listing);
+// Every published listing belongs to a published metro, but fall back gracefully.
+const areaHref = metro ? `/${metro.slug}/` : '/';
+const areaLabel = metro ? metro.name : 'All metros';
 
 const title = `${listing.name} Pricing — ${listing.city}, NC | EventRentalCosts.com`;
 const description = `Real published pricing for ${listing.name} in ${listing.city}, NC — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their website.`;

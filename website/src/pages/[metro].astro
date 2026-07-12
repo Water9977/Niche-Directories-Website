@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ListingTable from '../components/ListingTable.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { getPublishedMetros, groupByCity, lowestPrice, type Listing } from '../lib/listings';
+import type { MetroMeta } from '../lib/metros';
+import { breadcrumbJsonLd, itemListJsonLd } from '../lib/seo';
+
+export function getStaticPaths() {
+  return getPublishedMetros().map(({ meta, listings }) => ({
+    params: { metro: meta.slug },
+    props: { meta, listings },
+  }));
+}
+
+interface Props {
+  meta: MetroMeta;
+  listings: Listing[];
+}
+const { meta, listings } = Astro.props;
+
+const prices = listings.map(lowestPrice).filter((p): p is number => p != null);
+const minPrice = prices.length ? Math.min(...prices) : null;
+const maxPrice = prices.length ? Math.max(...prices) : null;
+
+const cities = groupByCity(listings);
+const multiCity = cities.length > 1;
+
+const title = `Party & Tent Rental Prices in ${meta.name} (${listings.length} Companies Compared)`;
+const description = `Compare real published prices from ${listings.length} verified party, tent, table, and chair rental companies in ${meta.name}.${minPrice != null ? ` Prices start around $${minPrice.toFixed(0)}.` : ''}`;
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: meta.name, href: `/${meta.slug}/` },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https://eventrentalcosts.com')];
+---
+<BaseLayout title={title} description={description} path={`/${meta.slug}/`} jsonLd={jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>Party &amp; Tent Rental Prices in {meta.name}</h1>
+
+    <p class="intro">
+      {meta.blurb} We list the {listings.length} local rental companies below that actually publish
+      real pricing on their own websites — not vague "contact us for a quote" pages.
+      {minPrice != null && maxPrice != null && (
+        <> Starting prices we found range from about ${minPrice.toFixed(0)} to ${maxPrice.toFixed(0)}
+        depending on the company and item, though most quote per-tent, per-table, or per-chair
+        rather than a flat rate.</>
+      )}
+    </p>
+
+    {multiCity ? (
+      cities.map(({ city, listings: cityListings }, i) => (
+        <section class="city-section">
+          <h2 id={city.toLowerCase().replace(/\s+/g, '-')}>{city}, {meta.state}</h2>
+          <ListingTable listings={cityListings} />
+          {i === 0 && <AdSlot variant="in-content" />}
+        </section>
+      ))
+    ) : (
+      <>
+        <ListingTable listings={listings} />
+        <AdSlot variant="in-content" />
+      </>
+    )}
+
+    <section class="faq">
+      <h2>Common questions about {meta.name} party rentals</h2>
+      <div class="faq-item">
+        <h3>Do {meta.name} rental companies charge for delivery?</h3>
+        <p>
+          It varies by company — some include delivery within a set radius, others charge a
+          separate fee based on distance. Check the "Delivery" column in each table above, or open
+          an individual listing for the exact policy where it's published.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Is party rental pricing higher on weekends?</h3>
+        <p>
+          Some companies apply a weekend or peak-season surcharge, especially during busy spring
+          and fall wedding months. We note this per company where it's explicitly published — it's
+          marked "Not published" rather than "No" when a company doesn't state a policy either way,
+          since we don't guess.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>How is this pricing data collected?</h3>
+        <p>
+          We scrape each rental company's own website directly and extract real dollar figures
+          they've published — we never estimate or fabricate a price. See our
+          <a href="/about/">methodology page</a> for the full process and last-checked dates.
+        </p>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .intro { max-width: 760px; margin-block: var(--space-4) var(--space-8); color: var(--color-text-muted); }
+  .city-section { margin-bottom: var(--space-12); }
+  .city-section h2 { margin-bottom: var(--space-4); }
+  .faq { margin-block: var(--space-12); max-width: 760px; }
+  .faq-item { margin-bottom: var(--space-6); }
+  .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .faq-item p { color: var(--color-text-muted); margin: 0; }
+</style>

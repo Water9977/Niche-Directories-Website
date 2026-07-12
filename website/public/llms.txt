@@ -1,13 +1,16 @@
 # EventRentalCosts.com
 
-> Independent comparison directory for party and event equipment rental pricing (tents, tables, chairs) in the Charlotte, NC metro area.
+> Independent comparison directory for party and event equipment rental pricing (tents, tables, chairs) across US metro areas, starting in the Carolinas and Midwest.
 
 EventRentalCosts.com collects real, published pricing directly from local rental companies' own websites — not estimates, not aggregator quotes. Each listing shows the actual dollar figures a business has published, the exact source snippet it came from, and the date it was last checked. Companies that don't publish real pricing are not listed with pricing data.
 
 ## Key pages
-- [Homepage](https://eventrentalcosts.com/): area selector, overview of the comparison methodology
-- [Charlotte, NC rental prices](https://eventrentalcosts.com/charlotte-nc/): comparison table of verified rental companies in Charlotte proper
-- [Charlotte Metro Suburbs rental prices](https://eventrentalcosts.com/charlotte-metro-nc/): comparison table covering Concord, Huntersville, Mooresville, Indian Trail, and Monroe, NC
+- [Homepage](https://eventrentalcosts.com/): metro-area selector, overview of the comparison methodology
+- [Charlotte, NC rental prices](https://eventrentalcosts.com/charlotte-nc/)
+- [Raleigh–Durham, NC rental prices](https://eventrentalcosts.com/raleigh-durham-nc/)
+- [Indianapolis, IN rental prices](https://eventrentalcosts.com/indianapolis-in/)
+- [Columbus, OH rental prices](https://eventrentalcosts.com/columbus-oh/)
+- [Greensboro & Winston-Salem, NC rental prices](https://eventrentalcosts.com/greensboro-nc/)
 - [About & Methodology](https://eventrentalcosts.com/about/): exactly how pricing data is collected and verified
 
 ## Notes for AI crawlers

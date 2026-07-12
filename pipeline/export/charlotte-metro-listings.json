@@ -1,6 +1,7 @@
 [
   {
     "name": "Charlotte Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "724 Montana Dr Ste J, Charlotte, NC 28216",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -29,6 +30,7 @@
   },
   {
     "name": "RentMeUSA Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "2301 Lanecrest Dr, Charlotte, NC 28215",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -84,6 +86,7 @@
   },
   {
     "name": "Jump & Wobble Bounce House Rentals, Inc.",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "5918 Red Carriage Ln, Charlotte, NC 28212",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -175,6 +178,7 @@
   },
   {
     "name": "LAFF HOUSE GAME TRUCK AND PARTY RENTALS",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "6236-5 Countryside Dr, Charlotte, NC 28213",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -230,6 +234,7 @@
   },
   {
     "name": "NewSouth Event Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "717 Atando Ave Ste T, Charlotte, NC 28206",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -348,6 +353,7 @@
   },
   {
     "name": "SASHES - Charlotte Party and Event Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "6014 McDaniel Ln, Charlotte, NC 28213",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -475,6 +481,7 @@
   },
   {
     "name": "Carolina's Luxury Events (CLUXE)",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "805 Pressley Rd #111, Charlotte, NC 28217",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -539,6 +546,7 @@
   },
   {
     "name": "Everbloom Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "2747 Interstate St, Charlotte, NC 28208",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -576,6 +584,7 @@
   },
   {
     "name": "Santa Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "14510 Asheton Creek Dr, Charlotte, NC 28273",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -739,6 +748,7 @@
   },
   {
     "name": "Party Saving Rental",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "7119 Haines Mill Road, Charlotte, NC 28273",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -839,6 +849,7 @@
   },
   {
     "name": "Elite Tent Rental",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "7552 Yellow Pine Ct, Charlotte, NC 28277",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -930,6 +941,7 @@
   },
   {
     "name": "Hooray Yard Cards Charlotte",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "10130 Mallard Creek Rd #300, Charlotte, NC 28262",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -994,6 +1006,7 @@
   },
   {
     "name": "Rogue Motions SFX An Event Production Company",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "9705 Parthenon Ct, Charlotte, NC 28262",
     "city": "Charlotte",
     "state": "North Carolina",
@@ -1445,6 +1458,7 @@
   },
   {
     "name": "Carolina Party Essentials",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "262 International Dr NW, Concord, NC 28027",
     "city": "Concord",
     "state": "North Carolina",
@@ -1590,6 +1604,7 @@
   },
   {
     "name": "Epic Event Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "589 Warren C Coleman Blvd, Concord, NC 28025",
     "city": "Concord",
     "state": "North Carolina",
@@ -1672,6 +1687,7 @@
   },
   {
     "name": "Yard Art Signs Charlotte",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "509 State Rd 2451, Huntersville, NC 28078",
     "city": "Huntersville",
     "state": "North Carolina",
@@ -1709,6 +1725,7 @@
   },
   {
     "name": "Elegant And Classy Events",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "157 Cedar Pointe Dr #9154, Mooresville, NC 28117",
     "city": "Mooresville",
     "state": "North Carolina",
@@ -1773,6 +1790,7 @@
   },
   {
     "name": "Jump Start Events",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "149 Byers Creek Rd Ste 101, Mooresville, NC 28117",
     "city": "Mooresville",
     "state": "North Carolina",
@@ -1981,6 +1999,7 @@
   },
   {
     "name": "CLT Splash Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "1418 Langdon Terrace Dr, Indian Trail, NC 28079",
     "city": "Indian Trail",
     "state": "North Carolina",
@@ -2027,6 +2046,7 @@
   },
   {
     "name": "Jumpin' Jacks Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "1235 Technology Dr Suite A, Indian Trail, NC 28079",
     "city": "Indian Trail",
     "state": "North Carolina",
@@ -2091,6 +2111,7 @@
   },
   {
     "name": "K's Bounce n Play - Bounce House & Party Rentals",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "212 Pedro St, Monroe, NC 28110",
     "city": "Monroe",
     "state": "North Carolina",
@@ -2542,6 +2563,7 @@
   },
   {
     "name": "Queen City Bounce and Bull Entertainment Incorparated",
+    "metro": "Charlotte-Concord-Gastonia",
     "address": "2909 Stitt St, Monroe, NC 28110",
     "city": "Monroe",
     "state": "North Carolina",
@@ -2754,6 +2776,3963 @@
         "source_snippet": "Queen City Double Splash Run \\$275",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-12T14:34:40.553101+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Magic by David",
+    "metro": "Raleigh-Durham",
+    "address": "6145 Saybrooke Dr, Raleigh, NC 27604",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27604",
+    "lat": 35.8439658,
+    "lng": -78.5377127,
+    "phone": "(919) 266-1682",
+    "website": "https://magicbydavid.com/raleigh-bounce-houses/",
+    "rating": 4.7,
+    "review_count": 80,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "dunking_booth_rental",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per 4 hours",
+        "source_snippet": "Rent a Dunking booth in Raleigh North Carolina. Duck Tank rental available in Raleigh NC and surrounding areas. Rent our Dunking Booth for just $325 for four hours.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:38.043502+00:00"
+      },
+      {
+        "item_type": "rock_wall_rental",
+        "price_low": 900.0,
+        "price_high": 150.0,
+        "unit": "per hour",
+        "source_snippet": "Rental fee $900 for full 4 hours, each extra hour $150.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:38.043502+00:00"
+      }
+    ]
+  },
+  {
+    "name": "EcoGear Party Rental & Tailgate",
+    "metro": "Raleigh-Durham",
+    "address": "5116 Crescent Sq. Street, Raleigh, NC 27616",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27616",
+    "lat": 35.7933721,
+    "lng": -78.6918375,
+    "phone": "(919) 436-3300",
+    "website": "http://ecogeartailgating.com/",
+    "rating": 5.0,
+    "review_count": 7,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_60in_round",
+        "price_low": 10.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "60\u201d Folding Round Table with Linens (included complimentary) ~~$12.50~~ Original price was: $12.50.$10.50Current price is: $10.50.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      },
+      {
+        "item_type": "table_rectangular_6ft",
+        "price_low": 9.2,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "6ft Rectangular Table with Linens (included complimentary) ~~$10.40~~ Original price was: $10.40.$9.20Current price is: $9.20.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      },
+      {
+        "item_type": "table_cocktail",
+        "price_low": 9.2,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cocktail Table with Linens (included complimentary) ~~$10.40~~ Original price was: $10.40.$9.20Current price is: $9.20.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 56.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "10\u00d710 Canopy tent rental $56.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      },
+      {
+        "item_type": "tent_10x20",
+        "price_low": 136.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "10\u00d720 Canopy tent rental $136.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      },
+      {
+        "item_type": "tent_side_panels_10x20",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Side Panels for 10\u00d720 Tent ~~$25.00~~ Original price was: $25.00.$20.00Current price is: $20.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:43.985246+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Pitch Perfect Events NC",
+    "metro": "Raleigh-Durham",
+    "address": "4301 Columbus Club Dr, Raleigh, NC 27604",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27604",
+    "lat": 35.8051537,
+    "lng": -78.5624999,
+    "phone": "(919) 812-7986",
+    "website": "http://pitchperfecteventsnc.com/",
+    "rating": 4.9,
+    "review_count": 33,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our tents are perfect for weddings, corporate events, festivals, and more. We offer a wide range of tents to fit your needs, along with accessories like lighting, flooring, and heating/venting to make your event comfortable and memorable. Tent prices start at $200 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:49.552604+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "We offer a wide range of chairs to fit your needs, including folding chairs for $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:49.552604+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "We offer a wide range of tables to fit your needs, including round tables for $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:49.552604+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery fees start at $50.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:49.552604+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A deposit of $100 is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:29:49.552604+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Holland Rent-All",
+    "metro": "Raleigh-Durham",
+    "address": "5118 Western Blvd, Raleigh, NC 27606",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27606",
+    "lat": 35.7868238,
+    "lng": -78.7124046,
+    "phone": "(919) 851-4378",
+    "website": "http://www.hollandrentall.com/",
+    "rating": 4.6,
+    "review_count": 250,
+    "category": "Equipment rental agency",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "brush_cutter_maxim_walk_behind",
+        "price_low": 100.0,
+        "price_high": 175.0,
+        "unit": "per rental period",
+        "source_snippet": "$100.00\u2013$175.00Price range: $100.00 through $175.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:17.792934+00:00"
+      },
+      {
+        "item_type": "sod_cutter_gas",
+        "price_low": 115.0,
+        "price_high": 175.0,
+        "unit": "per rental period",
+        "source_snippet": "$115.00\u2013$175.00Price range: $115.00 through $175.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:17.792934+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Sunny Side Tent Rentals Raleigh",
+    "metro": "Raleigh-Durham",
+    "address": "346 Angier Ave, Raleigh, NC 27610",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27610",
+    "lat": 35.7735093,
+    "lng": -78.6129223,
+    "phone": "(919) 321-9997",
+    "website": "http://www.sunnysidetentrentals.com/",
+    "rating": 4.0,
+    "review_count": 61,
+    "category": "Tent rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Party Tent Rentals | Local event rental companies, national chains | $200-$2,000+ depending on size and features",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:30.325600+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 2000.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Party Tent Rentals | Local event rental companies, national chains | $200-$2,000+ depending on size and features",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:30.325600+00:00"
+      },
+      {
+        "item_type": "wedding_marquee",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Wedding Marquee Hire | Specialized wedding vendors, luxury event companies | $1,500-$10,000+ for full setup",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:30.325600+00:00"
+      },
+      {
+        "item_type": "outdoor_event_canopy",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Outdoor Event Canopy | General rental services, party supply stores | $100-$800 for standard sizes",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:30.325600+00:00"
+      },
+      {
+        "item_type": "large_event_tent",
+        "price_low": 3000.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Large Event Tent Rental | Commercial event suppliers, festival equipment providers | $3,000-$15,000+ for structures accommodating 100+ guests",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:30.325600+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Interactive Playgrounds Inc.",
+    "metro": "Raleigh-Durham",
+    "address": "6013 Triangle Dr, Raleigh, NC 27617",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27617",
+    "lat": 35.8936336,
+    "lng": -78.7480262,
+    "phone": "(919) 832-7209",
+    "website": "https://www.interactiveplaygrounds.com/",
+    "rating": 4.9,
+    "review_count": 123,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "deposit",
+        "price_low": null,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Typically we have a $1,000 minimum for events.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:38.345269+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Party Saving Rental",
+    "metro": "Raleigh-Durham",
+    "address": "2701 McNeil St, Raleigh, NC 27608",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27608",
+    "lat": 35.8151713,
+    "lng": -78.6291107,
+    "phone": "(704) 831-1314",
+    "website": "https://partysavingrental.com/",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_folding",
+        "price_low": 1.88,
+        "price_high": null,
+        "unit": "per chair",
+        "source_snippet": "$1.88per chair",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 9.88,
+        "price_high": null,
+        "unit": "per table",
+        "source_snippet": "$9.88per table",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "chair_christal",
+        "price_low": 7.0,
+        "price_high": null,
+        "unit": "per chair",
+        "source_snippet": "$7.00per chair",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "table_96in",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per table",
+        "source_snippet": "$15.00per table",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "tent_10x20",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$180.00Tent (installation Included)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "event_tent_package",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$220.00Kits (Installation Included)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "speaker_200w",
+        "price_low": 35.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$35.00per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "cooler_insulated",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15.00per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      },
+      {
+        "item_type": "popcorn_machine",
+        "price_low": 80.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$80.00machine",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:30:56.401835+00:00"
+      }
+    ]
+  },
+  {
+    "name": "JESP 360 LLC",
+    "metro": "Raleigh-Durham",
+    "address": "207 W Millbrook Rd, Raleigh, NC 27609",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27609",
+    "lat": 35.8553192,
+    "lng": -78.6437275,
+    "phone": "(844) 735-6722",
+    "website": "https://www.jesp360.com/",
+    "rating": 5.0,
+    "review_count": 4,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Quality folding tables for weddings and events. Prices start at $5 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Comfortable chairs fit for any gathering size. Prices start at $3 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      },
+      {
+        "item_type": "linen_rentals",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Elegant linens to enhance your event's aesthetic. Prices start at $10 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are perfect for small to medium-sized events. Prices start at $200 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery fees start at $50 per trip.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your rental equipment.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:06.137521+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Kreative Entertainers",
+    "metro": "Raleigh-Durham",
+    "address": "9212 Shallcross Way, Raleigh, NC 27617",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27617",
+    "lat": 35.9055808,
+    "lng": -78.731402,
+    "phone": "(919) 859-3527",
+    "website": "http://kreative-entertainers.com/",
+    "rating": 3.4,
+    "review_count": 5,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "10x10 tents are $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:11.059365+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 1.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding chairs are $1 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:11.059365+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round tables are $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:11.059365+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery fees start at $50 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:11.059365+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all events.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:11.059365+00:00"
+      }
+    ]
+  },
+  {
+    "name": "FunFlicks Outdoor Movies of Raleigh",
+    "metro": "Raleigh-Durham",
+    "address": "5012 New Bern Ave, Raleigh, NC 27610",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27610",
+    "lat": 35.7949567,
+    "lng": -78.5519554,
+    "phone": "(919) 985-9407",
+    "website": "https://www.funflicks.com/projector-screen-rental-raleigh/",
+    "rating": 3.7,
+    "review_count": 6,
+    "category": "Audiovisual equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "yes",
+    "pricing": [
+      {
+        "item_type": "Indoor 12'",
+        "price_low": 399.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Indoor 12' for Crowds up to 75 Starts at $399",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Backyard 16'",
+        "price_low": 399.0,
+        "price_high": 499.0,
+        "unit": "per event",
+        "source_snippet": "Backyard 16' for Crowds up to 75 $399 | $499 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Premiere 21'",
+        "price_low": 599.0,
+        "price_high": 699.0,
+        "unit": "per event",
+        "source_snippet": "Premiere 21' for Crowds up to 250 $599 | $699 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Blockbuster 26'",
+        "price_low": 799.0,
+        "price_high": 899.0,
+        "unit": "per event",
+        "source_snippet": "Blockbuster 26' for Crowds up to 500 $799 | $899 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Elite 32'",
+        "price_low": 1199.0,
+        "price_high": 1399.0,
+        "unit": "per event",
+        "source_snippet": "Elite 32' for Crowds up to 750 $1199 | $1399 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Epic 40'",
+        "price_low": 1699.0,
+        "price_high": 1999.0,
+        "unit": "per event",
+        "source_snippet": "Epic 40' for Crowds up to 1000 $1699 | $1999 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      },
+      {
+        "item_type": "Xtreme 50'",
+        "price_low": 2499.0,
+        "price_high": 2999.0,
+        "unit": "per event",
+        "source_snippet": "Xtreme 50' for Crowds up to 5000 $2499 | $2999 Fri-Sat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:33.788621+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Selections Rentals,LLC",
+    "metro": "Raleigh-Durham",
+    "address": "817 New Bern Ave Ste 6, Raleigh, NC 27601",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27601",
+    "lat": 35.7802729,
+    "lng": -78.625907,
+    "phone": "(888) 372-0282",
+    "website": "http://www.selectionsrentals.com/",
+    "rating": 5.0,
+    "review_count": 8,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "delivery_fee",
+        "price_low": 70.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "Starting at $70.00 for delivery & pickup within Wake County, outside of Wake County up to 100 miles $125.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:42.982571+00:00"
+      },
+      {
+        "item_type": "setup_fee",
+        "price_low": 135.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Setup & breakdown $135.00 (All Prices Are Starting Prices. Depends on Quantity of Rentals)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:42.982571+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Ch\u00e9rie & Co. Event Rentals",
+    "metro": "Raleigh-Durham",
+    "address": "509 W North St Ste 224, Raleigh, NC 27603",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "postal_code": "27603",
+    "lat": 35.7843925,
+    "lng": -78.6467,
+    "phone": "(203) 505-5309",
+    "website": "https://www.republiceventrentals.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_round_60in",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dinner Plates: $25 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:49.436428+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Dining Chairs: $5 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:49.436428+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Frame Tents: $800 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:49.436428+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery Fee: $100",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:49.436428+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Dow Oak Photo Booth",
+    "metro": "Greensboro-Winston-Salem",
+    "address": "628 Joyner St A, Greensboro, NC 27403",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "postal_code": "27403",
+    "lat": 36.064897,
+    "lng": -79.8042333,
+    "phone": "(336) 962-2428",
+    "website": "https://dowoakevents.com/photo-booth-rental/",
+    "rating": 5.0,
+    "review_count": 20,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "deposit",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$400 Down\nReserves Your Date\nBalance 14 Days Prior\nNo Rush to Pay in Full",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:31:54.208605+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Party Reflections",
+    "metro": "Greensboro-Winston-Salem",
+    "address": "\u202a308 Friendship Dr, Greensboro, NC 27409",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "postal_code": "27409",
+    "lat": 36.0797197,
+    "lng": -79.9433179,
+    "phone": "(336) 852-6085",
+    "website": "https://partyreflections.com/",
+    "rating": 4.7,
+    "review_count": 42,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your event date.  This deposit will be applied to your final balance due 30 days prior to your event date.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T18:02:06.273585+00:00"
+      }
+    ]
+  },
+  {
+    "name": "24K Event Rentals",
+    "metro": "Greensboro-Winston-Salem",
+    "address": "1007 Arnold St, Greensboro, NC 27405",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "postal_code": "27405",
+    "lat": 36.0856359,
+    "lng": -79.768577,
+    "phone": "(336) 794-6498",
+    "website": "http://www.24keventrental.com/",
+    "rating": 5.0,
+    "review_count": 14,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our chair rentals start at $5 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:39:42.202193+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our round tables start at $20 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:39:42.202193+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents start at $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:39:42.202193+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per delivery",
+        "source_snippet": "Delivery fees start at $50 per delivery.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:39:42.202193+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:39:42.202193+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Bumper Jumpers",
+    "metro": "Greensboro-Winston-Salem",
+    "address": "4217 W Gate City Blvd, Greensboro, NC 27407",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "postal_code": "27407",
+    "lat": 36.0344494,
+    "lng": -79.863721,
+    "phone": "",
+    "website": "https://www.bumperjumpers.com/",
+    "rating": 4.0,
+    "review_count": 4,
+    "category": "Party equipment rental service",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "yes",
+    "pricing": [
+      {
+        "item_type": "child_admission",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per child",
+        "source_snippet": "$12.00 / Child (Ages 1 to 12)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      },
+      {
+        "item_type": "mining_ticket",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per bag",
+        "source_snippet": "Mining Ticket - $10.00 for 1 Bag",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      },
+      {
+        "item_type": "socks",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Socks $2.00 \u2013 you can bring your own socks",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      },
+      {
+        "item_type": "bj_cool_jump",
+        "price_low": 285.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Saturday / Sunday: $285.00 Plus Tax",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      },
+      {
+        "item_type": "bj_amazing_jump",
+        "price_low": 355.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Saturday / Sunday: $355.00 Plus Tax",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      },
+      {
+        "item_type": "bj_brilliant_jump",
+        "price_low": 445.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Saturday / Sunday: $445.00 Plus Tax",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:08.382545+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Carolinas Photobooths",
+    "metro": "Greensboro-Winston-Salem",
+    "address": "1633 New Garden Rd #1052, Greensboro, NC 27410",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "postal_code": "27410",
+    "lat": 36.118139,
+    "lng": -79.8745434,
+    "phone": "(864) 633-8600",
+    "website": "https://www.sphotomirrors.com/",
+    "rating": 5.0,
+    "review_count": 10,
+    "category": "Party equipment rental service",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "audio_guest_book",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Starting at $450 standalone or $350 as an add-on to our photobooths. Plus Transportation",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:12.665320+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Magic Special Events",
+    "metro": "Richmond",
+    "address": "3024 Bells Rd, Richmond, VA 23234",
+    "city": "Richmond",
+    "state": "Virginia",
+    "postal_code": "23234",
+    "lat": 37.4728526,
+    "lng": -77.4544277,
+    "phone": "(804) 230-1500",
+    "website": "https://www.magicspecialevents.com/",
+    "rating": 4.8,
+    "review_count": 53,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "delivery_fee",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery charge for the Richmond, VA area starts at $225.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:17.105498+00:00"
+      }
+    ]
+  },
+  {
+    "name": "LC Event Supplies",
+    "metro": "Richmond",
+    "address": "21 W 21st St, Richmond, VA 23225",
+    "city": "Richmond",
+    "state": "Virginia",
+    "postal_code": "23225",
+    "lat": 37.5165293,
+    "lng": -77.4522421,
+    "phone": "(804) 385-3338",
+    "website": "https://lceventsupplies.com/",
+    "rating": 4.8,
+    "review_count": 48,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_folding",
+        "price_low": 1.95,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "White Vinyl Chairs\\n\\n$1.95",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round Dining Table (5ft)\\n\\n$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 90.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "10' x 10' Pop-Up Tent\\n\\n$90.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "table_rectangular_6ft",
+        "price_low": 11.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Rectangular Folding Table (6ft)\\n\\n$11.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "table_cocktail",
+        "price_low": 11.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Cocktail Table\\n\\n$11.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "chair_white_resin",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "White Resin Garden Chairs\\n\\n$4.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "tent_20x30",
+        "price_low": 475.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "20' x 30' Canopy Pole Tent\\n\\n$475.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "table_round_8chairs",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "6ft Table & 8 Chairs\\n\\nRegular price\\n$25.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "table_round_8chairs",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Round Table & 8 Chairs\\n\\nRegular price\\n$25.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "bundle_cocktail_hour",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cocktail Hour Collection\\n\\nRegular price\\n$325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "bundle_pop_up",
+        "price_low": 240.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Pop-Up Package\\n\\nRegular price\\n$240.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      },
+      {
+        "item_type": "bundle_guests",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Just Add Guests\\n\\nRegular price\\n$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:40:33.415046+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Let Us Party & Event Rental",
+    "metro": "Columbus",
+    "address": "100 E Campus View Blvd Ste 250 #4508, Columbus, OH 43235",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43235",
+    "lat": 40.1190268,
+    "lng": -83.0143925,
+    "phone": "(380) 201-0909",
+    "website": "https://www.letuspartyrental.com/",
+    "rating": 4.9,
+    "review_count": 115,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for rent at $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:48:13.410964+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding chairs are available for rent at $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:48:13.410964+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round tables are available for rent at $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:48:13.410964+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery fees start at $50.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:48:13.410964+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:48:13.410964+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Lasting Impressions Event Rental of Columbus",
+    "metro": "Columbus",
+    "address": "5080 Sinclair Rd, Columbus, OH 43229",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43229",
+    "lat": 40.0693294,
+    "lng": -82.9973529,
+    "phone": "(614) 252-5400",
+    "website": "http://www.lirents.net/",
+    "rating": 4.3,
+    "review_count": 82,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "10x10 Tent Rental: $500 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      },
+      {
+        "item_type": "tent_20x20",
+        "price_low": 1000.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "20x20 Tent Rental: $1000 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding Chair Rental: $5 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "60\" Round Table Rental: $10 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery Fee: $50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Deposit: $100",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:16.077275+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Awesome Entertainment & Party Rentals Columbus, Cincinnati, Cleveland, Ohio",
+    "metro": "Columbus",
+    "address": "1250 Memory Ln N, Columbus, OH 43209",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43209",
+    "lat": 39.9435462,
+    "lng": -82.9465637,
+    "phone": "(614) 224-9568",
+    "website": "http://www.columbusparties.com/",
+    "rating": 4.8,
+    "review_count": 706,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "20x40 rink",
+        "price_low": 3200.0,
+        "price_high": 3200.0,
+        "unit": "per 4 hours",
+        "source_snippet": "$3,200 for up to 4 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x40 rink",
+        "price_low": 400.0,
+        "price_high": 400.0,
+        "unit": "per additional hour",
+        "source_snippet": "$400 for each additional hour",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x40 rink",
+        "price_low": 1600.0,
+        "price_high": 1600.0,
+        "unit": "per additional day",
+        "source_snippet": "$1,600 for each additional day (up to 4 hours)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x20 rink",
+        "price_low": 2399.0,
+        "price_high": 2399.0,
+        "unit": "per 4 hours",
+        "source_snippet": "$2,399 for up to 4 hours",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x20 rink",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per additional hour",
+        "source_snippet": "$300 for each additional hour",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x20 rink",
+        "price_low": 1200.0,
+        "price_high": 1200.0,
+        "unit": "per additional day",
+        "source_snippet": "$1,200 for each additional day (up to 4 hours)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "Picket Fence",
+        "price_low": 600.0,
+        "price_high": 600.0,
+        "unit": "flat",
+        "source_snippet": "$600+",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "Metal Fences/Gates",
+        "price_low": 400.0,
+        "price_high": 400.0,
+        "unit": "flat",
+        "source_snippet": "$400+",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      },
+      {
+        "item_type": "20x40 Inflatable Bumper Rink",
+        "price_low": 600.0,
+        "price_high": 600.0,
+        "unit": "flat",
+        "source_snippet": "$600",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:24.619532+00:00"
+      }
+    ]
+  },
+  {
+    "name": "American Structure Tent",
+    "metro": "Columbus",
+    "address": "100 E Campus View Blvd Ste 250-270, Columbus, OH 43235",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43235",
+    "lat": 40.1190268,
+    "lng": -83.0143925,
+    "phone": "(800) 872-8368",
+    "website": "http://www.americanstructuretent.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Tent rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "structure_tent_40x60",
+        "price_low": 3000.0,
+        "price_high": null,
+        "unit": "per month",
+        "source_snippet": "A 40'x60' clearspan structure typically starts around $3,000-$6,000 per month, while larger 100'+ wide structures range from $10,000-$25,000+ per month.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:30.269068+00:00"
+      },
+      {
+        "item_type": "structure_tent_100x",
+        "price_low": 10000.0,
+        "price_high": null,
+        "unit": "per month",
+        "source_snippet": "A 40'x60' clearspan structure typically starts around $3,000-$6,000 per month, while larger 100'+ wide structures range from $10,000-$25,000+ per month.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:30.269068+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Rent Wedding Chairs",
+    "metro": "Columbus",
+    "address": "61 Lawn Ave, Columbus, OH 43207",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43207",
+    "lat": 39.9177069,
+    "lng": -82.9969813,
+    "phone": "(614) 706-6869",
+    "website": "http://rentweddingchairs.com/",
+    "rating": 5.0,
+    "review_count": 52,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_gold_resin / chair_gold_aluminum",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$5",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:41.774614+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Cool Cat Sites Entertainment",
+    "metro": "Columbus",
+    "address": "4515 Raccoon Dr, Columbus, OH 43230",
+    "city": "Columbus",
+    "state": "Ohio",
+    "postal_code": "43230",
+    "lat": 40.0648564,
+    "lng": -82.9183572,
+    "phone": "(614) 471-3628",
+    "website": "http://www.coolcatsites.com/",
+    "rating": 5.0,
+    "review_count": 84,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Avengers Bounce\\n\\n$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Trolls Bounce\\n\\n$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cat in the Hat Bounce\\n\\n$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Unicorn Bounce\\n\\n$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Pumpkin Bounce\\n\\n$325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Christmas Bounce\\n\\n$225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "T-Rex Toss\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Fly Fling\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Golf Challenge\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Gone Fishin'\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Kick & Score Soccer\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Lasso the Longhorn\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Pumpkin Chunkin'\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Quarterback Toss\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Ring the Unicorn\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Spider Suppertime\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Strike Em Out\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Tic Tac Toss\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Witch's Brew\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Zap the Zombies\\n\\n$65\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "game",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Big Foot Race\\n\\n$75\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "banner",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Avengers Banner\\n\\n$25.00\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      },
+      {
+        "item_type": "banner",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "PJ Masks Banner\\n\\n$25.00\\n\\nMore Info",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:52:57.083787+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Hoosier Tent & Party Rental",
+    "metro": "Indianapolis",
+    "address": "3642 W 16th St, Indianapolis, IN 46222",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46222",
+    "lat": 39.7880257,
+    "lng": -86.2228993,
+    "phone": "(317) 272-9746",
+    "website": "http://www.hoosiertent.com/",
+    "rating": 4.8,
+    "review_count": 181,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_15x20",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "tent_20x20",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "tent_20x30",
+        "price_low": 345.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$345.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "tent_20x40",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$450.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "tent_30x30",
+        "price_low": 475.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$475.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "linen_90_round_table",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "linen_132_round_table",
+        "price_low": 22.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$22.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "linen_108_round_table",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$14.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "lighting_cafe_style",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$75.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "wall_champagne",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "trash_bin_cover",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$14.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "table_30_cocktail",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "table_5_round_umbrella",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$45.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "table_5_round",
+        "price_low": 11.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$11.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "table_6_banquet",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "table_8_banquet",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "pipe_drape_8x10",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$40.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      },
+      {
+        "item_type": "marquee_letters",
+        "price_low": 50.0,
+        "price_high": 1125.0,
+        "unit": "per character",
+        "source_snippet": "$50.00\u2013$1,125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:15.087419+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Ace Party Rental",
+    "metro": "Indianapolis",
+    "address": "5353 W 79th St, Indianapolis, IN 46268",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46268",
+    "lat": 39.8958742,
+    "lng": -86.2531411,
+    "phone": "(317) 872-8368",
+    "website": "http://www.acepartyandtents.com/",
+    "rating": 4.7,
+    "review_count": 145,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for rent starting at $500 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:44.764540+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are available for rent starting at $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:44.764540+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our 60\" round tables are available for rent starting at $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:44.764540+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per delivery",
+        "source_snippet": "Delivery fees start at $50 per delivery.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:44.764540+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:44.764540+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Garcia Party Rental",
+    "metro": "Indianapolis",
+    "address": "7280 Hollingsworth Dr, Indianapolis, IN 46268",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46268",
+    "lat": 39.8858875,
+    "lng": -86.2199448,
+    "phone": "(463) 282-6332",
+    "website": "https://www.garciapartyrental.com/",
+    "rating": 5.0,
+    "review_count": 190,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "concessions / cotton candy machine",
+        "price_low": 95.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $95.00 Cotton+Candy+Machine https://garciapartyrental.com/rentals/concessions/cotton-candy-machine/",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:51.137157+00:00"
+      },
+      {
+        "item_type": "concessions / popcorn machine",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00 Popcorn+Machine https://garciapartyrental.com/rentals/concessions/popcorn-machine/",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:51.137157+00:00"
+      },
+      {
+        "item_type": "concessions / snow cone machine",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00 Snow+Cone+Machine https://garciapartyrental.com/rentals/concessions/snow-cone-machine/",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:51.137157+00:00"
+      },
+      {
+        "item_type": "360 photobooth / 360 booth large automatic",
+        "price_low": 495.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $495.00 360+Booth+Large+Automatic https://garciapartyrental.com/rentals/360-photobooth/360-booth-large-automatic/",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:53:51.137157+00:00"
+      }
+    ]
+  },
+  {
+    "name": "All Occasion Tent Rental",
+    "metro": "Indianapolis",
+    "address": "510 W Merrill St, Indianapolis, IN 46225",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46225",
+    "lat": 39.7596653,
+    "lng": -86.1686669,
+    "phone": "(317) 422-8353",
+    "website": "https://www.alloccasiontentrental.com/",
+    "rating": 4.7,
+    "review_count": 38,
+    "category": "Tent rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for rent at $200 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:54:00.621194+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our round 60-inch tables are available for rent at $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:54:00.621194+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are available for rent at $5 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:54:00.621194+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery fees start at $50 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:54:00.621194+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your rental order.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:54:00.621194+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Triangle Lawn Games - Indianapolis South",
+    "metro": "Indianapolis",
+    "address": "5114 Arling Dr, Indianapolis, IN 46237",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46237",
+    "lat": 39.6912351,
+    "lng": -86.1039916,
+    "phone": "(317) 238-3088",
+    "website": "https://www.indylawngames.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "delivery_fee",
+        "price_low": 79.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "We\u2019ll measure driving distance from our Indy North hub to you and show the right delivery option. Check Zone. Buy for $79.00. Add to cart.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 119.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Buy for $119.00. Add to cart.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 159.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Buy for $159.00. Add to cart.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 199.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Buy for $199.00. Add to cart.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 239.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Buy for $239.00. Add to cart.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Save A Bunch Event Rentals",
+    "metro": "Indianapolis",
+    "address": "7105 Windsor Lakes Pl, Indianapolis, IN 46237",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46237",
+    "lat": 39.6643609,
+    "lng": -86.0748469,
+    "phone": "(765) 380-1276",
+    "website": "https://www.saveabuncheventrentals.com/",
+    "rating": 4.9,
+    "review_count": 45,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce house",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n120 US dollars\n\n$120",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "castle slide",
+        "price_low": 170.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n170 US dollars\n\n$170",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "bounce house-palm slide",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n220 US dollars\n\n$220",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "bounce house-palm slide-2",
+        "price_low": 270.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n270 US dollars\n\n$270",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "table",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n10 US dollars\n\n$10",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "round table",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n14 US dollars\n\n$14",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "white chair",
+        "price_low": 2.5,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n2.50 US dollars\n\n$2.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "tan chair",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n2 US dollars\n\n$2",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "royal chair",
+        "price_low": 130.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n130 US dollars\n\n$130",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "10x30 tent",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n200 US dollars\n\n$200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "20x30 tent",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n250 US dollars\n\n$250",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "360 booth",
+        "price_low": 375.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n375 US dollars\n\n$375",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "giant connect 4",
+        "price_low": 60.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n60 US dollars\n\n$60",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "giant jenga",
+        "price_low": 60.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n60 US dollars\n\n$60",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "corn hole",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n40 US dollars\n\n$40",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "18 drum fan",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n50 US dollars\n\n$50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "cooler 33",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n20 US dollars\n\n$20",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      },
+      {
+        "item_type": "trash bin",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1 day\n\n15 US dollars\n\n$15",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:03.218146+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Brincolines Los Kikos Llc",
+    "metro": "Indianapolis",
+    "address": "4905 E 23rd St, Indianapolis, IN 46218",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46218",
+    "lat": 39.7997254,
+    "lng": -86.0861708,
+    "phone": "(317) 339-8020",
+    "website": "https://kikosbouncerentals.com/",
+    "rating": 5.0,
+    "review_count": 6,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x20",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_10x20_open",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_20x20_red",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_20x20",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_20x30",
+        "price_low": 290.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$290.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_20x40",
+        "price_low": 360.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$360.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_20x40_new",
+        "price_low": 360.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$360.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "table_round_4ft_6people",
+        "price_low": 13.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$13.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "tent_40x40",
+        "price_low": 720.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$720.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "table_rectangular_6ft_8people",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$8.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_avengers",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$220.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_balloon_castle",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_lego_basic",
+        "price_low": 160.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$160.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_lego_combo",
+        "price_low": 260.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$260.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_mechanical_bull",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$800.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_mickey_mouse",
+        "price_low": 230.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$230.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_mini_toboggan",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_paw_patrol",
+        "price_low": 230.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$230.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      },
+      {
+        "item_type": "bounce_house_pink_castle",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:19.171744+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Party Time Rental",
+    "metro": "Indianapolis",
+    "address": "7250 N Keystone Ave, Indianapolis, IN 46240",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46240",
+    "lat": 39.8870326,
+    "lng": -86.1230615,
+    "phone": "(317) 536-2022",
+    "website": "http://www.ptrinc.com/",
+    "rating": 3.9,
+    "review_count": 67,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_20x20",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Pole Tent  20' x 20' White  $250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "chair_folding_white_plastic",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Chair Folding White Plastic Metal Frame  $2.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "porta_cool_system",
+        "price_low": 130.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Porta Cool System  $130.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "misting_fan",
+        "price_low": 85.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Misting Fan  $85.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "punch_bowl_silver_3_gal",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Silver 3 gal Punch Bowl  $20.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "punch_bowl_silver_ornate_3_gal",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Silver Ornate 3 gallon Punch Bowl with ladle  $20.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "punch_bowl_scalloped_2_gal",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Scalloped 2 gallon Glass Punch Bowl with a ladle  $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "punch_bowl_glass_ornate_2_gal",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Glass Ornate 2 gallon punch bowl, includes ladle  $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "beer_pitcher_glass_64oz",
+        "price_low": 1.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Glass Beer Pitcher 64oz.  $1.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "beer_pitcher_glass_64oz",
+        "price_low": 3.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Glass Beer Pitcher 64oz.  $3.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candlestick_single_crystal_5_inch",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Single Crystal 5 inch Candlestick  $2.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candlestick_single_crystal_10_inch",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Single Crystal 10 inch Candlestick  $4.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candlestick_single_brass_plain",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Single Brass Plain Candlestick  $3.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candlestick_single_brass_scalloped",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Single Brass Scalloped Candlestick  $4.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candleholder_mesh_gold",
+        "price_low": 1.25,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Mesh Gold Candle Holder  $1.25",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candleholder_lantern_12_inch",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Lantern 12\u2033 Glass Metal Candle Holder  $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      },
+      {
+        "item_type": "candleholder_cut_glass_pedestal",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Cut Glass w/Pedestal Glass Candle Holder  $2.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:31.932841+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Dappy Hays Event Photo Booth Services, Inc.",
+    "metro": "Indianapolis",
+    "address": "9702 E Washington St #400-151, Indianapolis, IN 46229",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46229",
+    "lat": 39.7755224,
+    "lng": -85.9932482,
+    "phone": "(317) 439-0302",
+    "website": "http://dappyhays.com/",
+    "rating": 4.9,
+    "review_count": 38,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:36.765531+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 1.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are $1 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:36.765531+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our round 60 inch tables are $5 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:36.765531+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per trip",
+        "source_snippet": "Delivery fee is $50 per trip.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:36.765531+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your booking.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:36.765531+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Montgomery Tent & Awning Company, Inc.",
+    "metro": "Indianapolis",
+    "address": "5054 E 10th St, Indianapolis, IN 46201",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46201",
+    "lat": 39.7817485,
+    "lng": -86.0840003,
+    "phone": "(317) 357-9759",
+    "website": "http://www.montgomerytent.com/",
+    "rating": 4.2,
+    "review_count": 11,
+    "category": "Tent rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      },
+      {
+        "item_type": "tent_20x40",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 20x40 tents are available for $300 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round tables are $5 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding chairs are $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per trip",
+        "source_snippet": "Delivery fees are $50 per trip.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your rental order.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:58:47.508485+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Party Rentals Pros",
+    "metro": "Indianapolis",
+    "address": "7715 42nd St, Indianapolis, IN 46226",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46226",
+    "lat": 39.8304301,
+    "lng": -86.0314089,
+    "phone": "(765) 532-1586",
+    "website": "https://www.partyrentalspros.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house_13x13_green",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$150",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_13x13_pink",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$150",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_13x13_grey",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$150",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_3d_palm_tree",
+        "price_low": 205.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$205",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_white_wedding",
+        "price_low": 399.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$399",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_fiesta_dry",
+        "price_low": 310.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$310",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_19x22_7_in_1_castle",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_royal_palace_dry",
+        "price_low": 289.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$289",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_princess_carriage",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_17ft_ferris_wheel",
+        "price_low": 365.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$365",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_trex_dry",
+        "price_low": 310.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$310",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_mini_monster_truck",
+        "price_low": 144.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$144",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_stardust_dry",
+        "price_low": 199.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$199",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_big_top_circus_dry",
+        "price_low": 289.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$289",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_18ft_curve",
+        "price_low": 485.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$485",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_20ft_zeus_lightning",
+        "price_low": 525.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$525",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_stardust_wet_dry",
+        "price_low": 249.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$249",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_13ft_wild_thing_dual_lane",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_13ft_boulder_dash_dual_lane",
+        "price_low": 425.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$425",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_15ft_dual_palm_tropical",
+        "price_low": 465.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$465",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_big_top_circus_wet_dry",
+        "price_low": 365.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$365",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_slide_royal_palace_wet_dry",
+        "price_low": 365.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$365",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_40ft_palm_tropical_dual_lane",
+        "price_low": 385.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$385",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_40ft_palm_tropical_obstacle_course_left",
+        "price_low": 385.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$385",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_45ft_palm_tropical_dual_lane",
+        "price_low": 425.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$425",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_toy_town_play_center",
+        "price_low": 315.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$315",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_85ft_palm_tropical",
+        "price_low": 775.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$775",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_80ft_palm_tropical",
+        "price_low": 750.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$750",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_125ft_palm_tropical_mega",
+        "price_low": 900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$900",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_inflatable_dodgeball_arena",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_airborne_adventure_aerial_lift",
+        "price_low": 385.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$385",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_inflatable_basketball_game",
+        "price_low": 139.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$139",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_mini_basketball_inflatable_toss_game",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$100",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "obstacle_course_mini_snowball_inflatable_winter_toss_game",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$100",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tent_10x20_pop_up",
+        "price_low": 179.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$179",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tent_20x20_high_peak",
+        "price_low": 385.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$385",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tent_20x40_high_peak_wedding",
+        "price_low": 635.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$635",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tent_20x60_high_peak_wedding_and_event",
+        "price_low": 995.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$995",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tent_20x20_solid_tent_sidewall",
+        "price_low": 60.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$60",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "table_6ft_white_folding",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$12",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "table_60_inch_round_white",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$15",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "chair_white_folding",
+        "price_low": 3.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$3.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tablecloth_6ft_white",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$14",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "tablecloth_6ft_black",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$14",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "generator_portable",
+        "price_low": 140.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$140",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "gas_tank_5_gallon",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$40",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "water_hose",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$25",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "electric_extension_cord_100ft",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$25",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "party_setup_decorating",
+        "price_low": 90.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$90",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      },
+      {
+        "item_type": "event_staff_helpers",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$40",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:09.516805+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Real Event Enterprises",
+    "metro": "Indianapolis",
+    "address": "3046 Shadeland Ave, Indianapolis, IN 46226",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46226",
+    "lat": 39.8123426,
+    "lng": -86.0465484,
+    "phone": "(317) 658-6164",
+    "website": "http://www.realevententerprises.com/",
+    "rating": 5.0,
+    "review_count": 11,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "stage_rental_2ft_12x16",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$350 day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_2ft_16x20_with_top",
+        "price_low": 750.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$750/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_3ft_tall_24x12",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$550/Day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_1ft_tall_12x16",
+        "price_low": 270.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "1' tall 12x16 | $270",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_2ft_tall_12x16_with_top",
+        "price_low": 380.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "2' tall 12x16W top | $380",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_2ft_tall_20x24",
+        "price_low": 850.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "2' tall 20x24 | $850",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_2ft_tall_24x12",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "2' tall 24x12 | $450",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_2ft_tall_8x24",
+        "price_low": 390.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "2' tall 8x24 | $390",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_3ft_tall_16x12",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "3' tall 16x12 | $450",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_3ft_tall_24x12",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "3' tall 24x12 | $550",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "stage_rental_3ft_tall_24x16_trailer_stage",
+        "price_low": 1800.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "3' tall 24x16 trailer stage | $1800",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "tent_rental_20x60_canopy",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$650",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "tent_rental_20x40_canopy",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$350",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "tent_rental_20x20_canopy",
+        "price_low": 210.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$210",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "tent_rental_10x15_canopy",
+        "price_low": 80.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$80",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "tent_rental_10x10_canopy",
+        "price_low": 35.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$35",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "chair",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$2 Each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      },
+      {
+        "item_type": "table_5ft_round",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$8 Each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:25.180764+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Jump N Play Party Rentals",
+    "metro": "Indianapolis",
+    "address": "1641 Charter Oak Cir, Indianapolis, IN 46260",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46260",
+    "lat": 39.9068051,
+    "lng": -86.1888304,
+    "phone": "(317) 838-9408",
+    "website": "https://www.jumpnplaypartyrentals.com/",
+    "rating": 5.0,
+    "review_count": 617,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house_with_slide",
+        "price_low": 339.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $339",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "bounce_house_with_water_slide",
+        "price_low": 369.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $369",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 849.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $849",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 599.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $599",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 569.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $569",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 569.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $569",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 519.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $519",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 349.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $349",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 479.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $479",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 569.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $569",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 549.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $549",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 1449.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1449",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 895.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $895",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 369.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $369",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 639.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $639",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 439.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $439",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 219.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $219",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 209.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $209",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 399.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $399",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 379.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $379",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 1595.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1595",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 549.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $549",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 549.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $549",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "interactive_attraction",
+        "price_low": 2399.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $2399",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "interactive_attraction",
+        "price_low": 2499.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $2499",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "interactive_attraction",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1500",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "interactive_attraction",
+        "price_low": 1349.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1349",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "interactive_attraction",
+        "price_low": 999.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $999",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "carnival_game",
+        "price_low": 899.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $899",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "carnival_game",
+        "price_low": 599.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $599",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "carnival_game",
+        "price_low": 399.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $399",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "carnival_game",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "carnival_game",
+        "price_low": 299.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $299",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "large_event_suggestion",
+        "price_low": 1495.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1495",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "large_event_suggestion",
+        "price_low": 1550.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1550",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "large_event_suggestion",
+        "price_low": 1750.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1750",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "large_event_suggestion",
+        "price_low": 1595.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1595",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "large_event_suggestion",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $1500",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 449.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $449",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 519.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $519",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 789.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $789",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 739.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $739",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 809.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $809",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      },
+      {
+        "item_type": "party_package",
+        "price_low": 990.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From $990",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:44.069008+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Jump N&N Again Bounce Houses & Games LLC",
+    "metro": "Indianapolis",
+    "address": "6213 Coffman Rd, Indianapolis, IN 46268",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "postal_code": "46268",
+    "lat": 39.868973,
+    "lng": -86.2409313,
+    "phone": "(317) 724-3021",
+    "website": "http://jumpnnagain.com/",
+    "rating": 5.0,
+    "review_count": 95,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_18x17x16",
+        "price_low": 199.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Regular price $199.00\nRegular price~~~~Sale price $199.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "tent_13x12x14.5",
+        "price_low": 169.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Regular price $169.00\nRegular price~~~~Sale price $169.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 69.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $69.00\nRegular price~~~~Sale price $69.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $50.00\nRegular price~~~~Sale price $50.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $25.00\nRegular price~~~~Sale price $25.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 79.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $79.00\nRegular price~~~~Sale price $79.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $50.00\nRegular price~~~~Sale price $50.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $50.00\nRegular price~~~~Sale price $50.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Regular price $65.00\nRegular price~~~~Sale price $65.00\nUnit price/ per",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-12T17:59:53.442424+00:00"
       }
     ]
   }

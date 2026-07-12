@@ -1,11 +1,13 @@
 ---
+import { getPublishedMetros } from '../lib/listings';
+// Show the first few metros in the nav; the homepage lists all of them.
+const metros = getPublishedMetros().slice(0, 3);
 ---
 <header class="site-header">
   <div class="container header-inner">
     <a href="/" class="brand">EventRentalCosts<span class="brand-dot">.com</span></a>
     <nav class="nav" aria-label="Main navigation">
-      <a href="/charlotte-nc/">Charlotte, NC</a>
-      <a href="/charlotte-metro-nc/">Metro Suburbs</a>
+      {metros.map((m) => <a href={`/${m.meta.slug}/`}>{m.meta.name}</a>)}
       <a href="/about/">About</a>
     </nav>
   </div>

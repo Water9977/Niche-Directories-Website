@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getPublishedMetros } from '../lib/listings';
 
+const metros = getPublishedMetros();
 const title = 'Page Not Found | EventRentalCosts.com';
 const description = 'The page you were looking for does not exist.';
 ---
@@ -10,8 +12,9 @@ const description = 'The page you were looking for does not exist.';
     <p>That page doesn't exist. Try one of these instead:</p>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/charlotte-nc/">Charlotte, NC rental prices</a></li>
-      <li><a href="/charlotte-metro-nc/">Charlotte Metro Suburbs rental prices</a></li>
+      {metros.map((m) => (
+        <li><a href={`/${m.meta.slug}/`}>{m.meta.name} rental prices</a></li>
+      ))}
     </ul>
   </div>
 </BaseLayout>

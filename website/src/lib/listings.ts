@@ -1,4 +1,5 @@
 import rawListings from '../data/listings.json';
+import { METROS, MIN_LISTINGS, metroByKey, type MetroMeta } from './metros';
 
 export interface PricingItem {
   item_type: string;
@@ -12,6 +13,7 @@ export interface PricingItem {
 
 export interface Listing {
   name: string;
+  metro: string;
   address: string;
   city: string;
   state: string;
@@ -46,7 +48,7 @@ function makeUniqueSlugs(items: Omit<Listing, 'slug'>[]): Listing[] {
   return items.map((l, i) => {
     const base = baseSlugs[i];
     if ((counts.get(base) ?? 0) <= 1) return { ...l, slug: base };
-    // Collision (e.g. two near-identically-named but genuinely different real
+    // Collision (two near-identically-named but genuinely different real
     // businesses at different addresses) — disambiguate with postal code
     // rather than silently dropping either one.
     const withPostal = slugify(`${l.name}-${l.city}-${l.postal_code ?? ''}`);
@@ -58,8 +60,6 @@ function makeUniqueSlugs(items: Omit<Listing, 'slug'>[]): Listing[] {
 
 const listings: Listing[] = makeUniqueSlugs(rawListings as Omit<Listing, 'slug'>[]);
 
-export const METRO_SUBURB_CITIES = ['Concord', 'Huntersville', 'Mooresville', 'Indian Trail', 'Monroe'];
-
 export function getAllListings(): Listing[] {
   return listings;
 }
@@ -68,24 +68,36 @@ export function getListingBySlug(slug: string): Listing | undefined {
   return listings.find((l) => l.slug === slug);
 }
 
-export function getCharlotteListings(): Listing[] {
-  return listings.filter((l) => l.city === 'Charlotte');
+export function getListingsByMetroKey(metroKey: string): Listing[] {
+  return listings.filter((l) => l.metro === metroKey);
 }
 
-export function getMetroSuburbListings(): Listing[] {
-  return listings.filter((l) => METRO_SUBURB_CITIES.includes(l.city));
+/** Metros that actually have listings AND clear the thin-content floor,
+ * in METROS declaration order. These are the only ones that get a page. */
+export function getPublishedMetros(): { meta: MetroMeta; listings: Listing[] }[] {
+  return METROS.map((meta) => ({ meta, listings: getListingsByMetroKey(meta.key) })).filter(
+    (m) => m.listings.length >= MIN_LISTINGS,
+  );
 }
 
-export function getMetroSuburbListingsByCity(): Record<string, Listing[]> {
-  const grouped: Record<string, Listing[]> = {};
-  for (const city of METRO_SUBURB_CITIES) {
-    const cityListings = listings.filter((l) => l.city === city);
-    if (cityListings.length > 0) grouped[city] = cityListings;
+export function getMetroForListing(listing: Listing): MetroMeta | undefined {
+  return metroByKey(listing.metro);
+}
+
+/** Group a metro's listings by city, so a metro page can section them. */
+export function groupByCity(items: Listing[]): { city: string; listings: Listing[] }[] {
+  const byCity = new Map<string, Listing[]>();
+  for (const l of items) {
+    if (!byCity.has(l.city)) byCity.set(l.city, []);
+    byCity.get(l.city)!.push(l);
   }
-  return grouped;
+  // Largest city section first.
+  return [...byCity.entries()]
+    .map(([city, ls]) => ({ city, listings: ls }))
+    .sort((a, b) => b.listings.length - a.listings.length);
 }
 
-/** Lowest real per-day-ish price found across a listing's pricing items, for sorting/display. */
+/** Lowest real price found across a listing's pricing items, for sorting/display. */
 export function lowestPrice(listing: Listing): number | null {
   const prices = listing.pricing.map((p) => p.price_low).filter((p): p is number => p != null);
   return prices.length ? Math.min(...prices) : null;
