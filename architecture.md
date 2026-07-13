@@ -5,6 +5,11 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-13 — Session 14: Google Search Console verified, sitemap submitted — ranking clock started
+- Human independently verified the domain in Google Search Console and submitted `https://eventrentalcosts.com/sitemap-index.xml` — status **Success**. "Discovered pages: 0" as of submission is expected (Google hasn't crawled yet; populates over the next hours-to-days).
+- **This is the real milestone per the brief's §7**: the 6-12 month ranking clock now officially starts from 2026-07-13. Month-6 kill-switch check date: **~2027-01-13** — check Search Console impressions then, decide invest-more vs. the niche is dead per the brief's explicit framework.
+- Honest expectation to hold onto: even with 85 real listings across 6 metros and correct technical SEO, brand-new zero-authority sites typically take months to show meaningful impressions, and the realistic outcome distribution from the brief still applies (~50% earn $0 ever). Nothing about today's launch changes those odds — it just means the clock is now running instead of not-yet-started.
+
 ### 2026-07-13 — Session 13: real domain live, found and fixed a robots.txt conflict
 - Human's domain was registered at Spaceship (spaceship.com), not Cloudflare — kept registration there, moved DNS management to Cloudflare (standard, free, no domain transfer needed). Human added `eventrentalcosts.com` in the Cloudflare dashboard, got 2 nameservers, updated them at Spaceship. Verified propagation via `nslookup -type=NS` (near-instant — Google's public DNS already showed the new Cloudflare nameservers) and confirmed the zone showed `"status": "active"` via the Cloudflare API.
 - Custom domain attachment to the Worker required broader token permissions than the original one had. Human created a second, properly-scoped Cloudflare API token (Account: Workers Scripts Edit; Zone: DNS/SSL/Zone Edit, scoped to just this zone — explicitly steered away from the legacy "Global API Key" which grants full account access, unnecessary and riskier). Even that token hit a permissions gap on the Workers Routes API specifically. Rather than keep chasing token scopes, finished the custom domain attach directly in the Cloudflare dashboard (one-click, uses the human's full session auth) — first attempt blocked by 2 leftover Spaceship parking-page A records, deleted those, retried, succeeded.
@@ -333,7 +338,8 @@ Data flow: `pipeline/export/charlotte-metro-listings.json` → manually copied t
 - [x] `robots.txt` with explicit AI-crawler allow blocks (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended)
 - [x] `llms.txt` present with honest, factual site summary
 - [ ] Accessibility — basic (`aria-label`s present) but not formally audited
-- [ ] Not yet deployed — everything above verified against the local build/dev server only, not a live URL
+- [x] **Deployed and verified live** at https://eventrentalcosts.com (2026-07-13) — all items above checked against the real production URL, not just local dev
+- [x] Google Search Console: domain verified, sitemap submitted, status Success (2026-07-13) — ranking clock started
 
 ## 11. Monetization Plan
 Lead-referral to local party/event rental companies (tent/table/chair quote requests) + featured listing slots for rental businesses wanting visibility for their off-season/weekday capacity + reserved (empty) ad space until traffic justifies Mediavine (~month 6+). Honest expectation: plan for $0-300/mo outcome per brief's realistic distribution; treat anything above as upside. Ticket size ($1,500-6,000/wedding) is smaller than the rejected pickleball niche ($8k-50k) — referral fee per lead will be proportionally smaller; volume of weddings/events searched is the offsetting factor.
@@ -375,8 +381,10 @@ Cloudflare account: dedicated account created for this project (credentials in `
 12. ~~Scaffold Astro project, config (`site`, sitemap, robots.txt)~~ — DONE.
 13. ~~Build website routes + SEO scaffolding~~ — DONE. See §9/§10.
 14. ~~Build `validate_pricing.py`, fix hallucinated pricing~~ — DONE. **22 published listings, 261 verified pricing rows** — the honest, spot-checked-clean number. See changelog for the bug found and how it was caught.
-15. **Get a real OG image** (1200x630 PNG) — no tooling available this session, needs either a design tool or an image-generation MCP.
-16. **Get a Web3Forms (or similar) key** so listing pages can carry a real multi-quote lead-capture form instead of just linking to each business's own contact info directly.
-17. Deploy to Cloudflare Pages, submit sitemap to Search Console.
-18. Build a proper sync step from `pipeline/export/*.json` into `website/src/data/` (currently a manual copy).
-19. Month-6 kill-switch check.
+15. ~~Deploy, point real domain, submit sitemap to Search Console~~ — DONE (2026-07-13). **Live at eventrentalcosts.com, sitemap Success, ranking clock started.** See changelog session 12-14 for the Vercel-vs-Cloudflare decision, the domain/DNS migration from Spaceship, and the Cloudflare AI-crawler robots.txt bug found and fixed.
+16. **Get a real OG image** (1200x630 PNG) — no tooling available in any session so far, needs either a design tool or an image-generation MCP.
+17. **Get a Web3Forms (or similar) key** so listing pages can carry a real multi-quote lead-capture form instead of just linking to each business's own contact info directly.
+18. Set up `www.eventrentalcosts.com` redirect (minor, not SEO-blocking — see session 13 changelog).
+19. Build a proper sync step from `pipeline/export/*.json` into `website/src/data/` (currently a manual copy) — matters more once more metros get added.
+20. Consider more metros / suburb top-ups for the metros still below the 5-listing floor (Richmond, Greenville, Pittsburgh) — Apify key has ~$3.63/$5 free credit left.
+21. **Month-6 kill-switch check: ~2027-01-13.** Check Search Console impressions; invest more / build site 2 if climbing, stop if flat, per the brief's framework.
