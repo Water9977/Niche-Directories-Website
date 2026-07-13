@@ -80,12 +80,15 @@ def is_excluded(url):
 
 
 def firecrawl_scrape(url):
-    resp = requests.post(
-        SCRAPE_ENDPOINT,
-        headers={"Authorization": f"Bearer {FIRECRAWL_KEY}"},
-        json={"url": url, "formats": ["markdown", "links"], "onlyMainContent": True},
-        timeout=60,
-    )
+    try:
+        resp = requests.post(
+            SCRAPE_ENDPOINT,
+            headers={"Authorization": f"Bearer {FIRECRAWL_KEY}"},
+            json={"url": url, "formats": ["markdown", "links"], "onlyMainContent": True},
+            timeout=60,
+        )
+    except requests.exceptions.RequestException:
+        return None
     if resp.status_code != 200:
         return None
     return resp.json().get("data", {})

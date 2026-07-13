@@ -65,6 +65,30 @@ export const METROS: MetroMeta[] = [
     blurb:
       'Richmond, Virginia and its surrounding counties host a growing wedding and event scene across historic venues and modern spaces.',
   },
+  {
+    key: 'Jacksonville',
+    slug: 'jacksonville-fl',
+    name: 'Jacksonville, FL',
+    state: 'FL',
+    blurb:
+      'Jacksonville, Florida — one of the largest cities by land area in the US — supports a large, active rental market spanning beach weddings, corporate events, and year-round outdoor parties across a wide metro footprint.',
+  },
+  {
+    key: 'Pittsburgh',
+    slug: 'pittsburgh-pa',
+    name: 'Pittsburgh, PA',
+    state: 'PA',
+    blurb:
+      'Pittsburgh, Pennsylvania hosts weddings, corporate events, and community gatherings across its riverfront venues and historic neighborhoods.',
+  },
+  {
+    key: 'Greenville',
+    slug: 'greenville-sc',
+    name: 'Greenville, SC',
+    state: 'SC',
+    blurb:
+      'Greenville, South Carolina is one of the fastest-growing mid-size cities in the Southeast, with a growing wedding and event scene downtown and across the Upstate.',
+  },
 ];
 
 export function metroBySlug(slug: string): MetroMeta | undefined {
