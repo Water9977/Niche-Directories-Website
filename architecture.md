@@ -5,6 +5,14 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-13 — Session 12: DEPLOYED — site is live on the real internet
+- Human decided to ship now (85 listings/6 metros is a real directory) and asked Vercel vs Cloudflare Pages. Recommended staying with Cloudflare per the brief's original decision: Vercel's free Hobby tier explicitly disallows commercial use in its ToS, and this site carries ads/lead-gen intent — a real disqualifier, not a style preference.
+- `wrangler login` (OAuth browser flow) timed out twice — browser likely wasn't reachable/visible in this session's environment. Switched to a Cloudflare API token instead (human created one via the dashboard, `CLOUDFLARE_API_TOKEN` added to `.env`, verified via `wrangler whoami` before using).
+- `wrangler pages deploy` auto-delegated to Cloudflare's newer Workers-based static-assets deploy path (Cloudflare's current recommended architecture — Pages and Workers have merged), installing `@astrojs/cloudflare` and generating `wrangler.jsonc`. Output remains 100% prerendered static HTML (`prerendering static routes` for all pages) — no live compute, still matches the brief's static-only architecture, just a newer delivery mechanism.
+- First deploy attempt failed needing a `workers.dev` subdomain registered; the interactive confirmation prompt silently defaults to "no" in a non-TTY session (piping "y" via stdin didn't work either — the prompt library ignores piped input). Registered the subdomain directly via Cloudflare's REST API (`PUT /accounts/{id}/workers/subdomain`) to unblock, then `wrangler deploy` succeeded.
+- **Site is live**: https://eventrentalcosts.eventrentalcosts.workers.dev — verified via live navigation: correct homepage content (85 listings, 6 metros), zero console errors.
+- **Not yet done: the real domain isn't pointed here yet.** `eventrentalcosts.com` needs to either move its DNS to Cloudflare (standard flow: add site to Cloudflare, update nameservers at the registrar) or get a custom domain route added to the Worker — need to know where the domain is currently registered before proceeding. Also still open: Search Console submission, real OG image, lead-capture form.
+
 ### 2026-07-12 — Session 11: 3 more metros — 59 → 85 published listings across 6 metros
 - Human's original $5/mo Apify credit hit exactly $4.9996 mid-Indianapolis last session. Human created a fresh free Apify account (`apify_api_QtjFlZAq...`), wired into `.env`, confirmed fresh $5 credit via usage API before proceeding.
 - Ingested the remaining 3 metros from `metros.py`: Jacksonville FL (90 raw items), Pittsburgh PA (65), Greenville SC (40). Fresh key at $1.37/$5 after all 3 — cheap, plenty of headroom left for suburb top-ups next session.
@@ -338,8 +346,9 @@ Apify usage ($1.65 of the $5/mo free credit, 209 places ingested) is tracked sep
 - Public GitHub remote live (see §14) — pushed only after confirming `.env` excluded via `git check-ignore`; re-verify before every future push.
 
 ## 14. Deployment State
-Website: not deployed. **Domain purchased: eventrentalcosts.com** ($9, 2026-07-12). No Cloudflare Pages project yet. No Search Console.
-GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-Website. Commits pushed 2026-07-12 (`.env` confirmed excluded, only `.env.example` tracked).
+Website: **LIVE** at https://eventrentalcosts.eventrentalcosts.workers.dev (Cloudflare Workers static assets, deployed 2026-07-13). **Domain purchased: eventrentalcosts.com** ($9, 2026-07-12) but **not yet pointed at the deployment** — need to know current registrar/DNS to move it over. No Search Console yet (blocked on the domain being live at the real URL first).
+GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-Website. Commits pushed through 2026-07-13.
+Cloudflare account: dedicated account created for this project (credentials in `.env`, not tracked). Worker name `eventrentalcosts`, `workers.dev` subdomain registered.
 
 ## 15. Roadmap / Next Steps (ordered)
 1. ~~Get human sign-off on niche~~ — DONE (party/event rental, after pivot from pickleball).
