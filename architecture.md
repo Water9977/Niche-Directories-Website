@@ -5,6 +5,12 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-13 — Session 15: real OG image, last SEO checklist gap closed
+- Human asked to get the OG image "from Chrome." The Browser pane's `computer` screenshot/zoom actions hung (30s timeout, repeated) in this session, so used a local Playwright instance instead: installed the `playwright` npm package + Chromium, wrote a small script to screenshot a branded 1200x630 HTML card (wordmark, real headline, real stats pulled from the actual listing count) to PNG.
+- Wired into `BaseLayout.astro`: `og:image`, `og:image:width/height`, `twitter:image`, upgraded `twitter:card` from `summary` to `summary_large_image`.
+- Deployed (asset upload succeeded; the `wrangler deploy` routes-reconciliation step still errors on the same Workers-Routes permission gap from session 12 — harmless, asset/worker code updates regardless. Left `wrangler.jsonc`'s `routes` block alone rather than risk it detaching the working custom domain on a config-reconcile). Verified live: `/og-image.png` returns 200 at the correct 1200x630 dimensions, `og:image` tag points at it correctly.
+- **This closes the last open item in the §10 SEO checklist** — everything in it is now done except the "not formally audited" accessibility note.
+
 ### 2026-07-13 — Session 14: Google Search Console verified, sitemap submitted — ranking clock started
 - Human independently verified the domain in Google Search Console and submitted `https://eventrentalcosts.com/sitemap-index.xml` — status **Success**. "Discovered pages: 0" as of submission is expected (Google hasn't crawled yet; populates over the next hours-to-days).
 - **This is the real milestone per the brief's §7**: the 6-12 month ranking clock now officially starts from 2026-07-13. Month-6 kill-switch check date: **~2027-01-13** — check Search Console impressions then, decide invest-more vs. the niche is dead per the brief's explicit framework.
@@ -330,7 +336,7 @@ Data flow: `pipeline/export/charlotte-metro-listings.json` → manually copied t
 - [x] `@astrojs/sitemap` generating; `site` set in `astro.config.mjs`; `robots.txt` references `sitemap-index.xml`
 - [x] Unique title + meta description per page
 - [x] Valid structured data: `BreadcrumbList` (all pages), `ItemList` (city pages), `LocalBusiness` (listing pages) — `aggregateRating` only emitted when a listing has a real `rating` + `review_count`, never fabricated
-- [ ] **Real OpenGraph image — NOT done.** No image-rasterization tooling available this session (ffmpeg can't decode SVG, no ImageMagick/canvas lib installed). `og:image` tag omitted entirely rather than reference something broken. Needs a real 1200x630 PNG before this is actually complete.
+- [x] **Real OpenGraph image — DONE 2026-07-13.** Rendered via a local Playwright instance (browser screenshot tool was hanging in-session): a branded 1200x630 HTML card screenshotted to PNG, real site stats (85+ companies, 6 metros). Live at `/og-image.png`, wired into `og:image`/`twitter:image` (upgraded twitter:card to `summary_large_image`).
 - [x] No AI-slop copy — reviewed page content for invented stats/unverifiable "we verify" claims; About page states real counts, not marketing fluff
 - [x] Three-state rendering (yes/no/"Not published") — never coerces missing data to a negative claim
 - [x] Ad slots reserved as empty CSS-`min-height` space (anchor + in-content), no ad network applied yet (correct per brief — month-6+ concern)
