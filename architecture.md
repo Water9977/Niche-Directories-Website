@@ -5,6 +5,13 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-13 — Session 13: real domain live, found and fixed a robots.txt conflict
+- Human's domain was registered at Spaceship (spaceship.com), not Cloudflare — kept registration there, moved DNS management to Cloudflare (standard, free, no domain transfer needed). Human added `eventrentalcosts.com` in the Cloudflare dashboard, got 2 nameservers, updated them at Spaceship. Verified propagation via `nslookup -type=NS` (near-instant — Google's public DNS already showed the new Cloudflare nameservers) and confirmed the zone showed `"status": "active"` via the Cloudflare API.
+- Custom domain attachment to the Worker required broader token permissions than the original one had. Human created a second, properly-scoped Cloudflare API token (Account: Workers Scripts Edit; Zone: DNS/SSL/Zone Edit, scoped to just this zone — explicitly steered away from the legacy "Global API Key" which grants full account access, unnecessary and riskier). Even that token hit a permissions gap on the Workers Routes API specifically. Rather than keep chasing token scopes, finished the custom domain attach directly in the Cloudflare dashboard (one-click, uses the human's full session auth) — first attempt blocked by 2 leftover Spaceship parking-page A records, deleted those, retried, succeeded.
+- **`eventrentalcosts.com` is now the live production URL**, verified: homepage 200 with correct real content, `/robots.txt`/`/sitemap-index.xml`/`/llms.txt` all 200, fake URL correctly 404s, canonical tags self-reference correctly (checked `/charlotte-nc/` → `rel="canonical" href="https://eventrentalcosts.com/charlotte-nc/"`).
+- **Found and fixed a real SEO conflict**: `robots.txt` was serving Cloudflare's own auto-injected "Managed robots.txt" block (part of their AI Crawl Control product, on by default for new zones) **above** our custom content — it explicitly `Disallow: /` for `ClaudeBot`, `GPTBot`, and `Google-Extended`, directly contradicting the AI-crawler allowlist we deliberately built into `robots.txt` and `llms.txt` for AI-answer-engine citability. Found by literally reading the live `robots.txt` output rather than assuming a 200 status meant it was correct. Fixed: Cloudflare dashboard → AI Crawl Control → toggled off "Managed robots.txt". Re-verified live — clean, matches our intended file exactly.
+- **Known minor gap, not blocking**: `www.eventrentalcosts.com` has no DNS record (only the apex domain was added as a custom domain). Nothing on the site links to `www` and all canonicals use the bare apex, so this doesn't affect SEO correctness — but a visitor typing `www.` manually would hit a dead end. Worth adding a redirect rule (apex already correct) next session.
+
 ### 2026-07-13 — Session 12: DEPLOYED — site is live on the real internet
 - Human decided to ship now (85 listings/6 metros is a real directory) and asked Vercel vs Cloudflare Pages. Recommended staying with Cloudflare per the brief's original decision: Vercel's free Hobby tier explicitly disallows commercial use in its ToS, and this site carries ads/lead-gen intent — a real disqualifier, not a style preference.
 - `wrangler login` (OAuth browser flow) timed out twice — browser likely wasn't reachable/visible in this session's environment. Switched to a Cloudflare API token instead (human created one via the dashboard, `CLOUDFLARE_API_TOKEN` added to `.env`, verified via `wrangler whoami` before using).
@@ -346,9 +353,12 @@ Apify usage ($1.65 of the $5/mo free credit, 209 places ingested) is tracked sep
 - Public GitHub remote live (see §14) — pushed only after confirming `.env` excluded via `git check-ignore`; re-verify before every future push.
 
 ## 14. Deployment State
-Website: **LIVE** at https://eventrentalcosts.eventrentalcosts.workers.dev (Cloudflare Workers static assets, deployed 2026-07-13). **Domain purchased: eventrentalcosts.com** ($9, 2026-07-12) but **not yet pointed at the deployment** — need to know current registrar/DNS to move it over. No Search Console yet (blocked on the domain being live at the real URL first).
+**Website is LIVE at https://eventrentalcosts.com** (real production domain, not just the workers.dev URL). Cloudflare Workers static assets. Verified: correct content, zero console errors, robots.txt/sitemap/llms.txt all 200, 404 handling correct, canonicals self-reference correctly.
+- Domain registrar: Spaceship (spaceship.com) — registration stays there, DNS management moved to Cloudflare (nameservers updated at Spaceship to Cloudflare's, zone active).
+- `www.eventrentalcosts.com` not yet set up (minor, not SEO-blocking — see changelog).
+- No Search Console submission yet — next step.
 GitHub: **public repo live** — https://github.com/Water9977/Niche-Directories-Website. Commits pushed through 2026-07-13.
-Cloudflare account: dedicated account created for this project (credentials in `.env`, not tracked). Worker name `eventrentalcosts`, `workers.dev` subdomain registered.
+Cloudflare account: dedicated account created for this project (credentials in `.env`, not tracked — never put personal/account email or account ID in this doc, it's public). Worker name `eventrentalcosts`, `workers.dev` subdomain registered, custom domain attached, AI Crawl Control's "Managed robots.txt" turned off (was overriding our intentional AI-crawler allowlist).
 
 ## 15. Roadmap / Next Steps (ordered)
 1. ~~Get human sign-off on niche~~ — DONE (party/event rental, after pivot from pickleball).

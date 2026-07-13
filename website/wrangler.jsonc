@@ -13,5 +13,9 @@
   "assets": {
     "binding": "ASSETS",
     "directory": "dist"
-  }
+  },
+  "routes": [
+    { "pattern": "eventrentalcosts.com", "custom_domain": true },
+    { "pattern": "www.eventrentalcosts.com", "custom_domain": true }
+  ]
 }
