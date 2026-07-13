@@ -5,6 +5,10 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-13 — Session 16: www redirect done; declined to set up ads yet
+- Added `www.eventrentalcosts.com` → apex domain, done in two parts: CNAME DNS record created via the Cloudflare API (that token has DNS edit), but the actual redirect rule needed the Rules/Single-Redirects product which the token wasn't scoped for — read Cloudflare's own docs (`/rules/url-forwarding/`) to get the exact dashboard flow right rather than guess, then guided the human through it: Wildcard pattern match `https://www.eventrentalcosts.com/*` → dynamic target `https://eventrentalcosts.com/${1}`, 301, preserve query string. **Verified live**: `curl -D-` on both `www.../` and `www.../charlotte-nc/` confirmed correct 301s with paths preserved, not just root.
+- Human asked to also set up ads. **Pushed back rather than just doing it** — the brief's own plan explicitly marks ads as a month-6+ concern: the site launched today with zero traffic/history, Mediavine/Ezoic need ~50k sessions/month (nowhere close), and applying to AdSense with zero traffic risks a low-quality rejection for effectively $0 realistic revenue right now (no visitors = no impressions either way). Ad slots are already reserved and ready to flip on later — no rework needed when the time comes. Awaiting human's decision on whether to proceed anyway or wait for real traffic.
+
 ### 2026-07-13 — Session 15: real OG image, last SEO checklist gap closed
 - Human asked to get the OG image "from Chrome." The Browser pane's `computer` screenshot/zoom actions hung (30s timeout, repeated) in this session, so used a local Playwright instance instead: installed the `playwright` npm package + Chromium, wrote a small script to screenshot a branded 1200x630 HTML card (wordmark, real headline, real stats pulled from the actual listing count) to PNG.
 - Wired into `BaseLayout.astro`: `og:image`, `og:image:width/height`, `twitter:image`, upgraded `twitter:card` from `summary` to `summary_large_image`.
@@ -390,7 +394,7 @@ Cloudflare account: dedicated account created for this project (credentials in `
 15. ~~Deploy, point real domain, submit sitemap to Search Console~~ — DONE (2026-07-13). **Live at eventrentalcosts.com, sitemap Success, ranking clock started.** See changelog session 12-14 for the Vercel-vs-Cloudflare decision, the domain/DNS migration from Spaceship, and the Cloudflare AI-crawler robots.txt bug found and fixed.
 16. **Get a real OG image** (1200x630 PNG) — no tooling available in any session so far, needs either a design tool or an image-generation MCP.
 17. **Get a Web3Forms (or similar) key** so listing pages can carry a real multi-quote lead-capture form instead of just linking to each business's own contact info directly.
-18. Set up `www.eventrentalcosts.com` redirect (minor, not SEO-blocking — see session 13 changelog).
+18. ~~Set up `www.eventrentalcosts.com` redirect~~ — DONE 2026-07-13. Verified 301, paths preserved.
 19. Build a proper sync step from `pipeline/export/*.json` into `website/src/data/` (currently a manual copy) — matters more once more metros get added.
 20. Consider more metros / suburb top-ups for the metros still below the 5-listing floor (Richmond, Greenville, Pittsburgh) — Apify key has ~$3.63/$5 free credit left.
 21. **Month-6 kill-switch check: ~2027-01-13.** Check Search Console impressions; invest more / build site 2 if climbing, stop if flat, per the brief's framework.
