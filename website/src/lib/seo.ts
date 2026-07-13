@@ -15,6 +15,17 @@ export function breadcrumbJsonLd(items: { label: string; href: string }[]) {
   };
 }
 
+/** Our `address` field is the full Maps-formatted string ("123 Main St, City,
+ * ST 12345") but PostalAddress.streetAddress should be just the street
+ * portion — city/state/zip already have their own fields. Splitting on the
+ * first comma matches every address we've ingested so far (verified against
+ * real data, not assumed); falls back to the full string if a business ever
+ * has no comma at all rather than silently dropping data. */
+function streetOnly(fullAddress: string): string {
+  const idx = fullAddress.indexOf(',');
+  return idx === -1 ? fullAddress : fullAddress.slice(0, idx).trim();
+}
+
 /** LocalBusiness schema for a single listing — only includes rating/review fields
  * when we actually have real values, per the brief's rule against fabricated
  * aggregateRating. */
@@ -25,7 +36,7 @@ export function localBusinessJsonLd(listing: Listing, url: string) {
     name: listing.name,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: listing.address,
+      streetAddress: streetOnly(listing.address),
       addressLocality: listing.city,
       addressRegion: listing.state,
       postalCode: listing.postal_code ?? undefined,
