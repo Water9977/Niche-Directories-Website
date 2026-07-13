@@ -10491,6 +10491,125 @@
     ]
   },
   {
+    "name": "Wii Bounce",
+    "metro": "Jacksonville",
+    "address": "14476 Duval Pl W Ste 802, Jacksonville, FL 32218",
+    "city": "Jacksonville",
+    "state": "Florida",
+    "postal_code": "32218",
+    "lat": 30.4741452,
+    "lng": -81.6489396,
+    "phone": "(904) 351-6161",
+    "website": "http://www.wiibounce.com/",
+    "rating": 4.6,
+    "review_count": 19,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house_patriot",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_unicorn",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_big_top_inside_slide",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_pinky_inside_slide_bounce_house",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_dora",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_spider_man_bounce_house",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_sponge_bob_square_pants_jump_large",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_monster_truck_jumper",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_15_carousel",
+        "price_low": 115.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $115.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_large_carousel_bouncer",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      },
+      {
+        "item_type": "bounce_house_rocket_ship_bounce_house",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:34.037013+00:00"
+      }
+    ]
+  },
+  {
     "name": "United Rent-All of NE FL",
     "metro": "Jacksonville",
     "address": "4743 Blanding Blvd, Jacksonville, FL 32210",
@@ -11161,6 +11280,893 @@
         "source_snippet": "Wet or Dry Purple Ice Palace Bounce House and Slide Combo | [![Wet or Dry Purple Ice Palace Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Purple-Ice-Palace-Combo-3.jpg)](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-13T15:37:30.017140+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Ampa Events",
+    "metro": "Richmond",
+    "address": "6701 Janway Rd, Henrico, VA 23228",
+    "city": "Henrico",
+    "state": "Virginia",
+    "postal_code": "23228",
+    "lat": 37.630552,
+    "lng": -77.504355,
+    "phone": "(804) 358-5451",
+    "website": "http://www.ampaevents.com/",
+    "rating": 4.6,
+    "review_count": 60,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:39.508554+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are available for $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:39.508554+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our 60\" round tables are available for $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:39.508554+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery fees start at $50.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:39.508554+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:29:39.508554+00:00"
+      }
+    ]
+  },
+  {
+    "name": "celebrations bounce house",
+    "metro": "Richmond",
+    "address": "12712 Cottage Mill Rd, Midlothian, VA 23114",
+    "city": "Midlothian",
+    "state": "Virginia",
+    "postal_code": "23114",
+    "lat": 37.4709909,
+    "lng": -77.6351325,
+    "phone": "(804) 245-0903",
+    "website": "https://www.celebrationsbouncehouse.com/",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house_all_sport_combo_bouncer",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$325.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/07/All-Sport-Combo-Bouncer-350x306.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/all-sport-combo-bouncer/ \"All Sport Combo Bouncer\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "bounce_house_disney_princess_bouncer",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$225.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/07/disney_princess-350x306.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/disney-princess-bouncer/ \"Disney Princess Bouncer\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "bounce_house_teenage_mutant_ninja_turtles",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$225.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/12/TMNT2-jump-350x299.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/teenage-mutant-ninja-turtles/ \"Teenage Mutant Ninja Turtles\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "bounce_house_frozen_combo_bouncer",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$325.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/12/frozen-350x284.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/frozen-combo-bouncer/ \"Frozen Combo Bouncer\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "bounce_house_rainbow_castle_wet_or_dry_combo_with_pool",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$325.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/07/Rainbow-Castle-Wet-or-Dry-with-Pool-350x306.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/rainbow-castle-wet-or-dry-combo-with-pool/ \"Rainbow Castle Wet or Dry Combo with Pool\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "bounce_house_palm_tree_water_slide",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$325.00 per day\\n\\n![](https://www.celebrationsbouncehouse.com/wp-content/uploads/2017/07/Palm-Tree-Water-Slide-350x306.jpg)\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/palm-tree-water-slide/ \"Palm Tree Water Slide\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "fun_foods_flufftastic_cotton_candy_machine",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$50.00 per day\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/flufftastic-cotton-candy-machine/ \"Flufftastic Cotton Candy Machine\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "fun_foods_pasadena_popcorn_machine",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$50.00 per day\\n\\nView Product}(https://www.celebrationsbouncehouse.com/ \"Pasadena Popcorn Machine\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      },
+      {
+        "item_type": "fun_foods_sno_cone_machine",
+        "price_low": 60.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$60.00 per day\\n\\nView Product}(https://www.celebrationsbouncehouse.com/product/sno-cone-machine/ \"Sno-Cone Machine\")",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:30:06.056609+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Bounce Geeks LLC",
+    "metro": "Richmond",
+    "address": "3042 Chiles Rd, Glen Allen, VA 23059",
+    "city": "Glen Allen",
+    "state": "Virginia",
+    "postal_code": "23059",
+    "lat": 37.6853691,
+    "lng": -77.4957304,
+    "phone": "(804) 901-0260",
+    "website": "https://www.bouncegeeks.com/",
+    "rating": 5.0,
+    "review_count": 584,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "bounce_house",
+        "price_low": 172.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Blue Party Bouncer $172.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dazzling Castle $185.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 230.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Mega Bouncer $230.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Colossal Castle (our biggest!) $250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "bounce_house",
+        "price_low": 168.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Aloha Bouncer $168.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 315.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Mermaid Plunge 16' foot Water or Dry Slide $315.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 626.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Tiki Falls 22' Dual Lane Water Slide $626.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 426.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Tiki Plunge 18' Dual Lane Water or Dry Slide $426.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 425.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dolphin Paradise 22' Water or Dry Slide $425.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "water_slide",
+        "price_low": 352.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Lava Rush 18' Water or Dry Slide $352.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 315.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Mermaid Plunge 16' foot Water or Dry Slide $315.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 426.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Tiki Plunge 18' Dual Lane Water or Dry Slide $426.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 425.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dolphin Paradise 22' Water or Dry Slide $425.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 352.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Lava Rush 18' Water or Dry Slide $352.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dry_slide",
+        "price_low": 541.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Xtreme Fun Wet or Dry Obstacle Course $541.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 447.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Wrecking Ball $447.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 465.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Hippo Chow Down $465.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 372.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Triple Play Sports Game $372.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 337.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Bungee Run $337.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "inflatable_game",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Human Foosball $300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dunk_tank",
+        "price_low": 340.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dunk Tank Red $340.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "dunk_tank",
+        "price_low": 340.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dunk Tank Blue $340.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 834.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Toxic Run 95' Obstacle Course $834.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 695.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Rainbow 80' Obstacle Course $695.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 541.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Spider-Man Wet or Dry Obstacle Course $541.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 541.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Xtreme Fun Wet or Dry Obstacle Course $541.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "obstacle_course",
+        "price_low": 395.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Rainbow 40' Obstacle Course $395.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "concession",
+        "price_low": 95.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Mid-size Generator $95.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      },
+      {
+        "item_type": "concession",
+        "price_low": 145.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Large Generator $145.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:13.276086+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Crisp Event Rentals Upstate",
+    "metro": "Greenville",
+    "address": "2611 SC-14, Greer, SC 29650",
+    "city": "Greer",
+    "state": "South Carolina",
+    "postal_code": "29650",
+    "lat": 34.8666858,
+    "lng": -82.2206857,
+    "phone": "(864) 800-8012",
+    "website": "https://www.crisprental.com/",
+    "rating": 5.0,
+    "review_count": 8,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Tent Rentals: 10x10 tents start at $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Table Rentals: Round 60\" tables start at $5 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Chair Rentals: Folding chairs start at $3 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery Fee: $50 within 20 miles.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Deposit: $100 (refundable upon return of all equipment in good condition).",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Super Jump Inflatables",
+    "metro": "Greenville",
+    "address": "814 Weathered Oak Wy, Anderson, SC 29621",
+    "city": "Anderson",
+    "state": "South Carolina",
+    "postal_code": "29621",
+    "lat": 34.5511962,
+    "lng": -82.6590834,
+    "phone": "(864) 310-1135",
+    "website": "http://superjumpfun.com/",
+    "rating": 5.0,
+    "review_count": 3,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "combo_unit_cloud_9",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:02.523271+00:00"
+      },
+      {
+        "item_type": "combo_unit_enchanted_forest",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:02.523271+00:00"
+      },
+      {
+        "item_type": "slide_dolphin",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$275",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:02.523271+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Carolinas Photobooths",
+    "metro": "Greenville",
+    "address": "518 E Main St #2038, Spartanburg, SC 29302",
+    "city": "Spartanburg",
+    "state": "South Carolina",
+    "postal_code": "29302",
+    "lat": 34.9532562,
+    "lng": -81.9189619,
+    "phone": "(864) 833-8600",
+    "website": "https://www.sphotomirrors.com/",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "audio_guest_book",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Starting at $450 standalone or $350 as an add-on to our photobooths. Plus Transportation",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:07.458305+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Davenport Vending & Party Rentals",
+    "metro": "Pittsburgh",
+    "address": "4607 Library Rd Ste 220 #537, Bethel Park, PA 15102",
+    "city": "Bethel Park",
+    "state": "Pennsylvania",
+    "postal_code": "15102",
+    "lat": 40.3499478,
+    "lng": -80.0227077,
+    "phone": "(412) 265-8458",
+    "website": "http://www.davenportvendingandpartyrentals.com/",
+    "rating": 5.0,
+    "review_count": 2,
+    "category": "Party equipment rental service",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per hour",
+        "source_snippet": "from$300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "for 2 hours",
+        "source_snippet": "for$300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "for 3 hours",
+        "source_snippet": "for$300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "for 4 hours",
+        "source_snippet": "for$300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "for 5 hours",
+        "source_snippet": "for$600.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "for 6 hours",
+        "source_snippet": "for$600.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "for 7 hours",
+        "source_snippet": "for$600.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "for 8 hours",
+        "source_snippet": "for$550.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 9 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 10 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 11 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 12 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 13 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 14 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 15 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 16 hours",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 135.0,
+        "price_high": null,
+        "unit": "per additional day",
+        "source_snippet": "$135.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 2 days",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 3 days",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 4 days",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 5 days",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 1 week",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 2 weeks",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 3 weeks",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "for 1 month",
+        "source_snippet": "for$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "per item",
+        "source_snippet": "$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Combo Bounce House Dry",
+        "price_low": 685.0,
+        "price_high": null,
+        "unit": "per sq foot",
+        "source_snippet": "$685.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Popcorn machine",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Cotton Candy Machine",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Sno Cone Machine",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
+      },
+      {
+        "item_type": "Tropical Bounce House",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-13T18:38:37.865864+00:00"
       }
     ]
   }
