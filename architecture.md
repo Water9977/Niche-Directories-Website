@@ -5,6 +5,36 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-14 — Session 19: real SEO audit run, master plan compiled (not executed)
+- Human manually pulled real Ahrefs keyword-volume data (bypassing the bot-check from last session by searching themselves) across ~15 query clusters: core niche terms, "near me" intent, adjacent items (bounce house, linen), and our actual metro cities.
+- Pulled the full `seo-audit` skill (coreyhaines31/marketingskills, v2.0.0) via `gh api` after Firecrawl scrapes of the skills.sh preview page and a wrong raw-GitHub path both came back incomplete/404 — found the real path via search first.
+- **Ran the skill's checklist against the live site for real** (not from memory): titles run 69-72 chars (recommended 50-60, real SERP-truncation risk), meta descriptions 160-164 chars (borderline over 150-160), H1 count correct (1/page), schema is server-rendered not JS-injected (no false-negative risk), page weight excellent (8.5KB homepage). **Found two real, concrete bugs**: (1) `LocalBusiness` schema's `streetAddress` field contains the full formatted address (street+city+state+zip) instead of just the street portion — redundant with the separate `addressLocality`/`addressRegion`/`postalCode` fields already in the same object; (2) NAP inconsistency — `addressRegion` stores the full state name ("North Carolina") while the site's own URLs/metro config use the standard abbreviation ("NC").
+- Compiled a full master plan (below) combining: the real audit findings, the two keyword-research batches, and the standing open items (lead form, more metros, ads). **Not executed — human said don't start until "GO."**
+
+**MASTER PLAN (pending execution)**
+
+*Critical fixes (real bugs, cheap to fix):*
+1. Fix `LocalBusiness` schema `streetAddress` — parse just the street portion instead of passing the full address string (`lib/seo.ts`).
+2. Normalize `addressRegion` to the 2-letter USPS abbreviation everywhere for NAP consistency.
+
+*High-impact, keyword-informed content changes:*
+3. Shorten title tags to 50-60 chars sitewide (currently 69-72) — reduce SERP truncation risk on every page type (homepage, metro, listing).
+4. Trim meta descriptions to 150-160 chars (currently 160-164).
+5. Expand FAQ sections to literally match the "how much does X cost" question-phrasing pattern confirmed across every keyword cluster (tent/party/table/bounce house) — real featured-snippet targeting, not guessing at phrasing.
+6. Surface tent-SIZE-specific content (40x60, 20x40, 20x30, 20x20 all show real volume) — we already capture this granularity in `listing_pricing.item_type`; add a "shop by tent size" view or per-size FAQ entries instead of leaving it buried in the raw pricing table.
+7. Give bounce houses a more prominent treatment — real volume + Easy KD on "bounce house rental cost", and we already have real per-listing bounce house pricing captured from the extraction pipeline.
+8. De-prioritize table/chair-only content — every table/chair-specific keyword variant showed <100 volume; tents (and bounce houses) are the real demand driver, tables/chairs are secondary in this niche, not primary.
+
+*Content quality / trust gap:*
+9. Add real images to listing pages — currently zero images sitewide (confirmed via `<img>` count = 0 on both a listing page and a metro page). No alt-text opportunity, weaker trust/E-E-A-T signal. Needs a real source (business photos via Apify's `photo_url` field, which we already capture but never render).
+
+*Backlog / already-built, awaiting a decision or resource:*
+10. Send the 92-target backlink outreach batch (`pipeline/backlink_outreach.py` output) — built, not sent; sending is the human's call.
+11. Real lead-capture form — needs a Web3Forms (or similar) key.
+12. Push Greenville (4→5) and Pittsburgh (1, genuinely quote-gated) further, or accept them as-is.
+13. More metros / suburb top-ups — Apify key has ~$1.94/$5 free credit left as of last check.
+14. Ads — still deferred per the brief's month-6+ guidance; revisit once there's real traffic.
+
 ### 2026-07-14 — Session 18: suburb top-ups — Richmond crosses publish threshold, 7 metros live; Ahrefs blocked by bot-check
 - Ingested all 11 remaining suburb cities from `metros.py` for the 3 weak/zero metros: Richmond (Henrico, Chesterfield, Midlothian, Glen Allen VA), Greenville (Greer, Simpsonville, Anderson, Spartanburg SC), Pittsburgh (Cranberry Township, Bethel Park, Monroeville PA). Apify cost: $1.37 → $3.06/$5 free credit for all 11. 1,057 total raw businesses now.
 - Ran full downstream pipeline (geo_validate: 841 confirmed → web_enrich: 26 new candidates → ai_extract → validate_pricing: 1159 of 1193 rows verified) and export.
