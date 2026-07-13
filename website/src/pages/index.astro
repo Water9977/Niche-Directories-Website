@@ -5,6 +5,18 @@ import { getPublishedMetros, getAllListings } from '../lib/listings';
 const metros = getPublishedMetros();
 const totalListings = metros.reduce((sum, m) => sum + m.listings.length, 0);
 
+// Group by state once we're spanning enough metros for it to matter (e.g.
+// roaminghunger.com's state-toggle pattern from the directory-SEO research) —
+// static grouping now, no JS toggle needed yet at this scale.
+const byState = new Map<string, typeof metros>();
+for (const m of metros) {
+  if (!byState.has(m.meta.state)) byState.set(m.meta.state, []);
+  byState.get(m.meta.state)!.push(m);
+}
+const stateGroups = [...byState.entries()]
+  .map(([state, ms]) => ({ state, metros: ms, count: ms.reduce((s, m) => s + m.listings.length, 0) }))
+  .sort((a, b) => b.count - a.count);
+
 const title = 'Real Party & Event Rental Prices, Compared | EventRentalCosts.com';
 const description = `Compare real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metro areas — actual numbers, not "call for a quote."`;
 ---
@@ -22,15 +34,20 @@ const description = `Compare real, published prices from ${totalListings} verifi
 
   <section class="container">
     <h2>Choose your metro area</h2>
-    <div class="metro-grid">
-      {metros.map(({ meta, listings }) => (
-        <a href={`/${meta.slug}/`} class="card metro-card">
-          <h3>{meta.name}</h3>
-          <p class="count">{listings.length} verified rental companies</p>
-          <span class="metro-cta">View pricing &rarr;</span>
-        </a>
-      ))}
-    </div>
+    {stateGroups.map(({ state, metros: stateMetros }) => (
+      <div class="state-group">
+        {stateGroups.length > 1 && <h3 class="state-heading">{state}</h3>}
+        <div class="metro-grid">
+          {stateMetros.map(({ meta, listings }) => (
+            <a href={`/${meta.slug}/`} class="card metro-card">
+              <h4>{meta.name}</h4>
+              <p class="count">{listings.length} verified rental companies</p>
+              <span class="metro-cta">View pricing &rarr;</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
   </section>
 
   <section class="container about-strip">
@@ -50,15 +67,23 @@ const description = `Compare real, published prices from ${totalListings} verifi
     background: linear-gradient(180deg, rgba(181, 80, 47, 0.06), transparent);
   }
   .lede { font-size: 1.1rem; color: var(--color-text-muted); max-width: 660px; }
+  .state-group { margin-bottom: var(--space-8); }
+  .state-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+  }
   .metro-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: var(--space-4);
-    margin-bottom: var(--space-12);
   }
   .metro-card { padding: var(--space-6); }
   .metro-card:hover { text-decoration: none; border-color: var(--color-primary); }
-  .metro-card h3 { margin-bottom: var(--space-2); font-size: 1.1rem; }
+  .metro-card h4 { margin-bottom: var(--space-2); font-size: 1.1rem; }
   .metro-card .count { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--space-3); }
   .metro-cta { font-weight: 600; color: var(--color-primary); font-size: 0.9rem; }
   .about-strip { padding-bottom: var(--space-16); color: var(--color-text-muted); }
