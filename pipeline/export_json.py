@@ -17,6 +17,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DB_PATH = Path(__file__).parent / "directory.db"
 EXPORT_DIR = Path(__file__).parent / "export"
+# Writes directly to the website's data file too — every session up to this
+# one required a manual `cp pipeline/export/*.json website/src/data/listings.json`
+# after running this script, an easy step to forget (it happened 3 times in
+# session 21 alone). Now export_json.py is the single source of truth.
+WEBSITE_DATA_PATH = Path(__file__).parent.parent / "website" / "src" / "data" / "listings.json"
 
 NAME_EXCLUDE_KEYWORDS = ["glamping"]
 
@@ -79,14 +84,17 @@ def main():
             "pricing": [dict(p) for p in pricing],
         })
 
-    out_path = EXPORT_DIR / "charlotte-metro-listings.json"
-    out_path.write_text(json.dumps(output, indent=2), encoding="utf-8")
+    payload = json.dumps(output, indent=2)
+    out_path = EXPORT_DIR / "listings.json"
+    out_path.write_text(payload, encoding="utf-8")
+    WEBSITE_DATA_PATH.write_text(payload, encoding="utf-8")
 
     print(f"Candidates checked: {len(candidates)}")
     print(f"Excluded (off-niche): {len(excluded)}")
     for eid, name, reason in excluded:
         print(f"  - {name} ({reason})")
     print(f"Published: {len(published)} -> {out_path}")
+    print(f"Also wrote directly to {WEBSITE_DATA_PATH} — no manual copy step needed.")
     conn.close()
 
 
