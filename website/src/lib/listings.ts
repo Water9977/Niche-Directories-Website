@@ -188,7 +188,7 @@ export interface TentSizeStat {
  * unrelated catalog entries that happen to share a `tent_` prefix (a few
  * furniture-rental listings use it oddly, e.g. `tent_kingston_farm_table`)
  * are excluded automatically. */
-export function tentSizeBreakdown(items: Listing[]): TentSizeStat[] {
+export function tentSizeBreakdown(items: Listing[], minCount = 1): TentSizeStat[] {
   const bySize = new Map<string, number[]>();
   for (const l of items) {
     for (const p of l.pricing) {
@@ -208,6 +208,7 @@ export function tentSizeBreakdown(items: Listing[]): TentSizeStat[] {
       high: Math.max(...prices),
       count: prices.length,
     }))
+    .filter((s) => s.count >= minCount)
     .sort((a, b) => {
       const [aw, ah] = a.size.split('x').map(Number);
       const [bw, bh] = b.size.split('x').map(Number);
@@ -235,4 +236,28 @@ export function bounceHousePriceRange(items: Listing[]): PriceRange | null {
   }
   if (!prices.length) return null;
   return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+}
+
+function priceRangeForPattern(items: Listing[], pattern: RegExp): PriceRange | null {
+  const prices: number[] = [];
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null || p.price_low <= 0) continue;
+      if (pattern.test(p.item_type)) prices.push(p.price_low);
+    }
+  }
+  if (!prices.length) return null;
+  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+}
+
+/** Real published delivery-fee range — for the national cost guide's "does
+ * delivery cost extra" question, answered with real numbers instead of a
+ * generic "it varies." */
+export function deliveryFeeRange(items: Listing[]): PriceRange | null {
+  return priceRangeForPattern(items, /delivery/i);
+}
+
+/** Real published deposit range, same reasoning as deliveryFeeRange. */
+export function depositRange(items: Listing[]): PriceRange | null {
+  return priceRangeForPattern(items, /deposit/i);
 }

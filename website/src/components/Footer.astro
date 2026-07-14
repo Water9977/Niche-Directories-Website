@@ -1,8 +1,15 @@
 ---
+import { getPublishedMetros } from '../lib/listings';
 const year = new Date().getFullYear();
+const metros = getPublishedMetros();
 ---
 <footer class="site-footer">
   <div class="container footer-inner">
+    <nav class="metro-nav" aria-label="Metro areas we cover">
+      <span class="metro-nav-label">Metro areas we cover:</span>
+      {metros.map((m) => <a href={`/${m.meta.slug}/`}>{m.meta.name}</a>)}
+      <a href="/tent-rental-cost/">Tent Rental Cost Guide</a>
+    </nav>
     <p class="disclosure">
       EventRentalCosts.com is an independent comparison directory. We are not affiliated with,
       endorsed by, or operated by any rental company listed on this site. Pricing is collected
@@ -35,5 +42,9 @@ const year = new Date().getFullYear();
   .footer-nav { display: flex; gap: var(--space-4); font-size: 0.85rem; font-weight: 600; }
   .footer-nav a { color: var(--color-text-muted); }
   .footer-nav a:hover { color: var(--color-primary); }
+  .metro-nav { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); font-size: 0.85rem; }
+  .metro-nav-label { color: var(--color-text-muted); font-weight: 600; }
+  .metro-nav a { color: var(--color-text-muted); }
+  .metro-nav a:hover { color: var(--color-primary); }
   .copyright { font-size: 0.78rem; color: var(--color-text-muted); margin: 0; }
 </style>

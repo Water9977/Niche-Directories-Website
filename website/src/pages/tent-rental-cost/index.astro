@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import {
+  getPublishedMetros,
+  tentSizeBreakdown,
+  bounceHousePriceRange,
+  deliveryFeeRange,
+  depositRange,
+  chairPriceMin,
+} from '../../lib/listings';
+import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+
+// The single biggest content gap found in the Fable-5 audit: metro pages and
+// listing pages exist, but nothing targets the national head terms ("tent
+// rental cost", "how much does a tent rental cost", "wedding tent rental
+// cost" — all real Easy-KD volume per keyword-research.md). This page is
+// built entirely from real cross-metro data already in listings.json — no
+// invented "average cost" numbers, the thing every other cost-guide page
+// for this query does.
+const metros = getPublishedMetros();
+const allListings = metros.flatMap((m) => m.listings);
+
+const tentSizes = tentSizeBreakdown(allListings, 2); // min 2 real data points per size, national scale can afford the bar
+const bounceHouse = bounceHousePriceRange(allListings);
+const delivery = deliveryFeeRange(allListings);
+const deposit = depositRange(allListings);
+const chairMin = chairPriceMin(allListings);
+const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
+const tentMax = tentSizes.length ? Math.max(...tentSizes.map((t) => t.high)) : null;
+
+const weddingTents = tentSizes.filter((t) => {
+  const [w, h] = t.size.split('x').map(Number);
+  return w * h >= 800;
+});
+const weddingMin = weddingTents.length ? Math.min(...weddingTents.map((t) => t.low)) : null;
+const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.high)) : null;
+
+const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
+
+const title = 'How Much Does Tent Rental Cost? (Real Prices)';
+const description = `Real published tent rental prices from ${allListings.length} verified companies across ${metros.length} US metros, broken down by size — not a made-up "average cost."`;
+
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Tent Rental Cost', href: '/tent-rental-cost/' },
+];
+
+const faqs = [
+  {
+    q: 'How much does a tent rental cost?',
+    a: tentMin != null
+      ? `Based on real published pricing from ${allListings.length} companies across our ${metros.length} metro areas, tent rental starts around $${fmt(tentMin)} and runs up to $${fmt(tentMax!)} or more for the largest sizes. Exact cost depends heavily on tent size, delivery distance, and whether setup is included.`
+      : `It depends on tent size, delivery distance, and whether setup is included.`,
+  },
+  ...(weddingMin != null && weddingMax != null && weddingMax > weddingMin
+    ? [{
+        q: 'How much does a wedding tent rental cost?',
+        a: `Larger tents suited to weddings (20x40 and up, roughly 800+ sq ft) run about $${fmt(weddingMin)}–$${fmt(weddingMax)} based on real rates published by companies in our directory. Final cost depends on exact size, sidewalls, flooring, and delivery distance.`,
+      }]
+    : []),
+  ...(delivery
+    ? [{
+        q: 'Do tent rental companies charge for delivery?',
+        a: `Many do — real published delivery fees in our data range from $${fmt(delivery.low)} to $${fmt(delivery.high)}, based on ${delivery.count} real published fee${delivery.count === 1 ? '' : 's'}. Some companies include delivery within a set radius instead of charging separately; check each company's listing for their specific policy.`,
+      }]
+    : []),
+  ...(deposit
+    ? [{
+        q: 'How much is a deposit for tent rental?',
+        a: `Real published deposits in our data range from $${fmt(deposit.low)} to $${fmt(deposit.high)}, based on ${deposit.count} real published deposit amount${deposit.count === 1 ? '' : 's'}. Not every company requires one, and policies vary — check the individual listing.`,
+      }]
+    : []),
+  {
+    q: 'How is this pricing data collected?',
+    a: `We scrape each rental company's own website directly and extract real dollar figures they've published — we never estimate or fabricate a price. See our methodology page for the full process.`,
+  },
+];
+
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+---
+<BaseLayout title={title} description={description} path="/tent-rental-cost/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>How much does tent rental cost?</h1>
+
+    <p class="intro">
+      Real answer, from real data: we collected published pricing directly from
+      {' '}{allListings.length} verified tent, table, and chair rental companies across
+      {' '}{metros.length} US metro areas.
+      {tentMin != null && tentMax != null && (
+        <> Tent rental starts around <strong>${fmt(tentMin)}</strong> and runs up to
+        {' '}<strong>${fmt(tentMax)}</strong>+ for the largest sizes — the table below breaks
+        it down by exact size.</>
+      )}
+    </p>
+
+    {tentSizes.length > 0 && (
+      <section class="size-breakdown">
+        <h2>Tent rental cost by size</h2>
+        <p class="muted">
+          Real starting prices pulled directly from rental companies' own published rate sheets,
+          aggregated across all metros we cover. Sizes with only one data point are omitted here —
+          see individual metro pages for the full picture in your area.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tent size</th><th>Price range</th><th>Companies</th></tr>
+            </thead>
+            <tbody>
+              {tentSizes.map((t) => (
+                <tr>
+                  <td>{t.size} ft</td>
+                  <td>{t.low === t.high ? <>${fmt(t.low)}</> : <>${fmt(t.low)}–${fmt(t.high)}</>}</td>
+                  <td class="muted">{t.count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {weddingMin != null && weddingMax != null && weddingMax > weddingMin && (
+      <section>
+        <h2>Wedding tent rental cost</h2>
+        <p>
+          Tents large enough for a wedding (20x40 and up, roughly 800+ square feet) run about
+          {' '}<strong>${fmt(weddingMin)}–${fmt(weddingMax)}</strong> based on real published rates.
+          Sidewalls, flooring, lighting, and delivery distance all affect the final price — check
+          individual company listings for exact line items.
+        </p>
+      </section>
+    )}
+
+    <section>
+      <h2>Delivery and deposit costs</h2>
+      <p>
+        {delivery ? (
+          <>Real published delivery fees range from <strong>${fmt(delivery.low)} to ${fmt(delivery.high)}</strong>
+          {' '}({delivery.count} real fee{delivery.count === 1 ? '' : 's'} published across our directory).</>
+        ) : (
+          <>Delivery fees vary by company and distance.</>
+        )}
+        {' '}
+        {deposit ? (
+          <>Where a deposit is required, real published amounts range from
+          {' '}<strong>${fmt(deposit.low)} to ${fmt(deposit.high)}</strong>
+          {' '}({deposit.count} real deposit{deposit.count === 1 ? '' : 's'} published).</>
+        ) : null}
+      </p>
+    </section>
+
+    {bounceHouse && (
+      <section>
+        <h2>Bounce house rental cost (if you need more than a tent)</h2>
+        <p>
+          Real published bounce house pricing across our directory runs about
+          {' '}<strong>${fmt(bounceHouse.low)}–${fmt(bounceHouse.high)}</strong>, based on
+          {' '}{bounceHouse.count} published price points. Combo units with a slide typically cost
+          more than a standalone bounce house.
+        </p>
+      </section>
+    )}
+
+    {chairMin != null && (
+      <section>
+        <h2>What about tables and chairs?</h2>
+        <p>
+          Table and chair rental is almost always priced per-item, not as a package — real folding
+          chair rates in our data start around <strong>${fmt(chairMin)} each</strong>. See a metro
+          page below for full per-company pricing tables.
+        </p>
+      </section>
+    )}
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      {faqs.map((faq) => (
+        <div class="faq-item">
+          <h3>{faq.q}</h3>
+          <p>
+            {faq.a.includes('methodology page') ? (
+              <>We scrape each rental company's own website directly and extract real dollar figures
+              they've published — we never estimate or fabricate a price. See our
+              <a href="/about/">methodology page</a> for the full process.</>
+            ) : (
+              faq.a
+            )}
+          </p>
+        </div>
+      ))}
+    </section>
+
+    <section class="metro-links">
+      <h2>See real prices where you are</h2>
+      <ul>
+        {metros.map(({ meta, listings }) => (
+          <li><a href={`/${meta.slug}/`}>{meta.name} tent rental prices</a> ({listings.length} companies)</li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 760px; }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  h2 { margin-top: var(--space-8); }
+  .size-breakdown .muted { color: var(--color-text-muted); margin-bottom: var(--space-3); font-size: 0.9rem; }
+  .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--space-4);
+  }
+  .faq-item { margin-bottom: var(--space-6); }
+  .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .faq-item p { color: var(--color-text-muted); margin: 0; }
+  .metro-links ul { padding-left: var(--space-6); }
+  .metro-links li { margin-bottom: var(--space-2); }
+</style>
