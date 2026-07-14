@@ -15,9 +15,15 @@ _Living source of truth. Update every session. Never let this drift from actual 
   - **B5**: llms.txt updated with Richmond + Jacksonville (was missing 2 of 7 live metros).
   - **B6**: killed visible "Ad space reserved" boxes — in-content slot reserves height invisibly, mobile anchor bar removed entirely (was permanently eating ~50px of every mobile viewport for zero revenue).
   - **B7**: CSS-only scroll shadows on listing tables (mobile cut columns with no cue), immutable cache headers for hashed assets via `public/_headers` (B9).
-- **IndexNow**: key generated, key file in `public/` (built, NOT yet deployed — production deploy of the key file blocked by permission mode mid-session; needs one more `wrangler deploy` + a ping to `api.indexnow.org`). Bing Webmaster Tools signup itself is a human task (Microsoft login; can one-click import the verified GSC property).
-- **Needs the human**: (1) one more deploy for the IndexNow key file, then ping; (2) Bing WMT signup/import; (3) Cloudflare Email Routing (dashboard, 2 min: Email → create `contact@eventrentalcosts.com` → forward to own inbox — API token lacks the permission) so the About page's "found an error?" has a real contact route; (4) Web3Forms key (unchanged); (5) backlink outreach go/no-go (46 real scraped emails ready, Resend domain verification was still pending).
-- Remaining from the analysis (this-month tier): national `/tent-rental-cost/` guide page from real cross-metro data (biggest content gap — no page targets the national head terms, all Easy KD), homepage grid redesign + real-price card teasers, monthly re-enrich freshness cadence, `minimum_order` item-type relabel + re-enrich Charlotte Party Rentals (its real tent inventory page has real prices; current listing only shows a $1,000 order minimum mislabeled as "tent frame").
+- **IndexNow**: key generated, key file deployed to `public/`, live at `/234c8db49d367d6c4212de9de61ce98a.txt`.
+- **Same-session follow-through — all 5 "needs the human" items closed:**
+  - **Resend domain verified** (`eventrentalcosts.com`, DKIM+SPF via Cloudflare DNS) — confirmed via dashboard screenshot after the API poll sat on `pending` for 37+ minutes despite DNS being correct on 3 resolvers the whole time (a Resend-side delay, not ours).
+  - **Bing Webmaster Tools**: human signed in, one-click imported the verified GSC property, submitted `sitemap-index.xml` — "Successfully processed."
+  - **Google Analytics (GA4)**: human created the property, gave the Measurement ID (`G-2PYE7BEJXT`) — wired into `BaseLayout.astro` as an `is:inline` script (avoids Astro/Vite trying to process the snippet as a module), deployed, verified live.
+  - **Cloudflare Email Routing**: hit the same class of gap as session 13's Workers Routes issue — a scoped API token could create the account-level destination address, but the **zone-level "enable email routing" toggle is gated to dashboard/session auth**, no token permission covers it (confirmed by testing 3 different token permission combinations, all returned the same generic "Authentication error" on that one endpoint specifically while other zone-level calls worked fine). Human clicked Enable in the dashboard once; the actual forwarding rule (`contact@eventrentalcosts.com` → real inbox) was then created via API without issue. **Safety note**: an early attempt to create the destination address auto-filled the forwarding target from account metadata (the Cloudflare login email) rather than an address the human had typed in this conversation — correctly blocked by the permission layer; re-did it after the human explicitly typed the real destination.
+  - **Web3Forms key**: human provided it, wired into `website/.env` as `PUBLIC_WEB3FORMS_KEY`, lead-capture form is now live on all 7 metro pages.
+  - **Backlink outreach SENT**: 46 real emails (real addresses scraped from each business's own site, zero guessed) sent via Resend. **0 failed.** Confirmed explicitly before sending — the first "send it" was ambiguous (arrived in the same message as the Web3Forms key, right after the human's own confused "what even are we doing" reaction to the original ask) and was correctly held for a plain yes/no before firing.
+- Remaining from the analysis (this-month tier, not yet started): national `/tent-rental-cost/` guide page from real cross-metro data (biggest content gap — no page targets the national head terms, all Easy KD), homepage grid redesign + real-price card teasers, monthly re-enrich freshness cadence, `minimum_order` item-type relabel + re-enrich Charlotte Party Rentals (its real tent inventory page has real prices; current listing only shows a $1,000 order minimum mislabeled as "tent frame").
 
 ### 2026-07-14 — Session 20: executed master plan items 2-9 (of the original 13); items 10-13 blocked/decided
 Human said "GO" on the master plan, one item at a time, executed in order:
@@ -417,6 +423,10 @@ Data flow: `pipeline/export/charlotte-metro-listings.json` → manually copied t
 - [ ] Accessibility — basic (`aria-label`s present) but not formally audited
 - [x] **Deployed and verified live** at https://eventrentalcosts.com (2026-07-13) — all items above checked against the real production URL, not just local dev
 - [x] Google Search Console: domain verified, sitemap submitted, status Success (2026-07-13) — ranking clock started
+- [x] FAQPage JSON-LD on every metro page; WebSite/Organization JSON-LD on homepage (2026-07-14, Session 21)
+- [x] Bing Webmaster Tools: imported from GSC, sitemap submitted, status Success (2026-07-14)
+- [x] IndexNow key file live at `/234c8db49d367d6c4212de9de61ce98a.txt`
+- [x] Google Analytics (GA4) wired site-wide, `G-2PYE7BEJXT` (2026-07-14)
 
 ## 11. Monetization Plan
 Lead-referral to local party/event rental companies (tent/table/chair quote requests) + featured listing slots for rental businesses wanting visibility for their off-season/weekday capacity + reserved (empty) ad space until traffic justifies Mediavine (~month 6+). Honest expectation: plan for $0-300/mo outcome per brief's realistic distribution; treat anything above as upside. Ticket size ($1,500-6,000/wedding) is smaller than the rejected pickleball niche ($8k-50k) — referral fee per lead will be proportionally smaller; volume of weddings/events searched is the offsetting factor.
@@ -430,9 +440,11 @@ Lead-referral to local party/event rental companies (tent/table/chair quote requ
 Apify usage ($1.65 of the $5/mo free credit, 209 places ingested) is tracked separately — it's inside the free tier, not a real charge against the $30 cash cap. Will move into this ledger for real if/when usage ever exceeds $5/mo.
 
 ## 13. Security Notes
-- `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY, MAPS_DATA_API_KEY (Apify), OPENROUTER_API_KEY, NVIDIA_API_KEY (all free-tier, human-provided across sessions). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
-- `.gitignore` covers `.env*`, `node_modules/`, `dist/`, `.astro/`, `*.db`, `pipeline/.venv/`, `__pycache__/` from commit #1.
-- No secrets in any tracked file (repo tracks only: this doc, `.gitignore`, `.env.example`, `README.md`, `pipeline/*.py`, `pipeline/requirements.txt`).
+- `.env` created with EXA_API_KEY, FIRECRAWL_API_KEY, GEMINI_API_KEY, MAPS_DATA_API_KEY (Apify), OPENROUTER_API_KEY, NVIDIA_API_KEY, CLOUDFLARE_API_TOKEN, RESEND_API_KEY, CLOUDFLARE_EMAIL_TOKEN (all human-provided across sessions). Confirmed gitignored via `git check-ignore -v .env` — not tracked, not staged.
+- `website/.env` (separate file — Astro/Vite reads its own `.env` from the site root, not the repo-root one) holds `PUBLIC_WEB3FORMS_KEY`. Also gitignored (matches the repo-root `.gitignore`'s `.env*` pattern recursively — verified via `git check-ignore`).
+- Two Cloudflare tokens in use: the original broader one (DNS/Workers/Zone) and a second one scoped narrowly to just Zone → Email Routing Rules → Edit, created after the broader token's edited permissions didn't take effect for that specific endpoint (see Session 21 changelog — same class of dashboard-only gate as the session 13 Workers Routes issue).
+- `.gitignore` covers `.env*`, `node_modules/`, `dist/`, `.astro/`, `*.db`, `pipeline/.venv/`, `__pycache__/`, `pipeline/export/` from commit #1.
+- No secrets in any tracked file (repo tracks only: this doc, `Fable-5-analysis.md`, `keyword-research.md`, `.gitignore`, `.env.example`, `README.md`, `pipeline/*.py`, `pipeline/requirements.txt`, `website/src/**`, `website/public/**`).
 - Public GitHub remote live (see §14) — pushed only after confirming `.env` excluded via `git check-ignore`; re-verify before every future push.
 
 ## 14. Deployment State
