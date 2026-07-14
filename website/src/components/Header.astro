@@ -7,7 +7,7 @@ const metros = getPublishedMetros().slice(0, 3);
   <div class="container header-inner">
     <a href="/" class="brand">EventRentalCosts<span class="brand-dot">.com</span></a>
     <nav class="nav" aria-label="Main navigation">
-      {metros.map((m) => <a href={`/${m.meta.slug}/`}>{m.meta.name}</a>)}
+      {metros.map((m) => <a class="metro-link" href={`/${m.meta.slug}/`}>{m.meta.name}</a>)}
       <a href="/about/">About</a>
     </nav>
   </div>
@@ -41,4 +41,12 @@ const metros = getPublishedMetros().slice(0, 3);
   }
   .nav a { color: var(--color-text); }
   .nav a:hover { color: var(--color-primary); }
+
+  /* On narrow viewports the nav used to wrap into 2-3 cramped lines under
+     the brand (audit finding B7/U5) — the full metro list already lives in
+     the footer on every page, so drop the redundant metro links here below
+     the breakpoint and keep just the one link that matters, About. */
+  @media (max-width: 640px) {
+    .metro-link { display: none; }
+  }
 </style>
