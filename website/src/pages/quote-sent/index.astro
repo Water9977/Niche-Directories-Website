@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Request Sent | EventRentalCosts.com';
+const description = 'Your rental quote request was sent.';
+---
+<BaseLayout title={title} description={description} path="/quote-sent/" noindex={true}>
+  <div class="container narrow">
+    <h1>Request sent</h1>
+    <p>
+      Thanks — your message has been sent and we'll reply directly. For the fastest response,
+      you can also reach out straight to any company on the metro page.
+    </p>
+    <p><a href="/">&larr; Back to home</a></p>
+  </div>
+</BaseLayout>

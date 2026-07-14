@@ -1,0 +1,58 @@
+---
+// Plain HTML form POST to Web3Forms — no client JS, no backend needed, works
+// on this static Cloudflare Workers deploy. Renders nothing until a real
+// access key exists (PUBLIC_WEB3FORMS_KEY in .env) — no broken/fake form.
+export interface Props {
+  metroName: string;
+}
+const { metroName } = Astro.props;
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY;
+---
+{accessKey && (
+  <section class="lead-form">
+    <h2>Have a question about {metroName} rentals?</h2>
+    <p class="muted">
+      Tell us what you're planning and we'll reply directly — or point you to the right company
+      from the list above. No account required.
+    </p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value={accessKey} />
+      <input type="hidden" name="subject" value={`New inquiry — ${metroName}`} />
+      <input type="hidden" name="from_name" value="EventRentalCosts.com" />
+      <input type="hidden" name="redirect" value="https://eventrentalcosts.com/quote-sent/" />
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" type="tel" name="phone" />
+      </div>
+      <div class="field">
+        <label for="message">What do you need? (tent size, date, guest count, etc.)</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="button">Send message</button>
+    </form>
+  </section>
+)}
+
+<style>
+  .lead-form { margin-block: var(--space-12); max-width: 560px; }
+  .lead-form .muted { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+  .field { margin-bottom: var(--space-4); }
+  .field label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: var(--space-2); }
+  .field input, .field textarea {
+    width: 100%;
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: inherit;
+    font: inherit;
+  }
+</style>

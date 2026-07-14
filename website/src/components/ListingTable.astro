@@ -1,5 +1,5 @@
 ---
-import { lowestPrice, type Listing } from '../lib/listings';
+import { lowestPrice, stateAbbr, type Listing } from '../lib/listings';
 import ThreeStateBadge from './ThreeStateBadge.astro';
 
 export interface Props {
@@ -33,7 +33,7 @@ const sorted = [...listings].sort((a, b) => {
           <tr>
             <td>
               <a href={`/listing/${listing.slug}/`}>{listing.name}</a>
-              <div class="muted">{listing.city}, {listing.state}</div>
+              <div class="muted">{listing.city}, {stateAbbr(listing.state)}</div>
             </td>
             <td>
               {listing.rating != null && listing.review_count ? (

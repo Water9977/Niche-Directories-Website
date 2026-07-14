@@ -25,11 +25,30 @@ export interface Listing {
   rating: number | null;
   review_count: number | null;
   category: string | null;
+  photo_url: string | null;
   delivery_available: 'yes' | 'no' | 'unknown';
   setup_included: 'yes' | 'no' | 'unknown';
   weekend_surcharge: 'yes' | 'no' | 'unknown';
   pricing: PricingItem[];
   slug: string;
+}
+
+/** Apify's Google Maps extraction returns full state names for some records
+ * and USPS abbreviations for others (spot-checked: FL came through abbreviated,
+ * everything else full-name) — normalize at read time rather than re-running
+ * the scrape, since schema/display need the 2-letter form consistently. */
+const STATE_ABBR: Record<string, string> = {
+  'North Carolina': 'NC',
+  Virginia: 'VA',
+  Ohio: 'OH',
+  Indiana: 'IN',
+  Florida: 'FL',
+  'South Carolina': 'SC',
+  Pennsylvania: 'PA',
+};
+
+export function stateAbbr(state: string): string {
+  return STATE_ABBR[state] ?? state;
 }
 
 export function slugify(input: string): string {
@@ -101,4 +120,68 @@ export function groupByCity(items: Listing[]): { city: string; listings: Listing
 export function lowestPrice(listing: Listing): number | null {
   const prices = listing.pricing.map((p) => p.price_low).filter((p): p is number => p != null);
   return prices.length ? Math.min(...prices) : null;
+}
+
+export interface TentSizeStat {
+  size: string;
+  low: number;
+  high: number;
+  count: number;
+}
+
+/** Real per-size tent pricing, aggregated from `item_type` values that name an
+ * actual WxH tent (e.g. `tent_40x60`, `pole_tent_30x30`) — keyword research
+ * confirmed size-specific searches (40x60, 20x40, 20x30, 20x20) carry real
+ * volume, but this data is otherwise buried in the flat per-listing pricing
+ * table. Only counts item_types containing "tent" AND a WxH pattern, so
+ * unrelated catalog entries that happen to share a `tent_` prefix (a few
+ * furniture-rental listings use it oddly, e.g. `tent_kingston_farm_table`)
+ * are excluded automatically. */
+export function tentSizeBreakdown(items: Listing[]): TentSizeStat[] {
+  const bySize = new Map<string, number[]>();
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null) continue;
+      if (!/tent/i.test(p.item_type)) continue;
+      const m = p.item_type.match(/(\d+)\s*x\s*(\d+)/);
+      if (!m) continue;
+      const size = `${m[1]}x${m[2]}`;
+      if (!bySize.has(size)) bySize.set(size, []);
+      bySize.get(size)!.push(p.price_low);
+    }
+  }
+  return [...bySize.entries()]
+    .map(([size, prices]) => ({
+      size,
+      low: Math.min(...prices),
+      high: Math.max(...prices),
+      count: prices.length,
+    }))
+    .sort((a, b) => {
+      const [aw, ah] = a.size.split('x').map(Number);
+      const [bw, bh] = b.size.split('x').map(Number);
+      return aw * ah - bw * bh;
+    });
+}
+
+export interface PriceRange {
+  low: number;
+  high: number;
+  count: number;
+}
+
+/** Real bounce-house price range from `item_type` values matching "bounce
+ * house" in any form — keyword research showed real head-term volume + Easy
+ * KD on "bounce house rental cost", better than table/chair terms, so this
+ * gets its own stat rather than staying buried in the generic pricing table. */
+export function bounceHousePriceRange(items: Listing[]): PriceRange | null {
+  const prices: number[] = [];
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null) continue;
+      if (/bounce.?house/i.test(p.item_type)) prices.push(p.price_low);
+    }
+  }
+  if (!prices.length) return null;
+  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
 }

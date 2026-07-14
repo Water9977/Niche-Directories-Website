@@ -5,34 +5,43 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-14 — Session 20: executed master plan items 2-9 (of the original 13); items 10-13 blocked/decided
+Human said "GO" on the master plan, one item at a time, executed in order:
+- **Item 1 (addressRegion → 2-letter state)**: added `stateAbbr()` in `website/src/lib/listings.ts` (data has mixed full-name/abbreviated states from Apify — normalized at read time). Applied to `seo.ts` schema, `ListingTable.astro`, and the listing-page title/description. **Bonus bug found+fixed in the same file**: the listing-page title hardcoded `, NC` for every listing regardless of actual state — wrong for Jacksonville FL, Indianapolis IN, etc. Fixed alongside.
+- **Item 2 (titles 50-60 chars)**: homepage 65→43 chars, metro pages 66-84→40-59 chars (verified against real per-metro listing counts and names, worst case Greensboro at 58). Listing-page titles vary with real business name length (10-75 chars) — 13/96 still exceed 60 chars because the business's real name is long; not fixable without truncating/faking a name, so left as-is.
+- **Item 3 (meta descriptions 150-160 chars)**: metro descriptions rewritten, 144-151 chars across all 7 live metros. Listing-page descriptions similarly vary with real business name length (21/96 exceed 160 for the same reason as above).
+- **Items 4-7 (FAQ phrasing, tent-size content, bounce-house prominence, table/chair de-prioritize)**: built together on the metro page since they're all the same content surface. Added `tentSizeBreakdown()` and `bounceHousePriceRange()` to `listings.ts` — real aggregations from `listing_pricing.item_type` (regex-matched WxH tent sizes, `bounce.?house` pattern), not fabricated. New metro-page sections: "Tent rental cost by size", "Bounce house rental cost". FAQ expanded with the exact "how much does X cost" phrasing from the Ahrefs data, one entry each for tent/bounce-house/table&chair (table&chair kept to one short answer, no dedicated section — the de-prioritization).
+- **Data-quality catch**: the existing `lowestPrice()` helper (used for the metro intro's price range and, initially, my tent FAQ answer) picks up non-rental line items like a $1 sock rental as the "lowest price" — made the new tent FAQ answer say "starts around $1", which is misleading. Fixed the FAQ to use the size-filtered tent minimum instead. The underlying `lowestPrice()` noise still affects the metro-page intro paragraph and homepage — **flagged as a follow-up task, not fixed this session** (out of scope of the 13 items, needs its own exclusion-list decision).
+- **Item 8 (real images)**: found `raw_listings.photo_url` already existed in the pipeline DB (real Google-hosted business photos, 1034/1057 raw rows) but was never carried into `export_json.py`'s output or `listings.json` — added it to both. 95/96 published listings now have a real photo. Rendered on listing pages with `aspect-ratio` CSS (photo dimensions vary per business, avoided hardcoding width/height to prevent distortion/CLS).
+- **Item 10 (lead-capture form)**: built `LeadForm.astro` — plain HTML POST to Web3Forms (no JS, works on the static Cloudflare Workers deploy), gated behind `PUBLIC_WEB3FORMS_KEY` so nothing broken ships if unset. Added `website/.env` (gitignored, Astro/Vite needs its own — the repo-root `.env` only feeds the Python pipeline). **Caught and fixed a fabrication risk in my own first draft**: the copy originally said "we'll pass your request along to real local companies" — untrue, there's no forwarding automation, it's a plain contact form to the site owner's inbox. Reworded to "we'll reply directly." **Blocked**: needs a real Web3Forms key from the human (free, no account — just an email to receive the key at) before the form actually renders.
+- **Item 9 (backlink outreach)**: NOT sent. Sending real email to 92 real businesses is an irreversible, external action explicitly marked "human's call" in this same plan — did not send, asked instead.
+- **Items 11-12 (Greenville/Pittsburgh push, more metros/suburbs)**: decided **accept as-is**, did not spend more Apify credit. Reasoning: (a) all suburb cities defined in `pipeline/metros.py` for the 3 weak metros were already ingested last session; (b) the changelog already documents hitting a genuine data ceiling for these small towns twice (sessions logged at lines ~124/132 of this file — businesses with no scrapable web pricing, not a pipeline gap); (c) remaining Apify free credit is only ~$1.94; (d) adding a genuinely new 10th metro is a research decision (verify it's outside the funded competitor's footprint, etc.), not a quick top-up — out of scope for "execute the list."
+- **Item 13 (ads)**: still correctly deferred, no change.
+
 ### 2026-07-14 — Session 19: real SEO audit run, master plan compiled (not executed)
 - Human manually pulled real Ahrefs keyword-volume data (bypassing the bot-check from last session by searching themselves) across ~15 query clusters: core niche terms, "near me" intent, adjacent items (bounce house, linen), and our actual metro cities.
 - Pulled the full `seo-audit` skill (coreyhaines31/marketingskills, v2.0.0) via `gh api` after Firecrawl scrapes of the skills.sh preview page and a wrong raw-GitHub path both came back incomplete/404 — found the real path via search first.
 - **Ran the skill's checklist against the live site for real** (not from memory): titles run 69-72 chars (recommended 50-60, real SERP-truncation risk), meta descriptions 160-164 chars (borderline over 150-160), H1 count correct (1/page), schema is server-rendered not JS-injected (no false-negative risk), page weight excellent (8.5KB homepage). **Found two real, concrete bugs**: (1) `LocalBusiness` schema's `streetAddress` field contains the full formatted address (street+city+state+zip) instead of just the street portion — redundant with the separate `addressLocality`/`addressRegion`/`postalCode` fields already in the same object; (2) NAP inconsistency — `addressRegion` stores the full state name ("North Carolina") while the site's own URLs/metro config use the standard abbreviation ("NC").
 - Compiled a full master plan (below) combining: the real audit findings, the two keyword-research batches, and the standing open items (lead form, more metros, ads). **Not executed — human said don't start until "GO."**
 
-**MASTER PLAN — remaining items** (item 1 from the original list, the `streetAddress` schema bug, is DONE — fixed and deployed same session, see entry above)
+**MASTER PLAN STATUS** (as of Session 20 — see that changelog entry for full detail on each)
 
-*Critical fixes (real bugs, cheap to fix):*
-1. Normalize `addressRegion` to the 2-letter USPS abbreviation everywhere for NAP consistency.
+- [x] 1. `streetAddress` schema bug — DONE (Session 20/streetAddress entry)
+- [x] 2. `addressRegion` → 2-letter state abbreviation — DONE
+- [x] 3. Title tags 50-60 chars — DONE (homepage/metro fully; listing pages vary with real business-name length, not fixable without truncating real data)
+- [x] 4. Meta descriptions 150-160 chars — DONE (same caveat as above for listing pages)
+- [x] 5. FAQ phrasing matched to real "how much does X cost" queries — DONE
+- [x] 6. Tent-SIZE-specific content — DONE (new "Tent rental cost by size" section per metro)
+- [x] 7. Bounce house prominence — DONE (new "Bounce house rental cost" section per metro)
+- [x] 8. De-prioritize table/chair content — DONE (one FAQ line, no dedicated section)
+- [x] 9. Real images on listing pages — DONE (95/96 listings, real Apify-captured Google photos)
+- [~] 10. Real lead-capture form — component built (`LeadForm.astro`), gated behind `PUBLIC_WEB3FORMS_KEY` which is unset. **Needs human to get a free key from web3forms.com and set it in `website/.env`** before the form goes live.
+- [ ] 11. Send the 92-target backlink outreach batch — NOT sent, human's call (irreversible external action).
+- [x] 12. Push Greenville/Pittsburgh further — **decided: accept as-is.** Genuine data ceiling confirmed twice already (see lines ~124/132), all defined suburbs exhausted.
+- [x] 13. More metros/suburb top-ups — **decided: accept as-is** for now. Only ~$1.94 free Apify credit left; a genuinely new metro is a research decision, not a quick top-up.
+- [ ] 14. Ads — still deferred per the brief's month-6+ guidance.
 
-*High-impact, keyword-informed content changes:*
-2. Shorten title tags to 50-60 chars sitewide (currently 69-72) — reduce SERP truncation risk on every page type (homepage, metro, listing).
-3. Trim meta descriptions to 150-160 chars (currently 160-164).
-4. Expand FAQ sections to literally match the "how much does X cost" question-phrasing pattern confirmed across every keyword cluster (tent/party/table/bounce house) — real featured-snippet targeting, not guessing at phrasing.
-5. Surface tent-SIZE-specific content (40x60, 20x40, 20x30, 20x20 all show real volume) — we already capture this granularity in `listing_pricing.item_type`; add a "shop by tent size" view or per-size FAQ entries instead of leaving it buried in the raw pricing table.
-6. Give bounce houses a more prominent treatment — real volume + Easy KD on "bounce house rental cost", and we already have real per-listing bounce house pricing captured from the extraction pipeline.
-7. De-prioritize table/chair-only content — every table/chair-specific keyword variant showed <100 volume; tents (and bounce houses) are the real demand driver, tables/chairs are secondary in this niche, not primary.
-
-*Content quality / trust gap:*
-8. Add real images to listing pages — currently zero images sitewide (confirmed via `<img>` count = 0 on both a listing page and a metro page). No alt-text opportunity, weaker trust/E-E-A-T signal. Needs a real source (business photos via Apify's `photo_url` field, which we already capture but never render).
-
-*Backlog / already-built, awaiting a decision or resource:*
-9. Send the 92-target backlink outreach batch (`pipeline/backlink_outreach.py` output) — built, not sent; sending is the human's call.
-10. Real lead-capture form — needs a Web3Forms (or similar) key.
-11. Push Greenville (4→5) and Pittsburgh (1, genuinely quote-gated) further, or accept them as-is.
-12. More metros / suburb top-ups — Apify key has ~$1.94/$5 free credit left as of last check.
-13. Ads — still deferred per the brief's month-6+ guidance; revisit once there's real traffic.
+**Still open, needs the human:** provide a Web3Forms key (item 10) and say go/no-go on sending the backlink outreach batch (item 11).
 
 ### 2026-07-14 — Session 18: suburb top-ups — Richmond crosses publish threshold, 7 metros live; Ahrefs blocked by bot-check
 - Ingested all 11 remaining suburb cities from `metros.py` for the 3 weak/zero metros: Richmond (Henrico, Chesterfield, Midlothian, Glen Allen VA), Greenville (Greer, Simpsonville, Anderson, Spartanburg SC), Pittsburgh (Cranberry Township, Bethel Park, Monroeville PA). Apify cost: $1.37 → $3.06/$5 free credit for all 11. 1,057 total raw businesses now.

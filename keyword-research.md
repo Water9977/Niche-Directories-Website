@@ -232,16 +232,16 @@ Volume is bucketed by Ahrefs' free tier as `>1000` / `>100` / `<100` — not exa
 See `architecture.md`'s changelog for the authoritative, up-to-date numbered list (it gets rewritten there as items complete). As of this file's last edit:
 
 - [x] 1. Fix `LocalBusiness` schema `streetAddress` bug — DONE (session 20)
-- [ ] 2. Normalize `addressRegion` to 2-letter state abbreviation
-- [ ] 3. Shorten title tags to 50-60 chars (currently 69-72)
-- [ ] 4. Trim meta descriptions to 150-160 chars (currently 160-164)
-- [ ] 5. Expand FAQs to match real "how much does X cost" phrasing
-- [ ] 6. Surface tent-size-specific content
-- [ ] 7. Give bounce houses more prominence
-- [ ] 8. De-prioritize table/chair-only content
-- [ ] 9. Add real images to listing pages (Apify `photo_url` field already captured, unused)
-- [ ] 10. Send the 92-target backlink outreach batch (built, awaiting human go-ahead to send)
-- [ ] 11. Real lead-capture form (needs Web3Forms or similar key)
-- [ ] 12. Push Greenville (4→5 listings) / Pittsburgh (stuck at 1, quote-gated) further, or accept as-is
-- [ ] 13. More metros / suburb top-ups (~$1.94/$5 Apify credit left as of last check)
+- [x] 2. Normalize `addressRegion` to 2-letter state abbreviation — DONE (session 20)
+- [x] 3. Shorten title tags to 50-60 chars — DONE homepage/metro; listing pages vary with real business-name length (session 20)
+- [x] 4. Trim meta descriptions to 150-160 chars — DONE, same caveat as above (session 20)
+- [x] 5. Expand FAQs to match real "how much does X cost" phrasing — DONE (session 20)
+- [x] 6. Surface tent-size-specific content — DONE (session 20)
+- [x] 7. Give bounce houses more prominence — DONE (session 20)
+- [x] 8. De-prioritize table/chair-only content — DONE (session 20)
+- [x] 9. Add real images to listing pages — DONE, 95/96 listings (session 20)
+- [~] 10. Real lead-capture form — component built, blocked on human providing a Web3Forms key (session 20)
+- [ ] 11. Send the 92-target backlink outreach batch (built, awaiting human go-ahead to send)
+- [x] 12. Push Greenville/Pittsburgh further — decided accept-as-is, genuine data ceiling (session 20)
+- [x] 13. More metros / suburb top-ups — decided accept-as-is for now, credit too low for a new metro (session 20)
 - [ ] 14. Ads — still correctly deferred per the brief's month-6+ guidance

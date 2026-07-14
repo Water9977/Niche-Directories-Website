@@ -17,7 +17,7 @@ const stateGroups = [...byState.entries()]
   .map(([state, ms]) => ({ state, metros: ms, count: ms.reduce((s, m) => s + m.listings.length, 0) }))
   .sort((a, b) => b.count - a.count);
 
-const title = 'Real Party & Event Rental Prices, Compared | EventRentalCosts.com';
+const title = 'Real Party & Event Rental Prices, Compared';
 const description = `Compare real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metro areas — actual numbers, not "call for a quote."`;
 ---
 <BaseLayout title={title} description={description} path="/">

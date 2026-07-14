@@ -3,7 +3,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ListingTable from '../components/ListingTable.astro';
 import AdSlot from '../components/AdSlot.astro';
-import { getPublishedMetros, groupByCity, lowestPrice, type Listing } from '../lib/listings';
+import LeadForm from '../components/LeadForm.astro';
+import {
+  getPublishedMetros,
+  groupByCity,
+  lowestPrice,
+  tentSizeBreakdown,
+  bounceHousePriceRange,
+  type Listing,
+} from '../lib/listings';
 import type { MetroMeta } from '../lib/metros';
 import { breadcrumbJsonLd, itemListJsonLd } from '../lib/seo';
 
@@ -27,8 +35,15 @@ const maxPrice = prices.length ? Math.max(...prices) : null;
 const cities = groupByCity(listings);
 const multiCity = cities.length > 1;
 
-const title = `Party & Tent Rental Prices in ${meta.name} (${listings.length} Companies Compared)`;
-const description = `Compare real published prices from ${listings.length} verified party, tent, table, and chair rental companies in ${meta.name}.${minPrice != null ? ` Prices start around $${minPrice.toFixed(0)}.` : ''}`;
+const tentSizes = tentSizeBreakdown(listings);
+const bounceHouse = bounceHousePriceRange(listings);
+// tentSizes is already filtered to real WxH tent items, so it's a cleaner
+// "tent starting price" than the site-wide minPrice above (which can surface
+// a $1-2 line item like a sock or deposit add-on as the "lowest price").
+const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
+
+const title = `${meta.name} Rental Prices (${listings.length} Companies)`;
+const description = `Real prices from ${listings.length} verified tent, table, and chair rental companies in ${meta.name} — actual dollar figures, not vague quotes.`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -66,8 +81,76 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https:/
       </>
     )}
 
+    {tentSizes.length > 0 && (
+      <section class="size-breakdown">
+        <h2>Tent rental cost by size in {meta.name}</h2>
+        <p class="muted">
+          Real starting prices pulled directly from local companies' own published rate sheets,
+          broken out by tent size.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tent size</th><th>Starting price</th><th>Companies</th></tr>
+            </thead>
+            <tbody>
+              {tentSizes.map((t) => (
+                <tr>
+                  <td>{t.size}</td>
+                  <td>{t.low === t.high ? <>${t.low.toFixed(0)}</> : <>${t.low.toFixed(0)}–${t.high.toFixed(0)}</>}</td>
+                  <td class="muted">{t.count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {bounceHouse && (
+      <section class="bounce-house">
+        <h2>Bounce house rental cost in {meta.name}</h2>
+        <p>
+          Real published bounce house pricing from {meta.name} rental companies runs from
+          about ${bounceHouse.low.toFixed(0)} to ${bounceHouse.high.toFixed(0)}, based on
+          {' '}{bounceHouse.count} published price point{bounceHouse.count === 1 ? '' : 's'}. Exact
+          cost depends on the unit — combo units with a slide typically cost more than a
+          standalone bounce house. See each company's listing for the full lineup.
+        </p>
+      </section>
+    )}
+
     <section class="faq">
       <h2>Common questions about {meta.name} party rentals</h2>
+      <div class="faq-item">
+        <h3>How much does a tent rental cost in {meta.name}?</h3>
+        <p>
+          {tentMin != null ? (
+            <>Based on real published pricing from local companies, tent rental starts around
+            ${tentMin.toFixed(0)} and varies by size — see the size-by-size breakdown above.</>
+          ) : (
+            <>It depends on tent size, delivery distance, and whether setup is included — see the
+            per-company pricing tables above for real published rates.</>
+          )}
+        </p>
+      </div>
+      {bounceHouse && (
+        <div class="faq-item">
+          <h3>How much does a bounce house rental cost in {meta.name}?</h3>
+          <p>
+            About ${bounceHouse.low.toFixed(0)}–${bounceHouse.high.toFixed(0)} based on real
+            pricing published by local companies, with combo units (bounce plus slide) generally
+            at the higher end. See the "Bounce house rental cost" section above.
+          </p>
+        </div>
+      )}
+      <div class="faq-item">
+        <h3>How much does table and chair rental cost in {meta.name}?</h3>
+        <p>
+          Usually priced per-item rather than as a package — check the pricing table for each
+          company above for their published per-table and per-chair rates.
+        </p>
+      </div>
       <div class="faq-item">
         <h3>Do {meta.name} rental companies charge for delivery?</h3>
         <p>
@@ -94,6 +177,8 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https:/
         </p>
       </div>
     </section>
+
+    <LeadForm metroName={meta.name} />
   </div>
 </BaseLayout>
 
@@ -101,6 +186,18 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https:/
   .intro { max-width: 760px; margin-block: var(--space-4) var(--space-8); color: var(--color-text-muted); }
   .city-section { margin-bottom: var(--space-12); }
   .city-section h2 { margin-bottom: var(--space-4); }
+  .size-breakdown, .bounce-house { margin-bottom: var(--space-12); max-width: 760px; }
+  .size-breakdown .muted { color: var(--color-text-muted); margin-bottom: var(--space-3); }
+  .size-breakdown .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+  .size-breakdown table { width: 100%; min-width: 360px; }
+  .size-breakdown .muted { font-size: 0.82rem; }
+  .bounce-house p { color: var(--color-text-muted); }
   .faq { margin-block: var(--space-12); max-width: 760px; }
   .faq-item { margin-bottom: var(--space-6); }
   .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }

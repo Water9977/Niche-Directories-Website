@@ -27,7 +27,7 @@ def main():
 
     candidates = conn.execute(
         """
-        SELECT l.*, rl.geo_status, tc.metro FROM listings l
+        SELECT l.*, rl.geo_status, rl.photo_url, tc.metro FROM listings l
         JOIN raw_listings rl ON l.raw_listing_id = rl.id
         JOIN target_cities tc ON rl.target_city_id = tc.id
         WHERE l.address IS NOT NULL
@@ -72,6 +72,7 @@ def main():
             "rating": row["rating"],
             "review_count": row["review_count"],
             "category": row["category"],
+            "photo_url": row["photo_url"],
             "delivery_available": row["delivery_available"],
             "setup_included": row["setup_included"],
             "weekend_surcharge": row["weekend_surcharge"],

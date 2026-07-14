@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ThreeStateBadge from '../../components/ThreeStateBadge.astro';
-import { getAllListings, getMetroForListing } from '../../lib/listings';
+import { getAllListings, getMetroForListing, stateAbbr } from '../../lib/listings';
 import { metroByKey } from '../../lib/metros';
 import { breadcrumbJsonLd, localBusinessJsonLd } from '../../lib/seo';
 
@@ -19,8 +19,9 @@ const metro = getMetroForListing(listing);
 const areaHref = metro ? `/${metro.slug}/` : '/';
 const areaLabel = metro ? metro.name : 'All metros';
 
-const title = `${listing.name} Pricing — ${listing.city}, NC | EventRentalCosts.com`;
-const description = `Real published pricing for ${listing.name} in ${listing.city}, NC — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their website.`;
+const state = stateAbbr(listing.state);
+const title = `${listing.name} Pricing — ${listing.city}, ${state}`;
+const description = `Real published pricing for ${listing.name} in ${listing.city}, ${state} — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their own website, not a vague quote.`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -42,6 +43,18 @@ const lastChecked = listing.pricing
     <Breadcrumbs items={breadcrumbs} />
     <h1>{listing.name}</h1>
     <p class="location">{listing.address}</p>
+
+    {listing.photo_url && (
+      <div class="listing-photo-wrap">
+        <img
+          class="listing-photo"
+          src={listing.photo_url}
+          alt={`${listing.name} — party and event rental in ${listing.city}, ${state}`}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    )}
 
     <div class="contact-row">
       {listing.phone && <a href={`tel:${listing.phone.replace(/[^0-9+]/g, '')}`} class="button">Call {listing.phone}</a>}
@@ -104,6 +117,15 @@ const lastChecked = listing.pricing
 
 <style>
   .location { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+  .listing-photo-wrap {
+    aspect-ratio: 4 / 3;
+    max-width: 408px;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    margin-bottom: var(--space-4);
+  }
+  .listing-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
   .contact-row { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-4); }
   .meta-row { display: flex; gap: var(--space-4); font-size: 0.9rem; margin-bottom: var(--space-8); }
   .muted { color: var(--color-text-muted); }

@@ -1,4 +1,5 @@
 import type { Listing } from './listings';
+import { stateAbbr } from './listings';
 
 const SITE = 'https://eventrentalcosts.com';
 
@@ -38,7 +39,7 @@ export function localBusinessJsonLd(listing: Listing, url: string) {
       '@type': 'PostalAddress',
       streetAddress: streetOnly(listing.address),
       addressLocality: listing.city,
-      addressRegion: listing.state,
+      addressRegion: stateAbbr(listing.state),
       postalCode: listing.postal_code ?? undefined,
       addressCountry: 'US',
     },
