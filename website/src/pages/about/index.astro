@@ -1,11 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { getAllListings } from '../../lib/listings';
+import { getAllListings, getPublishedMetros } from '../../lib/listings';
 import { breadcrumbJsonLd } from '../../lib/seo';
 
 const listings = getAllListings();
-const withPricing = listings.filter((l) => l.pricing.length > 0);
+const metros = getPublishedMetros();
+// Real pipeline funnel: raw Maps businesses ingested across all target
+// cities (pipeline DB, sessions 4-18) vs. the ones that actually publish
+// verifiable pricing. The pass rate IS the proof the verification is real —
+// update this alongside listings.json when new metros are ingested.
+const rawBusinessesChecked = 1057;
 
 const title = 'About & Methodology | EventRentalCosts.com';
 const description = 'How we collect and verify real party and event rental pricing data — no fabricated numbers, no fake reviews.';
@@ -22,7 +27,8 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
 
     <p>
       EventRentalCosts.com is an independent comparison site for party and event equipment
-      rental pricing in the Charlotte, NC metro area. We are not affiliated with, and don't
+      rental pricing across {metros.length} US metro areas — currently
+      {' '}{metros.map((m) => m.meta.name).join(', ')}. We are not affiliated with, and don't
       receive payment from, any company listed here as of this writing.
     </p>
 
@@ -38,10 +44,12 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
     <p>
       For each business, we scrape their own website directly — never a third-party directory
       or marketplace — looking for a real, published dollar figure. We do not estimate, average,
-      or guess at pricing. Of the {listings.length} verified rental businesses we've checked in this
-      metro area, {withPricing.length} currently publish real pricing on their own site; the rest
-      require a phone call or quote request, so we don't list pricing for them (we'd rather list
-      nothing than a fabricated number).
+      or guess at pricing. The bar is high on purpose: of the roughly {rawBusinessesChecked.toLocaleString()} rental-category
+      businesses we've checked across our metro areas, only {listings.length} publish real,
+      verifiable pricing on their own websites — and those are the only ones listed here. The
+      rest require a phone call or quote request, so we don't list pricing for them (we'd rather
+      list nothing than a fabricated number). Every extracted price is also automatically
+      re-checked against the exact sentence it came from before it's published.
     </p>
 
     <h2>What "not published" means</h2>

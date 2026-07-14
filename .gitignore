@@ -10,3 +10,5 @@ pipeline/.venv/
 __pycache__/
 *.pyc
 .DS_Store
+pipeline/export/backlink-outreach-real-emails.csv
+pipeline/indexnow-key.txt

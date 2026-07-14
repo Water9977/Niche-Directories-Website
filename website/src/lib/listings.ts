@@ -116,10 +116,61 @@ export function groupByCity(items: Listing[]): { city: string; listings: Listing
     .sort((a, b) => b.listings.length - a.listings.length);
 }
 
-/** Lowest real price found across a listing's pricing items, for sorting/display. */
+/** Item types that are real rows in the data but aren't rentable equipment —
+ * fees, deposits, admissions, and consumable add-ons (built from the actual
+ * item_type vocabulary in listings.json, e.g. a real "$2 socks" add-on at a
+ * bounce venue and a "$1 chair cover" that were surfacing as a company's
+ * headline "starting price" and reading as broken data). */
+const NON_RENTAL_ITEM_RE =
+  /deposit|delivery|fee\b|_fee|socks|admission|ticket|supervision|syrup|popcorn$|popcorn_supplies|cover|cushion|tablecloth|linen|candleholder|candlestick|goblet|pillow|tabletop_|napkin/i;
+
+export interface CheapestItem {
+  price: number;
+  label: string;
+}
+
+/** Human-readable label for an item_type slug, truncated so long catalog
+ * slugs don't blow up table cells. */
+function itemLabel(itemType: string): string {
+  const text = itemType.replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
+  return text.length > 26 ? `${text.slice(0, 25)}…` : text;
+}
+
+/** Cheapest real *rentable equipment* price for a listing, with what it's
+ * for. Showing "$1+" alone read as broken data (a $1 folding chair is real,
+ * but nobody knows it's a chair); showing "$1+ (folding chair)" reads as the
+ * verified fact it is. */
+export function cheapestRentalItem(listing: Listing): CheapestItem | null {
+  let best: CheapestItem | null = null;
+  for (const p of listing.pricing) {
+    if (p.price_low == null || p.price_low <= 0) continue;
+    if (NON_RENTAL_ITEM_RE.test(p.item_type)) continue;
+    if (!best || p.price_low < best.price) {
+      best = { price: p.price_low, label: itemLabel(p.item_type) };
+    }
+  }
+  return best;
+}
+
+/** Lowest real rentable-equipment price for a listing, for sorting/display. */
 export function lowestPrice(listing: Listing): number | null {
-  const prices = listing.pricing.map((p) => p.price_low).filter((p): p is number => p != null);
-  return prices.length ? Math.min(...prices) : null;
+  return cheapestRentalItem(listing)?.price ?? null;
+}
+
+/** Cheapest real chair price across a set of listings — chairs are the most
+ * common lowest-priced real item, so metro intros anchor on them explicitly
+ * instead of an unlabeled (and misleading-looking) bare minimum. */
+export function chairPriceMin(items: Listing[]): number | null {
+  let min: number | null = null;
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null || p.price_low <= 0) continue;
+      if (!/chair/i.test(p.item_type)) continue;
+      if (NON_RENTAL_ITEM_RE.test(p.item_type)) continue;
+      if (min == null || p.price_low < min) min = p.price_low;
+    }
+  }
+  return min;
 }
 
 export interface TentSizeStat {

@@ -7,13 +7,13 @@ import LeadForm from '../components/LeadForm.astro';
 import {
   getPublishedMetros,
   groupByCity,
-  lowestPrice,
+  chairPriceMin,
   tentSizeBreakdown,
   bounceHousePriceRange,
   type Listing,
 } from '../lib/listings';
 import type { MetroMeta } from '../lib/metros';
-import { breadcrumbJsonLd, itemListJsonLd } from '../lib/seo';
+import { breadcrumbJsonLd, itemListJsonLd, faqPageJsonLd } from '../lib/seo';
 
 export function getStaticPaths() {
   return getPublishedMetros().map(({ meta, listings }) => ({
@@ -28,19 +28,23 @@ interface Props {
 }
 const { meta, listings } = Astro.props;
 
-const prices = listings.map(lowestPrice).filter((p): p is number => p != null);
-const minPrice = prices.length ? Math.min(...prices) : null;
-const maxPrice = prices.length ? Math.max(...prices) : null;
-
 const cities = groupByCity(listings);
 const multiCity = cities.length > 1;
 
 const tentSizes = tentSizeBreakdown(listings);
 const bounceHouse = bounceHousePriceRange(listings);
-// tentSizes is already filtered to real WxH tent items, so it's a cleaner
-// "tent starting price" than the site-wide minPrice above (which can surface
-// a $1-2 line item like a sock or deposit add-on as the "lowest price").
 const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
+const chairMin = chairPriceMin(listings);
+// Wedding-size tents (20x40 and up, ~800+ sq ft) — targets the real
+// "wedding tent rental cost" query (Easy KD, real volume per keyword-research.md).
+const weddingTents = tentSizes.filter((t) => {
+  const [w, h] = t.size.split('x').map(Number);
+  return w * h >= 800;
+});
+const weddingMin = weddingTents.length ? Math.min(...weddingTents.map((t) => t.low)) : null;
+const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.high)) : null;
+
+const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
 const title = `${meta.name} Rental Prices (${listings.length} Companies)`;
 const description = `Real prices from ${listings.length} verified tent, table, and chair rental companies in ${meta.name} — actual dollar figures, not vague quotes.`;
@@ -49,7 +53,60 @@ const breadcrumbs = [
   { label: 'Home', href: '/' },
   { label: meta.name, href: `/${meta.slug}/` },
 ];
-const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https://eventrentalcosts.com')];
+
+// FAQ content lives in this one array — the visible HTML and the FAQPage
+// JSON-LD both render from it, so they can never drift apart. Google dropped
+// visual FAQ rich results, but FAQPage markup measurably lifts citations in
+// AI Overviews/ChatGPT/Perplexity (see Fable-5-analysis.md §4), which is the
+// channel this site's llms.txt/robots.txt strategy already targets.
+const faqs: { q: string; a: string }[] = [];
+if (tentMin != null) {
+  faqs.push({
+    q: `How much does a tent rental cost in ${meta.name}?`,
+    a: `Based on real published pricing from local companies, tent rental starts around $${fmt(tentMin)} and varies by size — see the size-by-size breakdown above.`,
+  });
+} else {
+  faqs.push({
+    q: `How much does a tent rental cost in ${meta.name}?`,
+    a: `It depends on tent size, delivery distance, and whether setup is included — see the per-company pricing tables above for real published rates.`,
+  });
+}
+if (weddingMin != null && weddingMax != null && weddingMax > weddingMin) {
+  faqs.push({
+    q: `How much does a wedding tent rental cost in ${meta.name}?`,
+    a: `Larger tents suited to weddings (20x40 and up) run about $${fmt(weddingMin)}–$${fmt(weddingMax)} in ${meta.name}, based on real rates published by local companies. Final cost depends on size, sidewalls, and delivery.`,
+  });
+}
+if (bounceHouse) {
+  faqs.push({
+    q: `How much does a bounce house rental cost in ${meta.name}?`,
+    a: `About $${fmt(bounceHouse.low)}–$${fmt(bounceHouse.high)} based on real pricing published by local companies, with combo units (bounce plus slide) generally at the higher end. See the "Bounce house rental cost" section above.`,
+  });
+}
+faqs.push(
+  {
+    q: `How much does table and chair rental cost in ${meta.name}?`,
+    a: `Usually priced per-item rather than as a package${chairMin != null ? ` — folding chairs start around $${fmt(chairMin)} each` : ''}. Check the pricing table for each company above for their published per-table and per-chair rates.`,
+  },
+  {
+    q: `Do ${meta.name} rental companies charge for delivery?`,
+    a: `It varies by company — some include delivery within a set radius, others charge a separate fee based on distance. Check the "Delivery" column in each table above, or open an individual listing for the exact policy where it's published.`,
+  },
+  {
+    q: `Is party rental pricing higher on weekends?`,
+    a: `Some companies apply a weekend or peak-season surcharge, especially during busy spring and fall wedding months. We note this per company where it's explicitly published — it's marked "Not published" rather than "No" when a company doesn't state a policy either way, since we don't guess.`,
+  },
+  {
+    q: `How is this pricing data collected?`,
+    a: `We scrape each rental company's own website directly and extract real dollar figures they've published — we never estimate or fabricate a price. See our methodology page for the full process and last-checked dates.`,
+  },
+);
+
+const jsonLd = [
+  breadcrumbJsonLd(breadcrumbs),
+  itemListJsonLd(listings, 'https://eventrentalcosts.com'),
+  faqPageJsonLd(faqs),
+];
 ---
 <BaseLayout title={title} description={description} path={`/${meta.slug}/`} jsonLd={jsonLd}>
   <div class="container">
@@ -59,10 +116,12 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https:/
     <p class="intro">
       {meta.blurb} We list the {listings.length} local rental companies below that actually publish
       real pricing on their own websites — not vague "contact us for a quote" pages.
-      {minPrice != null && maxPrice != null && (
-        <> Starting prices we found range from about ${minPrice.toFixed(0)} to ${maxPrice.toFixed(0)}
-        depending on the company and item, though most quote per-tent, per-table, or per-chair
-        rather than a flat rate.</>
+      {(chairMin != null || tentMin != null) && (
+        <> Real examples from their published rates:
+        {chairMin != null && <> folding chairs from ${fmt(chairMin)} each</>}
+        {chairMin != null && tentMin != null && <>,</>}
+        {tentMin != null && <> tents from ${fmt(tentMin)}</>}
+        &nbsp;— most companies quote per-item rather than a flat rate.</>
       )}
     </p>
 
@@ -122,60 +181,20 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), itemListJsonLd(listings, 'https:/
 
     <section class="faq">
       <h2>Common questions about {meta.name} party rentals</h2>
-      <div class="faq-item">
-        <h3>How much does a tent rental cost in {meta.name}?</h3>
-        <p>
-          {tentMin != null ? (
-            <>Based on real published pricing from local companies, tent rental starts around
-            ${tentMin.toFixed(0)} and varies by size — see the size-by-size breakdown above.</>
-          ) : (
-            <>It depends on tent size, delivery distance, and whether setup is included — see the
-            per-company pricing tables above for real published rates.</>
-          )}
-        </p>
-      </div>
-      {bounceHouse && (
+      {faqs.map((faq) => (
         <div class="faq-item">
-          <h3>How much does a bounce house rental cost in {meta.name}?</h3>
+          <h3>{faq.q}</h3>
           <p>
-            About ${bounceHouse.low.toFixed(0)}–${bounceHouse.high.toFixed(0)} based on real
-            pricing published by local companies, with combo units (bounce plus slide) generally
-            at the higher end. See the "Bounce house rental cost" section above.
+            {faq.a.includes('methodology page') ? (
+              <>We scrape each rental company's own website directly and extract real dollar figures
+              they've published — we never estimate or fabricate a price. See our
+              <a href="/about/">methodology page</a> for the full process and last-checked dates.</>
+            ) : (
+              faq.a
+            )}
           </p>
         </div>
-      )}
-      <div class="faq-item">
-        <h3>How much does table and chair rental cost in {meta.name}?</h3>
-        <p>
-          Usually priced per-item rather than as a package — check the pricing table for each
-          company above for their published per-table and per-chair rates.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h3>Do {meta.name} rental companies charge for delivery?</h3>
-        <p>
-          It varies by company — some include delivery within a set radius, others charge a
-          separate fee based on distance. Check the "Delivery" column in each table above, or open
-          an individual listing for the exact policy where it's published.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h3>Is party rental pricing higher on weekends?</h3>
-        <p>
-          Some companies apply a weekend or peak-season surcharge, especially during busy spring
-          and fall wedding months. We note this per company where it's explicitly published — it's
-          marked "Not published" rather than "No" when a company doesn't state a policy either way,
-          since we don't guess.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h3>How is this pricing data collected?</h3>
-        <p>
-          We scrape each rental company's own website directly and extract real dollar figures
-          they've published — we never estimate or fabricate a price. See our
-          <a href="/about/">methodology page</a> for the full process and last-checked dates.
-        </p>
-      </div>
+      ))}
     </section>
 
     <LeadForm metroName={meta.name} />

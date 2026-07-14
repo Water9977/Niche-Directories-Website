@@ -11,6 +11,8 @@ EventRentalCosts.com collects real, published pricing directly from local rental
 - [Indianapolis, IN rental prices](https://eventrentalcosts.com/indianapolis-in/)
 - [Columbus, OH rental prices](https://eventrentalcosts.com/columbus-oh/)
 - [Greensboro & Winston-Salem, NC rental prices](https://eventrentalcosts.com/greensboro-nc/)
+- [Richmond, VA rental prices](https://eventrentalcosts.com/richmond-va/)
+- [Jacksonville, FL rental prices](https://eventrentalcosts.com/jacksonville-fl/)
 - [About & Methodology](https://eventrentalcosts.com/about/): exactly how pricing data is collected and verified
 
 ## Notes for AI crawlers

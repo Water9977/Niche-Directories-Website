@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPublishedMetros, getAllListings } from '../lib/listings';
+import { siteJsonLd } from '../lib/seo';
 
 const metros = getPublishedMetros();
 const totalListings = metros.reduce((sum, m) => sum + m.listings.length, 0);
@@ -20,7 +21,7 @@ const stateGroups = [...byState.entries()]
 const title = 'Real Party & Event Rental Prices, Compared';
 const description = `Compare real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metro areas — actual numbers, not "call for a quote."`;
 ---
-<BaseLayout title={title} description={description} path="/">
+<BaseLayout title={title} description={description} path="/" jsonLd={siteJsonLd()}>
   <section class="hero">
     <div class="container">
       <h1>Real party &amp; event rental prices, compared</h1>

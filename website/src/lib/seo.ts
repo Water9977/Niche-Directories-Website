@@ -60,6 +60,45 @@ export function localBusinessJsonLd(listing: Listing, url: string) {
   return block;
 }
 
+/** FAQPage markup — Google no longer shows visual FAQ rich results, but this
+ * markup measurably lifts citation rates in AI Overviews/ChatGPT/Perplexity
+ * (the channel llms.txt + the robots.txt AI-crawler allowlist already target).
+ * Answers must be the same text the page visibly renders. */
+export function faqPageJsonLd(faqs: { q: string; a: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+}
+
+/** Site-level identity for the homepage — the one page that had no JSON-LD
+ * at all. Establishes the WebSite/Organization entity for knowledge-graph
+ * and AI systems. */
+export function siteJsonLd() {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'EventRentalCosts.com',
+      url: SITE,
+      description:
+        'Independent comparison directory of real, published party and event rental pricing (tents, tables, chairs) across US metro areas.',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'EventRentalCosts.com',
+      url: SITE,
+      logo: `${SITE}/og-image.png`,
+    },
+  ];
+}
+
 export function itemListJsonLd(listings: Listing[], baseUrl: string) {
   return {
     '@context': 'https://schema.org',

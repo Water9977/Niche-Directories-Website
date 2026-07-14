@@ -11,41 +11,21 @@ export interface Props {
 const { variant = 'in-content' } = Astro.props;
 ---
 
-{variant === 'in-content' && (
-  <div class="ad-slot ad-slot--in-content" aria-hidden="true">
-    Ad space reserved
-  </div>
-)}
-
-{variant === 'anchor' && (
-  <div class="ad-slot ad-slot--anchor" aria-hidden="true">
-    Ad space reserved
-  </div>
-)}
+{/* The visible dashed "Ad space reserved" boxes read as broken scaffolding
+    to visitors (and to businesses considering a featured listing) — audit
+    finding B6 in Fable-5-analysis.md. The in-content slot keeps its reserved
+    height invisibly so flipping ads on later still causes no layout shift;
+    the mobile anchor variant is not rendered at all until an ad network is
+    live, because permanently pinning ~50px of empty space to every mobile
+    viewport costs real UX for zero revenue today. */}
+{variant === 'in-content' && <div class="ad-slot ad-slot--in-content" aria-hidden="true" />}
 
 <style>
   .ad-slot--in-content {
     width: 100%;
     max-width: 336px;
     min-height: 280px;
-  }
-  .ad-slot--anchor {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 40;
-    width: 100%;
-    min-height: 50px;
-    max-height: 100px;
-    margin: 0;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    display: none;
-  }
-  @media (max-width: 768px) {
-    .ad-slot--anchor { display: flex; }
+    background: none;
+    border: none;
   }
 </style>

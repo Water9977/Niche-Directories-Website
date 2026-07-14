@@ -1,5 +1,5 @@
 ---
-import { lowestPrice, stateAbbr, type Listing } from '../lib/listings';
+import { cheapestRentalItem, stateAbbr, type Listing } from '../lib/listings';
 import ThreeStateBadge from './ThreeStateBadge.astro';
 
 export interface Props {
@@ -7,8 +7,8 @@ export interface Props {
 }
 const { listings } = Astro.props;
 const sorted = [...listings].sort((a, b) => {
-  const pa = lowestPrice(a);
-  const pb = lowestPrice(b);
+  const pa = cheapestRentalItem(a)?.price ?? null;
+  const pb = cheapestRentalItem(b)?.price ?? null;
   if (pa == null && pb == null) return 0;
   if (pa == null) return 1;
   if (pb == null) return -1;
@@ -28,7 +28,7 @@ const sorted = [...listings].sort((a, b) => {
     </thead>
     <tbody>
       {sorted.map((listing) => {
-        const low = lowestPrice(listing);
+        const cheapest = cheapestRentalItem(listing);
         return (
           <tr>
             <td>
@@ -43,7 +43,14 @@ const sorted = [...listings].sort((a, b) => {
               )}
             </td>
             <td>
-              {low != null ? <>${low.toFixed(0)}+</> : <span class="muted">See listing</span>}
+              {cheapest ? (
+                <>
+                  ${cheapest.price % 1 === 0 ? cheapest.price.toFixed(0) : cheapest.price.toFixed(2)}+
+                  <div class="muted">{cheapest.label}</div>
+                </>
+              ) : (
+                <span class="muted">See listing</span>
+              )}
             </td>
             <td>
               <ThreeStateBadge value={listing.delivery_available} labelYes="Yes" labelNo="No" />
@@ -61,10 +68,18 @@ const sorted = [...listings].sort((a, b) => {
 <style>
   .table-wrap {
     overflow-x: auto;
-    background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
+    /* CSS-only scroll shadows: on narrow screens the table overflows
+       horizontally with no visible cue that it scrolls (audit finding B7) —
+       these edge shadows appear only when there is more content that way. */
+    background:
+      linear-gradient(90deg, var(--color-surface) 30%, rgba(255, 255, 255, 0)) left / 40px 100% no-repeat local,
+      linear-gradient(270deg, var(--color-surface) 30%, rgba(255, 255, 255, 0)) right / 40px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgba(31, 27, 22, 0.18), transparent) left / 14px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgba(31, 27, 22, 0.18), transparent) right / 14px 100% no-repeat scroll;
+    background-color: var(--color-surface);
   }
   table { min-width: 560px; }
   .muted { color: var(--color-text-muted); font-size: 0.82rem; }
