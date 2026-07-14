@@ -19,13 +19,292 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "tent_frame",
-        "price_low": 1000.0,
+        "item_type": "tent_40x80_gable_end",
+        "price_low": 4160.0,
         "price_high": null,
         "unit": "per event",
-        "source_snippet": "Minimum project size: $1,000.",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T14:14:47.128131+00:00"
+        "source_snippet": "from$4,160.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x60_gable_end",
+        "price_low": 3120.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$3,120.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x45_gable_end",
+        "price_low": 2340.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,340.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x40_gable_end",
+        "price_low": 2080.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,080.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x100_high_peak_pole",
+        "price_low": 3400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$3,400.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x80_high_peak_pole",
+        "price_low": 2900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,900.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x60_high_peak_pole",
+        "price_low": 2175.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,175.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x40_high_peak_pole",
+        "price_low": 1450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,450.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x60_clear_top_gable_end",
+        "price_low": 4200.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$4,200.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_40x45_clear_top_gable_end",
+        "price_low": 3240.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$3,240.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x60_clear_top_gable_end",
+        "price_low": 2970.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,970.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x45_clear_top_gable_end",
+        "price_low": 2225.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,225.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x30_clear_top_gable_end",
+        "price_low": 1485.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,485.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x60_gable_end",
+        "price_low": 2070.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,070.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x50_gable",
+        "price_low": 1950.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,950.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x45_gable_end",
+        "price_low": 1485.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,485.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x40_gable_end",
+        "price_low": 1560.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,560.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x30_gable_end",
+        "price_low": 990.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$990.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x60_century_pole",
+        "price_low": 1625.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,625.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x60_high_peak_pole",
+        "price_low": 1625.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,625.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_30x45_high_peak_pole",
+        "price_low": 1215.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,215.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_20x60_high_peak",
+        "price_low": 1380.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$1,380.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_20x40_high_peak",
+        "price_low": 880.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$880.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_20x30_high_peak",
+        "price_low": 660.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$660.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_20x20_high_peak",
+        "price_low": 440.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$440.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_15x15_high_peak",
+        "price_low": 340.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$340.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_10x20_high_peak",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$325.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_10x10_high_peak",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$180.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_10x10_pop_up",
+        "price_low": 135.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$135.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_44x83_sailcloth",
+        "price_low": 5295.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$5,295.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_44x63_sailcloth",
+        "price_low": 4020.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$4,020.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
+      },
+      {
+        "item_type": "tent_44x43_sailcloth",
+        "price_low": 2745.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from$2,745.00",
+        "extracted_by_model": "manual-scrape-session21-deterministic-parse",
+        "last_checked": "2026-07-14T17:52:17.346627+00:00"
       }
     ]
   },
