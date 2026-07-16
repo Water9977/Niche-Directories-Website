@@ -89,6 +89,22 @@ export const METROS: MetroMeta[] = [
     blurb:
       'Greenville, South Carolina is one of the fastest-growing mid-size cities in the Southeast, with a growing wedding and event scene downtown and across the Upstate.',
   },
+  {
+    key: 'Charleston',
+    slug: 'charleston-sc',
+    name: 'Charleston, SC',
+    state: 'SC',
+    blurb:
+      'Charleston, South Carolina is one of the most sought-after wedding destinations in the country, with a dense calendar of weddings and events across its historic downtown, Mount Pleasant, and the surrounding Lowcountry.',
+  },
+  {
+    key: 'Knoxville',
+    slug: 'knoxville-tn',
+    name: 'Knoxville, TN',
+    state: 'TN',
+    blurb:
+      'Knoxville, Tennessee anchors East Tennessee’s wedding and event market, drawing on a university-town calendar alongside weddings and gatherings across the Great Smoky Mountains foothills.',
+  },
 ];
 
 export function metroBySlug(slug: string): MetroMeta | undefined {

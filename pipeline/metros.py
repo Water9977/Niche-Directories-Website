@@ -60,4 +60,22 @@ METROS = [
         "suburbs": [("Greer", "SC"), ("Simpsonville", "SC"),
                     ("Anderson", "SC"), ("Spartanburg", "SC")],
     },
+    {
+        # Session 22: strong real wedding-destination market, adjacent to
+        # our existing Greenville SC metro. Checked against tentrentalfinder.com
+        # (a 50-metro estimated-pricing lead-gen site, not a real competitor
+        # to our verified-pricing moat) — not in its city list either.
+        "name": "Charleston",
+        "core": ("Charleston", "SC"),
+        "suburbs": [("Mount Pleasant", "SC"), ("North Charleston", "SC"),
+                    ("Summerville", "SC"), ("Goose Creek", "SC")],
+    },
+    {
+        # Session 22: mid-size Southeast market, same tier as our existing
+        # metros, not in tentrentalfinder.com's 50-city list.
+        "name": "Knoxville",
+        "core": ("Knoxville", "TN"),
+        "suburbs": [("Farragut", "TN"), ("Maryville", "TN"),
+                    ("Oak Ridge", "TN"), ("Sevierville", "TN")],
+    },
 ]

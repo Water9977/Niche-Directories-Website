@@ -12544,5 +12544,251 @@
         "last_checked": "2026-07-13T18:38:37.865864+00:00"
       }
     ]
+  },
+  {
+    "name": "CHEERS",
+    "metro": "Charleston",
+    "address": "2467 Savannah Hwy, Charleston, SC 29414",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29414",
+    "lat": 32.7920628,
+    "lng": -80.051534,
+    "phone": "(843) 955-4092",
+    "website": "https://cheerscharleston.com/",
+    "rating": 5.0,
+    "review_count": 72,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnv_pB28kxVSFcbWykYlKxf-rAbdx7GGSFc1KBzU6kmxhaoQDZtq65beKBd-wT2lB46nfMnSIfqlJQJXuvD5mTfQpOfnfLXV3HDPVKXA6K3yj_EnEwtM2GgBvECKVfl2Cw0i46OsQ=w426-h240-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_round_60in",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Round Table \u2013 60\u2033 round $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "table_round_48in",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Round Table \u2013 48\u2033round $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "table_round_36in",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Round Table \u2013 36\u2033 round $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "cocktail_table",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Cocktail Table $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "banquet_table_8ft",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Banquet Table-8ft $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "banquet_table_6ft",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Banquet Table-6ft $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "banquet_table_4ft",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Banquet Table \u2013 4ft $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "foundry_cocktail_table",
+        "price_low": 125.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Foundry Cocktail Table $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      },
+      {
+        "item_type": "foundry_community_table",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Foundry Community Table $195.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:19:44.674187+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Ruth's House Event Rentals",
+    "metro": "Charleston",
+    "address": "1630-2 Meeting St, Charleston, SC 29405",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29405",
+    "lat": 32.8216003,
+    "lng": -79.9512701,
+    "phone": "(803) 496-7400",
+    "website": "http://www.ruthshouseinc.com/",
+    "rating": 4.6,
+    "review_count": 63,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkbCjf_WwcMxgoOGTO1AtT3AhGNmDmGKe5NLFcidOwOMegkjSBpTNwfrdjBh_Z7dwzXA5kTkKWVHLJMyLm9pEbcTVAzcHMLI8VwulCH_pkxKR-fUuj5YnTha6PN7TO3Anhl70dp=w408-h272-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "wedding_flowers_for_rent_bouquets_bridesmaid_bouquets_boutonnieres_garlands",
+        "price_low": 29.99,
+        "price_high": null,
+        "unit": "per item",
+        "source_snippet": "$ 29.99",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:20:07.718962+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Republic Event Rentals | Charleston Event Rentals",
+    "metro": "Charleston",
+    "address": "174 Meeting St Ste 300, Charleston, SC 29401",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29401",
+    "lat": 32.7800545,
+    "lng": -79.9307813,
+    "phone": "(843) 974-1545",
+    "website": "https://republiceventrentals.com/",
+    "rating": 5.0,
+    "review_count": 104,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmKSpv1-govUnHzHC3Yaxqx5pw8ni2ZjPAJZBUTXzOd-oeJi5R0CtPgrbga6s4EENSwvSaqHTHwkidfOCovK_d4tgXMe87Agv9A1iYZHljNh6BxqEymDzXdZBJulpTMaJZ7IwZtgVEk1O3n=w408-h544-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_round_60in",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dinner Plates - $50 per event",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:20:56.287531+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Dining Chairs - $5 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:20:56.287531+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Frame Tents - $800 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:20:56.287531+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery Fee - $100 flat",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:20:56.287531+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Republic Event Rentals | Charleston Wedding & Event Rentals",
+    "metro": "Charleston",
+    "address": "677 King St 3rd floor, Charleston, SC 29403",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29403",
+    "lat": 32.7959628,
+    "lng": -79.9440165,
+    "phone": "(843) 974-1545",
+    "website": "https://republiceventrentals.com/",
+    "rating": 5.0,
+    "review_count": 118,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmCXLFTXsypwoNnwG0b5SMjNDKPgVdgzYt9p6f37RQNDeIYi4s5C19QJ0pxVE-I-EU6STSQZW-w2UGANn9DwXVNBLziTbYEkiqXwZRzWC0hAMsNdrzuKiELMJsn0ubkA5m3zqewuDjEInY=w408-h272-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_round_60in",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dinner Plates - $50 per event",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:21:08.411792+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Dining Chairs - $5 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:21:08.411792+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Frame Tents - $800 per day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:21:08.411792+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery Fee - $100 per event",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T12:21:08.411792+00:00"
+      }
+    ]
   }
 ]
