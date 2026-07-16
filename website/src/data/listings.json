@@ -11820,6 +11820,207 @@
     ]
   },
   {
+    "name": "Richmond Bounce and Party Inflatables",
+    "metro": "Richmond",
+    "address": "9738 Southmill Dr, Glen Allen, VA 23060",
+    "city": "Glen Allen",
+    "state": "Virginia",
+    "postal_code": "23060",
+    "lat": 37.6673672,
+    "lng": -77.5587601,
+    "phone": "(804) 304-5750",
+    "website": "http://www.richmondparty.com/",
+    "rating": 4.1,
+    "review_count": 14,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkNDR2AJjUCoYEA6YFUCN9KBZoJ45RrSpG266J25R_dgDpEaAVFz3Cc6hzn3E8hoPkF10v4ZowlOCMjwAQrDFEHrpqa9U0mJaMR_C8Xlduc8S4_ayU_HoU626qGohYy7s6R6iH9Kb6sPiY=w408-h306-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 190.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Wet and Dry Slide\\n\\nSlide N' Splash Wet/Dry Slide\\n\\n$190.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_5in1",
+        "price_low": 260.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "5 in 1 Inflatable\\n\\n\\n$260.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_batman",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Batman\\n\\n\\n$200.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_disney_princess",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Disney Princess\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_4in1_combo_blue",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "4 in 1 Combo Bounce House (Blue)\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_4in1_combo_red",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "4 in 1 Combo Bounce House (Red)\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_plain_jumper",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Plain Jumper\\n\\n\\n$180.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_birthday_party_jumper",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Birthday Party Jumper\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_pirates_treasure_4in1",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Pirates & Treasure 4 in 1\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_rock_star_4in1",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Rock Star 4 in 1\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_strawberry_shortcake",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Strawberry Shortcake \\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_knight_dragon_4in1",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Knight and Dragon 4 in 1\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_transformers",
+        "price_low": 180.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Transformer's\\n\\n\\n$180.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "inflatable_halloween_4in1",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Halloween 4 in 1\\n\\n\\n$185.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "concession_product_snow_cone_machine",
+        "price_low": 85.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Snow Cone Machine\\n\\n\\n$85.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "concession_product_cotton_candy_machine",
+        "price_low": 85.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cotton Candy Machine\\n\\n\\n$85.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "concession_product_popcorn_machine_bundle",
+        "price_low": 85.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Popcorn Machine Bundle\\n\\n\\n$85.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "concession_product_additional_servings_100",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Additional 75 Servings \\n\\n\\n$25.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "concession_product_concessions_stand_attendant",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Concessions Stand Attendant\\n\\n\\n$300.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      },
+      {
+        "item_type": "other_rental_6ft_table_6chair_bundle",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "6-Foot Table & 6 Chair Bundle\\n\\n\\n$25.00\\n\\nBook Now",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:57:55.894488+00:00"
+      }
+    ]
+  },
+  {
     "name": "Bounce Geeks LLC",
     "metro": "Richmond",
     "address": "3042 Chiles Rd, Glen Allen, VA 23059",
@@ -12164,6 +12365,360 @@
         "source_snippet": "Deposit: $100 (refundable upon return of all equipment in good condition).",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-13T18:34:25.516434+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Greer Event Rentals",
+    "metro": "Greenville",
+    "address": "209 Depot St Unit F, Greer, SC 29651",
+    "city": "Greer",
+    "state": "South Carolina",
+    "postal_code": "29651",
+    "lat": 34.9359072,
+    "lng": -82.2241584,
+    "phone": "(864) 416-1716",
+    "website": "http://www.greereventrentals.com/",
+    "rating": 4.8,
+    "review_count": 26,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlQj3EWnzgnEnx8e4X5fyAaAAPiZVaiNAFXATzdDuQ99LxwfW4b4avmZgvIxMYrRxIMJ08DDwo7MIx8eTZmCbB8_WTZZohESgWJu1pHyrnv24vpN4Er-wEyEjWCJX5WTgcJVgK5dBrMFc06=w408-h272-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "yes",
+    "pricing": [
+      {
+        "item_type": "inflatable_rainbow_slide_bounce_house_combo",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$250.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_castle_bounce_house",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_boxing_ring_bounce_house",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_16ft_dry_slide",
+        "price_low": 296.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$296.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_16ft_pink_wet_dry_slide_w_splash_pool",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$300.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_18ft_shark_wet_dry_slide_w_splash_pool_or_ball_pit",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$300.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_dual_wet_dry_slide",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$300.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_the_splash_bucket_dump",
+        "price_low": 225.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$225.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_31ft_obstacle_course",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$250.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_55ft_obstacle_course",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$400.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_adrenaline_rush_obstacle_course",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$600.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_2_lane_bungee_run",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_axe_throwing",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_basketball_sports_game",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_football_sports_game",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_soccer_sports_game",
+        "price_low": 195.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$195.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "inflatable_3_in_1_game_sports_station_soccer_football_basketball",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$325.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "folding_black_chairs",
+        "price_low": 1.75,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$1.75/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "folding_white_chairs",
+        "price_low": 1.75,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$1.75/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "6ft_rectangular_table",
+        "price_low": 9.5,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$9.50/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "8ft_rectangular_table",
+        "price_low": 9.5,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$9.50/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "cotton_candy_machine",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$65.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "popcorn_machine",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$45.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "sno_cone_machine",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$65.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "hot_dog_warmer",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$50.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "cornhole_set",
+        "price_low": 35.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$35.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "giant_jenga",
+        "price_low": 30.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$30.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "life_size_connect_4",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$65.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "bucket_golf",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$50.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "volleyball_set",
+        "price_low": 95.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$95.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "kan_jam",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$10.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "badminton_set",
+        "price_low": 55.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$55.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "ladder_ball_ladder_toss",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "bocce_ball_set",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "vintage_tractor_hayride",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$650.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "golf_cart_4_seat",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$200.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
+      },
+      {
+        "item_type": "golf_cart_6_seat",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$300.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:58:50.015149+00:00"
       }
     ]
   },
@@ -12546,6 +13101,45 @@
     ]
   },
   {
+    "name": "III STAR PARTY RENTAL",
+    "metro": "Charleston",
+    "address": "810 St Andrews Blvd, Charleston, SC 29407",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29407",
+    "lat": 32.8017595,
+    "lng": -79.9975916,
+    "phone": "(843) 640-1028",
+    "website": "http://www.iiistarpartyrental.com/",
+    "rating": 4.2,
+    "review_count": 5,
+    "category": "Tent rental service",
+    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=06kRN1C37VCxeze8vxUqUA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=163.60675&pitch=0&thumbfov=100",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "deposit",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "With all Rentals there is a mandatory Security deposit of $40.00 which is refunded once items have been returned and accounted for.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:59:19.814755+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per trip",
+        "source_snippet": "_**Delivery round-trip starts at $45_",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T13:59:19.814755+00:00"
+      }
+    ]
+  },
+  {
     "name": "CHEERS",
     "metro": "Charleston",
     "address": "2467 Savannah Hwy, Charleston, SC 29414",
@@ -12788,6 +13382,549 @@
         "source_snippet": "Delivery Fee - $100 per event",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-16T12:21:08.411792+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Tailgate Tennessee",
+    "metro": "Knoxville",
+    "address": "5825 Middlebrook Pike, Knoxville, TN 37921",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": "37921",
+    "lat": 35.9538083,
+    "lng": -84.0122796,
+    "phone": "(865) 356-6669",
+    "website": "http://tailgatetennessee.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=P9yKx0JDNvlLWgGHu6pX7A&cb_client=search.gws-prod.gps&w=408&h=240&yaw=328.18033&pitch=0&thumbfov=100",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "table_round_60in",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## KICKOFF PACKAGE\n_starting at $1500+_\n**Location: Smokey Lawn**\\*\\*\\*",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 1900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## FIRST DOWN PACKAGE\n_starting at $1900+_\n**Location: Circle Park**",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 2750.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## TOUCHDOWN PACKAGE\n_starting at $2750+_\n**Location: Circle Park**",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 1500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## KICKOFF PACKAGE\n_starting at $1500+_\n**Location: Smokey Lawn**\\*\\*\\*",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 1900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## FIRST DOWN PACKAGE\n_starting at $1900+_\n**Location: Circle Park**",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 2750.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "## TOUCHDOWN PACKAGE\n_starting at $2750+_\n**Location: Circle Park**",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Event Rentals by Rothchild",
+    "metro": "Knoxville",
+    "address": "120 W Kings Way, Knoxville, TN 37923",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": "37923",
+    "lat": 35.9195897,
+    "lng": -84.0748974,
+    "phone": "(865) 531-0269",
+    "website": "https://www.eventrentalsbyrothchild.com/",
+    "rating": 4.4,
+    "review_count": 54,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTWVX0RER0cJlwTHS0TK-ebvMWAKmas9xfPJX7NKxFtMdRl49V-QRIbYkcE1JEuv-z94xP2WGRQolsWhQt1v7Md3JZ_hAG6V71-rRuGDdeRz2a6XELJVckgehfUNxSLVRzYMWBmQ=w408-h281-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "We are experts in tent rental and installation. From multi-day festivals to outdoor weddings, we have tents for every type of event and are happy to help you determine the right option for your venue, guest count and event design. Our prices start at $200 per day for a 10x10 tent.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:43.787063+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "From linens to china, we have it all. We offer round tables that seat 8-10 people for $10 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:43.787063+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "We offer folding chairs for $5 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:43.787063+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery fees start at $50.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:43.787063+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required to secure your rental order.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:43.787063+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Silent Disco Knox",
+    "metro": "Knoxville",
+    "address": "810 E Magnolia Ave, Knoxville, TN 37917",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": "37917",
+    "lat": 35.9759104,
+    "lng": -83.9145227,
+    "phone": "(865) 210-8153",
+    "website": "https://www.silentdiscoknox.com/",
+    "rating": 5.0,
+    "review_count": 25,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmcyXIuiVcgfVuRAd_8L9B-N4QW33SueYiMXA88H7XwKhKEYjN9_VMY99AT1vho4ygfY-G_UnHQDjOtkfrwHrTPy1xwoZq9pbuuKa1uDhbgrwCgqq0ZdLCExyC7hJbzpfZ5rDKEMg=w408-h509-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "party_rental",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Party Rentals starting at $325.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:52.197025+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Mechanical Bull Rentals - By Edgeway Events",
+    "metro": "Knoxville",
+    "address": "7420 Chapman Hwy, Knoxville, TN 37920",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": "37920",
+    "lat": 35.9111655,
+    "lng": -83.8452135,
+    "phone": "(423) 819-5199",
+    "website": "https://www.edgewayevents.com/mechanical-bull-rental-knoxville-tn",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn3r9JrLvDZvTDNWHP9q4mZatHPyP7QxiepU4LYFR2yZLyZDqgkezu6tqDLC2aSgGwVVW22dkpCY6CvNNJKS2mx-DqfePFd9Z3yFiW7Fwifs3UuWvA-ic2ZqxGm2hkX2hcZa576Yw=w408-h306-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "mechanical_bull",
+        "price_low": 975.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$975.00/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:10:58.383429+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Ultimate Mega Parties",
+    "metro": "Knoxville",
+    "address": "Knoxville, TN 37912",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": null,
+    "lat": 36.0229586,
+    "lng": -83.9536367,
+    "phone": "(865) 567-9100",
+    "website": "http://www.ultimatemegaparties.com/",
+    "rating": 4.2,
+    "review_count": 10,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn4TtNXucRFqKV8TqTNTf5ApTSqHA8UPzoXt4OTKQIuIfPfrOwqK2Vj5cF20iXsN87gCdTR6trgVnDKwPJyjukv_oCf5UckImhGmwBY04-P663Cen-BepLUGt1J0MhxAufeLdEy=w408-h306-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:11:03.278993+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are available for $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:11:03.278993+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our 60\" round tables are available for $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:11:03.278993+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery fees start at $50 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:11:03.278993+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:11:03.278993+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Furniture Rentals, Inc. - Charleston SC",
+    "metro": "Charleston",
+    "address": "1169 Chuck Dawley Blvd, Mt Pleasant, SC 29464",
+    "city": "Mt Pleasant",
+    "state": "South Carolina",
+    "postal_code": "29464",
+    "lat": 32.8025041,
+    "lng": -79.8544134,
+    "phone": "(800) 374-8018",
+    "website": "http://www.furniturerentals.com/",
+    "rating": 3.0,
+    "review_count": 6,
+    "category": "Furniture rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkDB-i6x2zdSIed_zTUIHKjg6ixtdAYgEY8vq3l-nahiaormVI0TMVwZWAWnIaw2aZC1994tbjYVy_5sWdQmab9sdNsrdjKaKXJ_k0thzs1QfmheO0eD34hfU_0eEiFA6gk2Xyl=w408-h306-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for $150 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:22:46.766882+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Folding chairs are available for $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:22:46.766882+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Round tables are available for $10 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:22:46.766882+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery fees start at $50 per event.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:22:46.766882+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:22:46.766882+00:00"
+      }
+    ]
+  },
+  {
+    "name": "The French Eclectic",
+    "metro": "Charleston",
+    "address": "4244 Scott St, North Charleston, SC 29405",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29405",
+    "lat": 32.8554899,
+    "lng": -80.0066358,
+    "phone": "(843) 996-6117",
+    "website": "https://www.thefrencheclectic.com/",
+    "rating": 4.9,
+    "review_count": 48,
+    "category": "Furniture rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmg2qhh0UF0lUdLs22trxO-Uv6xsyjDVQcbkArT13QwBYGGT9cdZ_hOhHfLx7dDnLbAJKgbX3oYb_J_ayNxlDO3j9ZvWltZUOQg16J7tK5BSOoxRY79s1Cvce_rzN_eCoregXI=w408-h272-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "THE GROVE Modular Sectional",
+        "price_low": 900.0,
+        "price_high": 900.0,
+        "unit": "per event",
+        "source_snippet": "$900.00Price",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:26:50.423577+00:00"
+      },
+      {
+        "item_type": "SANDBAR Bistro Table",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per event",
+        "source_snippet": "$200.00Price",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:26:50.423577+00:00"
+      }
+    ]
+  },
+  {
+    "name": "SUNRISE PARTY RENTAL",
+    "metro": "Charleston",
+    "address": "5140 N Rhett Ave, North Charleston, SC 29406",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29406",
+    "lat": 32.8912639,
+    "lng": -79.9853793,
+    "phone": "(843) 450-2455",
+    "website": "http://www.sunrisepartyrental.com/",
+    "rating": 5.0,
+    "review_count": 7,
+    "category": "Tent rental service",
+    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Io7jWEEkPz3CIiW8hUnXsw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=1.1158992&pitch=0&thumbfov=100",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "yes",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "10x10 Tent Frame (capacity of 10 Seating )\u200b or company delivery and install $125.00 with delivery",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      },
+      {
+        "item_type": "tent_delivery_fee",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Delivery starts at $45.00 & Up",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      },
+      {
+        "item_type": "tent_side_wall",
+        "price_low": 22.5,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "also in 7 FT TALL AND 10 FT LONG THIS COVER THE LEG OF THE TENT THIS MORE RECOMMEDED ONE $22.50 EACH",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      },
+      {
+        "item_type": "tent_leg_cover",
+        "price_low": 6.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "If the Tent goes on asphalt use the barrels $6.00 ea.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 40.0,
+        "price_high": 40.0,
+        "unit": "per event",
+        "source_snippet": "With all Rentals there is a mandatory security deposit of $40.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      }
+    ]
+  },
+  {
+    "name": "EventWorks",
+    "metro": "Charleston",
+    "address": "4760 Goer Dr Suite G, North Charleston, SC 29406",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29406",
+    "lat": 32.872067,
+    "lng": -80.007388,
+    "phone": "(843) 633-1900",
+    "website": "http://www.eventworksrentals.com/",
+    "rating": 4.5,
+    "review_count": 69,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkvK0EDJU3irlOd_aZgGuIDSuTm08gyB_Rb5obkXc2vOoLP3MDEZYzEhYQIftjmbU8e2wE1U1t-cHs3P8vnMf3I2yfWgE6Kq1IwTWR2XFwo9wJFBrJQSFezbXlKttwc9GO9nxX1lA=w408-h271-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 10x10 tents are available for $500 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:40.122940+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "Our folding chairs are available for $2 each.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:40.122940+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our 60\" round tables are available for $20 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:40.122940+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per delivery",
+        "source_snippet": "Delivery fees start at $50 per delivery.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:40.122940+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "A $100 deposit is required for all rentals.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:40.122940+00:00"
+      }
+    ]
+  },
+  {
+    "name": "WELLINGTON PARTY BRENTAL",
+    "metro": "Charleston",
+    "address": "8911 University Blvd, North Charleston, SC 29406",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29406",
+    "lat": 32.9732315,
+    "lng": -80.0575557,
+    "phone": "(843) 640-1631",
+    "website": "http://www.wellingtontentrental.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Tent rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlXXhzw4IYLRmFD0tZBJ-2jvXEV1EIpSK_P4KVoMXRmI3cuI1AM1by09xrsQ1HPXnmI4CtBQh48MCnHsS4bbkNAiY_W1tZ3NvKdkpMX0GmJFJzyeyiMGRV0cFwrCV7Q0G0dZCDlpJuZrxw=w426-h240-k-no",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 60.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "_10x10 Tent Frame (capacity of 10)\u200b_ **S** elf- install - $ 60.00 OR  it can be delivered For additional charge",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:58.655512+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 45.0,
+        "price_high": 150.0,
+        "unit": "per event",
+        "source_snippet": "DELIVERY FEE FROM $45. TO $150 CALL TO ASK",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-16T14:35:58.655512+00:00"
       }
     ]
   }
