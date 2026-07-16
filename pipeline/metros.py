@@ -67,7 +67,11 @@ METROS = [
         # to our verified-pricing moat) — not in its city list either.
         "name": "Charleston",
         "core": ("Charleston", "SC"),
-        "suburbs": [("Mount Pleasant", "SC"), ("North Charleston", "SC"),
+        # "Mt Pleasant" not "Mount Pleasant" — Google Maps returns the
+        # abbreviated form; geo_validate.py does exact-string city matching
+        # (case-insensitive, no fuzzy/alias handling), so the full spelling
+        # silently produced 0 confirmed matches until caught and fixed.
+        "suburbs": [("Mt Pleasant", "SC"), ("North Charleston", "SC"),
                     ("Summerville", "SC"), ("Goose Creek", "SC")],
     },
     {
