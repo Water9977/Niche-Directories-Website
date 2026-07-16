@@ -6,7 +6,7 @@ A from-scratch, bootstrapped ($30 total budget) niche local directory website bu
 
 ## Current status
 
-Pure research/setup phase. No website code, no database, no data pipeline yet. Niche is locked, tooling decisions are made, nothing has been built or deployed. See architecture.md §"Roadmap / Next Steps" for what's next.
+**Live in production at [eventrentalcosts.com](https://eventrentalcosts.com)** — 112 verified listings across 10 published metro pages (Charlotte, Raleigh–Durham, Indianapolis, Columbus, Greensboro–Winston-Salem, Richmond, Jacksonville, Greenville, Charleston, Knoxville), each with real per-item pricing scraped from the businesses' own websites and validated against source text. Google Search Console + Bing Webmaster Tools submitted, GA4 wired, lead-capture form live, backlink outreach sent. See architecture.md's changelog for the full session-by-session history.
 
 ## Niche
 
@@ -16,9 +16,9 @@ Party/event equipment rental directory (tents, tables, chairs) — US, city-by-c
 
 Real, verified per-day rental pricing collected directly from local rental companies — data Google Maps listings and quote-only marketplaces don't show. See architecture.md §1 for the full business thesis and honest risk assessment.
 
-## Tech stack (planned)
+## Tech stack
 
-Astro (static) + Python/SQLite data pipeline (build-time only) + Cloudflare Pages hosting. Full stack and rationale in architecture.md §4.
+Astro 5 (static output) + Python/SQLite data pipeline (build-time only, `pipeline/`) + Cloudflare Workers static assets hosting. Data: Apify Google Maps ingest → geo validation → Firecrawl website scraping → LLM pricing extraction (NVIDIA NIM/OpenRouter chain) → snippet-level price validation → JSON export straight into the site build. Full stack and rationale in architecture.md §4.
 
 ## Working rules
 
