@@ -7313,15 +7313,6 @@
       },
       {
         "item_type": "water_slide",
-        "price_low": 569.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "From $569",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:59:44.069008+00:00"
-      },
-      {
-        "item_type": "water_slide",
         "price_low": 519.0,
         "price_high": null,
         "unit": "per event",
@@ -7447,15 +7438,6 @@
         "last_checked": "2026-07-12T17:59:44.069008+00:00"
       },
       {
-        "item_type": "bounce_house",
-        "price_low": 299.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "From $299",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:59:44.069008+00:00"
-      },
-      {
         "item_type": "inflatable_game",
         "price_low": 399.0,
         "price_high": null,
@@ -7479,15 +7461,6 @@
         "price_high": null,
         "unit": "per event",
         "source_snippet": "From $1595",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:59:44.069008+00:00"
-      },
-      {
-        "item_type": "inflatable_game",
-        "price_low": 549.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "From $549",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-12T17:59:44.069008+00:00"
       },
@@ -7569,15 +7542,6 @@
         "price_high": null,
         "unit": "per event",
         "source_snippet": "From $399",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:59:44.069008+00:00"
-      },
-      {
-        "item_type": "carnival_game",
-        "price_low": 299.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "From $299",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-12T17:59:44.069008+00:00"
       },
@@ -7761,15 +7725,6 @@
         "price_high": null,
         "unit": "each",
         "source_snippet": "Regular price $79.00\nRegular price~~~~Sale price $79.00\nUnit price/ per",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:59:53.442424+00:00"
-      },
-      {
-        "item_type": "table_round_60in",
-        "price_low": 50.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "Regular price $50.00\nRegular price~~~~Sale price $50.00\nUnit price/ per",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-12T17:59:53.442424+00:00"
       },
@@ -9302,15 +9257,6 @@
       },
       {
         "item_type": "bounce_house",
-        "price_low": 300.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$300.00/Day",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:26:32.999807+00:00"
-      },
-      {
-        "item_type": "bounce_house",
         "price_low": 100.0,
         "price_high": null,
         "unit": "per day",
@@ -9369,33 +9315,6 @@
         "price_high": null,
         "unit": "per day",
         "source_snippet": "$15.00/Day",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:26:32.999807+00:00"
-      },
-      {
-        "item_type": "bounce_house",
-        "price_low": 300.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$300.00/Day",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:26:32.999807+00:00"
-      },
-      {
-        "item_type": "bounce_house",
-        "price_low": 400.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$400.00/Day",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:26:32.999807+00:00"
-      },
-      {
-        "item_type": "bounce_house",
-        "price_low": 275.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$275.00/Day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-13T15:26:32.999807+00:00"
       },
@@ -13405,7 +13324,7 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "table_round_60in",
+        "item_type": "tailgate_package_kickoff",
         "price_low": 1500.0,
         "price_high": null,
         "unit": "per event",
@@ -13414,7 +13333,7 @@
         "last_checked": "2026-07-16T14:07:37.787306+00:00"
       },
       {
-        "item_type": "table_round_60in",
+        "item_type": "tailgate_package_first_down",
         "price_low": 1900.0,
         "price_high": null,
         "unit": "per event",
@@ -13423,34 +13342,7 @@
         "last_checked": "2026-07-16T14:07:37.787306+00:00"
       },
       {
-        "item_type": "table_round_60in",
-        "price_low": 2750.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "## TOUCHDOWN PACKAGE\n_starting at $2750+_\n**Location: Circle Park**",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T14:07:37.787306+00:00"
-      },
-      {
-        "item_type": "tent_10x10",
-        "price_low": 1500.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "## KICKOFF PACKAGE\n_starting at $1500+_\n**Location: Smokey Lawn**\\*\\*\\*",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T14:07:37.787306+00:00"
-      },
-      {
-        "item_type": "tent_10x10",
-        "price_low": 1900.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "## FIRST DOWN PACKAGE\n_starting at $1900+_\n**Location: Circle Park**",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T14:07:37.787306+00:00"
-      },
-      {
-        "item_type": "tent_10x10",
+        "item_type": "tailgate_package_touchdown",
         "price_low": 2750.0,
         "price_high": null,
         "unit": "per event",

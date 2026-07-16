@@ -91,7 +91,11 @@ const lastChecked = listing.pricing
           <tbody>
             {listing.pricing.map((p) => (
               <tr>
-                <td>{p.item_type.replace(/_/g, ' ')}</td>
+                {/* A few real extractions produce very long compound item
+                    names (category-path slugs) — cap display length so one
+                    row can't blow up the table. Full context is still on the
+                    business's own site via the CTA above. */}
+                <td>{(() => { const t = p.item_type.replace(/_/g, ' ').replace(/\s+/g, ' ').trim(); return t.length > 48 ? `${t.slice(0, 47)}…` : t; })()}</td>
                 <td>
                   {p.price_low != null ? (
                     p.price_high != null && p.price_high !== p.price_low

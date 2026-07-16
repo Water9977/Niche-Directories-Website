@@ -10,6 +10,8 @@ import {
   chairPriceMin,
   tentSizeBreakdown,
   bounceHousePriceRange,
+  photoBoothPriceRange,
+  waterSlidePriceRange,
   type Listing,
 } from '../lib/listings';
 import type { MetroMeta } from '../lib/metros';
@@ -33,6 +35,8 @@ const multiCity = cities.length > 1;
 
 const tentSizes = tentSizeBreakdown(listings);
 const bounceHouse = bounceHousePriceRange(listings);
+const photoBooth = photoBoothPriceRange(listings);
+const waterSlide = waterSlidePriceRange(listings);
 const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
 const chairMin = chairPriceMin(listings);
 // Wedding-size tents (20x40 and up, ~800+ sq ft) — targets the real
@@ -81,6 +85,18 @@ if (bounceHouse) {
   faqs.push({
     q: `How much does a bounce house rental cost in ${meta.name}?`,
     a: `About $${fmt(bounceHouse.low)}–$${fmt(bounceHouse.high)} based on real pricing published by local companies, with combo units (bounce plus slide) generally at the higher end. See the "Bounce house rental cost" section above.`,
+  });
+}
+if (photoBooth) {
+  faqs.push({
+    q: `How much does a photo booth rental cost in ${meta.name}?`,
+    a: `Real published photo booth pricing in ${meta.name} runs about $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)}, based on ${photoBooth.count} published price point${photoBooth.count === 1 ? '' : 's'}. 360 booths and mirror booths typically price above a standard enclosed booth.`,
+  });
+}
+if (waterSlide) {
+  faqs.push({
+    q: `How much does a water slide rental cost in ${meta.name}?`,
+    a: `About $${fmt(waterSlide.low)}–$${fmt(waterSlide.high)} based on real published rates from local companies — taller dual-lane slides and slide/pool combos sit at the higher end.`,
   });
 }
 faqs.push(
@@ -175,6 +191,31 @@ const jsonLd = [
           {' '}{bounceHouse.count} published price point{bounceHouse.count === 1 ? '' : 's'}. Exact
           cost depends on the unit — combo units with a slide typically cost more than a
           standalone bounce house. See each company's listing for the full lineup.
+        </p>
+      </section>
+    )}
+
+    {photoBooth && (
+      <section class="bounce-house">
+        <h2>Photo booth rental cost in {meta.name}</h2>
+        <p>
+          Real published photo booth pricing from {meta.name} companies runs from
+          about ${photoBooth.low.toFixed(0)} to ${photoBooth.high.toFixed(0)}, based on
+          {' '}{photoBooth.count} published price point{photoBooth.count === 1 ? '' : 's'}.
+          360 booths and mirror booths typically price above a standard enclosed booth;
+          most quote per event or per hour.
+        </p>
+      </section>
+    )}
+
+    {waterSlide && (
+      <section class="bounce-house">
+        <h2>Water slide rental cost in {meta.name}</h2>
+        <p>
+          Real published water slide pricing from {meta.name} companies runs from
+          about ${waterSlide.low.toFixed(0)} to ${waterSlide.high.toFixed(0)}, based on
+          {' '}{waterSlide.count} published price point{waterSlide.count === 1 ? '' : 's'}.
+          Taller dual-lane slides and slide/pool combos sit at the higher end.
         </p>
       </section>
     )}

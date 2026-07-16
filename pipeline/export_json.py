@@ -9,11 +9,22 @@ not party/event equipment) via a small manual exclusion list rather than
 a heavyweight classifier — a one-off edge case doesn't need one.
 """
 import json
+import re
 import sqlite3
 import sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+# A listing whose ONLY pricing rows are fees/deposits/delivery charges has no
+# actual rentable item to show — its "starting price" renders as "See listing"
+# and the pricing table is just fees, which reads as a thin, broken page (found
+# live: a Charleston listing publishing with only deposit + delivery_fee).
+# Mirrors NON_RENTAL_ITEM_RE in website/src/lib/listings.ts — keep in sync.
+NON_RENTAL_ITEM_RE = re.compile(
+    r"deposit|delivery|fee\b|_fee|socks|admission|ticket|supervision|expedite|rescheduling",
+    re.IGNORECASE,
+)
 
 DB_PATH = Path(__file__).parent / "directory.db"
 EXPORT_DIR = Path(__file__).parent / "export"
@@ -46,6 +57,21 @@ def main():
         if any(kw in row["name"].lower() for kw in NAME_EXCLUDE_KEYWORDS):
             excluded.append((row["id"], row["name"], "off-niche name match"))
             continue
+        item_types = [
+            r[0]
+            for r in conn.execute(
+                "SELECT item_type FROM listing_pricing WHERE listing_id = ?", (row["id"],)
+            ).fetchall()
+        ]
+        # WARN but still publish. Hard-excluding fee-only listings was tried
+        # (session 23) and measured before shipping: it would have knocked
+        # Greensboro (5->3) and Greenville (5->4) below MIN_LISTINGS and
+        # unpublished two live, indexed metro pages — a real SEO loss to fix
+        # a cosmetic one. These listings still carry real fee data, policies,
+        # photos, and contacts; they sort last in tables automatically. The
+        # right long-term fix is re-enriching them for real item pricing.
+        if not any(not NON_RENTAL_ITEM_RE.search(t) for t in item_types):
+            print(f"  WARN fee-only pricing (re-enrich candidate): {row['name']}")
         published.append(row)
 
     conn.executemany(
@@ -60,7 +86,10 @@ def main():
     output = []
     for row in published:
         pricing = conn.execute(
-            "SELECT item_type, price_low, price_high, unit, source_snippet, extracted_by_model, last_checked FROM listing_pricing WHERE listing_id = ?",
+            # DISTINCT: the extractor occasionally emits the same item+price
+            # multiple times for one listing (seen live: a table row 3x) —
+            # exact duplicates carry no information, drop them at export.
+            "SELECT DISTINCT item_type, price_low, price_high, unit, source_snippet, extracted_by_model, last_checked FROM listing_pricing WHERE listing_id = ?",
             (row["id"],),
         ).fetchall()
         output.append({

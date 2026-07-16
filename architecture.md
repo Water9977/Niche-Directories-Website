@@ -5,6 +5,20 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-16 — Session 23: full re-audit, bug fixes, keyword batch 2 actioned, standalone skill created
+- Human asked for: full code+content audit, new-SEO research, competitor check, traffic-timeline expectations, an Ahrefs keyword list to pull, and a standalone reusable skill capturing the whole playbook.
+- **Standalone skill created at `E:\Claude\Claude Skills\Niche Directory Skill`** — SKILL.md + 8 reference files (working style, niche research, pipeline, website build, SEO/AEO playbook, keyword workflow, launch/monetize, architecture template). Fully self-contained; opens by asking whether the user has a niche or wants research. Every hard-won lesson from this project is baked in (including the wrong-conclusion corrections).
+- **Audit fixes shipped**:
+  - `llms.txt` had drifted AGAIN (missing all 3 new metros) — replaced the static file with a build-time Astro endpoint (`src/pages/llms.txt.ts`) generated from `getPublishedMetros()`; structurally can't drift now. Deployed + verified (all 10 metros + guide listed).
+  - README rewritten (still said "nothing built yet").
+  - **og-image regenerated WITHOUT baked stats** (old one said "85+ companies, 6 metros"; now says nothing numeric so it can't go stale). Script kept at `website/scripts/og-image.mjs`.
+  - **Tailgate Tennessee mislabel**: 6 rows labeled `tent_10x10`/`table_round_60in` were actually 3 tailgate PACKAGES ($1500/$1900/$2750) extracted twice — was polluting the 10x10 tent price range up to $2750. Relabeled to `tailgate_package_*` in the DB; national 10x10 range back to real $35–$2000. Export now also does `SELECT DISTINCT` on pricing rows (kills true dupes).
+  - **Fee-only listing gate: tried, measured, deliberately rolled back.** Hard-excluding listings whose only pricing rows are fees/deposits (10 found) would have unpublished TWO live indexed metro pages (Greensboro 5→3, Greenville 5→4) — a real SEO loss to fix a cosmetic issue. Now a WARN in export_json.py output listing them as re-enrich candidates instead. Money-first call, documented in the code comment.
+  - Listing-page pricing tables now truncate absurdly long item labels (48-char cap) — a few real extractions produce compound category-path slugs.
+- **Keyword batch 2 pulled by human (12 seed terms) and actioned same-day** — see keyword-research.md "BATCH 2" section. Headlines: photo booth rental cost (>100, Easy) and water slide rental cost (Easy) both got data-gated price-range sections + exact-phrasing FAQs on metro pages and the national guide; "how much do wedding rentals cost" (Easy) and "chair rental cost" (Easy) got guide FAQs. All answers computed from real data at build time.
+- **2026 SEO research findings** (WebSearch; Firecrawl MCP was down): FAQ schema ~67% citation extractability, structured data +73% AI-Overview selection, year-signals in titles ~+30% citations, BLUF answer blocks — our architecture already implements most; BLUF/year-signal opportunities noted for the guide page. Confirmed AGAIN that real-data differentiation is what survives the March 2026 scaled-content enforcement (template directories lost 60-90%).
+- **Traffic timeline set with the human**: impressions weeks 2-8, first clicks months 1-3, meaningful trickle months 4-6 (site is 5 days old — zero traffic is expected and normal). Kill-switch check stays ~2027-01-13.
+
 ### 2026-07-16 — Session 22: Charleston SC + Knoxville TN added — 3 metros cross the publish floor after finding a broken Firecrawl key
 - Human asked to keep expanding data using the remaining Apify credit, will create a fresh free account once it runs out (established pattern from session 10).
 - **Competitive check first**: found `tentrentalfinder.com`, a 50-metro site that covers literally all 7 of our existing published metros already. Confirmed via WebFetch it's generic estimated price ranges with no real per-item pricing and no methodology/transparency — same gap-in-kind as Reventals (session 2/12), doesn't invalidate the moat anywhere it operates, including new metros.

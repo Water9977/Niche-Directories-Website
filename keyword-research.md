@@ -1,11 +1,32 @@
 # Keyword Research — Raw Data + Analysis
 
 Source: human manually searched Ahrefs' free Keyword Generator (ahrefs.com/keyword-generator)
-on 2026-07-14 after the tool's Cloudflare Turnstile bot-check blocked automated access.
-Raw numbers below are exactly as pulled — do not re-derive or estimate, use these.
+on 2026-07-14 (batch 1) and 2026-07-16 (batch 2) after the tool's Cloudflare Turnstile
+bot-check blocked automated access. Raw numbers below are exactly as pulled — do not
+re-derive or estimate, use these.
 
 KD legend: Easy / Medium / Hard / N/A (no data) / "Sign up" (Ahrefs gates it behind signup, no data available free).
 Volume is bucketed by Ahrefs' free tier as `>1000` / `>100` / `<100` — not exact numbers.
+
+---
+
+## BATCH 2 (2026-07-16) — highlights + actions taken
+
+Raw pulls: tent/party rental for Charleston SC, Knoxville, Greenville SC; wedding
+rentals cost; chair rental cost (62 kws); event rental prices; photo booth rental
+cost (47 kws); water slide rental cost; inflatable rental near me (33 kws);
+refreshed tent rental cost (101) and bounce house rental prices (30).
+
+**Key findings → all actioned same day (Session 23):**
+
+1. **`photo booth rental cost` >100 vol + Easy KD; `wedding photo booth rental cost` >100 + Easy; 360/mirror variants Easy** — strongest new opportunity in the pull, and we hold real photo booth pricing. → Added photo-booth price-range sections (data-gated) to metro pages + national guide + FAQ entries with exact question phrasing.
+2. **`water slide rental cost` Easy** + dozens of real water-slide price rows in our data. → Same treatment: sections + FAQs.
+3. **`how much do wedding rentals cost` Easy** → new guide FAQ answering as a package view (tents+chairs+photo booth) from real data.
+4. **`chair rental cost` / `folding chair rental cost` / `wedding chair rental cost` all Easy** → guide FAQ with real chair minimums. (Still no dedicated page — every variant <100 vol.)
+5. **`bounce house rental prices` >100 but Medium KD now** (was Easy for "cost" phrasing) — existing bounce sections stay; "prices" phrasing not worth a separate target.
+6. **`inflatable rental near me` >100 Hard; `water slide inflatable rental near me` >100 Easy** — near-me terms stay local-pack-owned; noted for phrasing only, no page.
+7. **New-metro geo terms** (Charleston/Greenville Hard, Knoxville N/A) — matches the established pattern: geo head terms are competitive where markets are mature; our metro pages already target them; no extra action available.
+8. **`event rental prices` all <100/N-A** — no action.
 
 ---
 

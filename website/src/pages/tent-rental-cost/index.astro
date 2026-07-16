@@ -5,6 +5,8 @@ import {
   getPublishedMetros,
   tentSizeBreakdown,
   bounceHousePriceRange,
+  photoBoothPriceRange,
+  waterSlidePriceRange,
   deliveryFeeRange,
   depositRange,
   chairPriceMin,
@@ -23,6 +25,8 @@ const allListings = metros.flatMap((m) => m.listings);
 
 const tentSizes = tentSizeBreakdown(allListings, 2); // min 2 real data points per size, national scale can afford the bar
 const bounceHouse = bounceHousePriceRange(allListings);
+const photoBooth = photoBoothPriceRange(allListings);
+const waterSlide = waterSlidePriceRange(allListings);
 const delivery = deliveryFeeRange(allListings);
 const deposit = depositRange(allListings);
 const chairMin = chairPriceMin(allListings);
@@ -69,6 +73,33 @@ const faqs = [
     ? [{
         q: 'How much is a deposit for tent rental?',
         a: `Real published deposits in our data range from $${fmt(deposit.low)} to $${fmt(deposit.high)}, based on ${deposit.count} real published deposit amount${deposit.count === 1 ? '' : 's'}. Not every company requires one, and policies vary — check the individual listing.`,
+      }]
+    : []),
+  // "how much do wedding rentals cost" — Easy KD (July 2026 Ahrefs pull);
+  // answered as a package view across the real categories we hold data for.
+  ...(weddingMin != null && chairMin != null
+    ? [{
+        q: 'How much do wedding rentals cost?',
+        a: `For the core items: wedding-size tents (20x40+) run about $${fmt(weddingMin)}–$${fmt(weddingMax!)}, folding chairs start around $${fmt(chairMin)} each, and 60-inch round tables typically rent per-item on top${photoBooth ? `; photo booths add roughly $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)}` : ''} — all real published rates from companies in our directory.`,
+      }]
+    : []),
+  // "how much does chair rental cost" / "folding chair rental cost" — Easy KD.
+  ...(chairMin != null
+    ? [{
+        q: 'How much does chair rental cost?',
+        a: `Folding chairs start around $${fmt(chairMin)} each based on real published rates in our directory, with padded, resin, and chiavari chairs pricing higher per chair. Chair rental is almost always per-item, and many companies have order minimums.`,
+      }]
+    : []),
+  ...(photoBooth
+    ? [{
+        q: 'How much does a photo booth rental cost?',
+        a: `Real published photo booth pricing across our directory runs about $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)} (${photoBooth.count} price point${photoBooth.count === 1 ? '' : 's'}), with 360 booths and mirror booths above standard enclosed booths. Most quote per event or per hour.`,
+      }]
+    : []),
+  ...(waterSlide
+    ? [{
+        q: 'How much does a water slide rental cost?',
+        a: `About $${fmt(waterSlide.low)}–$${fmt(waterSlide.high)} based on real published rates across our directory (${waterSlide.count} price point${waterSlide.count === 1 ? '' : 's'}) — taller dual-lane slides and slide/pool combos sit at the higher end.`,
       }]
     : []),
   {
@@ -160,6 +191,31 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
           {' '}<strong>${fmt(bounceHouse.low)}–${fmt(bounceHouse.high)}</strong>, based on
           {' '}{bounceHouse.count} published price points. Combo units with a slide typically cost
           more than a standalone bounce house.
+        </p>
+      </section>
+    )}
+
+    {photoBooth && (
+      <section>
+        <h2>Photo booth rental cost</h2>
+        <p>
+          Real published photo booth pricing across our directory runs about
+          {' '}<strong>${fmt(photoBooth.low)}–${fmt(photoBooth.high)}</strong>
+          {' '}({photoBooth.count} published price point{photoBooth.count === 1 ? '' : 's'}).
+          360 booths and mirror booths typically price above a standard enclosed booth; most
+          companies quote per event or per hour.
+        </p>
+      </section>
+    )}
+
+    {waterSlide && (
+      <section>
+        <h2>Water slide rental cost</h2>
+        <p>
+          Real published water slide pricing runs about
+          {' '}<strong>${fmt(waterSlide.low)}–${fmt(waterSlide.high)}</strong>
+          {' '}({waterSlide.count} published price point{waterSlide.count === 1 ? '' : 's'}) —
+          taller dual-lane slides and slide/pool combos sit at the higher end.
         </p>
       </section>
     )}

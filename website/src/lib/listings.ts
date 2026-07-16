@@ -261,3 +261,17 @@ export function deliveryFeeRange(items: Listing[]): PriceRange | null {
 export function depositRange(items: Listing[]): PriceRange | null {
   return priceRangeForPattern(items, /deposit/i);
 }
+
+/** "photo booth rental cost" showed >100 volume + Easy KD in the July 2026
+ * Ahrefs pull (wedding + 360 variants too) and we hold real published photo
+ * booth pricing across several metros — same promote-on-real-demand logic
+ * as bounce houses. */
+export function photoBoothPriceRange(items: Listing[]): PriceRange | null {
+  return priceRangeForPattern(items, /photo.?booth|photobooth/i);
+}
+
+/** "water slide rental cost" = Easy KD, and the dataset holds dozens of real
+ * water-slide price points (Jacksonville especially). */
+export function waterSlidePriceRange(items: Listing[]): PriceRange | null {
+  return priceRangeForPattern(items, /water.?slide|water_unit/i);
+}
