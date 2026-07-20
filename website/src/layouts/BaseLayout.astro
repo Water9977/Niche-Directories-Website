@@ -27,10 +27,16 @@ const canonicalURL = new URL(path, Astro.site).toString();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PYE7BEJXT"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-2PYE7BEJXT');
+      // Only fire real analytics on the production hostname — local dev
+      // (localhost) and any preview/staging host were polluting real GA4
+      // data with testing traffic (found via a Session 21 GA4 review that
+      // looked like "visitors" but was actually agent/dev testing hits).
+      if (location.hostname === 'eventrentalcosts.com' || location.hostname === 'www.eventrentalcosts.com') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2PYE7BEJXT');
+      }
     </script>
     <title>{title}</title>
     <meta name="description" content={description} />
