@@ -13704,6 +13704,288 @@
     ]
   },
   {
+    "name": "BabyQuip Baby Gear Rentals Charleston- Julie Rice",
+    "metro": "Charleston",
+    "address": "3104 Wosley Ct, Mt Pleasant, SC 29466",
+    "city": "Mt Pleasant",
+    "state": "South Carolina",
+    "postal_code": "29466",
+    "lat": 32.908252,
+    "lng": -79.7785767,
+    "phone": "(843) 608-1471",
+    "website": "https://www.babyquip.com/julie628",
+    "rating": 5.0,
+    "review_count": 6,
+    "category": "Equipment rental agency",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwP4S7U53rCw_vd0Wc-PHkNjJ3O7iDlGA7BatdyZDSnL7lQvL8iZQNT_881zGcXhgXC9QdTCZAurbEM4kDi_Fh-t-SJd0hwWX6hsVCDs-VxWwpYhZl2S_TGCCpYp5sTC0awnzC=w408-h306-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_neso_grande",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "umbrella_with_2_chairs",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "beach_chair",
+        "price_low": 30.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$30/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "stroller_fan",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "stroller_organizer",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$3/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "yogasleep_hushh_white_noise_machine",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$3/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "stroller",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "double_stroller_jogger",
+        "price_low": 19.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$19/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "cosco_simple_fold_high_chair",
+        "price_low": 9.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$9/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "booster_seat",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "booster_chair_with_tray",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "skip_hop_baby_activity_center",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "6_ft_folding_table",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "8_black_folding_plastic_chairs",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$10/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "nursing_pillow",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$4/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "rocker",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$8/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "lifetime_kids_picnic_table",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$14/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "skip_hop_expandable_baby_gate",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$12/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "playpen_with_8_panel_safety_gate",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$12/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "folding_chair",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$4/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "water_table",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$8/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "beach_tent",
+        "price_low": 7.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$7/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "corn_hole",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$15/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "hiking_backpack_carrier",
+        "price_low": 6.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$6/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "pool_toys",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "pop_up_tent",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$4/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "toddler_sensory_table",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$8/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "moby_wrap_baby_carrier",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$5/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      },
+      {
+        "item_type": "igloo_38_quart_wheelie_cooler",
+        "price_low": 4.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$4/day",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T13:26:28.301500+00:00"
+      }
+    ]
+  },
+  {
     "name": "The French Eclectic",
     "metro": "Charleston",
     "address": "4244 Scott St, North Charleston, SC 29405",
