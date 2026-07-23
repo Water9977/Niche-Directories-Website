@@ -24,7 +24,13 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DB_PATH = Path(__file__).parent / "directory.db"
 
-MONEY_RE = re.compile(r"\$\s?(\d+(?:,\d{3})*(?:\.\d{1,2})?)")
+# \s* (not \s?) — some sites (Webflow-built ones especially) render "$" and the
+# figure as separate DOM nodes, which Firecrawl's markdown captures as
+# "$\n\n185.00". A single optional whitespace char misses that entirely,
+# silently causing validate_pricing.py to treat a real, correctly-quoted
+# price as unsupported and delete it. Found live 2026-07-23 debugging why
+# ACC Rental's real Webflow pricing kept vanishing.
+MONEY_RE = re.compile(r"\$\s*(\d+(?:,\d{3})*(?:\.\d{1,2})?)")
 
 
 def extract_dollar_amounts(text):

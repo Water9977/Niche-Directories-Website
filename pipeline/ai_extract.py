@@ -36,11 +36,15 @@ NVIDIA_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
 # (provider, model) in priority order. NVIDIA NIM tested fast/reliable (<1s) on the
 # 8B model; OpenRouter's free tier is shared/congested (upstream providers return
 # transient 429s independent of our own account quota) so it's the fallback.
+# The two OpenRouter free slugs below were replaced 2026-07-23: the originals
+# (meta-llama/llama-3.3-70b-instruct:free, qwen/qwen3-next-80b-a3b-instruct:free)
+# 404'd on every single call this whole session -- confirmed via OpenRouter's own
+# free-models catalog that both were deprecated/removed, not a transient outage.
 PROVIDER_CHAIN = [
     ("nvidia", "meta/llama-3.1-8b-instruct"),
     ("nvidia", "meta/llama-3.3-70b-instruct"),
-    ("openrouter", "meta-llama/llama-3.3-70b-instruct:free"),
-    ("openrouter", "qwen/qwen3-next-80b-a3b-instruct:free"),
+    ("openrouter", "openai/gpt-oss-20b:free"),
+    ("openrouter", "nvidia/nemotron-3-nano-30b-a3b:free"),
 ]
 DB_PATH = Path(__file__).parent / "directory.db"
 
@@ -120,7 +124,17 @@ def extract(content):
         for attempt in range(2):
             try:
                 result, retry_after = call_model(provider, model, content)
-            except (RuntimeError, json.JSONDecodeError, KeyError, requests.exceptions.RequestException) as e:
+            except json.JSONDecodeError as e:
+                # A malformed JSON generation is a one-off sampling glitch, not a
+                # broken model/endpoint (found live 2026-07-23: the exact same
+                # ACC Rental content parsed fine on a fresh call). Worth a real
+                # retry on the SAME model before giving up on it -- the previous
+                # code treated this identically to a dead endpoint and jumped
+                # straight to the fallback chain, most of which is unreliable
+                # (70B times out, the free OpenRouter model IDs below 404).
+                print(f"    {provider}/{model} produced malformed JSON ({e}), retrying...")
+                continue
+            except (RuntimeError, KeyError, requests.exceptions.RequestException) as e:
                 print(f"    {provider}/{model} failed ({e}), trying next...")
                 break
             if result is not None:

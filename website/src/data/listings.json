@@ -15604,5 +15604,200 @@
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       }
     ]
+  },
+  {
+    "name": "Buckeye Party Rental",
+    "metro": "Columbus",
+    "address": "3996 Columbia St, Hilliard, OH 43026",
+    "city": "Hilliard",
+    "state": "Ohio",
+    "postal_code": "43026",
+    "lat": 40.032668,
+    "lng": -83.158668,
+    "phone": "(614) 876-0762",
+    "website": "http://accpartyrental.com/",
+    "rating": null,
+    "review_count": null,
+    "category": "Party equipment rental service",
+    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=euKzCmwKqPO9DN6WHoOQow&cb_client=search.gws-prod.gps&w=408&h=240&yaw=150.43938&pitch=0&thumbfov=100",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "propane_tank_100lb",
+        "price_low": 145.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$ 145.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_10x10_first_aid",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 185.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_10x10_high_peak",
+        "price_low": 145.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 145.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_10x10_hydration",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 185.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_10x20_high_peak",
+        "price_low": 255.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 255.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_fan_12",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$ 25.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "tent_15x20_high_peak",
+        "price_low": 295.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 295.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "generator_20kw_diesel",
+        "price_low": 575.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 575.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      },
+      {
+        "item_type": "propane_tank_20lb",
+        "price_low": 575.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$ 575.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:24:35.674563+00:00"
+      }
+    ]
+  },
+  {
+    "name": "ACC Rental",
+    "metro": "Columbus",
+    "address": "3996 Columbia St, Hilliard, OH 43026",
+    "city": "Hilliard",
+    "state": "Ohio",
+    "postal_code": "43026",
+    "lat": 40.032669,
+    "lng": -83.158693,
+    "phone": "(614) 876-0762",
+    "website": "http://www.accrental.com/",
+    "rating": 5.0,
+    "review_count": 181,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkpUK9PRiKsZq9vy-RqamZKgDYmj-UXpsRQ9GM8JVTqdtiATRNW91r2aKBgWtgzyAg5ZumAsNVJgR-kCRbTvbX-cjZjITcJIjJXTGonKpJ7U-IrmbAMqh3ZoqdhWW1loF3UUks=w408-h340-k-no",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "propane_tank_100lb",
+        "price_low": 145.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$ 145.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_10x10_first_aid",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 185.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_10x10_high_peak",
+        "price_low": 145.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 145.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_10x20_high_peak",
+        "price_low": 255.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 255.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_15x20_high_peak",
+        "price_low": 295.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 295.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "generator_20kw",
+        "price_low": 575.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 575.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_fan_12",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "$ 25.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      },
+      {
+        "item_type": "tent_10x10_hydration",
+        "price_low": 185.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "$ 185.00",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-23T16:35:47.203913+00:00"
+      }
+    ]
   }
 ]
