@@ -3748,16 +3748,16 @@
         "unit": "per event",
         "source_snippet": "Starting at $70.00 for delivery & pickup within Wake County, outside of Wake County up to 100 miles $125.00.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:31:42.982571+00:00"
+        "last_checked": "2026-07-23T11:30:53.568853+00:00"
       },
       {
         "item_type": "setup_fee",
         "price_low": 135.0,
-        "price_high": null,
+        "price_high": 135.0,
         "unit": "per event",
         "source_snippet": "Setup & breakdown $135.00 (All Prices Are Starting Prices. Depends on Quantity of Rentals)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:31:42.982571+00:00"
+        "last_checked": "2026-07-23T11:30:53.568853+00:00"
       }
     ]
   },
@@ -3838,13 +3838,13 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "deposit",
+        "item_type": "photo_booth_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "flat",
-        "source_snippet": "$400 Down\nReserves Your Date\nBalance 14 Days Prior\nNo Rush to Pay in Full",
+        "source_snippet": "$400 Down / Reserves Your Date / Balance 14 Days Prior / No Rush to Pay in Full",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:31:54.208605+00:00"
+        "last_checked": "2026-07-23T11:30:55.290630+00:00"
       }
     ]
   },
@@ -4072,10 +4072,10 @@
         "item_type": "delivery_fee",
         "price_low": 225.0,
         "price_high": null,
-        "unit": "per event",
+        "unit": "flat",
         "source_snippet": "Delivery charge for the Richmond, VA area starts at $225.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:40:17.105498+00:00"
+        "last_checked": "2026-07-23T11:31:05.576179+00:00"
       }
     ]
   },
@@ -5860,46 +5860,46 @@
         "item_type": "delivery_fee",
         "price_low": 79.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "We\u2019ll measure driving distance from our Indy North hub to you and show the right delivery option. Check Zone. Buy for $79.00. Add to cart.",
+        "unit": "per delivery",
+        "source_snippet": "Check Zone\\n\\n**Buy for**$79.00\\n\\nAdd to cart",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+        "last_checked": "2026-07-23T11:31:09.814377+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 119.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Buy for $119.00. Add to cart.",
+        "unit": "per delivery",
+        "source_snippet": "Check Zone\\n\\n**Buy for**$119.00\\n\\nAdd to cart",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+        "last_checked": "2026-07-23T11:31:09.814377+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 159.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Buy for $159.00. Add to cart.",
+        "unit": "per delivery",
+        "source_snippet": "Check Zone\\n\\n**Buy for**$159.00\\n\\nAdd to cart",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+        "last_checked": "2026-07-23T11:31:09.814377+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 199.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Buy for $199.00. Add to cart.",
+        "unit": "per delivery",
+        "source_snippet": "Check Zone\\n\\n**Buy for**$199.00\\n\\nAdd to cart",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+        "last_checked": "2026-07-23T11:31:09.814377+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 239.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Buy for $239.00. Add to cart.",
+        "unit": "per delivery",
+        "source_snippet": "Check Zone\\n\\n**Buy for**$239.00\\n\\nAdd to cart",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:57:43.262499+00:00"
+        "last_checked": "2026-07-23T11:31:09.814377+00:00"
       }
     ]
   },
@@ -8532,63 +8532,6 @@
     ]
   },
   {
-    "name": "Go Jump and Slide Inflatables",
-    "metro": "Jacksonville",
-    "address": "13075 Lanier Rd, Jacksonville, FL 32226",
-    "city": "Jacksonville",
-    "state": "Florida",
-    "postal_code": "32226",
-    "lat": 30.4736134,
-    "lng": -81.5872103,
-    "phone": "(904) 870-2128",
-    "website": "http://www.gojumpandslide.com/",
-    "rating": 4.9,
-    "review_count": 51,
-    "category": "Party equipment rental service",
-    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlEdoEoK8pHuL0u7jLhszsx40TNdnUfDv49KYYifAW7SXUyTmENeTgWWrzaaXXPvPPR8gf558cUvqD3-iaLtYkPr8sZa1QaS3NL2xotJCtjn5jy9ro1dQ6P4BJkGchrPn0q1Nc5=w408-h303-k-no",
-    "delivery_available": "yes",
-    "setup_included": "no",
-    "weekend_surcharge": "unknown",
-    "pricing": [
-      {
-        "item_type": "delivery_fee",
-        "price_low": 79.95,
-        "price_high": null,
-        "unit": "per month",
-        "source_snippet": "## Launch\n## STARTING AT\n## $79.95\n## Per Month\n[Get started](https://eventrentalsystems.com/booking/)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:25:11.907857+00:00"
-      },
-      {
-        "item_type": "delivery_fee",
-        "price_low": 149.95,
-        "price_high": null,
-        "unit": "per month",
-        "source_snippet": "## Standard\n## STARTING AT\n## $149.95\n## Per Month\n[Get started](https://eventrentalsystems.com/booking/)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:25:11.907857+00:00"
-      },
-      {
-        "item_type": "delivery_fee",
-        "price_low": 249.95,
-        "price_high": null,
-        "unit": "per month",
-        "source_snippet": "## Pro\n## STARTING AT\n## $249.95\n## Per Month\n[Get started](https://eventrentalsystems.com/booking/)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:25:11.907857+00:00"
-      },
-      {
-        "item_type": "delivery_fee",
-        "price_low": 399.95,
-        "price_high": null,
-        "unit": "per month",
-        "source_snippet": "## Elite\n## STARTING AT\n## $399.95\n## Per Month\n[Get started](https://eventrentalsystems.com/booking/)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:25:11.907857+00:00"
-      }
-    ]
-  },
-  {
     "name": "Luxe Party Rentals LLC",
     "metro": "Jacksonville",
     "address": "165 Tresca Rd, Jacksonville, FL 32225",
@@ -8674,13 +8617,13 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "security_deposit",
+        "item_type": "deposit",
         "price_low": 40.0,
         "price_high": null,
         "unit": "flat",
-        "source_snippet": "With all rentals there is a **security deposit of $40.00,** which is refunded once things are returned and accounted for.",
+        "source_snippet": "With all rentals there is a **security deposit of $40.00,** which is refunded",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:25:31.952005+00:00"
+        "last_checked": "2026-07-23T11:31:20.626027+00:00"
       }
     ]
   },
@@ -9824,6 +9767,54 @@
         "source_snippet": "$365",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-13T15:27:52.559753+00:00"
+      }
+    ]
+  },
+  {
+    "name": "World Party Rentals",
+    "metro": "Jacksonville",
+    "address": "3863 Summer Grove Way N, Jacksonville, FL 32257",
+    "city": "Jacksonville",
+    "state": "Florida",
+    "postal_code": "32257",
+    "lat": 30.201817,
+    "lng": -81.6139749,
+    "phone": "(786) 812-1240",
+    "website": "http://www.worldpartyrentals.com/",
+    "rating": 4.9,
+    "review_count": 84,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFh0zk76_9jKW7m0_PV7qQvwBeRDhCdAWvRCgntbckX2A_loO3ZkAD1RZt9f_v2Yr0EV1tEee_ffbbMNv6HtWgD8AKuHguc0Q_ZGS577rcqmGaSU-_QzRXH_JSyAHhB7LZXo3NWxCwlfCc=w408-h544-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "luxury_soft_play",
+        "price_low": 497.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$497",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:17.766582+00:00"
+      },
+      {
+        "item_type": "soft_play",
+        "price_low": 397.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$397",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:17.766582+00:00"
+      },
+      {
+        "item_type": "customization",
+        "price_low": 87.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "PRICE : $87",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:17.766582+00:00"
       }
     ]
   },
@@ -11497,76 +11488,76 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 300.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Rainbow Bounce House | [![Rainbow Bounce House](https://files.sysers.com/cp/upload/partytogoers/items/med/Rainbow-Bounce-House-13.1.jpg)](https://www.partytogoevents.com/items/rainbow-bounce-house/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/rainbow-bounce-house/)<br>Add to Cart | $300.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 300.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Tropical Bounce House | [![Tropical Bounce House](https://files.sysers.com/cp/upload/partytogoers/items/med/Tropical-Bounce-House-5.jpg)](https://www.partytogoevents.com/items/tropical-bounce-house/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/tropical-bounce-house/)<br>Add to Cart | $300.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 300.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Block Party Bounce House | [![Block Party Bounce House](https://files.sysers.com/cp/upload/partytogoers/items/med/Block-Party-Bounce-House-4.jpg)](https://www.partytogoevents.com/items/block-party-bounce-house/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/block-party-bounce-house/)<br>Add to Cart | $300.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "MEGA Rainbow Wet or Dry Bounce House and Slide Combo | [![MEGA Rainbow Wet or Dry Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Rainbow-Combo-Kid-2.jpg)](https://www.partytogoevents.com/items/wet-or-dry-rainbow-bounce-house-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-rainbow-bounce-house-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Tropical Splash Wet or Dry Bounce House Slide Combo | [![Tropical Splash Wet or Dry Bounce House Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Mega-Tropical-Splash-Combo-3R.jpg)](https://www.partytogoevents.com/items/wet-or-dry-tropical-splash-bounce-house-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-tropical-splash-bounce-house-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Wet or Dry Block Party Bounce House and Slide Combo | [![Wet or Dry Block Party Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Block-Party-Combo-7.jpg)](https://www.partytogoevents.com/items/wet-or-dry-block-party-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-block-party-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Wet or Dry Pixelated Bounce House and Slide Combo | [![Wet or Dry Pixelated Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Pixelated-Combo-5_11zon.jpg)](https://www.partytogoevents.com/items/wet-or-dry-pixelated-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-pixelated-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       },
       {
-        "item_type": "bounce house rentals / bounce house rental with slide / delivery fee / deposit",
+        "item_type": "bounce_house_rental",
         "price_low": 400.0,
         "price_high": null,
         "unit": "per rental",
         "source_snippet": "Wet or Dry Purple Ice Palace Bounce House and Slide Combo | [![Wet or Dry Purple Ice Palace Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Purple-Ice-Palace-Combo-3.jpg)](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:37:30.017140+00:00"
+        "last_checked": "2026-07-23T11:31:29.978455+00:00"
       }
     ]
   },
@@ -13039,22 +13030,22 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "deposit",
-        "price_low": 40.0,
-        "price_high": null,
-        "unit": "flat",
-        "source_snippet": "With all Rentals there is a mandatory Security deposit of $40.00 which is refunded once items have been returned and accounted for.",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T13:59:19.814755+00:00"
-      },
-      {
         "item_type": "delivery_fee",
         "price_low": 45.0,
         "price_high": null,
         "unit": "per trip",
         "source_snippet": "_**Delivery round-trip starts at $45_",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T13:59:19.814755+00:00"
+        "last_checked": "2026-07-23T11:31:31.565494+00:00"
+      },
+      {
+        "item_type": "security_deposit",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "With all Rentals there is a **security deposit of $40** which is refunded once items have been picked up and accounted for",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:31:31.565494+00:00"
       }
     ]
   },
@@ -13305,6 +13296,939 @@
     ]
   },
   {
+    "name": "Dryvebox Charleston",
+    "metro": "Charleston",
+    "address": "164 Market St #121, Charleston, SC 29401",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29401",
+    "lat": 32.7807421,
+    "lng": -79.934482,
+    "phone": "",
+    "website": "https://www.dryvebox.com/locations/charleston",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=7lZ06lGR72XQLhEUaTdBIQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=346.29776&pitch=0&thumbfov=100",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "Dryvebox Trailer",
+        "price_low": 5000.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Client appreciation, team bonding, happy hours and annual parties \u2014 Dryvebox rolls in with the full entertainment package. A TrackMan-powered golf simulator for the players and lawn games like cornhole for everyone who'd rather watch and play. Setup, staff, teardown \u2014 all handled.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:41:21.236069+00:00"
+      },
+      {
+        "item_type": "Indoor Enclosure Setup",
+        "price_low": 8000.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "For those we bring our high-end indoor pop-up simulator: a clean, professional enclosure that installs in a few hours inside a downtown hotel ballroom, a Kiawah resort hospitality suite, or a private estate event space on Daniel Island.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:41:21.236069+00:00"
+      }
+    ]
+  },
+  {
+    "name": "LIT Charleston",
+    "metro": "Charleston",
+    "address": "455 1/2 King St, Charleston, SC 29403",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29403",
+    "lat": 32.7886327,
+    "lng": -79.9384741,
+    "phone": "(803) 412-0377",
+    "website": "https://liteventrentals.com/",
+    "rating": 5.0,
+    "review_count": 4,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwUMHTS32moYrTBrZyqoq9qWsivf9BgosITDhYLSbfK_Wbknj-0bgXe1Oq8qaC-eg9HTdBXfZiJMRRDWnyBgGq3VbyaVa6T7hH9Y8NLDn_Z2KjvjWEtPn5aUjDpPUsGon38r0=w408-h271-k-no",
+    "delivery_available": "unknown",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "lighting",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "All",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "ceiling lighting",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Ceiling Lighting",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "floor lighting",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Floor Lighting",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "tabletop lighting",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Tabletop Lighting",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "sconces",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Sconces",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Mia Pink Shade",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "The Paisley Standing Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "12.6\u2033 W x 18.1\u2033 H Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "16\u2033 W x 20\u2033 H Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "2 Tiered Drum Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "7-Tier Rattan Fixtures",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Apple Of My Eye Sconce",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Bamboo Standing Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Bamboo Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Bamboo Tiered Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Bamboo Wrapped Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Basket Collection Large",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Basket Collection Small",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Big Shiny Balls",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black & Gold Crystal Chandelier",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black & Gold Mini Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black Drum Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black Rattan Tulip",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black Three Tiered Drum",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Black XL Drum",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Blush Flower Pendant",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Bubble Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Buffet Bar Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Chelsye Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Chelsye Light box",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Classic White XL Drums",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Classic XL Empire Shades",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Clear Flower Pendant",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Crane Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Crystal & Gold Mini Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Crystal Globe Collection",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Custom Fabric Wrapped XL Drums",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Custom Pleated Shades",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Custom XL Shadow Box Lanterns",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Denison Lantern (one-tier)",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Disco Balls",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Dusty Blue and Gold Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Eggshell Fixtures",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Empire Shade Pendant Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Feather Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Four Tier Rattan",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Frilled Silk Lampshade",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Geometric Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Globe Light 2",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Globe Light 3",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Globe Light Collection",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Fringe Bar Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Lamp with White Shade",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Lamp with Woven Shade",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Mini Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Mushroom Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Gold Sconce with White Shade",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Grapevine Balls",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Green & Gold Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Green Mushroom Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Haley Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Haley Reed Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Hex Bali Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Honeycomb fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Large Black Bali Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Lattice Lantern Boxes",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Lia Pendant",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Medium Shadow Box Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Metallic Scallop Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Metallic Silver Drum Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Modern Candle Chandelier",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Modern Chrome Crystal Chandelier (Large)",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Modern Chrome Crystal Chandelier (XLarge)",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Modern Crystal & Gold Chandelier",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Modern Globe Light Trio",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Moon Lamps",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Multi Scalloped Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Mushroom Table Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Navy & White Rattan Drums",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Oblong Chinese Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Oblong Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Oblong Scoop Lantern",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Olive Green Bar Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Palm Leaf Drum Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Pineapple Candelabra",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Pink and Green Lamp",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Purple Flower Pendant",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Basket Fixture",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Beehive",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Donut",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Drum Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Fan",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Flower Pendant Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Open Octagon",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Round Pendant Light",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Three Tiered Drum",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      },
+      {
+        "item_type": "Rattan Tulip",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Read more",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:50.856127+00:00"
+      }
+    ]
+  },
+  {
     "name": "Tailgate Tennessee",
     "metro": "Knoxville",
     "address": "5825 Middlebrook Pike, Knoxville, TN 37921",
@@ -13349,6 +14273,126 @@
         "source_snippet": "## TOUCHDOWN PACKAGE\n_starting at $2750+_\n**Location: Circle Park**",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-16T14:07:37.787306+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Creative Event Rentals",
+    "metro": "Knoxville",
+    "address": "1701 Whittle Springs Rd, Knoxville, TN 37917",
+    "city": "Knoxville",
+    "state": "Tennessee",
+    "postal_code": "37917",
+    "lat": 35.9923659,
+    "lng": -83.9085939,
+    "phone": "(865) 675-7529",
+    "website": "https://www.creativeevent.rentals/",
+    "rating": 4.9,
+    "review_count": 35,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfR1OywA6MXc3O3ZOk2yN6zzjA9fgUG_L1IoultJhXJRTcY8NAXDnKfyByyG3bhgr_bXZrXKADhor5Lq33JYeqDi9gHFfFnvJuQKe8mHJgt1WK87rWEvpBN_p5vyTBHlPz_am4=w408-h271-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Tents, sidewalls, lighting, decor and more! Rain or shine our tents provide coverage and keep your guests cool.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "chair_folding",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Folding chairs for casual events or elegant banquet chairs available for more upscale events.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Construct the perfect atmosphere for your guests to dine or socialize.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "linen_tablecloth",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Design your tables & chairs with our premier linens to really stand out.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "concession_cotton_candy",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Attract people to your party, fundraiser or concession stand by using our commercial capacity equipment.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "dinnerware_plate",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dinner & salad plates, bowls, saucers, and charger plates. Serve your guests a great dining experience.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "flatware_fork",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Multiple colors & textures for a casual or upscale dining experience.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "heating_equipment",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Heating equipment for outdoor gatherings so guests stay warm.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "staging_dance_floor",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Designate a dancing area for your next party or wedding with a dance floor.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Delivery and pickup fees are based on the location of your event, the timing of your delivery, and the accessibility of the site.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "All reservations require a 50% non-refundable deposit to secure your items.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:17.098406+00:00"
       }
     ]
   },
@@ -13545,6 +14589,147 @@
     ]
   },
   {
+    "name": "Rent-A-Center",
+    "metro": "Charleston",
+    "address": "1660 Sam Rittenberg Blvd, Charleston, SC 29407",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "postal_code": "29407",
+    "lat": 32.8060597,
+    "lng": -80.0125748,
+    "phone": "(843) 763-9097",
+    "website": "https://locations.rentacenter.com/location/5583/?utm_source=google&utm_medium=organic&utm_campaign=localmaps",
+    "rating": 3.6,
+    "review_count": 71,
+    "category": "Furniture rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWll5MCXB6G-4SNRvrzMziNtdQHTO5fay6MIQcKZ_Wc9rQT6LiVoKdYj3uGTolH51EVqRBw1ZiPR8Knc3CzOFk9TBF0ZR_CsBLpMm1Pf4--DhZsprYaFuIuzO6dNFDnF1DXbAFmY=w408-h408-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "delivery_fee",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "Free Delivery is not available on cash sales.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:22.097383+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": 0.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "You will not own the merchandise until the total amount necessary to acquire ownership is paid in full or you exercise your early purchase option.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:43:22.097383+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Lowco Event Rentals",
+    "metro": "Charleston",
+    "address": "3558 Clambank Dr, Mt Pleasant, SC 29466",
+    "city": "Mt Pleasant",
+    "state": "South Carolina",
+    "postal_code": "29466",
+    "lat": 32.909758,
+    "lng": -79.753978,
+    "phone": "",
+    "website": "https://lowcoeventrentals.com/",
+    "rating": 5.0,
+    "review_count": 7,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk8Tc6acxs1IlcCsXMzAswVmWqGxULiNo_4OGuR7Cuh3Atkfu-x-mhKQTO-hBEyc5UmzCrMDpuTD06Sj0SgSeH0OMqYrY1ILC8eIwOi8lNv88FtCsNhz2PewANTbtYMSct45mzDFOxPTXU=w408-h379-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "cocktail table",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "kids folding chair rental",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$2.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "kids folding table rental",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "adult folding table rental",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "blue gingham kids tablecloth rental",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "red gingham kids tablecloth rental",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "yeti tank 85 rental",
+        "price_low": 25.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$25.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "pa speaker rental (bose l1 compact)",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$50.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      },
+      {
+        "item_type": "warming tray rental (21x16 inches)",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:44:58.067112+00:00"
+      }
+    ]
+  },
+  {
     "name": "Furniture Rentals, Inc. - Charleston SC",
     "metro": "Charleston",
     "address": "1169 Chuck Dawley Blvd, Mt Pleasant, SC 29464",
@@ -13650,6 +14835,54 @@
     ]
   },
   {
+    "name": "Karolina Throne king",
+    "metro": "Charleston",
+    "address": "5335 Dorchester Rd Unit 9, North Charleston, SC 29418",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29418",
+    "lat": 32.8568909,
+    "lng": -80.0436359,
+    "phone": "(843) 345-6604",
+    "website": "http://www.karolinathroneking.com/",
+    "rating": 5.0,
+    "review_count": 1,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlS40Cz68_f68Zn1lFUGJ5s_sIM1MpAOP2OnxnxXInq9sFLeCMANRGGCHOetCxZ1v--qyyxw27j6tGP-ZeiCs3SYZd2xDyUz9g4L4FyMQXpmuc0QAJ6AwP1JvSmzhUYktz_r6c=w408-h544-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_folding",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our chair rentals start at $5 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:02:26.505836+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our table rentals start at $10 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:02:26.505836+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 100.0,
+        "price_high": null,
+        "unit": "per day",
+        "source_snippet": "Our tent rentals start at $100 per day.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:02:26.505836+00:00"
+      }
+    ]
+  },
+  {
     "name": "SUNRISE PARTY RENTAL",
     "metro": "Charleston",
     "address": "5140 N Rhett Ave, North Charleston, SC 29406",
@@ -13712,6 +14945,747 @@
         "source_snippet": "With all Rentals there is a mandatory security deposit of $40.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-16T14:31:56.092266+00:00"
+      }
+    ]
+  },
+  {
+    "name": "A Tailor Made Event",
+    "metro": "Charleston",
+    "address": "8300 Dorchester Rd Ste e, North Charleston, SC 29418",
+    "city": "North Charleston",
+    "state": "South Carolina",
+    "postal_code": "29418",
+    "lat": 32.9129771,
+    "lng": -80.1031348,
+    "phone": "(843) 974-4742",
+    "website": "http://www.atailormadeevent.com/",
+    "rating": 4.6,
+    "review_count": 32,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqfxeQ-fNdwCszlFrLb7erALd7AygpYIoGG1ZGzA1EV2fNKrfF6CPGVb212apYgAooEtchZE21gGZwynGZw_HORHt5oqLFejpPI2roVNzqnom5J52oz5j6917ZI-E7fIFnSMpq=w408-h305-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "10 \u00d7 10 $250.00 white Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x20",
+        "price_low": 325.0,
+        "price_high": 325.0,
+        "unit": "per event",
+        "source_snippet": "10 \u00d7 20 $325.00 white Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x30",
+        "price_low": 375.0,
+        "price_high": 375.0,
+        "unit": "per event",
+        "source_snippet": "10 \u00d7 30 $375.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x40",
+        "price_low": 475.0,
+        "price_high": 475.0,
+        "unit": "per event",
+        "source_snippet": "10 \u00d7 40 $475.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x50",
+        "price_low": 550.0,
+        "price_high": 650.0,
+        "unit": "per event",
+        "source_snippet": "10 \u00d7 50 $550.00\n10 \u00d7 50 $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_15x15",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "per event",
+        "source_snippet": "15 x 15 Frame Tent $275.00 white Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_20x20",
+        "price_low": 450.0,
+        "price_high": 752.0,
+        "unit": "per event",
+        "source_snippet": "20 x 20 Frame tent $450.00 White Top\n$752.00 Clear Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_20x30",
+        "price_low": 675.0,
+        "price_high": 1125.0,
+        "unit": "per event",
+        "source_snippet": "Tent 20 x 30 $675.00 White Top\n$1,125.00 Clear Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_20x40",
+        "price_low": 900.0,
+        "price_high": 1500.0,
+        "unit": "per event",
+        "source_snippet": "20 x 40 $900.00 White Top\n$1,500.00 Clear Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_20x50",
+        "price_low": 1130.0,
+        "price_high": 1880.0,
+        "unit": "per event",
+        "source_snippet": "20 \u00d7 50 $1130.00\n20 \u00d7 50 $1880.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_20x60",
+        "price_low": 1356.0,
+        "price_high": 2256.0,
+        "unit": "per event",
+        "source_snippet": "Frame Tent 20 x 60 $1356.00 white Top\n$2256.00. Clear Top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_40x40",
+        "price_low": 1472.0,
+        "price_high": 2688.0,
+        "unit": "per event",
+        "source_snippet": "40 x 40 Frame Tent 1,472.00 solid top",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_40x60",
+        "price_low": 2200.0,
+        "price_high": 2256.0,
+        "unit": "per event",
+        "source_snippet": "40 \u00d7 60 $2200.00 -\n40 \u00d7 60 $2256.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_40x80",
+        "price_low": 2975.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "40 \u00d7 80 $2975.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_40x100",
+        "price_low": 3750.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "40 \u00d7 100 $ 3,750.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_40x120",
+        "price_low": 4550.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "40 \u00d7 120- $4,550.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x10_pop_up",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "10 x 10 Pop Up Tent $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x20_pop_up",
+        "price_low": 175.0,
+        "price_high": 175.0,
+        "unit": "per event",
+        "source_snippet": "10 x 20 Pop Up Tent $175.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_10x10_pop_up_side_walls",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per event",
+        "source_snippet": "Tent w option side walls 10x10 pop up $100.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_side_walls",
+        "price_low": 5.0,
+        "price_high": 75.0,
+        "unit": "each",
+        "source_snippet": "Weights $5.00 each\nside walls $10.00 each\nside walls 8x20 $75.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "tent_fan",
+        "price_low": 65.0,
+        "price_high": 65.0,
+        "unit": "per event",
+        "source_snippet": "Mounted Tent Fan $65.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "fire_extinguisher",
+        "price_low": 25.0,
+        "price_high": 25.0,
+        "unit": "each",
+        "source_snippet": "Fire Extinguisher $25.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "vinyl_exit_sign",
+        "price_low": 3.0,
+        "price_high": 3.0,
+        "unit": "each",
+        "source_snippet": "Vinyl Exit Sign $3.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "no_smoking_sign",
+        "price_low": 3.0,
+        "price_high": 3.0,
+        "unit": "each",
+        "source_snippet": "No Smoking Sign $3.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_4x4",
+        "price_low": 50.0,
+        "price_high": 50.0,
+        "unit": "each",
+        "source_snippet": "4x 4 stage $50.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_4x8",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "each",
+        "source_snippet": "4\u00d78 section - $100.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_12",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per 4x8 section",
+        "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_16",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per 4x8 section",
+        "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_24",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per 4x8 section",
+        "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_white",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_black",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_ivory",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_gold",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_beige",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_nude",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_baby_pink",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_royal_blue",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_navy_blue",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "stage_skirting_red",
+        "price_low": 45.0,
+        "price_high": 60.0,
+        "unit": "each",
+        "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "arbor_dark_stain",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per event",
+        "source_snippet": "Dark Stain Arbor $100.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "arbor_white",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "per event",
+        "source_snippet": "White Wooden Arbor $100.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "arbor_copper",
+        "price_low": 150.0,
+        "price_high": 150.0,
+        "unit": "per event",
+        "source_snippet": "Copper Arbor $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_white_doors",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "White Doors $250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_natural_woven_fiber_screen",
+        "price_low": 80.0,
+        "price_high": 80.0,
+        "unit": "per event",
+        "source_snippet": "Natural Woven Fiber Screen $80.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_trident_tec",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per event",
+        "source_snippet": "Trident Tec $300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_pallet",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "Pallet Backdrop 7ft wide x 8 ft tall $125.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_grass",
+        "price_low": 150.0,
+        "price_high": 150.0,
+        "unit": "per event",
+        "source_snippet": "Grass Backdrop $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_doors",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "per event",
+        "source_snippet": "Doors $250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_brick_wall",
+        "price_low": 75.0,
+        "price_high": 75.0,
+        "unit": "per event",
+        "source_snippet": "Brick wall Backdrop Panel $75.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_sheer_draping",
+        "price_low": 10.0,
+        "price_high": 30.0,
+        "unit": "per 8ft",
+        "source_snippet": "8ft $10.00 available in white only. All other sizes are available in colors. These are custom made so may not have all colors in stock.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_wooden_partitions",
+        "price_low": 40.0,
+        "price_high": 40.0,
+        "unit": "per event",
+        "source_snippet": "Wooden Partitions $40.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_castle",
+        "price_low": 60.0,
+        "price_high": 80.0,
+        "unit": "per event",
+        "source_snippet": "Castle Backdrop $60.00 canvas only\ncanvas with poles $80.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_castle_stairs",
+        "price_low": 50.0,
+        "price_high": 50.0,
+        "unit": "per event",
+        "source_snippet": "Castle Stairs $50.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_boxwood_wall",
+        "price_low": 400.0,
+        "price_high": 400.0,
+        "unit": "per event",
+        "source_snippet": "Boxwood Wall Backdrop $400.00 7 ft tall x 8 ft wide",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_forest_tapestry",
+        "price_low": 40.0,
+        "price_high": 60.0,
+        "unit": "per event",
+        "source_snippet": "Forest Tapestry $40.00 canvas only\ncanvas w poles $60.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_garden_tapestry",
+        "price_low": 45.0,
+        "price_high": 65.0,
+        "unit": "per event",
+        "source_snippet": "Garden Tapestry w Mushrooms $45.00 canvas only\ncanvas w poles $65.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_old_wood_tapestry",
+        "price_low": 45.0,
+        "price_high": 65.0,
+        "unit": "per event",
+        "source_snippet": "Old Wood Tapestry $45.00 canvas only\ncanvas w poles $65.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_boxwood_wall_canvas",
+        "price_low": 55.0,
+        "price_high": 75.0,
+        "unit": "per event",
+        "source_snippet": "Boxwood wall on canvas $55.00 for just canvas\n$75.00 includes poles",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_canvas_black_white_walkway",
+        "price_low": 45.0,
+        "price_high": 65.0,
+        "unit": "per event",
+        "source_snippet": "Canvas with Black& White walkway Canvas $45.00\nw poles $65.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "backdrop_boxwood_wall",
+        "price_low": 500.0,
+        "price_high": 500.0,
+        "unit": "per event",
+        "source_snippet": "Boxwood wall 7ft tall x 8 ft wide $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_white_7ft",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per event",
+        "source_snippet": "White 7 ft bar $300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_gold_leaf_8ft",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "Gold Leaf Bar 8ft $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_5ft_white",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "per event",
+        "source_snippet": "5 ft White Bar $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_black_4ft",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per event",
+        "source_snippet": "Black Bar 4 ft $200.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_6ft_or_8ft",
+        "price_low": 24.0,
+        "price_high": 24.0,
+        "unit": "per event",
+        "source_snippet": "6ft or 8ft Bar $24.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_serpentine_curved",
+        "price_low": 30.0,
+        "price_high": 30.0,
+        "unit": "per event",
+        "source_snippet": "Serpentine Curved Bar w Table $30.00 set",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_boxwood",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "per event",
+        "source_snippet": "Boxwood Bar $300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_truck",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "Truck Bar $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_vintage_volkswagen",
+        "price_low": 350.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "Vintage Volkswagen Bar $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_shelf",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per event",
+        "source_snippet": "Bar Shelf $200",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_gold_book_shelves",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "Gold Modern Book Shelves $125.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_black_glass_book_shelves",
+        "price_low": 125.0,
+        "price_high": 125.0,
+        "unit": "per event",
+        "source_snippet": "Black Glass Book Shelves $125.00 Each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_tiffany_cabinet",
+        "price_low": 150.0,
+        "price_high": 150.0,
+        "unit": "per event",
+        "source_snippet": "Tiffany Cabinet $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_vintage_metal_tub",
+        "price_low": 35.0,
+        "price_high": 35.0,
+        "unit": "per event",
+        "source_snippet": "Vintage Metal Tub on legs $35.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_castle_columns",
+        "price_low": 300.0,
+        "price_high": 350.0,
+        "unit": "per event",
+        "source_snippet": "Castle Columns $300.00 w no Banner\n$350.00 w banner",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_silver_bookshelves",
+        "price_low": 80.0,
+        "price_high": 80.0,
+        "unit": "per event",
+        "source_snippet": "Silver Bookshelves $80.00 each",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_3ft_bar_light_up_marquee_sign",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "3 ft Bar Light up Marquee Sign 225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_mimosa_bar_led_light_up_sign",
+        "price_low": 25.0,
+        "price_high": 25.0,
+        "unit": "per event",
+        "source_snippet": "Mimosa Bar LED light up sign $25.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
+      },
+      {
+        "item_type": "bar_glass_champagne_tower",
+        "price_low": null,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Glass Champagne Tower",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T12:03:12.746836+00:00"
       }
     ]
   },
@@ -13817,6 +15791,690 @@
         "source_snippet": "DELIVERY FEE FROM $45. TO $150 CALL TO ASK",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-16T14:35:58.655512+00:00"
+      }
+    ]
+  },
+  {
+    "name": "A & A Rentals & Sales Inc",
+    "metro": "Knoxville",
+    "address": "608 Old Knoxville Hwy, Sevierville, TN 37862",
+    "city": "Sevierville",
+    "state": "Tennessee",
+    "postal_code": "37862",
+    "lat": 35.876015,
+    "lng": -83.576588,
+    "phone": "(865) 453-4285",
+    "website": "http://aarents.net/",
+    "rating": 4.5,
+    "review_count": 156,
+    "category": "Equipment rental agency",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmCsZJtOKrD1ISrkzAUDT9GJxqBB3haehkzZSTxHRdBFhqRvatvt3rNZZ2n-UaH8w46I0bAL11I5P5G5rywRnKdRvtX_vykdgMSdBZLy7BMgw6x24LKLF_pZKPuk2x40gcRU6Fi=w427-h240-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "tent_10x10",
+        "price_low": null,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Prices subject to change. Delivery and pickup available for an additional fee. Call for availability.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "excavator_6ton",
+        "price_low": 425.0,
+        "price_high": 3000.0,
+        "unit": "per day",
+        "source_snippet": "| 6 Ton | $425 | $1300 | $3000 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "excavator_5ton",
+        "price_low": 375.0,
+        "price_high": 2800.0,
+        "unit": "per day",
+        "source_snippet": "| 5 Ton | $375 | $1200 | $2800 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "excavator_4ton",
+        "price_low": 300.0,
+        "price_high": 2300.0,
+        "unit": "per day",
+        "source_snippet": "| 4 Ton | $300 | $1000 | $2300 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "excavator_3ton",
+        "price_low": 300.0,
+        "price_high": 2200.0,
+        "unit": "per day",
+        "source_snippet": "| 3 Ton | $300 | $825 | $2200 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "excavator_2ton",
+        "price_low": 225.0,
+        "price_high": 1800.0,
+        "unit": "per day",
+        "source_snippet": "| 2 Ton | $225 | $700 | $1800 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "skid_steers_1500lb",
+        "price_low": 275.0,
+        "price_high": 2300.0,
+        "unit": "per day",
+        "source_snippet": "| 1500 lb. | $275 | $900 | $2300 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "skid_steers_2000lb",
+        "price_low": 320.0,
+        "price_high": 2600.0,
+        "unit": "per day",
+        "source_snippet": "| 2000 lb. | $320 | $1000 | $2600 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "skid_steers_2500lb",
+        "price_low": 400.0,
+        "price_high": 3200.0,
+        "unit": "per day",
+        "source_snippet": "| 2500 lb. | $400 | $1300 | $3200 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "skid_steers_3200lb",
+        "price_low": 425.0,
+        "price_high": 3500.0,
+        "unit": "per day",
+        "source_snippet": "| 3200 lb. | $425 | $1500 | $3500 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "skid_steers_mini",
+        "price_low": 245.0,
+        "price_high": 2000.0,
+        "unit": "per day",
+        "source_snippet": "| Mini Skid | $245 | $800 | $2000 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "trailer_6x12_dump",
+        "price_low": 135.0,
+        "price_high": 1000.0,
+        "unit": "per day",
+        "source_snippet": "| 6x12 Trailer Dump trailer | $135 | $400 | $1000 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "trailer_6x12_cargo",
+        "price_low": 55.0,
+        "price_high": 440.0,
+        "unit": "per day",
+        "source_snippet": "| 6x12 Cargo | $55 | $165 | $440 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "trailer_6x12_utility",
+        "price_low": 45.0,
+        "price_high": 405.0,
+        "unit": "per day",
+        "source_snippet": "| 6x12 Utility | $45 | $135 | $405 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "compactor_vibratory_roller",
+        "price_low": 180.0,
+        "price_high": 1485.0,
+        "unit": "per day",
+        "source_snippet": "| Vibratory Roller | $180 | $540 | $1485 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "compactor_plate",
+        "price_low": 75.0,
+        "price_high": 675.0,
+        "unit": "per day",
+        "source_snippet": "| Plate Compactor | $75 | $225 | $675 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "compactor_dirt_tamper",
+        "price_low": 75.0,
+        "price_high": 675.0,
+        "unit": "per day",
+        "source_snippet": "| Dirt Tamper | $75 | $225 | $675 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "compactor_reversible_plate",
+        "price_low": 95.0,
+        "price_high": 850.0,
+        "unit": "per day",
+        "source_snippet": "| Reversible Plate | $95 | $300 | $850 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "concrete_vibrator",
+        "price_low": 38.0,
+        "price_high": 342.0,
+        "unit": "per day",
+        "source_snippet": "| Vibrator | $38 | $114 | $342 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "concrete_power_trowel_36",
+        "price_low": 69.0,
+        "price_high": 621.0,
+        "unit": "per day",
+        "source_snippet": "| Power Trowel 36\" | $69 | $207 | $621 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "concrete_concrete_saw_14_handheld",
+        "price_low": 60.0,
+        "price_high": 540.0,
+        "unit": "per day",
+        "source_snippet": "| Concrete Saw 14\" Hand Held | $60 | $180 | $540 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "concrete_concrete_saw_14_walkbehind",
+        "price_low": 75.0,
+        "price_high": 675.0,
+        "unit": "per day",
+        "source_snippet": "| Concrete Saw 14\" Walk Behind | $75 | $225 | $675 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "aerial_lifts_rough_terrain_scissor",
+        "price_low": 275.0,
+        "price_high": 1500.0,
+        "unit": "per day",
+        "source_snippet": "| Rough Terrain Scissor | $275 | $750 | $1500 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "aerial_lifts_26ft_scissor",
+        "price_low": 145.0,
+        "price_high": 800.0,
+        "unit": "per day",
+        "source_snippet": "| 26' Scissor | $145 | $365 | $800 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "aerial_lifts_19ft_scissor",
+        "price_low": 125.0,
+        "price_high": 650.0,
+        "unit": "per day",
+        "source_snippet": "| 19' Scissor | $125 | $315 | $650 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "aerial_lifts_50ft_towable",
+        "price_low": 275.0,
+        "price_high": 2200.0,
+        "unit": "per day",
+        "source_snippet": "| 50' Towable | $275 | $1000 | $2200 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      },
+      {
+        "item_type": "aerial_lifts_34ft_towable",
+        "price_low": 235.0,
+        "price_high": 1900.0,
+        "unit": "per day",
+        "source_snippet": "| 34' Towable | $235 | $750 | $1900 |",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:02.411488+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Tennessee Casino Nights",
+    "metro": "Knoxville",
+    "address": "236 E Main St #71, Sevierville, TN 37862",
+    "city": "Sevierville",
+    "state": "Tennessee",
+    "postal_code": "37862",
+    "lat": 35.8682312,
+    "lng": -83.5607657,
+    "phone": "(865) 253-3390",
+    "website": "https://tncasinonights.com/",
+    "rating": 5.0,
+    "review_count": 2,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkDWNvvJLTAYGXOgWQtxosiDwdKMMvJGw7XZjmhG4hY5SWqaL4pp-DJcAAoADN0NH_CE0mD2D6Ul98gJUEUGTQsKYnTPn7lirsVHwxSRJFO00cKW-iNC1zkuEGudldL7xYH5R5FGV6Q5Zhi=w408-h272-k-no",
+    "delivery_available": "yes",
+    "setup_included": "yes",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "home_party_package",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$550",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:07.250244+00:00"
+      },
+      {
+        "item_type": "best_of_everything_package",
+        "price_low": 1359.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$1,359",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:07.250244+00:00"
+      },
+      {
+        "item_type": "casino_royale_package",
+        "price_low": 2970.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "$2,970",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:50:07.250244+00:00"
+      }
+    ]
+  },
+  {
+    "name": "Sage Hill Rentals, LLC",
+    "metro": "Columbus",
+    "address": "4406 Tuller Rd, Dublin, OH 43017",
+    "city": "Dublin",
+    "state": "Ohio",
+    "postal_code": "43017",
+    "lat": 40.1081173,
+    "lng": -83.1077505,
+    "phone": "",
+    "website": "https://www.sagehillrentals.com/",
+    "rating": 4.8,
+    "review_count": 42,
+    "category": "Party equipment rental service",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkOSU98hcoC5sFZTzBcSXn-_d0Cxf0kJlNYkPAfHmS7z_c4XxRmkcbQ3N4CfMus-0vQqzotMCMYTGJXdVG5bTHOW0dk7cGvH8uboDjEjniJsoK7Vwe2k_WGYfhJ8hR7YUYTfYin=w408-h271-k-no",
+    "delivery_available": "yes",
+    "setup_included": "unknown",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "chair_folding",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "table_round_60in",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "tent_10x10",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "table_tree_decoration",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$3.00](https://www.sagehillrentals.com/product-page/faux-fur-white-table-tree-decor)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "table_tree_decoration",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$10.00](https://www.sagehillrentals.com/product-page/ceramic-sparkle-table-tree-decoration)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "table_tree_decoration",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "table_tree_decoration",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "dance_floor",
+        "price_low": 900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$900.00](https://www.sagehillrentals.com/product-page/20-x-20-white-acrylic-dance-floor)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "aisle_steps",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_17ft_oval",
+        "price_low": 2400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2,400.00](https://www.sagehillrentals.com/product-page/17-oval-classic-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_14ft_modular",
+        "price_low": 1150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$1,150.00](https://www.sagehillrentals.com/product-page/14-modular-fluted-event-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_14ft_modular",
+        "price_low": 1050.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$1,050.00](https://www.sagehillrentals.com/product-page/14-modular-classic-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_14ft_modular",
+        "price_low": 1300.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$1,300.00](https://www.sagehillrentals.com/product-page/the-grand-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_7ft_arched",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$550.00](https://www.sagehillrentals.com/product-page/7ft-arched-bar-back-unit)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_7ft_arched",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$800.00](https://www.sagehillrentals.com/product-page/the-column-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_7ft_arched",
+        "price_low": 1450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$1,450.00](https://www.sagehillrentals.com/product-page/grand-estate-bar)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_7ft_arched",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/silver-seated-reindeer)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bar_7ft_arched",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "bench_cream_waterfall",
+        "price_low": 95.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$95.00](https://www.sagehillrentals.com/product-page/cream-waterfall-bench)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "plate_white_textured",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "sofa_cream_boucle",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "lamp_table_white",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "tree_9ft_white",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "tree_9ft_white",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$3.00](https://www.sagehillrentals.com/product-page/faux-fur-white-table-tree-decor)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "tree_9ft_white",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$10.00](https://www.sagehillrentals.com/product-page/ceramic-sparkle-table-tree-decoration)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "tree_9ft_white",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$600.00](https://www.sagehillrentals.com/product-page/8-white-cylinder-riser-stage)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 95.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$95.00](https://www.sagehillrentals.com/product-page/cream-waterfall-bench)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/silver-seated-reindeer)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$3.00](https://www.sagehillrentals.com/product-page/faux-fur-white-table-tree-decor)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$10.00](https://www.sagehillrentals.com/product-page/ceramic-sparkle-table-tree-decoration)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "stage_8ft_white",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "delivery_fee",
+        "price_low": null,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
+      },
+      {
+        "item_type": "deposit",
+        "price_low": null,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-23T11:57:00.606101+00:00"
       }
     ]
   }
