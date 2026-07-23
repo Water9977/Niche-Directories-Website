@@ -10,7 +10,17 @@ actually contain a matching dollar figure is removed.
 """
 import re
 import sqlite3
+import sys
 from pathlib import Path
+
+# Real bug, found live 2026-07-23: the print loop below can crash on Windows'
+# default console codepage (cp1252) whenever a snippet/item_type contains a
+# character outside it (e.g. the "inches" double-prime, U+2033). Because the
+# DELETE ran AFTER the print loop, every crash silently skipped deletion
+# entirely — hallucinated $0 rows this script correctly *identified* were
+# never actually removed from the DB across however many prior runs hit this.
+# Fixed two ways: force utf-8 output, and reorder so DELETE always runs first.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DB_PATH = Path(__file__).parent / "directory.db"
 
@@ -56,14 +66,17 @@ def main():
         else:
             removed.append((pid, listing_id, item_type, price_low, snippet))
 
-    print(f"Checked {len(rows)} pricing rows: {kept} verified, {len(removed)} unsupported by their own source_snippet.")
-    for pid, listing_id, item_type, price_low, snippet in removed:
-        safe_snippet = (snippet or "")[:80].encode("ascii", "replace").decode()
-        print(f"  REMOVE listing_id={listing_id} {item_type} price_low={price_low} snippet=\"{safe_snippet}\"")
-
+    # Delete BEFORE printing — a print-loop crash (encoding, whatever) must
+    # never be able to block the actual data-integrity fix, which is the one
+    # part of this script that actually matters.
     if removed:
         conn.executemany("DELETE FROM listing_pricing WHERE id = ?", [(r[0],) for r in removed])
         conn.commit()
+
+    print(f"Checked {len(rows)} pricing rows: {kept} verified, {len(removed)} unsupported by their own source_snippet.")
+    for pid, listing_id, item_type, price_low, snippet in removed:
+        safe_snippet = (snippet or "")[:80]
+        print(f"  REMOVE listing_id={listing_id} {item_type} price_low={price_low} snippet=\"{safe_snippet}\"")
 
     # A listing that loses its only real pricing row should also lose its
     # published status next time export_json runs — no page with no real
