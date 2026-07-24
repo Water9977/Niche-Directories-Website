@@ -3381,17 +3381,440 @@
     "category": "Party equipment rental service",
     "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfkTegrXBBMo4TNopPYcr0AtZ0Qwx9uGsMrtbTm1m8g4SzYflw5sqNFDM-oYo6F9h43WWaCtVoZch6rwzB3mYEzMkBMEbpfplWvGBZQpkRV_yRAlM1RqQ31GG-lu7IOXFJGSQ=w408-h306-k-no",
     "delivery_available": "yes",
-    "setup_included": "unknown",
+    "setup_included": "yes",
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "deposit",
-        "price_low": null,
+        "item_type": "generator",
+        "price_low": 130.0,
         "price_high": null,
         "unit": "flat",
-        "source_snippet": "Typically we have a $1,000 minimum for events.",
+        "source_snippet": "5000-7000 Watt Generator - from $130.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:30:38.345269+00:00"
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "dunk tank",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Dunk Tank - from $400.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "wipe out slide",
+        "price_low": 375.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Wipe Out Slide - from $375.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "rampage",
+        "price_low": 575.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Rampage - from $575.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "stars and stripes slide",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Stars and Stripes Slide - from $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "enchanted forest",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Enchanted Forest - from $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "18' tie dye splash down",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "18' Tie Dye Splash Down - from $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "27' liquid magma slide",
+        "price_low": 1250.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "27' Liquid Magma Slide - from $1,250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "carnival game package",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Carnival Game Package - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "carnival wacky mirrors",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Carnival Wacky Mirrors - from $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "beach games",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Beach Games - from $325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "western games",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Western Games - from $325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "blizzard of dollars",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Blizzard of Dollars - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "cash cube",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cash Cube - from $400.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "rocket darts",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Rocket Darts - from $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "air racers",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Air Racers - from $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "bullseye ball",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Bullseye Ball - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "cowboy showdown",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Cowboy Showdown - from $400.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "happy hoppers",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Happy Hoppers - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "chucklin' chickens",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Chucklin' Chickens - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "hot shots",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Hot Shots - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "disc golf",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Disc Golf - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "frisbee fun",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Frisbee Fun - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "horseshoe tossing",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Horseshoe Tossing - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "air soccer",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Air Soccer - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "inflatable plinko",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Inflatable Plinko - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "soccer trainer",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Soccer Trainer - from $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "inflatable skee ball",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Inflatable Skee Ball - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "zap-a-mole",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Zap-A-Mole - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "zap-a-penguin",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Zap-A-Penguin - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "axe throwing inflatable",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Axe Throwing Inflatable - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "snow axe throwing inflatable",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Snow Axe Throwing Inflatable - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "basketball connect four",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Basketball Connect Four - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "hoop zone",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Hoop Zone - from $200.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "soccer fever",
+        "price_low": 325.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Soccer Fever - from $325.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "alpine tubing slide",
+        "price_low": 1250.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Alpine Tubing Slide - from $1,250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "gem mining",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Gem Mining - from $800.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "open season",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Open Season - from $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "twister inflatable",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Twister Inflatable - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "zombie attack",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Zombie Attack - from $400.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "gaga ball inflatable pit",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Gaga Ball Inflatable Pit - from $275.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "giant trike racing",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Giant Trike Racing - from $450.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "hippo chow down",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Hippo Chow Down - from $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "lagoon of doom",
+        "price_low": 650.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Lagoon of Doom - from $650.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "archery ball",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Archery Ball - from $350.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "galaxy battle",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Galaxy Battle - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "ninja battle",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Ninja Battle - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
+      },
+      {
+        "item_type": "space balls",
+        "price_low": 500.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "Space Balls - from $500.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:08:08.519203+00:00"
       }
     ]
   },
@@ -4071,11 +4494,128 @@
       {
         "item_type": "delivery_fee",
         "price_low": 225.0,
-        "price_high": null,
-        "unit": "flat",
-        "source_snippet": "Delivery charge for the Richmond, VA area starts at $225.",
+        "price_high": 225.0,
+        "unit": "per event",
+        "source_snippet": "Delivery charge for the Richmond, VA area starts at $225.00.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:05.576179+00:00"
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "surfboard_triple_cutout_sign_8ft",
+        "price_low": 150.0,
+        "price_high": 150.0,
+        "unit": "flat",
+        "source_snippet": "SURFBOARD TRIPLE CUTOUT SIGN 8FT. $150.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "car_hop_on_skates_1950s_life-size_prop",
+        "price_low": 265.0,
+        "price_high": 265.0,
+        "unit": "flat",
+        "source_snippet": "CAR HOP ON SKATES 1950s LIFE-SIZE PROP. $265.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "giant_malpractice_operation_game",
+        "price_low": 385.0,
+        "price_high": 385.0,
+        "unit": "flat",
+        "source_snippet": "GIANT MALPRACTICE OPERATION GAME. $385.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "giant_milkshake_cutout_prop",
+        "price_low": 100.0,
+        "price_high": 100.0,
+        "unit": "flat",
+        "source_snippet": "GIANT MILKSHAKE CUTOUT PROP. $100.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "57_chevy_car_red_prop",
+        "price_low": 65.0,
+        "price_high": 65.0,
+        "unit": "flat",
+        "source_snippet": "57 Chevy Red Car Prop Rental. $65.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "beverage_dispenser_cooler_10_gallon",
+        "price_low": 23.0,
+        "price_high": 23.0,
+        "unit": "flat",
+        "source_snippet": "BEVERAGE DISPENSER COOLER 10 GALLON. $23.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "glass_candy_jar_with_chrome_lid_large",
+        "price_low": 9.5,
+        "price_high": 9.5,
+        "unit": "flat",
+        "source_snippet": "Glass Candy Jar With Chrome Lid Large Rental. Subtotal: $9.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "peanut_roasting_machine_vintage_nostalgic",
+        "price_low": 90.0,
+        "price_high": 90.0,
+        "unit": "flat",
+        "source_snippet": "PEANUT ROASTING MACHINE \u2013 VINTAGE & NOSTALGIC. $90.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "stagecoach_inflatable_combo_bouncer",
+        "price_low": 375.0,
+        "price_high": 375.0,
+        "unit": "flat",
+        "source_snippet": "STAGECOACH INFLATABLE COMBO BOUNCER. $375.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "giant_pop_or_jump_out_birthday_cake",
+        "price_low": 275.0,
+        "price_high": 275.0,
+        "unit": "flat",
+        "source_snippet": "GIANT POP OR JUMP OUT BIRTHDAY CAKE. $275.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "crazy_quarters_plinko_carnival_game",
+        "price_low": 75.0,
+        "price_high": 75.0,
+        "unit": "flat",
+        "source_snippet": "CRAZY QUARTERS PLINKO CARNIVAL GAME. $75.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "beverage_stock_tank_trough_100_gal",
+        "price_low": 55.0,
+        "price_high": 55.0,
+        "unit": "flat",
+        "source_snippet": "BEVERAGE STOCK TANK TROUGH 100 GAL. $55.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
+      },
+      {
+        "item_type": "quarterback_toss_football_carnival_frame_game",
+        "price_low": 110.0,
+        "price_high": 110.0,
+        "unit": "flat",
+        "source_snippet": "QUARTERBACK TOSS FOOTBALL CARNIVAL FRAME GAME. $110.00.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:09:08.314919+00:00"
       }
     ]
   },
@@ -5860,46 +6400,253 @@
         "item_type": "delivery_fee",
         "price_low": 79.0,
         "price_high": null,
-        "unit": "per delivery",
-        "source_snippet": "Check Zone\\n\\n**Buy for**$79.00\\n\\nAdd to cart",
+        "unit": "per event",
+        "source_snippet": "Buy for $79.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:09.814377+00:00"
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 119.0,
         "price_high": null,
-        "unit": "per delivery",
-        "source_snippet": "Check Zone\\n\\n**Buy for**$119.00\\n\\nAdd to cart",
+        "unit": "per event",
+        "source_snippet": "Buy for $119.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:09.814377+00:00"
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 159.0,
         "price_high": null,
-        "unit": "per delivery",
-        "source_snippet": "Check Zone\\n\\n**Buy for**$159.00\\n\\nAdd to cart",
+        "unit": "per event",
+        "source_snippet": "Buy for $159.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:09.814377+00:00"
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 199.0,
         "price_high": null,
-        "unit": "per delivery",
-        "source_snippet": "Check Zone\\n\\n**Buy for**$199.00\\n\\nAdd to cart",
+        "unit": "per event",
+        "source_snippet": "Buy for $199.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:09.814377+00:00"
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
       },
       {
         "item_type": "delivery_fee",
         "price_low": 239.0,
         "price_high": null,
-        "unit": "per delivery",
-        "source_snippet": "Check Zone\\n\\n**Buy for**$239.00\\n\\nAdd to cart",
+        "unit": "per event",
+        "source_snippet": "Buy for $239.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:31:09.814377+00:00"
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "giant_plastic_connect_4",
+        "price_low": 29.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $29.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "standard_cornhole",
+        "price_low": 29.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $29.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "giant_stained_jenga",
+        "price_low": 29.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $29.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "speaker_microphone",
+        "price_low": 69.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $69.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "kid_s_party_pack",
+        "price_low": 112.52,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $112.52",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "cornhole_tourney_bundle",
+        "price_low": 283.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $283.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "party_pack",
+        "price_low": 158.11,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $158.11",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "giant_wood_connect_4",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $45.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "stained_cornhole",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $45.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "giant_checkers",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "large_event_bundle",
+        "price_low": 384.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $384.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "kan_jam",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "spikeball",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "ladder_golf",
+        "price_low": 30.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $30.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "bocce_ball",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "putterball",
+        "price_low": 30.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $30.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "badminton",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "ring_toss",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "dodgeballs",
+        "price_low": 3.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $3.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "hula_hoop",
+        "price_low": 2.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $2.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "yardzee",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "potato_sacks",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $5.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
+      },
+      {
+        "item_type": "tug_of_war",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-24T18:04:45.293632+00:00"
       }
     ]
   },
