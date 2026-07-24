@@ -11,6 +11,18 @@ v2: widened the nav-label keyword net (session 6 only followed literal
 "Shop"/"Catalog"/"Rentals"/"Products" nav labels instead), follows up to
 3 candidate pages per business instead of 1, and probes a fixed list of
 common paths directly when no nav link matches at all.
+
+v3: found live 2026-07-24 debugging 3 businesses that showed as "fee-only"
+(no real item pricing) despite genuinely having it. Two real gaps, both
+fixed here: (1) every scrape now waits a few seconds for JS to render --
+several sites (Booqable-powered checkout widgets especially) only put real
+per-item prices in the DOM after client-side JS runs, so a plain static
+fetch saw nothing. (2) when the nav-keyword crawl AND the common-path
+guesses both find nothing, this now falls back to Firecrawl's /map
+endpoint with a pricing-flavored search query -- some real catalogs
+(Interactive Playgrounds' "/inventory/*" category pages, Magic Special
+Events' tag-taxonomy product pages) simply aren't linked from the
+homepage nav with a keyword this script's link-scan would ever match.
 """
 import argparse
 import sqlite3
@@ -29,7 +41,15 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 FIRECRAWL_KEY = os.environ.get("FIRECRAWL_API_KEY")
 SCRAPE_ENDPOINT = "https://api.firecrawl.dev/v2/scrape"
+MAP_ENDPOINT = "https://api.firecrawl.dev/v2/map"
 DB_PATH = Path(__file__).parent / "directory.db"
+
+# Milliseconds to let client-side JS render before Firecrawl captures the
+# page. Booqable-style checkout widgets and similar cart embeds render real
+# prices only after this; a plain static fetch sees an empty/placeholder DOM.
+WAIT_FOR_MS = 4000
+
+MAP_SEARCH_QUERY = "pricing catalog rentals shop inventory products"
 
 EXCLUDED_HOSTS = {
     "facebook.com", "www.facebook.com",
@@ -84,14 +104,34 @@ def firecrawl_scrape(url):
         resp = requests.post(
             SCRAPE_ENDPOINT,
             headers={"Authorization": f"Bearer {FIRECRAWL_KEY}"},
-            json={"url": url, "formats": ["markdown", "links"], "onlyMainContent": True},
-            timeout=60,
+            json={
+                "url": url,
+                "formats": ["markdown", "links"],
+                "onlyMainContent": True,
+                "waitFor": WAIT_FOR_MS,
+            },
+            timeout=90,
         )
     except requests.exceptions.RequestException:
         return None
     if resp.status_code != 200:
         return None
     return resp.json().get("data", {})
+
+
+def firecrawl_map(url, search, limit=10):
+    try:
+        resp = requests.post(
+            MAP_ENDPOINT,
+            headers={"Authorization": f"Bearer {FIRECRAWL_KEY}"},
+            json={"url": url, "search": search, "limit": limit},
+            timeout=30,
+        )
+    except requests.exceptions.RequestException:
+        return []
+    if resp.status_code != 200:
+        return []
+    return [l["url"] for l in resp.json().get("links", []) if l.get("url")]
 
 
 def find_pricing_links(base_url, links, max_links):
@@ -144,6 +184,20 @@ def enrich_one(conn, raw_id, name, website):
             if page and page.get("markdown"):
                 store_page(conn, raw_id, url, "pricing", page["markdown"])
                 pages_found += 1
+
+    if pages_found == 1:
+        # Nothing found via nav links or common-path guesses. Some real
+        # catalogs live outside the homepage nav entirely (category or
+        # tag-taxonomy pages), so fall back to Firecrawl's own site index.
+        for url in firecrawl_map(website, MAP_SEARCH_QUERY, limit=6):
+            if is_excluded(url) or url == website or "sitemap" in url.lower():
+                continue
+            page = firecrawl_scrape(url)
+            if page and page.get("markdown") and len(page["markdown"]) > 200:
+                store_page(conn, raw_id, url, "pricing_mapped", page["markdown"])
+                pages_found += 1
+                if pages_found >= MAX_PAGES_PER_BUSINESS:
+                    break
 
     return pages_found
 
