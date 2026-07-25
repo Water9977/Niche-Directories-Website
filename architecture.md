@@ -5,6 +5,13 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-07-24 — Session 25 (cont.): broader thin-pricing sweep recovers 2 more real catalogs, confirms 1 genuine ceiling
+- Extended tonight's fee-only recovery technique to a wider net: every published listing with <=2 pricing rows (19 found), not just the 7 originally flagged fee-only. Most were businesses already checked and confirmed genuinely thin (single-product services like photo booths). Checked the multi-item-catalog-shaped remainder via `firecrawl_map`.
+- **Ruth's House Event Rentals (Charleston): 28 real items recovered ($1.50-$576).** A 58-product Shopify catalog at `/collections/all-products` the old 3-page nav-keyword crawl never found — same root cause as earlier tonight (catalog not linked from homepage nav with a matching keyword).
+- **Parties n Motion (Jacksonville): 13 real items recovered.** Individual WooCommerce product pages (Mickey Mouse Bounce House $245, Sno Cone Machine $65, Castle Moonwalk $245, Sports Cage $170, Clown Toss $35) found the same way.
+- **Everbloom Party Rentals checked and confirmed genuinely quote-only** — real 22-item WooCommerce catalog found via map, but every product uses an "Add to quote" flow with zero visible prices anywhere. A real ceiling, not a gap; correctly left alone.
+- `validate_pricing.py` caught 9 more hallucinated rows in this pass (including some cross-matched price ranges — the compact multi-item text format fed to the model made it occasionally borrow a neighboring item's price as a "high" bound). Gate held the line same as always.
+
 ### 2026-07-24 — Session 25 (cont.): backlink outreach deferred by human choice
 - Backlink outreach scripts (`backlink_outreach.py` draft-CSV-only, `send_backlink_outreach.py` with a real `--send` path via Resend) were next on the list. `send_backlink_outreach.py` sends real cold emails to real businesses on the human's behalf — even the dry-run preview got blocked by Claude Code's auto-mode permission classifier since it touches the same script. Asked the human directly rather than trying to work around the block; **they chose to skip outreach entirely for now** rather than generate a draft CSV or dry-run preview. Not touched further this session — no CSV, no preview, no send.
 
