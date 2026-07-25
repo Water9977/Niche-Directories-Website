@@ -3286,7 +3286,7 @@
         "unit": "per rental period",
         "source_snippet": "$100.00\u2013$175.00Price range: $100.00 through $175.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:30:17.792934+00:00"
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
       },
       {
         "item_type": "sod_cutter_gas",
@@ -3295,7 +3295,43 @@
         "unit": "per rental period",
         "source_snippet": "$115.00\u2013$175.00Price range: $115.00 through $175.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:30:17.792934+00:00"
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
+      },
+      {
+        "item_type": "excavator_mini_kubota_kx033",
+        "price_low": 340.0,
+        "price_high": 395.0,
+        "unit": "per rental period",
+        "source_snippet": "Excavator Mini Kubota KX033 - $340.00-$395.00 (Rental Period: 4 hours / 9 hours / 24 hours)",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
+      },
+      {
+        "item_type": "mini_tracked_loader_bobcat_mt55",
+        "price_low": 220.0,
+        "price_high": 280.0,
+        "unit": "per rental period",
+        "source_snippet": "Mini Tracked Loader, Bobcat MT55 - $220.00-$280.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
+      },
+      {
+        "item_type": "mini_loader_pallet_forks_dingo_kubota",
+        "price_low": 50.0,
+        "price_high": 50.0,
+        "unit": "per rental period",
+        "source_snippet": "Mini Loader Pallet Forks Dingo/Kubota - $50.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
+      },
+      {
+        "item_type": "tracked_loader_w_bucket_kubota_svl_65",
+        "price_low": 325.0,
+        "price_high": 450.0,
+        "unit": "per rental period",
+        "source_snippet": "Tracked Loader w/Bucket, Kubota SVL 65 - $325.00-$450.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:17:01.857452+00:00"
       }
     ]
   },
@@ -5442,26 +5478,26 @@
     "category": "Tent rental service",
     "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn9O41wsxTJMIidvd2l7ezZJ9_7UNZ1_6aquGyHIfUu2QxDnQPBl2GNjZoluVCbcj5NM8Gd9LS9Rgj8dg5RR7zx9bq6OEFNKCRenikHwwubnkKhXY5E8xVeHU_euQZBpo-ttQZGwg=w408-h272-k-no",
     "delivery_available": "yes",
-    "setup_included": "yes",
+    "setup_included": "unknown",
     "weekend_surcharge": "unknown",
     "pricing": [
       {
         "item_type": "structure_tent_40x60",
         "price_low": 3000.0,
-        "price_high": null,
+        "price_high": 6000.0,
         "unit": "per month",
         "source_snippet": "A 40'x60' clearspan structure typically starts around $3,000-$6,000 per month, while larger 100'+ wide structures range from $10,000-$25,000+ per month.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:52:30.269068+00:00"
+        "last_checked": "2026-07-25T05:16:56.792605+00:00"
       },
       {
         "item_type": "structure_tent_100x",
         "price_low": 10000.0,
-        "price_high": null,
+        "price_high": 25000.0,
         "unit": "per month",
         "source_snippet": "A 40'x60' clearspan structure typically starts around $3,000-$6,000 per month, while larger 100'+ wide structures range from $10,000-$25,000+ per month.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-12T17:52:30.269068+00:00"
+        "last_checked": "2026-07-25T05:16:56.792605+00:00"
       }
     ]
   },
@@ -15942,7 +15978,7 @@
     "category": "Tent rental service",
     "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlXXhzw4IYLRmFD0tZBJ-2jvXEV1EIpSK_P4KVoMXRmI3cuI1AM1by09xrsQ1HPXnmI4CtBQh48MCnHsS4bbkNAiY_W1tZ3NvKdkpMX0GmJFJzyeyiMGRV0cFwrCV7Q0G0dZCDlpJuZrxw=w426-h240-k-no",
     "delivery_available": "yes",
-    "setup_included": "no",
+    "setup_included": "unknown",
     "weekend_surcharge": "unknown",
     "pricing": [
       {
@@ -15952,16 +15988,16 @@
         "unit": "flat",
         "source_snippet": "_10x10 Tent Frame (capacity of 10)\u200b_ **S** elf- install - $ 60.00 OR  it can be delivered For additional charge",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T14:35:58.655512+00:00"
+        "last_checked": "2026-07-25T05:16:54.316829+00:00"
       },
       {
-        "item_type": "delivery_fee",
-        "price_low": 45.0,
-        "price_high": 150.0,
-        "unit": "per event",
-        "source_snippet": "DELIVERY FEE FROM $45. TO $150 CALL TO ASK",
+        "item_type": "throne_chair_rental",
+        "price_low": 150.0,
+        "price_high": 1800.0,
+        "unit": "flat",
+        "source_snippet": "THRONE CHAIR RENTAL $150.00 & SALE $1,800.00 come IN White Silver or Gold",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T14:35:58.655512+00:00"
+        "last_checked": "2026-07-25T05:16:54.316829+00:00"
       }
     ]
   },
