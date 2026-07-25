@@ -10318,13 +10318,76 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "tent_10x10",
+        "item_type": "inflatable_rental",
+        "price_low": 245.0,
+        "price_high": 245.0,
+        "unit": "per rental",
+        "source_snippet": "Mickey Mouse Bounce House - $245.00 - 14'-4\" X 13'-4\"",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "fun_foods",
         "price_low": 200.0,
-        "price_high": null,
-        "unit": "per event",
+        "price_high": 200.0,
+        "unit": "per order",
         "source_snippet": "NOTE: Due to the rising fuel costs we require either an inflatable rental or a minimum $200 order of fun foods, carnival games, or tables and chairs without an inflatable.",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-13T15:27:33.738666+00:00"
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "carnival_games",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per order",
+        "source_snippet": "NOTE: Due to the rising fuel costs we require either an inflatable rental or a minimum $200 order of fun foods, carnival games, or tables and chairs without an inflatable.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "tables_and_chairs",
+        "price_low": 200.0,
+        "price_high": 200.0,
+        "unit": "per order",
+        "source_snippet": "NOTE: Due to the rising fuel costs we require either an inflatable rental or a minimum $200 order of fun foods, carnival games, or tables and chairs without an inflatable.",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "Clown Toss",
+        "price_low": 35.0,
+        "price_high": 35.0,
+        "unit": "per rental",
+        "source_snippet": "Clown Toss - $35.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "Sno Cone Machine",
+        "price_low": 65.0,
+        "price_high": 65.0,
+        "unit": "per rental",
+        "source_snippet": "Sno Cone Machine - $65.00 - Commercial Sno Cone machine, One 30 serving package",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "Castle Moonwalk",
+        "price_low": 245.0,
+        "price_high": 245.0,
+        "unit": "per rental",
+        "source_snippet": "Castle Moonwalk - $245.00 - 15' x 15' x 12'",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
+      },
+      {
+        "item_type": "Sports Cage",
+        "price_low": 170.0,
+        "price_high": 170.0,
+        "unit": "per rental",
+        "source_snippet": "Sports Cage - $170.00 - All day rental",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:12.266928+00:00"
       }
     ]
   },
@@ -13918,13 +13981,220 @@
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "wedding_flowers_for_rent_bouquets_bridesmaid_bouquets_boutonnieres_garlands",
-        "price_low": 29.99,
+        "item_type": "chair_chiavari_barstool_gold",
+        "price_low": 17.0,
+        "price_high": 17.0,
+        "unit": "each",
+        "source_snippet": "Chair [Chiavari Chair - Barstool - Gold] - $ 17.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "chair_xback_driftwood_stool",
+        "price_low": 20.0,
+        "price_high": 20.0,
+        "unit": "each",
+        "source_snippet": "Chair [X-Back Driftwood Farmhouse - Stool] - $ 20.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_36inch_round",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Tables [36 inch round] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_48inch_round",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Tables [48 inch round] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_48inch_square",
+        "price_low": 18.0,
+        "price_high": 18.0,
+        "unit": "each",
+        "source_snippet": "Tables [48 inch square] - $ 18.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_60inch_round",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Tables [60 inch round table] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_72inch_round",
+        "price_low": 20.0,
+        "price_high": 20.0,
+        "unit": "each",
+        "source_snippet": "Tables [72 inch round table] - $ 20.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_6ft_rectangular",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Tables [6 ft rectangular] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "table_8ft_rectangular",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Tables [8 ft rectangular] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "umbrella_wine_barrel",
+        "price_low": 70.0,
+        "price_high": 70.0,
+        "unit": "each",
+        "source_snippet": "Accessory [Umbrella & Wine Barrel] - $ 70.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "bar_rustic_walnut",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "each",
+        "source_snippet": "Bar - Rustic [Walnut] - $ 300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "bar_white_wood",
+        "price_low": 300.0,
+        "price_high": 300.0,
+        "unit": "each",
+        "source_snippet": "Bar -White Wood - $ 300.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "bench_rustic_walnut",
+        "price_low": 45.0,
+        "price_high": 45.0,
+        "unit": "each",
+        "source_snippet": "Bench - Rustic [Walnut] - $ 45.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "dance_floor_seamless_american_plank",
+        "price_low": 576.0,
         "price_high": null,
-        "unit": "per item",
+        "unit": "unknown",
+        "source_snippet": "Dance Floor [Seamless - American Plank] - from $ 576.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "dance_floor_seamless_black_and_white",
+        "price_low": 576.0,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Dance Floor [Seamless - Black and White] - from $ 576.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "lighting_deco_bulbs",
+        "price_low": 75.0,
+        "price_high": 75.0,
+        "unit": "each",
+        "source_snippet": "Lighting [Deco Bulbs] - $ 75.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "lighting_white_chandelier",
+        "price_low": 250.0,
+        "price_high": 250.0,
+        "unit": "each",
+        "source_snippet": "Lighting [White Chandelier] - $ 250.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "linen_color",
+        "price_low": 26.5,
+        "price_high": 26.5,
+        "unit": "each",
+        "source_snippet": "Linen [Color] - $ 26.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "linen_white",
+        "price_low": 26.5,
+        "price_high": 26.5,
+        "unit": "each",
+        "source_snippet": "Linen [White] - $ 26.50",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "lounge_wine_barrel_table",
+        "price_low": 225.0,
+        "price_high": 225.0,
+        "unit": "each",
+        "source_snippet": "Lounge [Wine Barrel Table] - $ 225.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "lounge_wine_barrel",
+        "price_low": 55.0,
+        "price_high": 55.0,
+        "unit": "each",
+        "source_snippet": "Lounge [Wine Barrel] - $ 55.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "staging",
+        "price_low": 85.0,
+        "price_high": null,
+        "unit": "unknown",
+        "source_snippet": "Staging - from $ 85.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "tall_cocktail_table",
+        "price_low": 12.0,
+        "price_high": 12.0,
+        "unit": "each",
+        "source_snippet": "Table [tall cocktail] - $ 12.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
+      },
+      {
+        "item_type": "wedding_flowers_for_rent_bouquets_bridesmaid_boutonnieres_garlands",
+        "price_low": 29.99,
+        "price_high": 29.99,
+        "unit": "each",
         "source_snippet": "$ 29.99",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-16T12:20:07.718962+00:00"
+        "last_checked": "2026-07-25T05:05:07.428321+00:00"
       }
     ]
   },
