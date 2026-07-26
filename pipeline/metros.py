@@ -125,4 +125,13 @@ METROS = [
         "suburbs": [("Leland", "NC"), ("Carolina Beach", "NC"),
                     ("Wrightsville Beach", "NC"), ("Hampstead", "NC")],
     },
+    {
+        # Session 26. Real wedding/tourism destination, adjacent to our
+        # existing Charleston/Columbia coverage. Not in Reventals' ~46-metro
+        # list or tentrentalfinder.com's 50-city list (checked live).
+        "name": "Myrtle Beach",
+        "core": ("Myrtle Beach", "SC"),
+        "suburbs": [("North Myrtle Beach", "SC"), ("Conway", "SC"),
+                    ("Surfside Beach", "SC"), ("Murrells Inlet", "SC")],
+    },
 ]

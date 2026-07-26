@@ -22423,5 +22423,119 @@
         "last_checked": "2026-07-26T07:54:57.278442+00:00"
       }
     ]
+  },
+  {
+    "name": "Cherry Grove Beach Services",
+    "metro": "Myrtle Beach",
+    "address": "302 Main St, North Myrtle Beach, SC 29582",
+    "city": "North Myrtle Beach",
+    "state": "South Carolina",
+    "postal_code": "29582",
+    "lat": 33.820865,
+    "lng": -78.673282,
+    "phone": "(843) 309-3064",
+    "website": "https://cherrygrovebeachservices.com/",
+    "rating": 4.8,
+    "review_count": 97,
+    "category": "Equipment rental agency",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlBxvVDYnGDVbDpWhzJYLZGnd9ZYwaJyRi0xrYPffTifnl-oON6LtidQWKnUtZrI5nMcSXVQAAAnbxjqDXwbMJITLiD7pTpd8k_XCcs3hbiHTrgk3_p2R2jENrKqJYDHl9NL9Kw=w426-h240-k-no",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "Beach Basics Package",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $45.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Brought the Kids Package",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $75.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Family Vacation Package",
+        "price_low": 65.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $65.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Beach Umbrella",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $20.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Boogie Board",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $8.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Beach Chair",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $10.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      },
+      {
+        "item_type": "Beach Wagon",
+        "price_low": 15.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "from $15.00",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:46.939345+00:00"
+      }
+    ]
+  },
+  {
+    "name": "North Strand Beach Services",
+    "metro": "Myrtle Beach",
+    "address": "28th Ave S, North Myrtle Beach, SC 29582",
+    "city": "North Myrtle Beach",
+    "state": "South Carolina",
+    "postal_code": "29582",
+    "lat": 33.8062562,
+    "lng": -78.7158754,
+    "phone": "(843) 385-3058",
+    "website": "http://northstrandbeachservice.com/",
+    "rating": 4.8,
+    "review_count": 86,
+    "category": "Equipment rental agency",
+    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmgNuKuwISyOPzLlyURNHwJbTiXAEt8JiVYz3e8nLtmyK_KpAFs0TfLpp2cnSN_i0Um2wbSAe7phtrgPZZh5DlT8P7tJ-Jjhb2Kf0KAm--LdaJHXeIj7uA16cMjkA2ApTaVWpcB=w408-h408-k-no",
+    "delivery_available": "yes",
+    "setup_included": "no",
+    "weekend_surcharge": "unknown",
+    "pricing": [
+      {
+        "item_type": "beach_umbrella_weekly",
+        "price_low": 49.0,
+        "price_high": null,
+        "unit": "per week",
+        "source_snippet": "$49 Beach Umbrella \u2013 Weekly Rental",
+        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
+        "last_checked": "2026-07-26T09:44:54.944503+00:00"
+      }
+    ]
   }
 ]
