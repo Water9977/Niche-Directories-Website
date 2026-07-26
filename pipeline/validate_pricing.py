@@ -32,12 +32,24 @@ DB_PATH = Path(__file__).parent / "directory.db"
 # ACC Rental's real Webflow pricing kept vanishing.
 MONEY_RE = re.compile(r"\$\s*(\d+(?:,\d{3})*(?:\.\d{1,2})?)")
 
+# Some sites write the figure before the symbol ("20$ ea.") instead of after
+# ("$20"). Found live 2026-07-25, North Beach Rentals (Tybee Island) --
+# real, correctly-quoted prices, just reversed order.
+MONEY_RE_SUFFIX = re.compile(r"(\d+(?:,\d{3})*(?:\.\d{1,2})?)\s*\$")
+
 
 def extract_dollar_amounts(text):
     if not text:
         return []
+    # PDF-extracted price lists (found live 2026-07-25, Show Time Event
+    # Rentals) sometimes render "$3.50" as "$3. 50" -- a stray space after
+    # the decimal point from the original document's leader-dot formatting.
+    # Without this, the regex below only ever captures "3", not "3.50",
+    # and a 100% real price gets flagged unsupported. Normalize before
+    # matching rather than trying to make the regex itself uglier.
+    text = re.sub(r"(\d)\.\s+(\d)", r"\1.\2", text)
     amounts = []
-    for m in MONEY_RE.finditer(text):
+    for m in list(MONEY_RE.finditer(text)) + list(MONEY_RE_SUFFIX.finditer(text)):
         try:
             amounts.append(float(m.group(1).replace(",", "")))
         except ValueError:

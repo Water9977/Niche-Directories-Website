@@ -82,4 +82,47 @@ METROS = [
         "suburbs": [("Farragut", "TN"), ("Maryville", "TN"),
                     ("Oak Ridge", "TN"), ("Sevierville", "TN")],
     },
+    {
+        # Session 25: re-checked both competitors live before adding.
+        # tentrentalfinder.com's city list has grown since it was last
+        # checked (now covers 7 of our 10 existing metros) but still
+        # doesn't include Asheville. Real wedding-destination market.
+        "name": "Asheville",
+        "core": ("Asheville", "NC"),
+        "suburbs": [("Hendersonville", "NC"), ("Arden", "NC"),
+                    ("Black Mountain", "NC"), ("Fletcher", "NC")],
+    },
+    {
+        # Session 25. Major real wedding-destination market, adjacent to
+        # our existing Charleston/Jacksonville coverage. Not in Reventals'
+        # ~46-metro list or tentrentalfinder's 50-city list.
+        "name": "Savannah",
+        "core": ("Savannah", "GA"),
+        "suburbs": [("Pooler", "GA"), ("Richmond Hill", "GA"),
+                    ("Tybee Island", "GA"), ("Bluffton", "SC")],
+    },
+    {
+        # Session 25. Mid-size Southeast market adjacent to our existing
+        # Knoxville coverage. Not in either competitor's list.
+        "name": "Chattanooga",
+        "core": ("Chattanooga", "TN"),
+        "suburbs": [("Hixson", "TN"), ("East Ridge", "TN"),
+                    ("Cleveland", "TN"), ("Fort Oglethorpe", "GA")],
+    },
+    {
+        # Session 25. State capital, adjacent to our existing
+        # Greenville/Charleston coverage. Not in either competitor's list.
+        "name": "Columbia",
+        "core": ("Columbia", "SC"),
+        "suburbs": [("Lexington", "SC"), ("Irmo", "SC"),
+                    ("Forest Acres", "SC"), ("Cayce", "SC")],
+    },
+    {
+        # Session 25. Coastal wedding-destination market. Not in either
+        # competitor's list.
+        "name": "Wilmington",
+        "core": ("Wilmington", "NC"),
+        "suburbs": [("Leland", "NC"), ("Carolina Beach", "NC"),
+                    ("Wrightsville Beach", "NC"), ("Hampstead", "NC")],
+    },
 ]

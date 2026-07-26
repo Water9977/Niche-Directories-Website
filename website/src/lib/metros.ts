@@ -105,6 +105,46 @@ export const METROS: MetroMeta[] = [
     blurb:
       'Knoxville, Tennessee anchors East Tennessee’s wedding and event market, drawing on a university-town calendar alongside weddings and gatherings across the Great Smoky Mountains foothills.',
   },
+  {
+    key: 'Asheville',
+    slug: 'asheville-nc',
+    name: 'Asheville, NC',
+    state: 'NC',
+    blurb:
+      'Asheville, North Carolina is one of the Southeast’s premier wedding destinations, with a dense calendar of mountain-view weddings and events across the Blue Ridge foothills and surrounding towns like Hendersonville and Black Mountain.',
+  },
+  {
+    key: 'Savannah',
+    slug: 'savannah-ga',
+    name: 'Savannah, GA',
+    state: 'GA',
+    blurb:
+      'Savannah, Georgia is a major real wedding-destination market, drawing on its historic squares and Lowcountry charm for a steady calendar of weddings and events across the city and coastal towns like Tybee Island and Pooler.',
+  },
+  {
+    key: 'Chattanooga',
+    slug: 'chattanooga-tn',
+    name: 'Chattanooga, TN',
+    state: 'TN',
+    blurb:
+      'Chattanooga, Tennessee combines a growing downtown event scene with weddings and gatherings set against the Tennessee River and surrounding Appalachian foothills.',
+  },
+  {
+    key: 'Columbia',
+    slug: 'columbia-sc',
+    name: 'Columbia, SC',
+    state: 'SC',
+    blurb:
+      'Columbia, South Carolina — the state capital — hosts a steady calendar of weddings, corporate events, and university gatherings across the Midlands region.',
+  },
+  {
+    key: 'Wilmington',
+    slug: 'wilmington-nc',
+    name: 'Wilmington, NC',
+    state: 'NC',
+    blurb:
+      'Wilmington, North Carolina is a real coastal wedding destination, with events spanning its historic riverfront downtown and nearby beach towns like Wrightsville Beach and Carolina Beach.',
+  },
 ];
 
 export function metroBySlug(slug: string): MetroMeta | undefined {
