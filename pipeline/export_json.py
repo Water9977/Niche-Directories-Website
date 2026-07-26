@@ -34,7 +34,16 @@ EXPORT_DIR = Path(__file__).parent / "export"
 # session 21 alone). Now export_json.py is the single source of truth.
 WEBSITE_DATA_PATH = Path(__file__).parent.parent / "website" / "src" / "data" / "listings.json"
 
-NAME_EXCLUDE_KEYWORDS = ["glamping"]
+# Household rent-to-own furniture/appliance chains get swept up by Google's
+# "Furniture rental service" category alongside real event/party rental
+# businesses. Found live 2026-07-26 (Buddy's Home Furnishings, Rent-A-Center)
+# -- neither has ever actually published (their weekly-payment price format
+# happens to lack a "$" sign, so validate_pricing.py's own gate already
+# rejects them), but excluding by exact chain name is cheap insurance against
+# a future site that does include a "$". Full names only, not partial words
+# like "aaron" or "buddy" -- those false-positive-match real event rental
+# businesses (e.g. "Aaron's Lowcountry Event Rentals").
+NAME_EXCLUDE_KEYWORDS = ["glamping", "rent-a-center", "rent a center", "aaron's rent to own", "buddy's home furnishings"]
 
 
 def main():
