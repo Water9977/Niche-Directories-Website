@@ -16,6 +16,7 @@ OpenRouter sometimes return transient 429s independent of our own quota.
 import argparse
 import json
 import os
+import re
 import sqlite3
 import sys
 import time
@@ -82,8 +83,51 @@ WEBSITE CONTENT:
 """
 
 
+# How much scraped text fits in one extraction prompt. The models in
+# PROVIDER_CHAIN all handle this comfortably; the cap exists to keep prompts
+# (and latency) sane, not because of a hard model limit.
+CONTENT_CHAR_BUDGET = 40000
+
+# Just enough to tell "this page quotes real prices" from "this page is
+# marketing copy" — a full money regex isn't needed to rank pages.
+MONEY_SIGNAL_RE = re.compile(r"\$\s*\d")
+
+
+def build_content(pages):
+    """Packs scraped pages into CONTENT_CHAR_BUDGET, most price-dense first.
+
+    Real bug this fixes, found live 2026-07-26: pages used to be concatenated
+    in database-insertion order and then blindly truncated to the budget. A
+    business whose homepage alone exceeds it — Partytime Inflatable's is 46502
+    chars — had its actual catalog page cut off entirely before the model ever
+    saw it. That extraction returned 4 pricing items; the catalog it never read
+    held 77. Sorting by how many dollar figures each page actually contains
+    puts real pricing ahead of boilerplate, so the pages that matter survive
+    the cap. Ties break toward the shorter page (denser signal per char).
+    """
+    ranked = sorted(
+        pages,
+        key=lambda p: (-len(MONEY_SIGNAL_RE.findall(p[1] or "")), len(p[1] or "")),
+    )
+
+    separator = "\n\n---\n\n"
+    chunks, used = [], 0
+    for page_type, markdown in ranked:
+        header = f"[{page_type}]\n"
+        overhead = len(header) + (len(separator) if chunks else 0)
+        room = CONTENT_CHAR_BUDGET - used - overhead
+        if room <= 0:
+            break
+        body = (markdown or "")[:room]
+        if not body:
+            continue
+        chunks.append(header + body)
+        used += overhead + len(body)
+    return separator.join(chunks)
+
+
 def call_model(provider, model, content):
-    prompt_text = PROMPT.format(shape=JSON_SHAPE_INSTRUCTIONS, content=content[:40000])
+    prompt_text = PROMPT.format(shape=JSON_SHAPE_INSTRUCTIONS, content=content[:CONTENT_CHAR_BUDGET])
     if provider == "nvidia":
         endpoint, key = NVIDIA_ENDPOINT, NVIDIA_KEY
         body = {
@@ -215,7 +259,7 @@ def main():
         pages = conn.execute(
             "SELECT page_type, markdown FROM scraped_pages WHERE raw_listing_id=?", (raw_id,)
         ).fetchall()
-        content = "\n\n---\n\n".join(f"[{ptype}]\n{md}" for ptype, md in pages)
+        content = build_content(pages)
 
         try:
             result, model_used = extract(content)
