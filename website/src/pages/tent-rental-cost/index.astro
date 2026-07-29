@@ -12,6 +12,7 @@ import {
   deliveryFeeRange,
   depositRange,
   chairPriceMin,
+  tablePriceRange,
 } from '../../lib/listings';
 import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
 
@@ -37,6 +38,7 @@ const waterSlide = waterSlidePriceRange(allListings);
 const delivery = deliveryFeeRange(allListings);
 const deposit = depositRange(allListings);
 const chairMin = chairPriceMin(allListings);
+const tableRange = tablePriceRange(allListings);
 const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
 const tentMax = tentSizes.length ? Math.max(...tentSizes.map((t) => t.high)) : null;
 
@@ -95,6 +97,14 @@ const faqs = [
     ? [{
         q: 'How much does chair rental cost?',
         a: `Folding chairs start around $${fmt(chairMin)} each based on real published rates in our directory, with padded, resin, and chiavari chairs pricing higher per chair. Chair rental is almost always per-item, and many companies have order minimums.`,
+      }]
+    : []),
+  // "table rental cost" — Easy KD (keyword-research.md batch 1). Real data
+  // existed all along but only ever surfaced buried in per-listing tables.
+  ...(tableRange
+    ? [{
+        q: 'How much does table rental cost?',
+        a: `Real published table prices in our directory run about $${fmt(tableRange.low)}–$${fmt(tableRange.high)} each (${tableRange.count} price point${tableRange.count === 1 ? '' : 's'}), covering banquet, cocktail, round, and specialty tables. Like chairs, tables are almost always priced per-item rather than as part of a package.`,
       }]
     : []),
   ...(photoBooth
@@ -227,13 +237,22 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
       </section>
     )}
 
-    {chairMin != null && (
+    {(chairMin != null || tableRange) && (
       <section>
         <h2>What about tables and chairs?</h2>
         <p>
-          Table and chair rental is almost always priced per-item, not as a package — real folding
-          chair rates in our data start around <strong>${fmt(chairMin)} each</strong>. See a metro
-          page below for full per-company pricing tables.
+          Table and chair rental is almost always priced per-item, not as a package.
+          {chairMin != null && (
+            <> Real folding chair rates in our data start around <strong>${fmt(chairMin)} each</strong>.</>
+          )}
+          {tableRange && (
+            <>
+              {' '}Table prices — banquet, cocktail, round, and more — run{' '}
+              <strong>${fmt(tableRange.low)} to ${fmt(tableRange.high)}</strong> each,
+              based on {tableRange.count} real published table prices.
+            </>
+          )}
+          {' '}See a metro page below for full per-company pricing tables.
         </p>
       </section>
     )}

@@ -251,6 +251,50 @@ export function bounceHousePriceRange(items: Listing[]): PriceRange | null {
   return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
 }
 
+// Matches "table"/"tables" as a real word, not a substring — a naive /table/i
+// would also match every single bounce-house/inflatable item_type, since
+// "inflatable" itself contains "table" (in-fla-TABLE). Verified against the
+// live DB before shipping: 0 of 117 real matches were contaminated by
+// "inflatable" once boundaries were required on both sides. The separate
+// /cloth/i guard below catches tablecloth item_types the NON_RENTAL_ITEM_RE
+// tablecloth check misses when the words are space- or underscore-separated
+// ("COCKTAIL TABLE CLOTH", "table_cloth_60x120") rather than one word.
+const TABLE_WORD_RE = /(^|[^a-zA-Z])tables?([^a-zA-Z]|$)/i;
+
+// Real contamination found live 2026-07-26 while shipping tablePriceRange,
+// both from a single business's garbled extraction, not the regex above:
+// (1) item_types like "tents_tables_chairs_and_more_tent_20x20" are a
+//     category breadcrumb the model captured as the item_type instead of the
+//     actual item -- the $679.90 behind it is a TENT price, not a table's.
+// (2) one "table_round_60in" row's source_snippet is literally for a sofa
+//     ($400 "cream boucle sherpa sofa") -- a real item_type hallucination
+//     validate_pricing.py can't catch, since it only checks that the price
+//     appears in the snippet, never that the snippet is actually about the
+//     claimed item. Guarding against recognizable furniture words here
+//     rather than hand-excluding one row, so a future re-extraction with the
+//     same failure mode doesn't quietly slip back in.
+const GARBLED_CATEGORY_RE = /tent.*chair|chair.*tent/i;
+const WRONG_ITEM_SNIPPET_RE = /sofa|couch|loveseat|sectional/i;
+
+/** Real table price range (any table type — banquet, cocktail, round, etc) —
+ * "table rental cost" is an Easy-KD real-volume keyword (keyword-research.md
+ * batch 1) that only ever surfaced as a single chair-price line, never its
+ * own number, despite real table pricing existing across the data. */
+export function tablePriceRange(items: Listing[]): PriceRange | null {
+  const prices: number[] = [];
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null || p.price_low <= 0) continue;
+      if (/cloth/i.test(p.item_type)) continue;
+      if (GARBLED_CATEGORY_RE.test(p.item_type)) continue;
+      if (p.source_snippet && WRONG_ITEM_SNIPPET_RE.test(p.source_snippet)) continue;
+      if (TABLE_WORD_RE.test(p.item_type)) prices.push(p.price_low);
+    }
+  }
+  if (!prices.length) return null;
+  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+}
+
 function priceRangeForPattern(items: Listing[], pattern: RegExp): PriceRange | null {
   const prices: number[] = [];
   for (const l of items) {
