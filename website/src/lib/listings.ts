@@ -99,6 +99,19 @@ export function getPublishedMetros(): { meta: MetroMeta; listings: Listing[] }[]
   );
 }
 
+/** Published listings whose metro hasn't cleared MIN_LISTINGS, so no metro page
+ * exists to link them. Without surfacing these somewhere they're orphans: live
+ * and in the sitemap, but reachable by zero internal links. Found live
+ * 2026-07-26 — Pittsburgh's single listing had been in that state since the
+ * metro was added, joined by Myrtle Beach's two. Covers both cases: a metro
+ * declared in METROS but under the floor, and one not declared there at all. */
+export function getUnpagedListings(): Listing[] {
+  const paged = new Set(getPublishedMetros().map((m) => m.meta.key));
+  return listings
+    .filter((l) => !paged.has(l.metro))
+    .sort((a, b) => a.city.localeCompare(b.city) || a.name.localeCompare(b.name));
+}
+
 export function getMetroForListing(listing: Listing): MetroMeta | undefined {
   return metroByKey(listing.metro);
 }

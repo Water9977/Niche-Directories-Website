@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import {
   getPublishedMetros,
+  getUnpagedListings,
+  stateAbbr,
   tentSizeBreakdown,
   bounceHousePriceRange,
   photoBoothPriceRange,
@@ -22,6 +24,11 @@ import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
 // for this query does.
 const metros = getPublishedMetros();
 const allListings = metros.flatMap((m) => m.listings);
+
+// Published listings in areas that haven't cleared the metro-page floor yet.
+// They're live and in the sitemap either way; linking them here is what stops
+// them being orphans with zero internal links pointing at them.
+const unpaged = getUnpagedListings();
 
 const tentSizes = tentSizeBreakdown(allListings, 2); // min 2 real data points per size, national scale can afford the bar
 const bounceHouse = bounceHousePriceRange(allListings);
@@ -256,6 +263,23 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
           <li><a href={`/${meta.slug}/`}>{meta.name} tent rental prices</a> ({listings.length} companies)</li>
         ))}
       </ul>
+
+      {unpaged.length > 0 && (
+        <>
+          <h3>Other areas we have prices for</h3>
+          <p class="muted">
+            Not enough companies with published pricing in these areas for a full
+            city page yet — here's every one we've verified so far.
+          </p>
+          <ul>
+            {unpaged.map((l) => (
+              <li>
+                <a href={`/listing/${l.slug}/`}>{l.name}</a> — {l.city}, {stateAbbr(l.state)}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
   </div>
 </BaseLayout>
@@ -278,4 +302,6 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
   .faq-item p { color: var(--color-text-muted); margin: 0; }
   .metro-links ul { padding-left: var(--space-6); }
   .metro-links li { margin-bottom: var(--space-2); }
+  .metro-links h3 { margin-top: var(--space-6); margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .metro-links .muted { color: var(--color-text-muted); margin: 0 0 var(--space-3); font-size: 0.9rem; }
 </style>
