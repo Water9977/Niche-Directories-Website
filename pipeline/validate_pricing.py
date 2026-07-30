@@ -57,6 +57,39 @@ def extract_dollar_amounts(text):
     return amounts
 
 
+# A product-page URL inside a snippet names exactly which product the price
+# belongs to, so it's the one case where the item_type can be checked against
+# something authoritative rather than taken on trust.
+PRODUCT_URL_RE = re.compile(r"/(?:product-page|product|rentals|items|shop)/([a-z0-9][a-z0-9\-_]*)", re.I)
+
+
+def item_type_matches_snippet_url(item_type, snippet):
+    """Guards a real blind spot in this script's main check: verifying the price
+    appears in the snippet proves the NUMBER is real, never that it belongs to
+    the item it's filed under. Found live 2026-07-26 — Sage Hill Rentals had 13
+    rows (a third of its data) where the model reused one product's snippet
+    across unrelated item_types: a `tent_10x10` priced $120 that is actually a
+    pre-lit tree, a `table_round_60in` at $400 that is a sofa. Every one passed
+    the price check cleanly, and the bogus tent price fed the site's tent-size
+    stats.
+
+    Only judges rows whose snippet carries a product URL with a genuinely
+    descriptive slug (2+ real tokens). Slugs like `/items/med` say nothing
+    about the product, so those rows pass through untouched rather than being
+    deleted on weak evidence. Verified against the full DB before shipping:
+    43 pass, 11 skipped as non-descriptive, and exactly the 13 known-bad rows
+    flagged — no collateral damage to any other listing.
+    """
+    m = PRODUCT_URL_RE.search(snippet or "")
+    if not m:
+        return True
+    slug_tokens = {t for t in re.split(r"[-_]", m.group(1)) if len(t) > 2}
+    if len(slug_tokens) < 2:
+        return True
+    type_tokens = {t for t in re.split(r"[^a-z0-9]+", (item_type or "").lower()) if len(t) > 2}
+    return bool(slug_tokens & type_tokens)
+
+
 def price_is_supported(price, snippet_amounts, tolerance=0.01):
     if price is None:
         return True  # nothing to verify
@@ -75,14 +108,20 @@ def main():
         "SELECT id, listing_id, item_type, price_low, price_high, source_snippet FROM listing_pricing"
     ).fetchall()
 
-    kept, removed = 0, []
+    kept, unsupported, mislabeled = 0, [], []
     for pid, listing_id, item_type, price_low, price_high, snippet in rows:
         amounts = extract_dollar_amounts(snippet)
         ok = price_is_supported(price_low, amounts) and price_is_supported(price_high, amounts)
-        if ok and amounts:
-            kept += 1
+        if not (ok and amounts):
+            unsupported.append((pid, listing_id, item_type, price_low, snippet))
+        elif not item_type_matches_snippet_url(item_type, snippet):
+            # Price is real, but it belongs to a different product than the one
+            # this row claims — publishing it would misattribute a real price.
+            mislabeled.append((pid, listing_id, item_type, price_low, snippet))
         else:
-            removed.append((pid, listing_id, item_type, price_low, snippet))
+            kept += 1
+
+    removed = unsupported + mislabeled
 
     # Delete BEFORE printing — a print-loop crash (encoding, whatever) must
     # never be able to block the actual data-integrity fix, which is the one
@@ -91,8 +130,16 @@ def main():
         conn.executemany("DELETE FROM listing_pricing WHERE id = ?", [(r[0],) for r in removed])
         conn.commit()
 
-    print(f"Checked {len(rows)} pricing rows: {kept} verified, {len(removed)} unsupported by their own source_snippet.")
-    for pid, listing_id, item_type, price_low, snippet in removed:
+    print(f"Checked {len(rows)} pricing rows: {kept} verified, {len(unsupported)} unsupported by their own source_snippet.")
+    if mislabeled:
+        print(
+            f"{len(mislabeled)} more removed as MISLABELED — real price, but the snippet's "
+            f"product URL names a different item than the row claims:"
+        )
+        for pid, listing_id, item_type, price_low, snippet in mislabeled:
+            url = PRODUCT_URL_RE.search(snippet or "")
+            print(f"  MISLABEL listing_id={listing_id} {item_type} ${price_low} is actually: {url.group(1) if url else '?'}")
+    for pid, listing_id, item_type, price_low, snippet in unsupported:
         safe_snippet = (snippet or "")[:80]
         print(f"  REMOVE listing_id={listing_id} {item_type} price_low={price_low} snippet=\"{safe_snippet}\"")
 

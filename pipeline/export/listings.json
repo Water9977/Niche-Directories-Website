@@ -16333,24 +16333,6 @@
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       },
       {
-        "item_type": "table_round_60in",
-        "price_low": 400.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "tent_10x10",
-        "price_low": 120.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
         "item_type": "table_tree_decoration",
         "price_low": 3.0,
         "price_high": null,
@@ -16373,15 +16355,6 @@
         "price_low": 16.0,
         "price_high": null,
         "unit": "per event",
-        "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "table_tree_decoration",
-        "price_low": 16.0,
-        "price_high": null,
-        "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
@@ -16392,15 +16365,6 @@
         "price_high": null,
         "unit": "per event",
         "source_snippet": "Price$900.00](https://www.sagehillrentals.com/product-page/20-x-20-white-acrylic-dance-floor)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "aisle_steps",
-        "price_low": 150.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       },
@@ -16464,24 +16428,6 @@
         "price_high": null,
         "unit": "per event",
         "source_snippet": "Price$1,450.00](https://www.sagehillrentals.com/product-page/grand-estate-bar)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "bar_7ft_arched",
-        "price_low": 2.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/silver-seated-reindeer)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "bar_7ft_arched",
-        "price_low": 2.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       },
@@ -16568,46 +16514,10 @@
       },
       {
         "item_type": "stage_8ft_white",
-        "price_low": 150.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "stage_8ft_white",
-        "price_low": 95.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$95.00](https://www.sagehillrentals.com/product-page/cream-waterfall-bench)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "stage_8ft_white",
-        "price_low": 2.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/silver-seated-reindeer)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "stage_8ft_white",
         "price_low": 2.0,
         "price_high": null,
         "unit": "per event",
         "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "stage_8ft_white",
-        "price_low": 400.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       },
@@ -16635,15 +16545,6 @@
         "price_high": null,
         "unit": "per event",
         "source_snippet": "Price$3.00](https://www.sagehillrentals.com/product-page/faux-fur-white-table-tree-decor)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-23T11:57:00.606101+00:00"
-      },
-      {
-        "item_type": "stage_8ft_white",
-        "price_low": 10.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Price$10.00](https://www.sagehillrentals.com/product-page/ceramic-sparkle-table-tree-decoration)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-07-23T11:57:00.606101+00:00"
       },
@@ -18872,702 +18773,702 @@
     "review_count": 45,
     "category": "Party equipment rental service",
     "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkMEXj4FizqEU9reQAWSkMKI_RdPEjFTLBXZuwp3p2Bz0g3-ZjtWkEAr2AafRbKuN5a5Fi8Ny_1_RaOYJJWqziU4fEHerZrBQVdReSBxPVLBmcc3lX6cp1ies1P1JHIXWbA-Ks=w426-h240-k-no",
-    "delivery_available": "yes",
+    "delivery_available": "unknown",
     "setup_included": "unknown",
     "weekend_surcharge": "unknown",
     "pricing": [
       {
-        "item_type": "Toddler Yard",
+        "item_type": "toddler_yard",
         "price_low": 350.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Toddler Yard - $350.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Marvel Avengers Inflatable Combo Wet",
+        "item_type": "marvel_avengers_inflatable_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Marvel Avengers Inflatable Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Marble Combo Wet",
+        "item_type": "marble_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Marble Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Kingdom Combo Wet",
+        "item_type": "kingdom_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Kingdom Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Jurassic Park",
+        "item_type": "jurassic_park",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Jurassic Park - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Epic Combo Wet",
+        "item_type": "epic_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Epic Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dual Lane Shark Combo Inflatable Rental Wet",
+        "item_type": "dual_lane_shark_combo_inflatable_rental_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dual Lane Shark Combo Inflatable Rental Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dinosaur Inflatable Combo",
+        "item_type": "dinosaur_inflatable_combo",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dinosaur Inflatable Combo - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Castle Chase Combo Wet",
+        "item_type": "castle_chase_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Castle Chase Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Balloon Combo Wet",
+        "item_type": "balloon_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Balloon Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Mickey Mouse Club House Wet",
+        "item_type": "mickey_mouse_club_house_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Mickey Mouse Club House Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Toddler Pirate Ship Inflatable Combo",
+        "item_type": "toddler_pirate_ship_inflatable_combo",
         "price_low": 350.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Toddler Pirate Ship Inflatable Combo - $350.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Toddler Combo",
+        "item_type": "toddler_combo",
         "price_low": 350.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Toddler Combo - $350.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Lil Farm Toddler Inflatable Rentals",
+        "item_type": "lil_farm_toddler_inflatable_rentals",
         "price_low": 350.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Lil Farm Toddler Inflatable Rentals - $350.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Animal Kingdom",
+        "item_type": "animal_kingdom",
         "price_low": 350.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Animal Kingdom - $350.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Black Folding Chair",
+        "item_type": "black_folding_chair",
         "price_low": 3.85,
         "price_high": null,
-        "unit": "each",
-        "source_snippet": "Black Folding Chair - $3.85",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$3.85",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "6 foot Table",
+        "item_type": "6_foot_table",
         "price_low": 16.5,
         "price_high": null,
-        "unit": "each",
-        "source_snippet": "6 foot Table - $16.50",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$16.50",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "4 foot Table",
+        "item_type": "4_foot_table",
         "price_low": 16.5,
         "price_high": null,
-        "unit": "each",
-        "source_snippet": "4 foot Table - $16.50",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$16.50",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Rocky Falls Dual Lane Super Slide",
+        "item_type": "rocky_falls_dual_lane_super_slide",
         "price_low": 795.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Rocky Falls Dual Lane Super Slide - $795.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$795.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Island Revenge Dual Lane Inflatable Water Slide",
+        "item_type": "island_revenge_dual_lane_inflatable_water_slide",
         "price_low": 795.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Island Revenge Dual Lane Inflatable Water Slide - $795.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$795.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dolphin Cove",
+        "item_type": "dolphin_cove",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dolphin Cove - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Wildfire Inflatable Water Slide",
+        "item_type": "wildfire_inflatable_water_slide",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Wildfire Inflatable Water Slide - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Slippery Slope",
+        "item_type": "slippery_slope",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Slippery Slope - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Rockin Dual Lane Inflatable Water Slide Rental",
+        "item_type": "rockin_dual_lane_inflatable_water_slide_rental",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Rockin Dual Lane Inflatable Water Slide Rental - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Red Canyon Inflatable Slide Wet",
+        "item_type": "red_canyon_inflatable_slide_wet",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Red Canyon Inflatable Slide Wet - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Rainbow Run Inflatable Slide Wet",
+        "item_type": "rainbow_run_inflatable_slide_wet",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Rainbow Run Inflatable Slide Wet - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Purple Hurricane Dual Lane Slide",
+        "item_type": "purple_hurricane_dual_lane_slide",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Purple Hurricane Dual Lane Slide - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Oasis Slide Wet",
+        "item_type": "oasis_slide_wet",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Oasis Slide Wet - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Everest",
+        "item_type": "everest",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Everest - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Electric Slide Wet",
+        "item_type": "electric_slide_wet",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Electric Slide Wet - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dual Lane Fiesta Super Slide",
+        "item_type": "dual_lane_fiesta_super_slide",
         "price_low": 795.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dual Lane Fiesta Super Slide - $795.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$795.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Big Blue Slide",
+        "item_type": "big_blue_slide",
         "price_low": 495.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Big Blue Slide - $495.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Unicorn Inflatable Combo with Slide Wet",
+        "item_type": "unicorn_inflatable_combo_with_slide_wet",
         "price_low": 425.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Unicorn Inflatable Combo with Slide Wet - $425.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$425.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Tropical Falls Combo Wet",
+        "item_type": "tropical_falls_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Tropical Falls Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Tiki Plunge Dual Lane Wet Combo",
+        "item_type": "tiki_plunge_dual_lane_wet_combo",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Tiki Plunge Dual Lane Wet Combo - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Sports 3-D Combo Wet",
+        "item_type": "sports_3_d_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Sports 3-D Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "River Rush Combo Wet",
+        "item_type": "river_rush_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "River Rush Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Paw Patrol Combo Wet",
+        "item_type": "paw_patrol_combo_wet",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Paw Patrol Combo Wet - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Minnie Mouse Wet Combo",
+        "item_type": "minnie_mouse_wet_combo",
         "price_low": 379.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Minnie Mouse Wet Combo - $379.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Epic Combo Dry",
+        "item_type": "epic_combo_dry",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Epic Combo Dry - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "9 Square in the Air",
+        "item_type": "9_square_in_the_air",
         "price_low": 375.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "9 Square in the Air - $375.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Connect A Shot",
+        "item_type": "connect_a_shot",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Connect A Shot - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Cash Machine",
+        "item_type": "cash_machine",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Cash Machine - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Carnival 5 n 1 Inflatable Game",
+        "item_type": "carnival_5_n_1_inflatable_game",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Carnival 5 n 1 Inflatable Game - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Axe Throw Inflatable Rental",
+        "item_type": "axe_throw_inflatable_rental",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Axe Throw Inflatable Rental - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "3 Point Basketball",
+        "item_type": "3_point_basketball",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "3 Point Basketball - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Cornhole",
+        "item_type": "cornhole",
         "price_low": 215.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Cornhole - $215.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$215.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Electric Slide Dry",
+        "item_type": "electric_slide_dry",
         "price_low": 400.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Electric Slide Dry - $400.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$400.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Ninja Combo",
+        "item_type": "ninja_combo",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Ninja Combo - $365.00 Starting at",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Bungee Run/Twister/Joust",
+        "item_type": "bungee_run_twister_joust",
         "price_low": 375.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Bungee Run/Twister/Joust - $375.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dual Lane Shark Combo Inflatable Rental Dry",
+        "item_type": "dual_lane_shark_combo_inflatable_rental_dry",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dual Lane Shark Combo Inflatable Rental Dry - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Crayon Combo",
+        "item_type": "crayon_combo",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Crayon Combo - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Castle Chase Combo Dry",
+        "item_type": "castle_chase_combo_dry",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Castle Chase Combo Dry - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Balloon Combo Dry",
+        "item_type": "balloon_combo_dry",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Balloon Combo Dry - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Backyard Combo",
+        "item_type": "backyard_combo",
         "price_low": 365.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Backyard Combo - $365.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Cotton Candy Machine",
+        "item_type": "cotton_candy_machine",
         "price_low": 135.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Cotton Candy Machine - $135.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$135.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Down A Clown",
+        "item_type": "down_a_clown",
         "price_low": 145.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Down A Clown - $145.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Disneys Princess Castle",
+        "item_type": "disneys_princess_castle",
         "price_low": 250.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Disneys Princess Castle - $250.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$250.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Radical Run Through",
+        "item_type": "radical_run_through",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Radical Run Through - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Baja Blast Dual Lane Inflatable Super Slide",
+        "item_type": "baja_blast_dual_lane_inflatable_super_slide",
         "price_low": 795.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Baja Blast Dual Lane Inflatable Super Slide - $795.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$795.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Rainbow Slip N Dip",
+        "item_type": "rainbow_slip_n_dip",
         "price_low": 295.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Rainbow Slip N Dip - $295.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Fire Slip N Dip",
+        "item_type": "fire_slip_n_dip",
         "price_low": 295.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Fire Slip N Dip - $295.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Blazin Slip N Dip",
+        "item_type": "blazin_slip_n_dip",
         "price_low": 295.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Blazin Slip N Dip - $295.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "U-Turn Obstacle Course",
+        "item_type": "u_turn_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "U-Turn Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "TN River Run",
+        "item_type": "tn_river_run",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "TN River Run - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Tiki Island Water Obstacle Course Rental",
+        "item_type": "tiki_island_water_obstacle_course_rental",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Tiki Island Water Obstacle Course Rental - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "River Rush Obstacle Course",
+        "item_type": "river_rush_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "River Rush Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Radical U-Turn",
+        "item_type": "radical_u_turn",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Radical U-Turn - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Cowabunga Wet Bounce House",
+        "item_type": "cowabunga_wet_bounce_house",
         "price_low": 250.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Cowabunga Wet Bounce House - $250.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$250.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Radical Run",
+        "item_type": "radical_run",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Radical Run - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Radical Rock Slide",
+        "item_type": "radical_rock_slide",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Radical Rock Slide - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Hop, Skip, n Jump Obstacle Course",
+        "item_type": "hop_skip_n_jump_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Hop, Skip, n Jump Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "H2O Inflatable Obstacle Course Rental",
+        "item_type": "h2o_inflatable_obstacle_course_rental",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "H2O Inflatable Obstacle Course Rental - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Crossfit Obstacle Course",
+        "item_type": "crossfit_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Crossfit Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Camo Obstacle Course",
+        "item_type": "camo_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Camo Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "7 Element Obstacle Course",
+        "item_type": "7_element_obstacle_course",
         "price_low": 395.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "7 Element Obstacle Course - $395.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       },
       {
-        "item_type": "Dual Lane Slam Dunk",
+        "item_type": "dual_lane_slam_dunk",
         "price_low": 375.0,
         "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Dual Lane Slam Dunk - $375.00 (or $99.00 Customer Pickup)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T09:24:35.813366+00:00"
+        "unit": "per day",
+        "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
+        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
+        "last_checked": "2026-07-27T17:11:48.107865+00:00"
       }
     ]
   },
