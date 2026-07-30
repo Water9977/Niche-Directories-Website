@@ -13,6 +13,7 @@ import {
   depositRange,
   chairPriceMin,
   tablePriceRange,
+  formatPriceRange,
 } from '../../lib/listings';
 import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
 
@@ -75,13 +76,13 @@ const faqs = [
   ...(delivery
     ? [{
         q: 'Do tent rental companies charge for delivery?',
-        a: `Many do — real published delivery fees in our data range from $${fmt(delivery.low)} to $${fmt(delivery.high)}, based on ${delivery.count} real published fee${delivery.count === 1 ? '' : 's'}. Some companies include delivery within a set radius instead of charging separately; check each company's listing for their specific policy.`,
+        a: `Many do — real published delivery fees in our data range from ${formatPriceRange(delivery, fmt)}, based on ${delivery.count} real published fee${delivery.count === 1 ? '' : 's'}. Some companies include delivery within a set radius instead of charging separately; check each company's listing for their specific policy.`,
       }]
     : []),
   ...(deposit
     ? [{
         q: 'How much is a deposit for tent rental?',
-        a: `Real published deposits in our data range from $${fmt(deposit.low)} to $${fmt(deposit.high)}, based on ${deposit.count} real published deposit amount${deposit.count === 1 ? '' : 's'}. Not every company requires one, and policies vary — check the individual listing.`,
+        a: `Real published deposits in our data range from ${formatPriceRange(deposit, fmt)}, based on ${deposit.count} real published deposit amount${deposit.count === 1 ? '' : 's'}. Not every company requires one, and policies vary — check the individual listing.`,
       }]
     : []),
   // "how much do wedding rentals cost" — Easy KD (July 2026 Ahrefs pull);
@@ -104,19 +105,19 @@ const faqs = [
   ...(tableRange
     ? [{
         q: 'How much does table rental cost?',
-        a: `Real published table prices in our directory run about $${fmt(tableRange.low)}–$${fmt(tableRange.high)} each (${tableRange.count} price point${tableRange.count === 1 ? '' : 's'}), covering banquet, cocktail, round, and specialty tables. Like chairs, tables are almost always priced per-item rather than as part of a package.`,
+        a: `Real published table prices in our directory run about ${formatPriceRange(tableRange, fmt)} each (${tableRange.count} price point${tableRange.count === 1 ? '' : 's'}), covering banquet, cocktail, round, and specialty tables. Like chairs, tables are almost always priced per-item rather than as part of a package.`,
       }]
     : []),
   ...(photoBooth
     ? [{
         q: 'How much does a photo booth rental cost?',
-        a: `Real published photo booth pricing across our directory runs about $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)} (${photoBooth.count} price point${photoBooth.count === 1 ? '' : 's'}), with 360 booths and mirror booths above standard enclosed booths. Most quote per event or per hour.`,
+        a: `Real published photo booth pricing across our directory runs about ${formatPriceRange(photoBooth, fmt)} (${photoBooth.count} price point${photoBooth.count === 1 ? '' : 's'}), with 360 booths and mirror booths above standard enclosed booths. Most quote per event or per hour.`,
       }]
     : []),
   ...(waterSlide
     ? [{
         q: 'How much does a water slide rental cost?',
-        a: `About $${fmt(waterSlide.low)}–$${fmt(waterSlide.high)} based on real published rates across our directory (${waterSlide.count} price point${waterSlide.count === 1 ? '' : 's'}) — taller dual-lane slides and slide/pool combos sit at the higher end.`,
+        a: `About ${formatPriceRange(waterSlide, fmt)} based on real published rates across our directory (${waterSlide.count} price point${waterSlide.count === 1 ? '' : 's'}) — taller dual-lane slides and slide/pool combos sit at the higher end.`,
       }]
     : []),
   {
@@ -186,7 +187,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
       <h2>Delivery and deposit costs</h2>
       <p>
         {delivery ? (
-          <>Real published delivery fees range from <strong>${fmt(delivery.low)} to ${fmt(delivery.high)}</strong>
+          <>Real published delivery fees range from <strong>{formatPriceRange(delivery, fmt)}</strong>
           {' '}({delivery.count} real fee{delivery.count === 1 ? '' : 's'} published across our directory).</>
         ) : (
           <>Delivery fees vary by company and distance.</>
@@ -194,7 +195,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
         {' '}
         {deposit ? (
           <>Where a deposit is required, real published amounts range from
-          {' '}<strong>${fmt(deposit.low)} to ${fmt(deposit.high)}</strong>
+          {' '}<strong>{formatPriceRange(deposit, fmt)}</strong>
           {' '}({deposit.count} real deposit{deposit.count === 1 ? '' : 's'} published).</>
         ) : null}
       </p>
@@ -205,7 +206,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
         <h2>Bounce house rental cost (if you need more than a tent)</h2>
         <p>
           Real published bounce house pricing across our directory runs about
-          {' '}<strong>${fmt(bounceHouse.low)}–${fmt(bounceHouse.high)}</strong>, based on
+          {' '}<strong>{formatPriceRange(bounceHouse, fmt)}</strong>, based on
           {' '}{bounceHouse.count} published price points. Combo units with a slide typically cost
           more than a standalone bounce house.
         </p>
@@ -217,7 +218,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
         <h2>Photo booth rental cost</h2>
         <p>
           Real published photo booth pricing across our directory runs about
-          {' '}<strong>${fmt(photoBooth.low)}–${fmt(photoBooth.high)}</strong>
+          {' '}<strong>{formatPriceRange(photoBooth, fmt)}</strong>
           {' '}({photoBooth.count} published price point{photoBooth.count === 1 ? '' : 's'}).
           360 booths and mirror booths typically price above a standard enclosed booth; most
           companies quote per event or per hour.
@@ -230,7 +231,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
         <h2>Water slide rental cost</h2>
         <p>
           Real published water slide pricing runs about
-          {' '}<strong>${fmt(waterSlide.low)}–${fmt(waterSlide.high)}</strong>
+          {' '}<strong>{formatPriceRange(waterSlide, fmt)}</strong>
           {' '}({waterSlide.count} published price point{waterSlide.count === 1 ? '' : 's'}) —
           taller dual-lane slides and slide/pool combos sit at the higher end.
         </p>
@@ -248,7 +249,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
           {tableRange && (
             <>
               {' '}Table prices — banquet, cocktail, round, and more — run{' '}
-              <strong>${fmt(tableRange.low)} to ${fmt(tableRange.high)}</strong> each,
+              <strong>{formatPriceRange(tableRange, fmt)}</strong> each,
               based on {tableRange.count} real published table prices.
             </>
           )}

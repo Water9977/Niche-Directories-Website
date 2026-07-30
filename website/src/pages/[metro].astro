@@ -8,6 +8,8 @@ import {
   getPublishedMetros,
   groupByCity,
   chairPriceMin,
+  tablePriceRange,
+  formatPriceRange,
   tentSizeBreakdown,
   bounceHousePriceRange,
   photoBoothPriceRange,
@@ -39,6 +41,7 @@ const photoBooth = photoBoothPriceRange(listings);
 const waterSlide = waterSlidePriceRange(listings);
 const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
 const chairMin = chairPriceMin(listings);
+const tableRange = tablePriceRange(listings);
 // Wedding-size tents (20x40 and up, ~800+ sq ft) — targets the real
 // "wedding tent rental cost" query (Easy KD, real volume per keyword-research.md).
 const weddingTents = tentSizes.filter((t) => {
@@ -84,25 +87,27 @@ if (weddingMin != null && weddingMax != null && weddingMax > weddingMin) {
 if (bounceHouse) {
   faqs.push({
     q: `How much does a bounce house rental cost in ${meta.name}?`,
-    a: `About $${fmt(bounceHouse.low)}–$${fmt(bounceHouse.high)} based on real pricing published by local companies, with combo units (bounce plus slide) generally at the higher end. See the "Bounce house rental cost" section above.`,
+    a: `About ${formatPriceRange(bounceHouse, fmt)} based on real pricing published by local companies, with combo units (bounce plus slide) generally at the higher end. See the "Bounce house rental cost" section above.`,
   });
 }
 if (photoBooth) {
   faqs.push({
     q: `How much does a photo booth rental cost in ${meta.name}?`,
-    a: `Real published photo booth pricing in ${meta.name} runs about $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)}, based on ${photoBooth.count} published price point${photoBooth.count === 1 ? '' : 's'}. 360 booths and mirror booths typically price above a standard enclosed booth.`,
+    a: `Real published photo booth pricing in ${meta.name} runs about ${formatPriceRange(photoBooth, fmt)}, based on ${photoBooth.count} published price point${photoBooth.count === 1 ? '' : 's'}. 360 booths and mirror booths typically price above a standard enclosed booth.`,
   });
 }
 if (waterSlide) {
   faqs.push({
     q: `How much does a water slide rental cost in ${meta.name}?`,
-    a: `About $${fmt(waterSlide.low)}–$${fmt(waterSlide.high)} based on real published rates from local companies — taller dual-lane slides and slide/pool combos sit at the higher end.`,
+    a: `About ${formatPriceRange(waterSlide, fmt)} based on real published rates from local companies — taller dual-lane slides and slide/pool combos sit at the higher end.`,
   });
 }
 faqs.push(
   {
     q: `How much does table and chair rental cost in ${meta.name}?`,
-    a: `Usually priced per-item rather than as a package${chairMin != null ? ` — folding chairs start around $${fmt(chairMin)} each` : ''}. Check the pricing table for each company above for their published per-table and per-chair rates.`,
+    // Real per-metro numbers where the data supports them, falling back to the
+    // generic "check the tables" line only when this metro genuinely has none.
+    a: `Usually priced per-item rather than as a package${chairMin != null ? ` — folding chairs start around $${fmt(chairMin)} each` : ''}${tableRange ? `, and tables run ${formatPriceRange(tableRange, fmt)} each across ${tableRange.count} real published price${tableRange.count === 1 ? '' : 's'}` : ''}. Check the pricing table for each company above for their published per-table and per-chair rates.`,
   },
   {
     q: `Do ${meta.name} rental companies charge for delivery?`,
@@ -132,10 +137,12 @@ const jsonLd = [
     <p class="intro">
       {meta.blurb} We list the {listings.length} local rental companies below that actually publish
       real pricing on their own websites — not vague "contact us for a quote" pages.
-      {(chairMin != null || tentMin != null) && (
+      {(chairMin != null || tentMin != null || tableRange) && (
         <> Real examples from their published rates:
         {chairMin != null && <> folding chairs from ${fmt(chairMin)} each</>}
-        {chairMin != null && tentMin != null && <>,</>}
+        {chairMin != null && (tableRange || tentMin != null) && <>,</>}
+        {tableRange && <> tables from ${fmt(tableRange.low)} each</>}
+        {tableRange && tentMin != null && <>,</>}
         {tentMin != null && <> tents from ${fmt(tentMin)}</>}
         &nbsp;— most companies quote per-item rather than a flat rate.</>
       )}

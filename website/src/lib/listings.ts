@@ -235,6 +235,17 @@ export interface PriceRange {
   count: number;
 }
 
+/** Renders a price range, collapsing to a single figure when low === high.
+ * Metro pages aggregate small per-metro samples, so a category with one real
+ * price (or several identical ones) otherwise renders as "$10–$10", which
+ * reads like a formatting bug rather than real data. Found live 2026-07-26
+ * across 6 collapsed ranges on metro pages spanning several categories. */
+export function formatPriceRange(range: PriceRange, fmt: (n: number) => string): string {
+  return range.low === range.high
+    ? `$${fmt(range.low)}`
+    : `$${fmt(range.low)}–$${fmt(range.high)}`;
+}
+
 /** Real bounce-house price range from `item_type` values matching "bounce
  * house" in any form — keyword research showed real head-term volume + Easy
  * KD on "bounce house rental cost", better than table/chair terms, so this
