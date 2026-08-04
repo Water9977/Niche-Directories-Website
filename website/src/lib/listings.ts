@@ -1,5 +1,5 @@
 import rawListings from '../data/listings.json';
-import { METROS, MIN_LISTINGS, metroByKey, type MetroMeta } from './metros';
+import { METROS, MIN_LISTINGS, metroByKey, nearbyMetroKeys, type MetroMeta } from './metros';
 
 export interface PricingItem {
   item_type: string;
@@ -114,6 +114,18 @@ export function getUnpagedListings(): Listing[] {
 
 export function getMetroForListing(listing: Listing): MetroMeta | undefined {
   return metroByKey(listing.metro);
+}
+
+/** Published metros geographically near the given one, for cross-metro
+ * internal linking on metro pages (SEO audit 2026-07-31). Filters the real
+ * adjacency list down to metros that actually have a page right now, so a
+ * neighbor below MIN_LISTINGS (or removed) never produces a dead link. */
+export function getNearbyPublishedMetros(key: string): MetroMeta[] {
+  const publishedKeys = new Set(getPublishedMetros().map((m) => m.meta.key));
+  return nearbyMetroKeys(key)
+    .filter((k) => publishedKeys.has(k))
+    .map((k) => metroByKey(k))
+    .filter((m): m is MetroMeta => m != null);
 }
 
 /** Group a metro's listings by city, so a metro page can section them. */

@@ -30,7 +30,9 @@ const cards = metros
   .sort((a, b) => b.listings.length - a.listings.length);
 
 const title = 'Real Party & Event Rental Prices, Compared';
-const description = `Compare real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metro areas — actual numbers, not "call for a quote."`;
+// Trimmed 2026-07-31 (SEO audit) — the old wording ran 155 chars, right at
+// the desktop SERP truncation edge and already clipped on mobile (~120).
+const description = `Real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metros — actual numbers, not vague quotes.`;
 ---
 <BaseLayout title={title} description={description} path="/" jsonLd={siteJsonLd()}>
   <section class="hero">

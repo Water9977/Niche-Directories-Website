@@ -14,6 +14,7 @@ import {
   bounceHousePriceRange,
   photoBoothPriceRange,
   waterSlidePriceRange,
+  getNearbyPublishedMetros,
   type Listing,
 } from '../lib/listings';
 import type { MetroMeta } from '../lib/metros';
@@ -42,6 +43,7 @@ const waterSlide = waterSlidePriceRange(listings);
 const tentMin = tentSizes.length ? Math.min(...tentSizes.map((t) => t.low)) : null;
 const chairMin = chairPriceMin(listings);
 const tableRange = tablePriceRange(listings);
+const nearbyMetros = getNearbyPublishedMetros(meta.key);
 // Wedding-size tents (20x40 and up, ~800+ sq ft) — targets the real
 // "wedding tent rental cost" query (Easy KD, real volume per keyword-research.md).
 const weddingTents = tentSizes.filter((t) => {
@@ -245,6 +247,17 @@ const jsonLd = [
       ))}
     </section>
 
+    {nearbyMetros.length > 0 && (
+      <section class="nearby">
+        <h2>Nearby metros</h2>
+        <ul>
+          {nearbyMetros.map((n) => (
+            <li><a href={`/${n.slug}/`}>{n.name} rental prices</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <LeadForm metroName={meta.name} />
   </div>
 </BaseLayout>
@@ -269,4 +282,7 @@ const jsonLd = [
   .faq-item { margin-bottom: var(--space-6); }
   .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
   .faq-item p { color: var(--color-text-muted); margin: 0; }
+  .nearby { margin-bottom: var(--space-12); max-width: 760px; }
+  .nearby ul { padding-left: var(--space-6); }
+  .nearby li { margin-bottom: var(--space-2); }
 </style>

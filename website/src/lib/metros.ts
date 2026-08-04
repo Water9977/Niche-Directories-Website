@@ -147,6 +147,37 @@ export const METROS: MetroMeta[] = [
   },
 ];
 
+/** Real geographic neighbors (roughly under ~150 driving miles, or same
+ * region), added for cross-metro internal linking (SEO audit 2026-07-31 —
+ * metro pages had zero links to each other outside the homepage grid).
+ * Deliberately conservative: only pairs with a real, known-close relationship
+ * are listed; a metro with no genuinely nearby neighbor in our footprint
+ * (Pittsburgh) gets none rather than a forced, misleading pairing. Filtered
+ * to published metros at render time, so this list can safely include a
+ * metro before it clears MIN_LISTINGS. */
+const NEARBY: Record<string, string[]> = {
+  'Charlotte-Concord-Gastonia': ['Raleigh-Durham', 'Greensboro-Winston-Salem', 'Greenville'],
+  'Raleigh-Durham': ['Charlotte-Concord-Gastonia', 'Greensboro-Winston-Salem', 'Richmond'],
+  'Greensboro-Winston-Salem': ['Charlotte-Concord-Gastonia', 'Raleigh-Durham', 'Richmond'],
+  Richmond: ['Raleigh-Durham', 'Greensboro-Winston-Salem'],
+  Charleston: ['Savannah', 'Columbia', 'Greenville'],
+  Savannah: ['Charleston', 'Jacksonville', 'Columbia'],
+  Columbia: ['Charleston', 'Greenville', 'Charlotte-Concord-Gastonia'],
+  Greenville: ['Asheville', 'Charlotte-Concord-Gastonia', 'Columbia'],
+  Asheville: ['Greenville', 'Knoxville', 'Charlotte-Concord-Gastonia'],
+  Knoxville: ['Chattanooga', 'Asheville'],
+  Chattanooga: ['Knoxville'],
+  Jacksonville: ['Savannah'],
+  Columbus: ['Indianapolis'],
+  Indianapolis: ['Columbus'],
+  Wilmington: ['Charlotte-Concord-Gastonia', 'Raleigh-Durham', 'Charleston'],
+  Pittsburgh: [],
+};
+
+export function nearbyMetroKeys(key: string): string[] {
+  return NEARBY[key] ?? [];
+}
+
 export function metroBySlug(slug: string): MetroMeta | undefined {
   return METROS.find((m) => m.slug === slug);
 }
