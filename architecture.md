@@ -5,6 +5,12 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-08-22 — Session 27 (cont.): submitted to AdSense
+- Checked Google's current, live AdSense docs directly (not memory) before recommending anything: no numeric traffic/site-age minimum exists anymore, just original content + working nav/policy pages + 18+. Checked that against the real site state (privacy/terms/about all live, real growing organic traffic, HTTPS just fixed) — all cleared. Also confirmed one AdSense account covers both this site and Event Tools (`tools.eventrentalcosts.com`) via "Add another site," but each site gets its own independent review — no shared approval.
+- Human created the AdSense account and reached the "Verify site ownership" step. Added the Google-issued verification snippet (`ca-pub-7444475541581027`) verbatim to `BaseLayout.astro`'s `<head>` — every page uses this layout, confirmed present on all 22 built pages, correctly inside `<head></head>`, byte-for-byte matching Google's snippet. Not hostname-gated like the GA4 script next to it — Google's review crawler only ever hits the real production domain, so there's no dev-traffic risk the way there was for analytics.
+- Script is inert on its own (loads the library, shows nothing) until real ad units are placed — `AdSlot.astro`'s reserved-space comment had already anticipated this exact moment ("applying to AdSense... is a later-stage decision").
+- Verified live on production before telling the human to click "Request review."
+
 ### 2026-08-22 — Session 27: real ~40-day GSC data analyzed, real growth confirmed, 2 real findings actioned
 - Human provided the corrected main-site GSC export (the one two sessions ago was a duplicate of the Tools site's data, caught and flagged then). Extracted directly from the xlsx via stdlib `zipfile` (no package installer available in this environment) since the Read tool can't parse binary spreadsheets.
 - **Real, healthy growth confirmed across ~40 days (Jul 12–Aug 20)**: impressions climbed from ~20-30/day in week 1 to 100-250/day by week 5 (Aug 20: 215) — ahead of the "impressions weeks 2-8" timeline set in session 23. 6 total real clicks so far.
