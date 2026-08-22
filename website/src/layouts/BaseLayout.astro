@@ -25,6 +25,13 @@ const canonicalURL = new URL(path, Astro.site).toString();
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- AdSense site-verification snippet (2026-08-22) -- must be present,
+         verbatim, on every page for Google's site review. Not hostname-gated
+         like the GA4 snippet below: Google's review crawler only ever hits
+         the real production domain directly, so there's no dev-traffic
+         pollution risk the way there was for analytics. Inert until real
+         <ins class="adsbygoogle"> ad units are added (see AdSlot.astro). -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7444475541581027" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PYE7BEJXT"></script>
     <script is:inline>
       // Only fire real analytics on the production hostname — local dev
