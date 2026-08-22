@@ -56,7 +56,10 @@ const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.h
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
 const title = `${meta.name} Rental Prices (${listings.length} Companies)`;
-const description = `Real prices from ${listings.length} verified tent, table, and chair rental companies in ${meta.name} — actual dollar figures, not vague quotes.`;
+// "Wedding rentals in [city]" added 2026-08-22 per real GSC data (see intro
+// paragraph comment below) — checked longest metro name (Greensboro &
+// Winston-Salem, NC) stays under the 155-char truncation threshold at 108.
+const description = `Wedding rentals in ${meta.name} — real prices from ${listings.length} verified companies, not vague quotes.`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -137,8 +140,16 @@ const jsonLd = [
     <h1>Party &amp; Tent Rental Prices in {meta.name}</h1>
 
     <p class="intro">
-      {meta.blurb} We list the {listings.length} local rental companies below that actually publish
-      real pricing on their own websites — not vague "contact us for a quote" pages.
+      {/* Real GSC data (2026-08-22) showed "wedding rentals in [city]" pulling
+         hundreds of combined impressions across Indianapolis, Wilmington,
+         Richmond, Columbus, Charleston, Greensboro, and Savannah alone, all
+         ranking page 6+ with zero clicks — a real, systemic phrasing gap, not
+         a guess. This sentence is true for every metro (every company listed
+         does wedding rentals among other event types) so it's safe to apply
+         everywhere rather than cherry-picking wedding-specific markets. */}
+      Looking for wedding rentals in {meta.name}? {meta.blurb} We list the {listings.length} local
+      rental companies below that actually publish real pricing on their own websites — not vague
+      "contact us for a quote" pages.
       {(chairMin != null || tentMin != null || tableRange) && (
         <> Real examples from their published rates:
         {chairMin != null && <> folding chairs from ${fmt(chairMin)} each</>}
