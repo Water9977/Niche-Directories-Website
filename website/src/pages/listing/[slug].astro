@@ -37,12 +37,53 @@ const lastChecked = listing.pricing
   .filter(Boolean)
   .sort()
   .at(-1);
+
+// A per-listing summary built only from fields already verified for this
+// business (category, rating, real pricing count/floor, known policies) —
+// every sentence differs by listing since the underlying facts differ.
+// Added 2026-08-25 after AdSense flagged the site's content as "low value":
+// with 154 listing pages making up most of the site, each one previously
+// carried only ~2 sentences of prose around a data table — the exact
+// templated/thin-page pattern their content policy calls out. Nothing here
+// is invented; it's the same real data already shown, restated as prose.
+const cheapestPrice = listing.pricing
+  .filter((p) => p.price_low != null)
+  .sort((a, b) => a.price_low! - b.price_low!)[0];
+const categoryLabel = listing.category?.trim() || 'party and event rental';
+const article = /^[aeiou]/i.test(categoryLabel) ? 'an' : 'a';
+const overviewParts: string[] = [];
+overviewParts.push(
+  `${listing.name} is ${article} ${categoryLabel.toLowerCase()} company based in ${listing.city}, ${state}.`,
+);
+if (listing.rating != null && listing.review_count) {
+  overviewParts.push(
+    `They hold a ${listing.rating.toFixed(1)}-star average across ${listing.review_count.toLocaleString()} Google review${listing.review_count === 1 ? '' : 's'}.`,
+  );
+}
+overviewParts.push(
+  `We've verified ${listing.pricing.length} real price point${listing.pricing.length === 1 ? '' : 's'} published directly on their own website${cheapestPrice?.price_low != null ? `, starting at $${cheapestPrice.price_low.toFixed(0)}${cheapestPrice.unit ? ` ${cheapestPrice.unit}` : ''}` : ''}.`,
+);
+const knownPolicies: string[] = [];
+if (listing.delivery_available !== 'unknown') {
+  knownPolicies.push(listing.delivery_available === 'yes' ? 'offer delivery' : "don't offer delivery");
+}
+if (listing.setup_included !== 'unknown') {
+  knownPolicies.push(listing.setup_included === 'yes' ? 'include setup' : "don't include setup");
+}
+if (listing.weekend_surcharge === 'yes') {
+  knownPolicies.push('charge a weekend surcharge');
+}
+if (knownPolicies.length > 0) {
+  overviewParts.push(`Per their published policies, they ${knownPolicies.join(' and ')}.`);
+}
+const overview = overviewParts.join(' ');
 ---
 <BaseLayout title={title} description={description} path={`/listing/${listing.slug}/`} jsonLd={jsonLd} showAds={false}>
   <div class="container">
     <Breadcrumbs items={breadcrumbs} />
     <h1>{listing.name}</h1>
     <p class="location">{listing.address}</p>
+    <p class="overview">{overview}</p>
 
     {listing.photo_url && (
       <div class="listing-photo-wrap">
@@ -121,6 +162,7 @@ const lastChecked = listing.pricing
 
 <style>
   .location { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+  .overview { max-width: 640px; margin-bottom: var(--space-6); line-height: 1.55; }
   .listing-photo-wrap {
     aspect-ratio: 4 / 3;
     max-width: 408px;
