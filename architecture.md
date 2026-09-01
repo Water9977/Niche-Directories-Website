@@ -5,6 +5,15 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-08-25 — Session 28 (cont.): fixed AdSense "low value content" rejection
+- AdSense rejected the review with "We found some policy violations: Low value content." Read all 5 linked policy pages top to bottom (Google Publisher Policies, AdSense content/UX guide, thin-content webmaster guidance) rather than guessing at the cause.
+- Real diagnosis: 154 of ~178 pages on the site are business listing pages (`listing/[slug].astro`), and each one carried only ~2 boilerplate sentences of prose around a pricing table — matches Google's own description of "thin affiliate pages" / "doorway pages" almost exactly (templated pages at scale with little unique value per page).
+- Fix: added a real, per-listing overview paragraph built entirely from data already verified for that business (category, rating, review count, real pricing count and floor price, delivery/setup/surcharge policy flags where known) — nothing fabricated, just existing real facts restated as prose, genuinely unique per page since the underlying facts differ.
+- Caught and fixed 2 real grammar bugs during a full sweep of all 154 rendered pages before deploying: subject-verb mismatch ("they offers/charges" → "they offer/charge") and missing a/an logic on the category noun ("is a equipment rental agency" → "is an"). Zero remaining issues confirmed via grep across all 154 pages.
+- Verified: build clean, deployed, confirmed live with a cache-busted request (production byte count matched the new build exactly — first check hit stale CDN cache and was corrected).
+- Nav/UX requirements from the same docs (working menu, no dead links, no misleading pages) already satisfied by the existing header/footer — checked, no changes needed there.
+- Human will click "Request review" now that the fix is live.
+
 ### 2026-08-25 — Session 28: fixed ads.txt, clarified path to live ads
 - AdSense Sites dashboard showed real status for eventrentalcosts.com: Approval "Getting ready" (not yet "Ready" — review still in progress) and Ads.txt "Not found." Corrected the human's framing ("site is approved now") against the actual screenshot before acting on it.
 - Confirmed `website/public/ads.txt` was genuinely missing (`curl https://eventrentalcosts.com/ads.txt` returned live 404) and added it: `google.com, pub-7444475541581027, DIRECT, f08c47fec0942fa0` (publisher ID matches the verification snippet already live in `BaseLayout.astro`). Deployed, verified live (200, exact content match), committed.
