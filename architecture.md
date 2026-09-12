@@ -5,6 +5,20 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-09-12 — Session 29: second AdSense rejection, measured the site instead of guessing
+- AdSense rejected again on the same "Low value content" grounds. Read all 5 linked policy pages again, then **measured** rather than guessed: **71% of pages (126 of 176) were under 250 words**, and **154 of 176 pages were per-business listing pages with a median of 168 words**. Last session's short overview paragraph moved the median barely at all. That composition — a site that is ~87% templated pages carrying a price table and little else — is exactly the thin/templated pattern the policy describes.
+- **Main fix: per-listing peer price comparison.** Each company's published prices are now set against what other companies publish for the same category (tent sizes matched size-for-size, plus tables, chairs, bounce houses, photo booths, water slides, delivery, deposits). Compares within the company's own metro where local data exists, falls back to the whole directory otherwise, and every line states which pool it used. This is the one genuinely original thing this site can say that no individual rental company's own website can, and it is computed from prices already verified on both sides — never estimated. **Listing median 168 → 412 words; pages under 250 words 126 → 25.**
+- **Homepage 298 → 625 words.** It was a hero plus a grid of metro cards — the first thing a reviewer sees, and it conveyed almost nothing about what the site knows. Added real published ranges per category across all 2,133 verified price points, plus sections on what gets listed and what the data actually answers.
+- **Four real data bugs found while doing this, each of which was putting a wrong number on the page:**
+  - The new `chairPriceRange` lacked the garbled-category guard `tablePriceRange` already had, so `tents_tables_chairs_and_more_tent_20x30` ($679.90 — a *tent*) was reported as a chair price. Caught it because the homepage table made it visible. Chairs now top out at $324 (a real peacock chair).
+  - `tables_and_chairs` ($200) is a category bundle, not an item — it was inflating both the table and chair ranges.
+  - `table_leg_extension` ($1) and `table_tree_decoration` ($3) are parts and decor, making "tables from $1" technically true and practically misleading. Tables now start at $5.
+  - `STATE_ABBR` was missing Georgia and Tennessee, so listing titles read "Pooler, Georgia" while the breadcrumb above said "Savannah, GA".
+  - The table/bundle fixes also correct metro pages and the tent cost guide, which use the same functions.
+- **Deliberately left alone:** 20 listing pages remain under 250 words. They're genuine specialty businesses (mechanical bulls, casino nights, yard cards, ice rinks) whose items fall outside the tent/table/chair vocabulary — forcing a comparison there would be apples-to-oranges and dishonest. 14% thin is a healthy ratio against the 71% we started at.
+- Verified: build clean, all 10 generated verdict-sentence shapes grammar-checked across 131 pages, homepage and a listing page checked in-browser with zero console errors, deployed, confirmed live via cache-busted requests.
+- **Still open for the human:** click "Request review" in AdSense. Also worth knowing `quote-sent` is `noindex` but still listed in the sitemap — a real contradiction, not fixed this session.
+
 ### 2026-08-25 — Session 28 (cont.): fixed AdSense "low value content" rejection
 - AdSense rejected the review with "We found some policy violations: Low value content." Read all 5 linked policy pages top to bottom (Google Publisher Policies, AdSense content/UX guide, thin-content webmaster guidance) rather than guessing at the cause.
 - Real diagnosis: 154 of ~178 pages on the site are business listing pages (`listing/[slug].astro`), and each one carried only ~2 boilerplate sentences of prose around a pricing table — matches Google's own description of "thin affiliate pages" / "doorway pages" almost exactly (templated pages at scale with little unique value per page).
