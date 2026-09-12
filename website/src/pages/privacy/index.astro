@@ -10,7 +10,14 @@ const breadcrumbs = [
   { label: 'Privacy Policy', href: '/privacy/' },
 ];
 const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
-const lastUpdated = 'July 12, 2026';
+// 2026-09-12: the Advertising section below said "displays no ads" and
+// treated AdSense as a hypothetical future feature — false since the
+// verification script went live and site submitted for AdSense review.
+// Google's Privacy disclosures policy requires the privacy policy to
+// actually describe current data collection from using Google's ad
+// products, not a placeholder for later, so this needed to be accurate now,
+// not "when ads go live."
+const lastUpdated = 'September 12, 2026';
 ---
 <BaseLayout title={title} description={description} path="/privacy/" jsonLd={jsonLd}>
   <div class="container narrow">
@@ -26,17 +33,33 @@ const lastUpdated = 'July 12, 2026';
 
     <h2>Information we collect</h2>
     <p>
-      This site does not require account creation and does not collect personal information
-      through forms at this time. If we add a quote-request or contact form in the future, this
-      policy will be updated before that feature goes live, and it will state exactly what's
-      collected and how it's used.
+      {/* 2026-09-12: this said forms don't collect personal info "at this
+         time," treating the quote-request form as hypothetical — it has
+         been live on every metro page since Session 21. Same category of
+         problem as the Analytics and Advertising sections above: describing
+         real current data collection as a future feature. */}
+      This site does not require account creation. Metro pages include an optional quote-request
+      form where you can enter your name, email address, phone number (optional), and a message
+      describing what you need. If you submit that form, this information is sent to
+      {' '}<a href="https://web3forms.com/privacy" rel="nofollow noopener" target="_blank">Web3Forms</a>,
+      a third-party form processing service, which delivers it to us by email. We use it only to
+      respond to your inquiry — we don't sell it, and we don't use it for advertising. You are
+      never required to use this form to browse the site or see any pricing data.
     </p>
 
     <h2>Analytics</h2>
     <p>
-      We use privacy-focused, cookie-free analytics to understand aggregate traffic (which pages
-      are visited, roughly how many people, and from where) — this does not identify individual
-      visitors and does not use tracking cookies or cross-site tracking.
+      {/* 2026-09-12: this claimed "cookie-free" analytics, but Google
+         Analytics (GA4) — live in the site since Session 21 — sets
+         first-party cookies by default to measure sessions and returning
+         visitors. A privacy policy making a false claim about its own
+         tracking is a real disclosure problem, not a wording nitpick, so
+         this now describes what actually runs. */}
+      We use Google Analytics (GA4) to understand aggregate traffic (which pages are visited,
+      roughly how many people, and from where). Google Analytics sets first-party cookies in
+      your browser to do this. We use this data in aggregate and do not use it to identify you
+      individually. You can opt out of Google Analytics tracking across all websites using the
+      {' '}<a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener" target="_blank">Google Analytics Opt-out Browser Add-on</a>.
     </p>
 
     <h2>Third-party links</h2>
@@ -48,9 +71,17 @@ const lastUpdated = 'July 12, 2026';
 
     <h2>Advertising</h2>
     <p>
-      This site currently displays no ads. If we add display advertising in the future (e.g.
-      Google AdSense), this policy will be updated to disclose what data the ad network collects
-      and how to opt out, before ads go live.
+      This site uses Google AdSense to display ads (currently pending Google's review — you may
+      not see ads yet). We use Google's Auto Ads, meaning Google's system chooses ad placement
+      and format automatically rather than us placing fixed ad units.
+    </p>
+    <p>
+      Google and its partners use cookies, web beacons, and similar technologies to serve ads
+      based on your prior visits to this and other websites, and may collect device and usage
+      information as a result of ad serving on this site. This applies whether or not you have
+      an account with Google. You can learn more about, and opt out of, personalized advertising
+      at <a href="https://adssettings.google.com/" rel="nofollow noopener" target="_blank">Google Ads Settings</a>,
+      or see <a href="https://www.google.com/policies/privacy/partners/" rel="nofollow noopener" target="_blank">how Google uses data when you use our partners' sites or apps</a>.
     </p>
 
     <h2>Changes to this policy</h2>

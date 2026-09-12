@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { breadcrumbJsonLd } from '../../lib/seo';
+import { getPublishedMetros } from '../../lib/listings';
 
 const title = 'Terms of Use | EventRentalCosts.com';
 const description = 'Terms of use for EventRentalCosts.com.';
@@ -10,7 +11,13 @@ const breadcrumbs = [
   { label: 'Terms', href: '/terms/' },
 ];
 const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
-const lastUpdated = 'July 12, 2026';
+// 2026-09-12: this said "Charlotte, NC metro area" — true at launch, false
+// since the site expanded past its first metro. Wrong scope on this page is
+// a real "misrepresents ... the content itself" risk under Google's
+// Misrepresentative content policy, not just a stale sentence. Pulled from
+// the same live data every other page uses so it can't drift silently again.
+const metros = getPublishedMetros();
+const lastUpdated = 'September 12, 2026';
 ---
 <BaseLayout title={title} description={description} path="/terms/" jsonLd={jsonLd}>
   <div class="container narrow">
@@ -21,9 +28,10 @@ const lastUpdated = 'July 12, 2026';
     <h2>What this site is</h2>
     <p>
       EventRentalCosts.com is an independent, informational comparison resource for party and
-      event equipment rental pricing in the Charlotte, NC metro area. We are not a rental
-      company, we do not process bookings or payments, and we are not a party to any transaction
-      between you and a listed business.
+      event equipment rental pricing, currently covering {metros.length} US metro areas
+      ({metros.map((m) => m.meta.name).join(', ')}). We are not a rental company, we do not
+      process bookings or payments, and we are not a party to any transaction between you and a
+      listed business.
     </p>
 
     <h2>Accuracy of pricing</h2>
