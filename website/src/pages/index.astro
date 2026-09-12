@@ -1,10 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getPublishedMetros, tentSizeBreakdown, chairPriceMin } from '../lib/listings';
+import {
+  getAllListings,
+  getPublishedMetros,
+  tentSizeBreakdown,
+  chairPriceMin,
+  chairPriceRange,
+  tablePriceRange,
+  bounceHousePriceRange,
+  photoBoothPriceRange,
+  waterSlidePriceRange,
+  deliveryFeeRange,
+  depositRange,
+  formatPriceRange,
+} from '../lib/listings';
 import { siteJsonLd } from '../lib/seo';
 
 const metros = getPublishedMetros();
 const totalListings = metros.reduce((sum, m) => sum + m.listings.length, 0);
+
+// Real aggregate figures for the homepage, computed from the same verified
+// data every other page uses. Added 2026-09-12: the homepage was a hero plus
+// a grid of metro cards and little else (~300 words), which is the first
+// thing an AdSense reviewer sees and gave almost no sense of what the site
+// actually knows. These are real published ranges, not "average cost" guesses.
+const allListings = getAllListings();
+const totalPricePoints = allListings.reduce(
+  (sum, l) => sum + l.pricing.filter((p) => p.price_low != null).length,
+  0,
+);
+
+const fmtRange = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
+const nationalTents = tentSizeBreakdown(allListings, 2);
+const commonTent = nationalTents.find((t) => t.size === '20x20') ?? nationalTents[0] ?? null;
+
+const categoryRows = [
+  { label: 'Tents (20x20 and similar)', range: commonTent ? { low: commonTent.low, high: commonTent.high, count: commonTent.count } : null },
+  { label: 'Tables (per table)', range: tablePriceRange(allListings) },
+  { label: 'Chairs (per chair)', range: chairPriceRange(allListings) },
+  { label: 'Bounce houses', range: bounceHousePriceRange(allListings) },
+  { label: 'Photo booths', range: photoBoothPriceRange(allListings) },
+  { label: 'Water slides', range: waterSlidePriceRange(allListings) },
+  { label: 'Delivery fees', range: deliveryFeeRange(allListings) },
+  { label: 'Deposits', range: depositRange(allListings) },
+].filter((r): r is { label: string; range: NonNullable<typeof r.range> } => r.range != null);
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
@@ -61,13 +100,68 @@ const description = `Real, published prices from ${totalListings} verified tent,
     </div>
   </section>
 
+  {categoryRows.length > 0 && (
+    <section class="container price-summary">
+      <h2>What event rentals actually cost</h2>
+      <p class="section-lede">
+        Every figure below is a real price published by a rental company on its own website —
+        {' '}{totalPricePoints.toLocaleString()} verified price points across all
+        {' '}{allListings.length} companies in our directory, including the handful in areas that
+        don't yet have enough companies for their own metro page. These are real published
+        ranges, not a national "average cost" someone estimated. They're wide because rental
+        pricing genuinely varies by size, duration, and region — which is exactly why a single
+        average figure would mislead you.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Real published range</th><th>Price points</th></tr>
+          </thead>
+          <tbody>
+            {categoryRows.map((r) => (
+              <tr>
+                <td>{r.label}</td>
+                <td>{formatPriceRange(r.range, fmtRange)}</td>
+                <td class="muted">{r.range.count}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small">
+        Want the full breakdown by tent size, plus what drives the difference?
+        {' '}<a href="/tent-rental-cost/">Read the tent rental cost guide</a>.
+      </p>
+    </section>
+  )}
+
   <section class="container about-strip">
     <h2>Why prices, not just a directory</h2>
     <p>
       Google Maps shows you a business's name and phone number. It doesn't show you what a
       10x10 tent actually costs, whether delivery is included, or what a Saturday surcharge
       looks like. We scrape each company's own website for real, dated pricing — and we only
-      list companies that actually publish real numbers. <a href="/about/">Read our methodology</a>.
+      list companies that actually publish real numbers.
+    </p>
+    <h2>How we decide what gets listed</h2>
+    <p>
+      A company only appears here if it publishes an actual dollar figure somewhere on its own
+      site. That rules out most of the market: the majority of rental companies we check list
+      no pricing at all and want you to call for a quote. We don't estimate what those
+      companies might charge, and we don't fill the gap with a guess — a business with no
+      published pricing simply isn't listed. Each price we do publish is tied to the page it
+      came from and stamped with the date we last checked it, because rental rates move with
+      the season.
+    </p>
+    <h2>What you can work out from this</h2>
+    <p>
+      Every company page sets that company's published prices against what others in the same
+      metro publish for the same category, so you can see whether a quote is in line with the
+      local market before you call. Metro pages aggregate the same data by city, and each one
+      breaks tent pricing down by actual size rather than lumping it into one number. If a
+      company's page shows "Not published" against delivery or setup, that means they don't
+      state a policy — not that the answer is no.
+      {' '}<a href="/about/">Read our full methodology</a>.
     </p>
   </section>
 </BaseLayout>
@@ -103,4 +197,20 @@ const description = `Real, published prices from ${totalListings} verified tent,
   .metro-card .teaser { color: var(--color-primary); font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-3); }
   .metro-cta { font-weight: 600; color: var(--color-primary); font-size: 0.9rem; }
   .about-strip { padding-bottom: var(--space-16); color: var(--color-text-muted); }
+  .about-strip h2 { margin-top: var(--space-8); color: var(--color-text); }
+  .about-strip p { max-width: 760px; }
+  .price-summary { padding-block: var(--space-8); }
+  .price-summary .section-lede { color: var(--color-text-muted); max-width: 760px; }
+  .price-summary .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-block: var(--space-4);
+    max-width: 760px;
+  }
+  .price-summary table { width: 100%; min-width: 420px; }
+  .price-summary .muted { color: var(--color-text-muted); }
+  .price-summary .small { font-size: 0.85rem; }
 </style>

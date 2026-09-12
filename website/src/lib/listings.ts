@@ -45,6 +45,10 @@ const STATE_ABBR: Record<string, string> = {
   Florida: 'FL',
   'South Carolina': 'SC',
   Pennsylvania: 'PA',
+  // Added 2026-09-12: both came through as full names, so listing titles read
+  // "Pooler, Georgia" while the breadcrumb above them said "Savannah, GA".
+  Georgia: 'GA',
+  Tennessee: 'TN',
 };
 
 export function stateAbbr(state: string): string {
@@ -299,6 +303,24 @@ const TABLE_WORD_RE = /(^|[^a-zA-Z])tables?([^a-zA-Z]|$)/i;
 const GARBLED_CATEGORY_RE = /tent.*chair|chair.*tent/i;
 const WRONG_ITEM_SNIPPET_RE = /sofa|couch|loveseat|sectional/i;
 
+// Found 2026-09-12 while putting real category ranges on the homepage, where a
+// contaminated figure would have been the first thing anyone saw:
+// (1) "tables_and_chairs" ($200) is a category bundle, not an item — it could
+//     be a table, a chair, or a package covering both, so it can't honestly
+//     anchor either category's range.
+// (2) the "tents_tables_chairs_and_more_" breadcrumb prefix one real business's
+//     extraction produced is followed by the ACTUAL item, so the tail decides
+//     the category: "..._tent_20x30" is a $679.90 TENT and must never count as
+//     a chair, while "..._white_resin_chair" ($4.50) is a genuine chair price
+//     worth keeping. GARBLED_CATEGORY_RE already drops the whole family from
+//     tables; chairs need the narrower tent-with-a-size test instead.
+// (3) "table_leg_extension" ($1) and "table_tree_decoration" ($3) are parts and
+//     decor, not tables — they were making "tables from $1" technically true
+//     and practically misleading.
+const AMBIGUOUS_BUNDLE_RE = /tables?[_\s]+and[_\s]+chairs?|chairs?[_\s]+and[_\s]+tables?/i;
+const TENT_WITH_SIZE_RE = /tent[_\s]*\d+\s*x\s*\d+/i;
+const TABLE_PART_RE = /leg[_\s]?extension|decoration/i;
+
 /** Real table price range (any table type — banquet, cocktail, round, etc) —
  * "table rental cost" is an Easy-KD real-volume keyword (keyword-research.md
  * batch 1) that only ever surfaced as a single chair-price line, never its
@@ -310,6 +332,8 @@ export function tablePriceRange(items: Listing[]): PriceRange | null {
       if (p.price_low == null || p.price_low <= 0) continue;
       if (/cloth/i.test(p.item_type)) continue;
       if (GARBLED_CATEGORY_RE.test(p.item_type)) continue;
+      if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) continue;
+      if (TABLE_PART_RE.test(p.item_type)) continue;
       if (p.source_snippet && WRONG_ITEM_SNIPPET_RE.test(p.source_snippet)) continue;
       if (TABLE_WORD_RE.test(p.item_type)) prices.push(p.price_low);
     }
@@ -354,4 +378,135 @@ export function photoBoothPriceRange(items: Listing[]): PriceRange | null {
  * water-slide price points (Jacksonville especially). */
 export function waterSlidePriceRange(items: Listing[]): PriceRange | null {
   return priceRangeForPattern(items, /water.?slide|water_unit/i);
+}
+
+/** Real chair price range, same guards as chairPriceMin (which only ever
+ * returned a floor). Needed so chairs can take part in the per-listing peer
+ * comparison below like every other category. */
+export function chairPriceRange(items: Listing[]): PriceRange | null {
+  const prices: number[] = [];
+  for (const l of items) {
+    for (const p of l.pricing) {
+      if (p.price_low == null || p.price_low <= 0) continue;
+      if (!/chair/i.test(p.item_type)) continue;
+      if (NON_RENTAL_ITEM_RE.test(p.item_type)) continue;
+      // See the notes on AMBIGUOUS_BUNDLE_RE / TENT_WITH_SIZE_RE above: a
+      // "tents_tables_chairs_and_more_tent_20x30" row is a tent price, and a
+      // "tables_and_chairs" row is a bundle — neither is a real chair rate.
+      if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) continue;
+      if (TENT_WITH_SIZE_RE.test(p.item_type)) continue;
+      prices.push(p.price_low);
+    }
+  }
+  if (!prices.length) return null;
+  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+}
+
+export interface PeerComparison {
+  label: string;
+  self: PriceRange;
+  peers: PriceRange;
+  /** How many *other* companies in the compared pool publish a price here. */
+  peerCompanies: number;
+  /** Whether the comparison pool was this company's own metro or the whole
+   * directory. Some companies are the only one locally publishing a given
+   * category (a photo-booth specialist in a tent-heavy metro, say) — falling
+   * back to the national pool keeps the comparison real, as long as the page
+   * says plainly which pool it used. */
+  scope: 'local' | 'national';
+}
+
+type RangeFn = (items: Listing[]) => PriceRange | null;
+
+function comparisonFor(
+  label: string,
+  fn: RangeFn,
+  listing: Listing,
+  localPeers: Listing[],
+  nationalPeers: Listing[],
+): PeerComparison | null {
+  const self = fn([listing]);
+  if (!self) return null;
+  const pools = [
+    ['local', localPeers],
+    ['national', nationalPeers],
+  ] as const;
+  for (const [scope, pool] of pools) {
+    if (!pool.length) continue;
+    const peers = fn(pool);
+    if (!peers) continue;
+    const peerCompanies = pool.filter((p) => fn([p]) != null).length;
+    if (!peerCompanies) continue;
+    return { label, self, peers, peerCompanies, scope };
+  }
+  return null;
+}
+
+/** How many peer comparisons a single listing page will show. Tent sizes are
+ * capped separately because a big catalog can publish a dozen of them and the
+ * section stops being readable. */
+const MAX_TENT_SIZE_COMPARISONS = 5;
+const MAX_COMPARISONS = 9;
+
+/** Compare one company's real published prices against the other companies we
+ * track in the same metro, category by category.
+ *
+ * This is the one genuinely original thing this site can say that no single
+ * rental company's own website can: not just "here is their price" but "here
+ * is their price next to everyone else's in the same market." Added 2026-09-12
+ * after AdSense's "low value content" rejection — per-listing pages were a
+ * scraped price table and little else, which is exactly the thin/templated
+ * pattern their policy calls out. Every number here is real published pricing
+ * already verified for that business; the comparison is computed, never
+ * estimated, and a category is skipped entirely when either side lacks data.
+ */
+export function comparePricingToPeers(
+  listing: Listing,
+  localPeers: Listing[],
+  nationalPeers: Listing[] = [],
+): PeerComparison[] {
+  const out: PeerComparison[] = [];
+
+  // Size-specific tent comparison first — it's what a renter actually shops
+  // on, and a 20x40 next to other 20x40s is a fair comparison in a way that
+  // "tents, generally" is not.
+  for (const self of tentSizeBreakdown([listing])) {
+    if (out.length >= MAX_TENT_SIZE_COMPARISONS) break;
+    const sizeRange: RangeFn = (items) => {
+      const stat = tentSizeBreakdown(items).find((t) => t.size === self.size);
+      return stat ? { low: stat.low, high: stat.high, count: stat.count } : null;
+    };
+    const c = comparisonFor(`${self.size} tents`, sizeRange, listing, localPeers, nationalPeers);
+    if (c) out.push(c);
+  }
+
+  const categories: { label: string; fn: RangeFn }[] = [
+    { label: 'Tables', fn: tablePriceRange },
+    { label: 'Chairs', fn: chairPriceRange },
+    { label: 'Bounce houses', fn: bounceHousePriceRange },
+    { label: 'Photo booths', fn: photoBoothPriceRange },
+    { label: 'Water slides', fn: waterSlidePriceRange },
+    { label: 'Delivery', fn: deliveryFeeRange },
+    { label: 'Deposits', fn: depositRange },
+  ];
+
+  for (const { label, fn } of categories) {
+    if (out.length >= MAX_COMPARISONS) break;
+    const c = comparisonFor(label, fn, listing, localPeers, nationalPeers);
+    if (c) out.push(c);
+  }
+
+  return out;
+}
+
+/** Where a company's published price sits against the local range, per
+ * category. Deliberately three-state and conservative: "within" covers any
+ * overlap with the local range, so we only ever say below/above when the
+ * company's own floor genuinely clears the whole local spread. */
+export type PricePosition = 'below' | 'within' | 'above';
+
+export function pricePosition(c: PeerComparison): PricePosition {
+  if (c.self.low < c.peers.low) return 'below';
+  if (c.self.low > c.peers.high) return 'above';
+  return 'within';
 }

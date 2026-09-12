@@ -2,7 +2,15 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ThreeStateBadge from '../../components/ThreeStateBadge.astro';
-import { getAllListings, getMetroForListing, stateAbbr } from '../../lib/listings';
+import {
+  getAllListings,
+  getListingsByMetroKey,
+  getMetroForListing,
+  stateAbbr,
+  comparePricingToPeers,
+  pricePosition,
+  formatPriceRange,
+} from '../../lib/listings';
 import { metroByKey } from '../../lib/metros';
 import { breadcrumbJsonLd, localBusinessJsonLd } from '../../lib/seo';
 
@@ -77,6 +85,40 @@ if (knownPolicies.length > 0) {
   overviewParts.push(`Per their published policies, they ${knownPolicies.join(' and ')}.`);
 }
 const overview = overviewParts.join(' ');
+
+// Real peer comparison against the other companies we track in the same metro
+// — see comparePricingToPeers() for why this exists and what it will and won't
+// claim. Everything below is computed from prices already verified on both
+// sides; a category the peers don't publish simply doesn't appear.
+const peers = getListingsByMetroKey(listing.metro).filter((l) => l.slug !== listing.slug);
+const nationalPeers = getAllListings().filter((l) => l.slug !== listing.slug);
+const comparisons = comparePricingToPeers(listing, peers, nationalPeers);
+const positions = comparisons.map(pricePosition);
+const belowCount = positions.filter((p) => p === 'below').length;
+const withinCount = positions.filter((p) => p === 'within').length;
+const aboveCount = positions.filter((p) => p === 'above').length;
+
+// Built as a whole sentence rather than glued-together fragments: when every
+// category lands in the same bucket, "land inside the compared range in 3"
+// reads like a broken template, and with one category it's worse still.
+const n = comparisons.length;
+const buckets = [
+  { count: belowCount, phrase: 'below the compared range' },
+  { count: withinCount, phrase: 'inside the compared range' },
+  { count: aboveCount, phrase: 'above the compared range' },
+].filter((b) => b.count > 0);
+
+let verdict = '';
+if (n === 1 && buckets.length === 1) {
+  verdict = `The one category we can compare directly falls ${buckets[0].phrase}.`;
+} else if (buckets.length === 1) {
+  verdict = `All ${n} categories we can compare directly fall ${buckets[0].phrase}.`;
+} else if (buckets.length > 1) {
+  const bits = buckets.map((b) => `${b.phrase} in ${b.count}`);
+  verdict = `Across the ${n} categories we can compare directly, their published starting prices land ${bits.slice(0, -1).join(', ')}, and ${bits.at(-1)}.`;
+}
+
+const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 ---
 <BaseLayout title={title} description={description} path={`/listing/${listing.slug}/`} jsonLd={jsonLd} showAds={false}>
   <div class="container">
@@ -156,6 +198,41 @@ const overview = overviewParts.join(' ');
       </p>
     </section>
 
+    {comparisons.length > 0 && (
+      <section class="comparison">
+        <h2>How {listing.name}'s prices compare</h2>
+        <p>
+          A price on its own doesn't tell you much. Below, each category
+          {listing.name} publishes a real price for is set against what other companies in our
+          directory publish for the same thing. Each line says which pool it compares
+          against: other {areaLabel} companies where we have local data, or the wider
+          directory when they're the only company locally publishing that category. Both
+          sides are real published rates we've verified — no estimates — and a category only
+          appears when both sides actually publish a number for it.
+        </p>
+        <ul class="comparison-list">
+          {comparisons.map((c) => (
+            <li>
+              <strong>{c.label}:</strong> {formatPriceRange(c.self, fmt)} here, versus
+              {' '}{formatPriceRange(c.peers, fmt)} across the {c.peerCompanies} other
+              {' '}{c.peerCompanies === 1 ? 'company' : 'companies'} we track
+              {' '}{c.scope === 'local' ? `in ${areaLabel}` : 'nationally'} that
+              {' '}{c.peerCompanies === 1 ? 'publishes' : 'publish'} this.
+            </li>
+          ))}
+        </ul>
+        {verdict && (
+          <p>
+            {verdict} Ranges overlap often in this market, so a company sitting inside the
+            compared range on most items is the normal case rather than a mark against it — and a
+            lower starting price can reflect a smaller or more basic version of the item, not a
+            better deal on the same one. Check the exact line items above before drawing a
+            conclusion.
+          </p>
+        )}
+      </section>
+    )}
+
     <p class="back-link"><a href={areaHref}>&larr; Back to all {areaLabel} rental companies</a></p>
   </div>
 </BaseLayout>
@@ -189,5 +266,10 @@ const overview = overviewParts.join(' ');
     box-shadow: var(--shadow-sm);
     margin-block: var(--space-3);
   }
+  .comparison { margin-bottom: var(--space-8); max-width: 720px; }
+  .comparison p { color: var(--color-text-muted); }
+  .comparison-list { padding-left: var(--space-6); margin-block: var(--space-4); }
+  .comparison-list li { margin-bottom: var(--space-3); color: var(--color-text-muted); }
+  .comparison-list strong { color: var(--color-text); }
   .back-link { margin-top: var(--space-8); }
 </style>
