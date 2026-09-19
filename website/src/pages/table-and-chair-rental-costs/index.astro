@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CategoryTables from '../../components/CategoryTables.astro';
+import { getAllListings, deliveryFeeRange, formatPriceRange, isChairPrice, isTablePrice } from '../../lib/listings';
+import {
+  collectPoints,
+  coverage,
+  fmtMoney,
+  fmtRangeStats,
+  metroBreakdown,
+  statsFor,
+  subtypeBreakdown,
+  topCompanies,
+  type SubtypeSpec,
+} from '../../lib/categories';
+import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+
+// Tables and chairs are the two categories with the most real data in the
+// directory (163 and 131 price points before cleanup) and, until this page,
+// no page of their own — the numbers only appeared inside per-company tables
+// and one homepage row. Everything below is computed from the same verified
+// listings as every other page; nothing is estimated.
+const all = getAllListings();
+const tablePts = collectPoints(all, isTablePrice);
+const chairPts = collectPoints(all, isChairPrice);
+const tStats = statsFor(tablePts)!;
+const cStats = statsFor(chairPts)!;
+const tCov = coverage(tablePts);
+const cCov = coverage(chairPts);
+const delivery = deliveryFeeRange(all);
+
+// First matching bucket wins, so order matters: a "cocktail_table_round" is a
+// cocktail table, not a round one.
+const tableSpecs: SubtypeSpec[] = [
+  { label: 'Cocktail & high-top tables', blurb: 'Tall standing tables for cocktail hours and lounge areas.', test: (i) => /cocktail|high.?top|bistro/i.test(i.item_type) },
+  { label: 'Round tables', blurb: 'Mostly 60-inch rounds, the standard seated-dinner table.', test: (i) => /round/i.test(i.item_type) },
+  { label: 'Rectangular & banquet tables', blurb: '6-foot and 8-foot folding banquet tables for buffets and long seating.', test: (i) => /rectang|banquet|\d\s*ft|\d+.?in\b|folding|long/i.test(i.item_type) },
+];
+const chairSpecs: SubtypeSpec[] = [
+  { label: 'Chiavari & specialty chairs', blurb: 'Decor-grade chairs: chiavari, crossback, peacock, fan-back and throne chairs.', test: (i) => /chiavari|chivari|crossback|fan.?back|peacock|christal|ghost|throne/i.test(i.item_type) },
+  { label: 'Padded, resin & garden chairs', blurb: 'Upgrades from the basic folding chair, including padded seats.', test: (i) => /padded|resin|garden|wire/i.test(i.item_type) },
+  { label: 'Folding chairs', blurb: 'The standard event chair, usually in white or black.', test: (i) => /folding/i.test(i.item_type) },
+];
+const tableSubs = subtypeBreakdown(tablePts, tableSpecs, 'Specialty & named tables', 'Farm, console and other named tables that don’t fit the groups above.');
+const chairSubs = subtypeBreakdown(chairPts, chairSpecs, 'Accent, lounge & other chairs', 'Armchairs, accent chairs and other furniture-style pieces, plus plain chairs with no type stated.');
+
+const tableMetros = metroBreakdown(isTablePrice);
+const chairMetros = metroBreakdown(isChairPrice);
+
+const round = tableSubs.find((r) => r.label === 'Round tables');
+const banquet = tableSubs.find((r) => r.label === 'Rectangular & banquet tables');
+const folding = chairSubs.find((r) => r.label === 'Folding chairs');
+const chiavari = chairSubs.find((r) => r.label === 'Chiavari & specialty chairs');
+
+const title = 'Table & Chair Rental Cost: Real Prices by Type';
+const description = `What tables and chairs actually rent for: real published per-item prices from ${tCov.companies} table and ${cCov.companies} chair rental companies, by type and metro.`;
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Table & Chair Rental Cost', href: '/table-and-chair-rental-costs/' },
+];
+
+const faqs: { q: string; a: string }[] = [
+  {
+    q: 'How much does it cost to rent a table?',
+    a: `Across ${tStats.points} real published table prices from ${tStats.companies} companies, tables rent for ${fmtRangeStats(tStats)} each. The typical starting price — the median of each company's own cheapest table — is $${fmtMoney(tStats.typicalStart)}.${round ? ` Round tables start at a typical $${fmtMoney(round.stats.typicalStart)}.` : ''}`,
+  },
+  {
+    q: 'How much does it cost to rent chairs?',
+    a: `Across ${cStats.points} real published chair prices from ${cStats.companies} companies, chairs rent for ${fmtRangeStats(cStats)} each.${folding ? ` Folding chairs, the standard event chair, have a typical starting price of $${fmtMoney(folding.stats.typicalStart)} each.` : ''}${chiavari ? ` Chiavari and other specialty chairs price higher, with a typical starting price of $${fmtMoney(chiavari.stats.typicalStart)}.` : ''}`,
+  },
+  {
+    q: 'Is table and chair rental priced per item or as a package?',
+    a: 'Almost always per item. A quote is usually the number of tables times the table price plus the number of chairs times the chair price, with delivery and any linens added on top. That is why the per-item price is the figure worth comparing between companies.',
+  },
+  {
+    q: 'How many chairs and tables do I need for my guest count?',
+    a: 'Plan one chair per guest, plus a few spares. A 60-inch round table seats about 8 (up to 10 if guests are close), and an 8-foot banquet table seats about 8. Divide your seated guests by 8 for a rough round-table count, then add tables for a buffet, gifts and a cake.',
+  },
+  {
+    q: 'Are linens included in table rental prices?',
+    a: `No. The table prices on this page exclude tablecloths and linens, which most companies price separately per table. Linens are a real added cost, so ask for them on the same quote.`,
+  },
+  {
+    q: 'Do table and chair rental companies charge for delivery?',
+    a: delivery
+      ? `Many do. Real published delivery fees in our data range from ${formatPriceRange(delivery, fmtMoney)} (${delivery.count} published fees), and some companies include delivery within a set radius. Check the company's listing for its policy.`
+      : 'Many do, and some include delivery within a set radius. Check the company’s listing for its policy.',
+  },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+---
+<BaseLayout title={title} description={description} path="/table-and-chair-rental-costs/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>How much does table and chair rental cost?</h1>
+
+    <p class="intro">
+      Tables and chairs are almost always priced per item, so the number that decides your bill
+      is the per-item price multiplied by how many you need. We collected published prices
+      straight from rental companies' own websites: <strong>{tStats.points} table prices from
+      {' '}{tStats.companies} companies</strong> and <strong>{cStats.points} chair prices from
+      {' '}{cStats.companies} companies</strong>, across {Math.max(tCov.metros, cCov.metros)} of our
+      metro areas. Tables rent for <strong>{fmtRangeStats(tStats)}</strong> each and chairs for
+      {' '}<strong>{fmtRangeStats(cStats)}</strong> each, and the typical company starts at
+      {' '}<strong>${fmtMoney(tStats.typicalStart)}</strong> for a table and
+      {' '}<strong>${fmtMoney(cStats.typicalStart)}</strong> for a chair.
+    </p>
+
+    <section>
+      <h2>How to read these numbers</h2>
+      <p>
+        Every range below is a real published price, not an estimate. Two figures appear
+        throughout. The <strong>published range</strong> is the lowest to highest price across
+        every price point we hold. The <strong>typical starting price</strong> is the median of
+        each company's own cheapest price in that group, counting every company once. We use that
+        instead of an average over all price points because a few companies list dozens of
+        near-identical items, and an average would end up describing them rather than the market.
+      </p>
+    </section>
+
+    <section>
+      <h2>Table rental cost by type</h2>
+      <p>
+        The table you need depends on the job: round tables for a seated dinner, banquet tables
+        for a buffet or long seating, and cocktail tables for standing receptions. Here is what
+        each group costs, from the same {tStats.points} published prices.
+      </p>
+      <CategoryTables subtypes={tableSubs} unit="per table" noun="table" />
+      {round && banquet && (
+        <p>
+          {round.stats.typicalStart === banquet.stats.typicalStart
+            ? <>Round and banquet tables start at the same typical price, ${fmtMoney(round.stats.typicalStart)}, across
+              {' '}{round.stats.companies} and {banquet.stats.companies} companies respectively.</>
+            : <>Round tables have a typical starting price of ${fmtMoney(round.stats.typicalStart)} across
+              {' '}{round.stats.companies} companies, against ${fmtMoney(banquet.stats.typicalStart)} for
+              rectangular and banquet tables across {banquet.stats.companies}.</>}
+          {' '}Groups with few companies are worth treating as a guide rather than a benchmark.
+        </p>
+      )}
+    </section>
+
+    <section>
+      <h2>Chair rental cost by type</h2>
+      <p>
+        Chair prices spread further than table prices, because the category runs from a basic
+        folding chair to individually named furniture pieces. Most events only need the first
+        two groups.
+      </p>
+      <CategoryTables subtypes={chairSubs} unit="per chair" noun="chair" />
+      {folding && chiavari && (
+        <p>
+          A folding chair has a typical starting price of ${fmtMoney(folding.stats.typicalStart)},
+          against ${fmtMoney(chiavari.stats.typicalStart)} for chiavari and other specialty
+          chairs. At those starting prices, seating 100 guests comes to roughly
+          {' '}${fmtMoney(folding.stats.typicalStart * 100)} with folding chairs or ${fmtMoney(chiavari.stats.typicalStart * 100)} with
+          chiavari-style chairs, before delivery.
+        </p>
+      )}
+    </section>
+
+    <section>
+      <h2>How many tables and chairs do you need?</h2>
+      <p>
+        Plan one chair per guest and add a few spares. For tables, a 60-inch round seats about 8
+        people (10 if you accept a squeeze), and an 8-foot banquet table seats about 8 along its
+        length. Divide your seated guests by 8 for a starting round-table count, then add tables
+        for a buffet, a gift table, a cake and a guest book. Standing cocktail receptions need
+        far fewer chairs, and a common rule of thumb is about one cocktail table per 8 to 10 guests.
+      </p>
+      <p>
+        If you are still working out layout, our free
+        {' '}<a href="https://tools.eventrentalcosts.com/seating-chart-planner/">seating chart planner</a>
+        {' '}lets you set table sizes and see the count, and the
+        {' '}<a href="https://tools.eventrentalcosts.com/tent-size-calculator/">tent size calculator</a>
+        {' '}tells you how much floor space that many tables need under cover. The
+        {' '}<a href="/tent-rental-cost/">tent rental cost guide</a> covers pricing for the
+        tent itself.
+      </p>
+    </section>
+
+    <section>
+      <h2>What is not in these prices</h2>
+      <p>
+        The table figures here exclude tablecloths and linens, and we also exclude bundled
+        "table plus chairs" packages, because a package price cannot be split fairly into a table
+        price and a chair price. In practice, a real quote adds several things on top of the
+        per-item price:
+      </p>
+      <ul>
+        <li><strong>Linens.</strong> Priced separately per table by most companies.</li>
+        <li>
+          <strong>Delivery and pickup.</strong>
+          {delivery
+            ? <> Published delivery fees in our data run {formatPriceRange(delivery, fmtMoney)}, and some companies include delivery inside a set radius.</>
+            : <> Fees vary by distance, and some companies include delivery inside a set radius.</>}
+        </li>
+        <li><strong>Setup and teardown.</strong> Some companies include it and some charge for it, so confirm which applies.</li>
+        <li><strong>Order minimums.</strong> Some companies set a minimum order, which matters for a small event.</li>
+      </ul>
+    </section>
+
+    {tableMetros.length > 0 && (
+      <section>
+        <h2>Table rental prices by metro area</h2>
+        <p>
+          Prices vary by market. Each row counts only companies in that metro that publish a table
+          price, so a metro with one or two companies is a small sample.
+        </p>
+        <CategoryTables metros={tableMetros} unit="per table" noun="table" />
+      </section>
+    )}
+
+    {chairMetros.length > 0 && (
+      <section>
+        <h2>Chair rental prices by metro area</h2>
+        <CategoryTables metros={chairMetros} unit="per chair" noun="chair" />
+      </section>
+    )}
+
+    <section>
+      <h2>Companies publishing the most table prices</h2>
+      <p>
+        These companies publish the most table prices, each linking to its full listing with
+        every published price and policy.
+      </p>
+      <CategoryTables companies={topCompanies(tablePts, 8)} noun="table" />
+      <h2>Companies publishing the most chair prices</h2>
+      <CategoryTables companies={topCompanies(chairPts, 8)} noun="chair" />
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      {faqs.map((faq) => (
+        <div class="faq-item">
+          <h3>{faq.q}</h3>
+          <p>{faq.a}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="related">
+      <h2>More rental cost guides</h2>
+      <ul>
+        <li><a href="/tent-rental-cost/">Tent rental cost</a> by size, with wedding-size tents</li>
+        <li><a href="/bounce-house-rental-costs/">Bounce house and water slide rental cost</a></li>
+        <li><a href="/photo-booth-rental-costs/">Photo booth rental cost</a></li>
+        <li><a href="/">All metro areas we cover</a></li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 760px; }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  section { margin-bottom: var(--space-8); }
+  h2 { margin-top: var(--space-8); }
+  ul { padding-left: var(--space-6); }
+  li { margin-bottom: var(--space-2); }
+  .faq-item { margin-bottom: var(--space-6); }
+  .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .faq-item p { color: var(--color-text-muted); margin: 0; }
+</style>

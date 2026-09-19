@@ -12,7 +12,7 @@ import {
   formatPriceRange,
 } from '../../lib/listings';
 import { metroByKey } from '../../lib/metros';
-import { breadcrumbJsonLd, localBusinessJsonLd } from '../../lib/seo';
+import { breadcrumbJsonLd, clampText, localBusinessJsonLd } from '../../lib/seo';
 
 export function getStaticPaths() {
   return getAllListings().map((listing) => ({
@@ -28,8 +28,16 @@ const areaHref = metro ? `/${metro.slug}/` : '/';
 const areaLabel = metro ? metro.name : 'All metros';
 
 const state = stateAbbr(listing.state);
-const title = `${listing.name} Pricing — ${listing.city}, ${state}`;
-const description = `Real published pricing for ${listing.name} in ${listing.city}, ${state} — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their own website, not a vague quote.`;
+// Titles/descriptions embed the business name, and a few real names are very
+// long, which pushed some listing titles to 98 chars and descriptions to 204 in
+// the 2026-09-19 crawl (SERP truncation is ~60 / ~160). Only the name gets
+// clamped, so the "Pricing — City, ST" part a searcher scans for always shows.
+const titleSuffix = ` Pricing — ${listing.city}, ${state}`;
+const title = `${clampText(listing.name, Math.max(20, 60 - titleSuffix.length))}${titleSuffix}`;
+
+const descPrefix = 'Real published pricing for ';
+const descTail = ` in ${listing.city}, ${state} — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their own website, not a vague quote.`;
+const description = `${descPrefix}${clampText(listing.name, Math.max(20, 160 - descPrefix.length - descTail.length))}${descTail}`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },

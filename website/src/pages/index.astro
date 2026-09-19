@@ -35,15 +35,15 @@ const nationalTents = tentSizeBreakdown(allListings, 2);
 const commonTent = nationalTents.find((t) => t.size === '20x20') ?? nationalTents[0] ?? null;
 
 const categoryRows = [
-  { label: 'Tents (20x20 and similar)', range: commonTent ? { low: commonTent.low, high: commonTent.high, count: commonTent.count } : null },
-  { label: 'Tables (per table)', range: tablePriceRange(allListings) },
-  { label: 'Chairs (per chair)', range: chairPriceRange(allListings) },
-  { label: 'Bounce houses', range: bounceHousePriceRange(allListings) },
-  { label: 'Photo booths', range: photoBoothPriceRange(allListings) },
-  { label: 'Water slides', range: waterSlidePriceRange(allListings) },
-  { label: 'Delivery fees', range: deliveryFeeRange(allListings) },
+  { label: 'Tents (20x20 and similar)', href: '/tent-rental-cost/', range: commonTent ? { low: commonTent.low, high: commonTent.high, count: commonTent.count } : null },
+  { label: 'Tables (per table)', href: '/table-and-chair-rental-costs/', range: tablePriceRange(allListings) },
+  { label: 'Chairs (per chair)', href: '/table-and-chair-rental-costs/', range: chairPriceRange(allListings) },
+  { label: 'Bounce houses', href: '/bounce-house-rental-costs/', range: bounceHousePriceRange(allListings) },
+  { label: 'Photo booths', href: '/photo-booth-rental-costs/', range: photoBoothPriceRange(allListings) },
+  { label: 'Water slides', href: '/bounce-house-rental-costs/#water-slide-rental-cost', range: waterSlidePriceRange(allListings) },
+  { label: 'Delivery fees', href: '/tent-rental-cost/', range: deliveryFeeRange(allListings) },
   { label: 'Deposits', range: depositRange(allListings) },
-].filter((r): r is { label: string; range: NonNullable<typeof r.range> } => r.range != null);
+].filter((r): r is { label: string; href: string; range: NonNullable<typeof r.range> } => r.range != null);
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
@@ -68,7 +68,10 @@ const cards = metros
   })
   .sort((a, b) => b.listings.length - a.listings.length);
 
-const title = 'Real Party & Event Rental Prices, Compared';
+// 2026-09-19: was 'Real Party & Event Rental Prices, Compared' (44 chars) — left
+// ~16 chars of SERP width unused and named none of the categories people
+// actually search. Kept under 60 so it doesn't truncate.
+const title = 'Party & Event Rental Prices: Tents, Tables, Chairs Compared';
 // Trimmed 2026-07-31 (SEO audit) — the old wording ran 155 chars, right at
 // the desktop SERP truncation edge and already clipped on mobile (~120).
 const description = `Real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metros — actual numbers, not vague quotes.`;
@@ -91,7 +94,7 @@ const description = `Real, published prices from ${totalListings} verified tent,
       {cards.map(({ meta, listings, teaser }) => (
         <a href={`/${meta.slug}/`} class="card metro-card">
           <span class="state-tag">{meta.state}</span>
-          <h4>{meta.name}</h4>
+          <h3>{meta.name}</h3>
           <p class="count">{listings.length} verified rental companies</p>
           {teaser && <p class="teaser">{teaser}</p>}
           <span class="metro-cta">View pricing &rarr;</span>
@@ -120,7 +123,7 @@ const description = `Real, published prices from ${totalListings} verified tent,
           <tbody>
             {categoryRows.map((r) => (
               <tr>
-                <td>{r.label}</td>
+                <td>{r.href ? <a href={r.href}>{r.label}</a> : r.label}</td>
                 <td>{formatPriceRange(r.range, fmtRange)}</td>
                 <td class="muted">{r.range.count}</td>
               </tr>
@@ -129,8 +132,11 @@ const description = `Real, published prices from ${totalListings} verified tent,
         </table>
       </div>
       <p class="muted small">
-        Want the full breakdown by tent size, plus what drives the difference?
-        {' '}<a href="/tent-rental-cost/">Read the tent rental cost guide</a>.
+        Each category above links to its full guide, with the breakdown by type, by metro area
+        and by company: <a href="/tent-rental-cost/">tents</a>,
+        {' '}<a href="/table-and-chair-rental-costs/">tables and chairs</a>,
+        {' '}<a href="/bounce-house-rental-costs/">bounce houses and water slides</a> and
+        {' '}<a href="/photo-booth-rental-costs/">photo booths</a>.
       </p>
     </section>
   )}
@@ -192,7 +198,7 @@ const description = `Real, published prices from ${totalListings} verified tent,
     border-radius: 999px;
     padding: 0.15em 0.6em;
   }
-  .metro-card h4 { margin-bottom: var(--space-2); font-size: 1.1rem; padding-right: var(--space-8); }
+  .metro-card h3 { margin-bottom: var(--space-2); font-size: 1.1rem; padding-right: var(--space-8); }
   .metro-card .count { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: var(--space-1); }
   .metro-card .teaser { color: var(--color-primary); font-size: 0.85rem; font-weight: 600; margin-bottom: var(--space-3); }
   .metro-cta { font-weight: 600; color: var(--color-primary); font-size: 0.9rem; }

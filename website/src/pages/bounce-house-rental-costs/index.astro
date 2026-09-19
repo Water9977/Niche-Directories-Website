@@ -1,0 +1,269 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CategoryTables from '../../components/CategoryTables.astro';
+import {
+  getAllListings,
+  deliveryFeeRange,
+  depositRange,
+  formatPriceRange,
+  isBounceHousePrice,
+  isWaterSlidePrice,
+} from '../../lib/listings';
+import {
+  collectPoints,
+  coverage,
+  fmtMoney,
+  fmtRangeStats,
+  metroBreakdown,
+  statsFor,
+  subtypeBreakdown,
+  topCompanies,
+  type SubtypeSpec,
+} from '../../lib/categories';
+import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+
+// Bounce houses have the most price points of any category after tables and
+// chairs and, until this page, no page of their own. Water slides are folded
+// in because a renter shopping for one is nearly always weighing the other,
+// and several combo units are literally both. Every figure is computed from
+// the same verified listings as the rest of the site.
+const all = getAllListings();
+const bouncePts = collectPoints(all, isBounceHousePrice);
+const waterPts = collectPoints(all, isWaterSlidePrice);
+const bStats = statsFor(bouncePts)!;
+const wStats = statsFor(waterPts)!;
+const bCov = coverage(bouncePts);
+const wCov = coverage(waterPts);
+const delivery = deliveryFeeRange(all);
+const deposit = depositRange(all);
+
+const bounceSpecs: SubtypeSpec[] = [
+  { label: 'Combo units (bounce plus slide)', blurb: 'Bounce area with a slide attached, including 5-in-1 and 6-in-1 units.', test: (i) => /combo|\d\s*in\s*1|\d+in\d/i.test(i.item_type) },
+  { label: 'Standard bounce houses', blurb: 'A plain bounce house with no theme or slide stated.', test: (i) => /^bounce[_\s]?house([_\s]rental)?$/i.test(i.item_type.trim()) },
+];
+const waterSpecs: SubtypeSpec[] = [
+  { label: 'Combo and pool units', blurb: 'Slides sold as a combo with a bounce area or splash pool.', test: (i) => /combo|\d\s*in\s*1|pool/i.test(i.item_type) },
+  { label: 'Slip-and-slide, foam and dunk tanks', blurb: 'Slip-and-slide inflatables, foam party units and dunk tanks.', test: (i) => /slip|foam|dunk|cannon/i.test(i.item_type) },
+];
+const bounceSubs = subtypeBreakdown(bouncePts, bounceSpecs, 'Themed, castle and specialty units', 'Named units such as castles, princess and character themes, and sports arenas.');
+const waterSubs = subtypeBreakdown(waterPts, waterSpecs, 'Water slides by height and lane count', 'Single-lane and dual-lane slides, usually sold by height.');
+
+// How the price is quoted matters as much as the number: a per-day price and a
+// per-event price are not the same thing.
+const quoteSpecs: SubtypeSpec[] = [
+  { label: 'Quoted per event or rental', blurb: 'One price for the booking, typically a several-hour rental.', test: (i) => /event|rental/i.test(i.unit ?? '') },
+  { label: 'Quoted per day or 24 hours', blurb: 'One price for a full day.', test: (i) => /day|24/i.test(i.unit ?? '') },
+];
+const bounceQuote = subtypeBreakdown(bouncePts, quoteSpecs, 'Other billing periods', 'Hourly, multi-day, weekly and flat-rate quotes.');
+
+const bounceMetros = metroBreakdown(isBounceHousePrice);
+const waterMetros = metroBreakdown(isWaterSlidePrice);
+
+const combo = bounceSubs.find((r) => r.label.startsWith('Combo'));
+const standard = bounceSubs.find((r) => r.label === 'Standard bounce houses');
+
+const title = 'Bounce House & Water Slide Rental Cost: Real Prices';
+const description = `What bounce houses and water slides actually rent for: real published prices from ${bCov.companies} bounce house and ${wCov.companies} water slide companies, by type and metro.`;
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Bounce House Rental Cost', href: '/bounce-house-rental-costs/' },
+];
+
+const faqs: { q: string; a: string }[] = [
+  {
+    q: 'How much does it cost to rent a bounce house?',
+    a: `Across ${bStats.points} real published bounce house prices from ${bStats.companies} companies, rentals cost ${fmtRangeStats(bStats)}. The typical starting price — the median of each company's own cheapest bounce house — is $${fmtMoney(bStats.typicalStart)}.${standard ? ` A standard bounce house starts at a typical $${fmtMoney(standard.stats.typicalStart)}.` : ''}`,
+  },
+  {
+    q: 'Are combo bounce houses more expensive?',
+    a: combo && standard && combo.stats.typicalStart > standard.stats.typicalStart
+      ? `Yes, generally. Combo units, which add a slide, have a typical starting price of $${fmtMoney(combo.stats.typicalStart)} across ${combo.stats.companies} companies, against $${fmtMoney(standard.stats.typicalStart)} for a standard bounce house across ${standard.stats.companies}.`
+      : 'Combo units, which add a slide to the bounce area, usually cost more than a standard bounce house because they are larger and take more space.',
+  },
+  {
+    q: 'How much does it cost to rent a water slide?',
+    a: `Across ${wStats.points} real published water slide prices from ${wStats.companies} companies, rentals cost ${fmtRangeStats(wStats)}, with a typical starting price of $${fmtMoney(wStats.typicalStart)}. Taller dual-lane slides and slide-and-pool combinations sit at the higher end.`,
+  },
+  {
+    q: 'Do bounce house companies charge for delivery?',
+    a: delivery
+      ? `Many do. Real published delivery fees in our data range from ${formatPriceRange(delivery, fmtMoney)} across ${delivery.count} published fees, and some companies include delivery within a set radius. Check the company's listing for its policy.`
+      : 'Many do, and some include delivery within a set radius. Check the company’s listing for its policy.',
+  },
+  {
+    q: 'Do I need to pay a deposit?',
+    a: deposit
+      ? `Often. Real published deposits in our data range from ${formatPriceRange(deposit, fmtMoney)} across ${deposit.count} published amounts. Not every company requires one, and terms differ, so confirm before you book.`
+      : 'Some companies require a deposit to hold the date. Confirm before you book.',
+  },
+  {
+    q: 'How much space do I need for a bounce house?',
+    a: 'A flat area larger than the unit itself, with a few feet of clearance on every side and nothing overhead such as branches or power lines. The blower also needs a power outlet within cord reach, or a generator. Ask the company for the exact footprint of the unit you are considering.',
+  },
+  {
+    q: 'What weather cancels a bounce house rental?',
+    a: 'Rain, storms and strong wind. Operators commonly deflate and stop using inflatables in sustained wind, often somewhere around 15 to 20 miles per hour, but the limit is set by the manufacturer and the company. Ask about the weather and rescheduling policy before you pay a deposit.',
+  },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+---
+<BaseLayout title={title} description={description} path="/bounce-house-rental-costs/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>How much does a bounce house rental cost?</h1>
+
+    <p class="intro">
+      We collected published prices straight from rental companies' own websites:
+      {' '}<strong>{bStats.points} bounce house prices from {bStats.companies} companies</strong> and
+      {' '}<strong>{wStats.points} water slide prices from {wStats.companies} companies</strong>, across
+      {' '}{Math.max(bCov.metros, wCov.metros)} of our metro areas. Bounce houses rent for
+      {' '}<strong>{fmtRangeStats(bStats)}</strong>, with the typical company starting at
+      {' '}<strong>${fmtMoney(bStats.typicalStart)}</strong>. Water slides rent for
+      {' '}<strong>{fmtRangeStats(wStats)}</strong>, starting at a typical
+      {' '}<strong>${fmtMoney(wStats.typicalStart)}</strong>.
+    </p>
+
+    <section>
+      <h2>How to read these numbers</h2>
+      <p>
+        Every range is a real published price, not an estimate. The <strong>published range</strong>
+        is the lowest to highest price we hold, and the <strong>typical starting price</strong> is
+        the median of each company's own cheapest price, counting every company once, so a company
+        that lists dozens of units does not skew the result. We also collapse repeated rows: some
+        company pages show the same price against many durations, and counting each of those as a
+        separate price would overstate how much data there is.
+      </p>
+    </section>
+
+    <section>
+      <h2>Bounce house rental cost by type</h2>
+      <p>
+        The biggest driver of price is what the unit is. A plain bounce house is the baseline, a
+        combo adds a slide, and themed units and castles are priced individually.
+      </p>
+      <CategoryTables subtypes={bounceSubs} unit="per rental" noun="bounce house" />
+      {combo && standard && (
+        <p>
+          Combo units start at a typical ${fmtMoney(combo.stats.typicalStart)} across
+          {' '}{combo.stats.companies} companies, against ${fmtMoney(standard.stats.typicalStart)} for a
+          standard bounce house across {standard.stats.companies}. Groups with few companies are
+          worth treating as a guide rather than a benchmark.
+        </p>
+      )}
+    </section>
+
+    <section>
+      <h2>Per event or per day: how the price is quoted</h2>
+      <p>
+        Two prices that look alike can cover different things. Many bounce house companies quote
+        one price per event or rental, which often means a few hours, while others quote per
+        day. Some quote by the hour or by longer periods. Compare like with like.
+      </p>
+      <CategoryTables subtypes={bounceQuote} unit="per rental" noun="bounce house" />
+    </section>
+
+    <section>
+      <h2 id="water-slide-rental-cost">Water slide rental cost</h2>
+      <p>
+        Water slides cost more than dry bounce houses in our data: a typical starting price of
+        ${fmtMoney(wStats.typicalStart)} against ${fmtMoney(bStats.typicalStart)}. They are usually larger and need a
+        water supply, which is part of why. Here is what {wStats.points} published prices from
+        {wStats.companies} companies show.
+      </p>
+      <CategoryTables subtypes={waterSubs} unit="per rental" noun="water slide" />
+      <p>
+        Water slide prices are quoted for a set rental period: mostly per event, with some quoted
+        per day or for a block of two or four hours. Confirm the length of the rental period, since
+        it is the main thing that separates two similar-looking prices.
+      </p>
+    </section>
+
+    <section>
+      <h2>What else goes on the bill</h2>
+      <ul>
+        <li>
+          <strong>Delivery and setup.</strong>
+          {delivery
+            ? <> Published delivery fees in our data run {formatPriceRange(delivery, fmtMoney)}, and some companies include delivery inside a set radius.</>
+            : <> Fees vary by distance, and some companies include delivery inside a set radius.</>}
+        </li>
+        <li>
+          <strong>Deposit.</strong>
+          {deposit
+            ? <> Published deposits run {formatPriceRange(deposit, fmtMoney)}, and not every company asks for one.</>
+            : <> Some companies ask for a deposit to hold the date.</>}
+        </li>
+        <li><strong>Extras.</strong> Generators, extra hours, attendants and add-on items are usually priced separately.</li>
+        <li><strong>Site needs.</strong> A flat area with clearance on every side and a power outlet within reach of the blower. Water slides also need a water source.</li>
+      </ul>
+      <p>
+        If the party also needs shelter, see the
+        {' '}<a href="/tent-rental-cost/">tent rental cost guide</a>, and for seating see
+        {' '}<a href="/table-and-chair-rental-costs/">table and chair rental costs</a>. The free
+        {' '}<a href="https://tools.eventrentalcosts.com/party-budget-planner/">party budget planner</a>
+        {' '}helps you fit all of it into one budget.
+      </p>
+    </section>
+
+    {bounceMetros.length > 0 && (
+      <section>
+        <h2>Bounce house rental prices by metro area</h2>
+        <p>
+          Each row counts only companies in that metro that publish a bounce house price, so a
+          metro with one or two companies is a small sample.
+        </p>
+        <CategoryTables metros={bounceMetros} unit="per rental" noun="bounce house" />
+      </section>
+    )}
+
+    {waterMetros.length > 0 && (
+      <section>
+        <h2>Water slide rental prices by metro area</h2>
+        <CategoryTables metros={waterMetros} unit="per rental" noun="water slide" />
+      </section>
+    )}
+
+    <section>
+      <h2>Companies publishing the most bounce house prices</h2>
+      <p>
+        Each links to its full listing with every published price and policy.
+      </p>
+      <CategoryTables companies={topCompanies(bouncePts, 8)} noun="bounce house" />
+      <h2>Companies publishing the most water slide prices</h2>
+      <CategoryTables companies={topCompanies(waterPts, 6)} noun="water slide" />
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      {faqs.map((faq) => (
+        <div class="faq-item">
+          <h3>{faq.q}</h3>
+          <p>{faq.a}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="related">
+      <h2>More rental cost guides</h2>
+      <ul>
+        <li><a href="/tent-rental-cost/">Tent rental cost</a> by size, with wedding-size tents</li>
+        <li><a href="/table-and-chair-rental-costs/">Table and chair rental cost</a> by type</li>
+        <li><a href="/photo-booth-rental-costs/">Photo booth rental cost</a></li>
+        <li><a href="/">All metro areas we cover</a></li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 760px; }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  section { margin-bottom: var(--space-8); }
+  h2 { margin-top: var(--space-8); }
+  ul { padding-left: var(--space-6); }
+  li { margin-bottom: var(--space-2); }
+  .faq-item { margin-bottom: var(--space-6); }
+  .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .faq-item p { color: var(--color-text-muted); margin: 0; }
+</style>

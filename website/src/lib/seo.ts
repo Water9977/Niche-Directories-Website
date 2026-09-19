@@ -60,6 +60,20 @@ export function localBusinessJsonLd(listing: Listing, url: string) {
   return block;
 }
 
+/** Trim text to at most `max` characters, cutting at a word boundary and
+ * adding an ellipsis only when something was actually cut. Used for titles and
+ * meta descriptions that embed a business name: a handful of real names are
+ * very long ("Awesome Entertainment Party Rentals Columbus Cincinnati
+ * Cleveland Ohio") and pushed listing titles to 98 characters and
+ * descriptions to 204 in the 2026-09-19 crawl. */
+export function clampText(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  const base = lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut;
+  return `${base.replace(/[\s,;:.\-–—]+$/, '')}…`;
+}
+
 /** FAQPage markup — Google no longer shows visual FAQ rich results, but this
  * markup measurably lifts citation rates in AI Overviews/ChatGPT/Perplexity
  * (the channel llms.txt + the robots.txt AI-crawler allowlist already target).

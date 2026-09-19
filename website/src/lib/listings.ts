@@ -193,10 +193,8 @@ export function chairPriceMin(items: Listing[]): number | null {
   let min: number | null = null;
   for (const l of items) {
     for (const p of l.pricing) {
-      if (p.price_low == null || p.price_low <= 0) continue;
-      if (!/chair/i.test(p.item_type)) continue;
-      if (NON_RENTAL_ITEM_RE.test(p.item_type)) continue;
-      if (min == null || p.price_low < min) min = p.price_low;
+      if (!isChairPrice(p)) continue;
+      if (min == null || p.price_low! < min) min = p.price_low;
     }
   }
   return min;
@@ -267,15 +265,7 @@ export function formatPriceRange(range: PriceRange, fmt: (n: number) => string):
  * KD on "bounce house rental cost", better than table/chair terms, so this
  * gets its own stat rather than staying buried in the generic pricing table. */
 export function bounceHousePriceRange(items: Listing[]): PriceRange | null {
-  const prices: number[] = [];
-  for (const l of items) {
-    for (const p of l.pricing) {
-      if (p.price_low == null) continue;
-      if (/bounce.?house/i.test(p.item_type)) prices.push(p.price_low);
-    }
-  }
-  if (!prices.length) return null;
-  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+  return rangeForPredicate(items, isBounceHousePrice);
 }
 
 // Matches "table"/"tables" as a real word, not a substring — a naive /table/i
@@ -317,7 +307,10 @@ const WRONG_ITEM_SNIPPET_RE = /sofa|couch|loveseat|sectional/i;
 // (3) "table_leg_extension" ($1) and "table_tree_decoration" ($3) are parts and
 //     decor, not tables — they were making "tables from $1" technically true
 //     and practically misleading.
-const AMBIGUOUS_BUNDLE_RE = /tables?[_\s]+and[_\s]+chairs?|chairs?[_\s]+and[_\s]+tables?/i;
+// Also catches a table sold WITH a set number of chairs ("table_round_8chairs"):
+// that price is a package, so it can't stand for either a table or a chair.
+const AMBIGUOUS_BUNDLE_RE =
+  /tables?[_\s]+and[_\s]+chairs?|chairs?[_\s]+and[_\s]+tables?|tables?[_\sa-z]*\d+\s*chairs?/i;
 const TENT_WITH_SIZE_RE = /tent[_\s]*\d+\s*x\s*\d+/i;
 const TABLE_PART_RE = /leg[_\s]?extension|decoration/i;
 
@@ -326,17 +319,92 @@ const TABLE_PART_RE = /leg[_\s]?extension|decoration/i;
  * batch 1) that only ever surfaced as a single chair-price line, never its
  * own number, despite real table pricing existing across the data. */
 export function tablePriceRange(items: Listing[]): PriceRange | null {
+  return rangeForPredicate(items, isTablePrice);
+}
+
+/** A row is only a usable price when it has a positive dollar figure. */
+function hasPrice(p: PricingItem): boolean {
+  return p.price_low != null && p.price_low > 0;
+}
+
+/** The one definition of "what counts as a ___ price" for each category.
+ * The range functions above/below, the peer comparison on listing pages, and
+ * the category guide pages all go through these, so a contamination fix
+ * (e.g. a tent price being counted as a chair) can only ever need to be made
+ * in one place. Before 2026-09-19 each consumer had its own copy of these
+ * rules, which is exactly how the chair range picked up a $679.90 tent. */
+export function isTablePrice(p: PricingItem): boolean {
+  if (!hasPrice(p)) return false;
+  // Linens ("linen_90_round_table") are cloth for a table, not a table.
+  if (/cloth|linen/i.test(p.item_type)) return false;
+  if (GARBLED_CATEGORY_RE.test(p.item_type)) return false;
+  if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) return false;
+  if (TABLE_PART_RE.test(p.item_type)) return false;
+  if (p.source_snippet && WRONG_ITEM_SNIPPET_RE.test(p.source_snippet)) return false;
+  return TABLE_WORD_RE.test(p.item_type);
+}
+
+export function isChairPrice(p: PricingItem): boolean {
+  if (!hasPrice(p)) return false;
+  if (!/chair/i.test(p.item_type)) return false;
+  if (NON_RENTAL_ITEM_RE.test(p.item_type)) return false;
+  if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) return false;
+  if (TENT_WITH_SIZE_RE.test(p.item_type)) return false;
+  // Same class of extraction error as WRONG_ITEM_SNIPPET_RE for tables: a row
+  // typed as a folding chair whose own source text is an armchair. Found
+  // 2026-09-19: "chair_folding" at $150 with the snippet naming a
+  // "natural-beige-arm-chair" — it made folding chairs look like $1-$150.
+  if (/folding/i.test(p.item_type) && p.source_snippet && /arm.?chair|accent|throne|lounge/i.test(p.source_snippet)) return false;
+  return true;
+}
+
+export function isBounceHousePrice(p: PricingItem): boolean {
+  if (!hasPrice(p) || !/bounce.?house/i.test(p.item_type)) return false;
+  // Water-slide combos ("bounce_house_baja_dual_lane_waterslide") belong to the
+  // water-slide category; counting them in both double-counted 5 rows. A
+  // "bounce_house_mechanical_bull" ($800) is a mechanical bull filed under a
+  // bounce_house_ prefix, and it had become the top of the bounce-house range.
+  return !/water.?slide|waterslide|water_slide|pool|wet|mechanical.?bull/i.test(p.item_type);
+}
+
+export function isPhotoBoothPrice(p: PricingItem): boolean {
+  return hasPrice(p) && /photo.?booth|photobooth/i.test(p.item_type);
+}
+
+export function isWaterSlidePrice(p: PricingItem): boolean {
+  return hasPrice(p) && /water.?slide|water_unit/i.test(p.item_type);
+}
+
+/** A listing's rows matching a category, cleaned of repeated-price artifacts.
+ *
+ * One bounce-house company's extraction produced 27 rows for the same "Combo
+ * Bounce House Dry" at the same $685, differing only in a duration string
+ * ("for 2 hours" ... "for 1 month"). That is a page table where a single price
+ * sat beside every duration, so we cannot tell what the $685 actually covers.
+ * Rows are the same when the item and dollar figure are the same. Exact
+ * repeats (2-3 copies) collapse to one; a price repeated 4+ times is an
+ * unreliable extraction and is dropped entirely rather than keeping an
+ * arbitrary copy that set the top of the category's range. */
+export function matchingRows(listing: Listing, pred: (p: PricingItem) => boolean): PricingItem[] {
+  const groups = new Map<string, PricingItem[]>();
+  for (const p of listing.pricing) {
+    if (!pred(p)) continue;
+    const key = `${p.item_type.toLowerCase().replace(/[_\s]+/g, ' ').trim()}|${p.price_low}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(p);
+  }
+  const out: PricingItem[] = [];
+  for (const rows of groups.values()) {
+    if (rows.length >= 4) continue;
+    out.push(rows[0]);
+  }
+  return out;
+}
+
+function rangeForPredicate(items: Listing[], pred: (p: PricingItem) => boolean): PriceRange | null {
   const prices: number[] = [];
   for (const l of items) {
-    for (const p of l.pricing) {
-      if (p.price_low == null || p.price_low <= 0) continue;
-      if (/cloth/i.test(p.item_type)) continue;
-      if (GARBLED_CATEGORY_RE.test(p.item_type)) continue;
-      if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) continue;
-      if (TABLE_PART_RE.test(p.item_type)) continue;
-      if (p.source_snippet && WRONG_ITEM_SNIPPET_RE.test(p.source_snippet)) continue;
-      if (TABLE_WORD_RE.test(p.item_type)) prices.push(p.price_low);
-    }
+    for (const p of matchingRows(l, pred)) prices.push(p.price_low!);
   }
   if (!prices.length) return null;
   return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
@@ -371,35 +439,20 @@ export function depositRange(items: Listing[]): PriceRange | null {
  * booth pricing across several metros — same promote-on-real-demand logic
  * as bounce houses. */
 export function photoBoothPriceRange(items: Listing[]): PriceRange | null {
-  return priceRangeForPattern(items, /photo.?booth|photobooth/i);
+  return rangeForPredicate(items, isPhotoBoothPrice);
 }
 
 /** "water slide rental cost" = Easy KD, and the dataset holds dozens of real
  * water-slide price points (Jacksonville especially). */
 export function waterSlidePriceRange(items: Listing[]): PriceRange | null {
-  return priceRangeForPattern(items, /water.?slide|water_unit/i);
+  return rangeForPredicate(items, isWaterSlidePrice);
 }
 
 /** Real chair price range, same guards as chairPriceMin (which only ever
  * returned a floor). Needed so chairs can take part in the per-listing peer
  * comparison below like every other category. */
 export function chairPriceRange(items: Listing[]): PriceRange | null {
-  const prices: number[] = [];
-  for (const l of items) {
-    for (const p of l.pricing) {
-      if (p.price_low == null || p.price_low <= 0) continue;
-      if (!/chair/i.test(p.item_type)) continue;
-      if (NON_RENTAL_ITEM_RE.test(p.item_type)) continue;
-      // See the notes on AMBIGUOUS_BUNDLE_RE / TENT_WITH_SIZE_RE above: a
-      // "tents_tables_chairs_and_more_tent_20x30" row is a tent price, and a
-      // "tables_and_chairs" row is a bundle — neither is a real chair rate.
-      if (AMBIGUOUS_BUNDLE_RE.test(p.item_type)) continue;
-      if (TENT_WITH_SIZE_RE.test(p.item_type)) continue;
-      prices.push(p.price_low);
-    }
-  }
-  if (!prices.length) return null;
-  return { low: Math.min(...prices), high: Math.max(...prices), count: prices.length };
+  return rangeForPredicate(items, isChairPrice);
 }
 
 export interface PeerComparison {

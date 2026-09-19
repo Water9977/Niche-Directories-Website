@@ -1,0 +1,240 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CategoryTables from '../../components/CategoryTables.astro';
+import { getAllListings, deliveryFeeRange, formatPriceRange, isPhotoBoothPrice } from '../../lib/listings';
+import {
+  collectPoints,
+  coverage,
+  fmtMoney,
+  fmtRangeStats,
+  metroBreakdown,
+  statsFor,
+  subtypeBreakdown,
+  topCompanies,
+  type SubtypeSpec,
+} from '../../lib/categories';
+import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+
+// Photo booths are the smallest of the three guide categories in this
+// directory: a real but modest sample. This page says so plainly rather than
+// dressing a handful of prices up as a national benchmark.
+const all = getAllListings();
+const pts = collectPoints(all, isPhotoBoothPrice);
+const stats = statsFor(pts)!;
+
+// Prices here are quoted per event, per hour and per day, and those are
+// different things: $150 an hour and $999 an event cannot be folded into one
+// figure. The booth-type, metro and headline numbers therefore use per-event
+// prices only, the one billing method with enough prices to compare like with
+// like. Hourly and daily quotes get their own table further down.
+const isPerEvent = (p: { unit: string | null }) => /event/i.test(p.unit ?? '');
+const eventPts = pts.filter((pt) => isPerEvent(pt.item));
+const eStats = statsFor(eventPts)!;
+const cov = coverage(pts);
+const delivery = deliveryFeeRange(all);
+
+const typeSpecs: SubtypeSpec[] = [
+  { label: '360 booths', blurb: 'A platform or arm that films slow-motion video as it circles guests.', test: (i) => /360|spinner|overhead/i.test(i.item_type) },
+  { label: 'Mirror booths', blurb: 'Full-length touchscreen mirrors that take photos with animations.', test: (i) => /mirror/i.test(i.item_type) },
+];
+const typeRows = subtypeBreakdown(eventPts, typeSpecs, 'Standard, glam and other booths', 'Classic, magazine-style, social and other booth setups.');
+
+// The number means something different depending on how it is quoted, so it
+// gets its own breakdown rather than one blended figure.
+const quoteSpecs: SubtypeSpec[] = [
+  { label: 'Quoted per event', blurb: 'One price for the booking.', test: (i) => /event/i.test(i.unit ?? '') },
+  { label: 'Quoted per hour', blurb: 'An hourly rate, so the total depends on how long the booth stays.', test: (i) => /hour/i.test(i.unit ?? '') },
+  { label: 'Quoted per day', blurb: 'One price for a day.', test: (i) => /day/i.test(i.unit ?? '') },
+];
+const quoteRows = subtypeBreakdown(pts, quoteSpecs, 'Flat-rate and other', 'Flat prices with no billing period stated.');
+
+const metros = metroBreakdown((p) => isPhotoBoothPrice(p) && isPerEvent(p));
+const hourly = quoteRows.find((r) => r.label === 'Quoted per hour');
+const perEvent = quoteRows.find((r) => r.label === 'Quoted per event');
+const threeHours = hourly ? hourly.stats.low * 3 : null;
+const three60 = typeRows.find((r) => r.label === '360 booths');
+const mirror = typeRows.find((r) => r.label === 'Mirror booths');
+
+const title = 'Photo Booth Rental Cost: Real Prices by Booth Type';
+const description = `What photo booths actually rent for: ${stats.points} real published prices from ${cov.companies} companies, split by booth type and by how the price is quoted.`;
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Photo Booth Rental Cost', href: '/photo-booth-rental-costs/' },
+];
+
+const faqs: { q: string; a: string }[] = [
+  {
+    q: 'How much does it cost to rent a photo booth?',
+    a: `Where a company quotes a flat price per event, photo booths cost ${fmtRangeStats(eStats)}, and the typical company starts at $${fmtMoney(eStats.typicalStart)} (${eStats.points} prices from ${eStats.companies} companies). Other companies quote by the hour or the day, which is covered separately. Our sample is small, so treat this as a starting point rather than a market average.`,
+  },
+  {
+    q: 'Are 360 photo booths more expensive?',
+    a: three60
+      ? `Among per-event prices we track, 360 booths have a typical starting price of $${fmtMoney(three60.stats.typicalStart)} across ${three60.stats.companies} ${three60.stats.companies === 1 ? 'company' : 'companies'}, with published prices from ${fmtRangeStats(three60.stats)}.${mirror ? ` Mirror booths start at a typical $${fmtMoney(mirror.stats.typicalStart)}.` : ''} With so few companies, one company's pricing can move these figures a lot.`
+      : '360 booths and mirror booths generally price above a standard enclosed booth, since they use more equipment and need more floor space.',
+  },
+  {
+    q: 'Is a photo booth priced per hour or per event?',
+    a: hourly && perEvent
+      ? `Both are common. ${perEvent.stats.points} of the prices we hold are quoted per event and ${hourly.stats.points} per hour. An hourly rate rises with the length of your event, so multiply it by the hours you need before comparing it with a flat per-event price.`
+      : 'Both are common. Multiply an hourly rate by the hours you need before comparing it with a flat per-event price.',
+  },
+  {
+    q: 'What is usually included in a photo booth rental?',
+    a: 'It varies, which is the main reason two prices are hard to compare. Ask whether the price includes an attendant, prints, a digital gallery, props, a custom backdrop or overlay, and setup and teardown. Confirm the length of the rental and any charge for extra hours.',
+  },
+  {
+    q: 'Do photo booth companies charge for delivery?',
+    a: delivery
+      ? `Practices vary. Real published delivery fees across our directory range from ${formatPriceRange(delivery, fmtMoney)}, but some companies charge for travel and others build it into the price, so ask for the total before you book.`
+      : 'Practices vary: some companies charge for travel and others build it into the price. Ask for the total before you book.',
+  },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+---
+<BaseLayout title={title} description={description} path="/photo-booth-rental-costs/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>How much does a photo booth rental cost?</h1>
+
+    <p class="intro">
+      We collected published photo booth prices straight from rental companies' own websites:
+      {' '}<strong>{stats.points} prices from {stats.companies} companies</strong> across
+      {' '}{cov.metros} of our metro areas. Where a company quotes a flat price per event, photo
+      booths cost <strong>{fmtRangeStats(eStats)}</strong>, and the typical company starts at
+      {' '}<strong>${fmtMoney(eStats.typicalStart)}</strong>. Others quote by the hour or the day, and
+      those prices are shown separately because they are not comparable.
+    </p>
+
+    <section class="callout">
+      <h2>A note on sample size</h2>
+      <p>
+        Photo booths are a smaller category in our directory than tents, tables or bounce houses.
+        Only {stats.companies} of our {cov.totalCompanies} companies publish a photo booth price, and
+        most metro areas have one or two. That is enough to show how booth types and billing
+        methods compare, but not enough to call any figure the going rate in your city. Use it as a
+        way to check whether a quote is in a sensible range, and get several quotes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Photo booth rental cost by booth type</h2>
+      <p>
+        Booth type is one of the main things that separates prices: a classic enclosed or open-air
+        booth is the baseline, while 360 booths and mirror booths use more equipment and space.
+        This table uses only prices quoted per event ({eStats.points} of the {stats.points} we hold),
+        so every row is comparable.
+      </p>
+      <CategoryTables subtypes={typeRows} unit="per event" noun="photo booth" />
+      {three60 && (
+        <p>
+          360 booths start at a typical ${fmtMoney(three60.stats.typicalStart)} across
+          {' '}{three60.stats.companies} {three60.stats.companies === 1 ? 'company' : 'companies'}.
+          With so few companies in a group, a single company's pricing can move the figure a lot.
+        </p>
+      )}
+    </section>
+
+    <section>
+      <h2>Per event or per hour: how the price is quoted</h2>
+      <p>
+        This is where photo booth quotes get misleading. A flat per-event price and an hourly rate
+        cannot be compared until you know how long you need the booth.
+      </p>
+      <CategoryTables subtypes={quoteRows} unit="as quoted" noun="photo booth" />
+      {hourly && threeHours != null && (
+        <p>
+          For example, at the lowest hourly price we hold, ${fmtMoney(hourly.stats.low)} an hour, a
+          three-hour reception comes to ${fmtMoney(threeHours)}, before any extras. Some hourly quotes
+          also charge a higher first hour and a lower rate after it, so read the full terms rather
+          than the headline number.
+        </p>
+      )}
+    </section>
+
+    <section>
+      <h2>What to ask before you book</h2>
+      <p>
+        Two booths at the same price can include very different things. Get these confirmed in
+        writing:
+      </p>
+      <ul>
+        <li><strong>Hours.</strong> How long the booth is staffed and running, and the charge for extra time.</li>
+        <li><strong>Attendant.</strong> Whether someone runs the booth and helps guests.</li>
+        <li><strong>Prints and digital copies.</strong> Whether prints are unlimited or capped, and whether guests get a digital gallery.</li>
+        <li><strong>Props and backdrop.</strong> What is included, and whether a custom overlay or backdrop costs extra.</li>
+        <li><strong>Setup, teardown and travel.</strong> Whether they are in the price, and any space or power requirements.</li>
+      </ul>
+      <p>
+        Planning the rest of the event? See the
+        {' '}<a href="/table-and-chair-rental-costs/">table and chair rental costs</a>,
+        {' '}<a href="/tent-rental-cost/">tent rental costs</a> and
+        {' '}<a href="/bounce-house-rental-costs/">bounce house rental costs</a>, or use the free
+        {' '}<a href="https://tools.eventrentalcosts.com/party-budget-planner/">party budget planner</a>
+        {' '}to see where a booth fits in your budget.
+      </p>
+    </section>
+
+    {metros.length > 0 && (
+      <section>
+        <h2>Photo booth prices by metro area</h2>
+        <p>
+          Each row counts only companies in that metro that quote a photo booth price per event. Most
+          rows rest on one or two companies, so read them as examples, not averages.
+        </p>
+        <CategoryTables metros={metros} unit="per event" noun="photo booth" />
+      </section>
+    )}
+
+    <section>
+      <h2>Companies publishing photo booth prices</h2>
+      <p>
+        Each links to its full listing with every published price and policy. A company's range
+        here follows its own billing method, hourly, daily or per event, so open the listing for
+        the unit behind each price.
+      </p>
+      <CategoryTables companies={topCompanies(pts, 9)} noun="photo booth" />
+    </section>
+
+    <section class="faq">
+      <h2>Common questions</h2>
+      {faqs.map((faq) => (
+        <div class="faq-item">
+          <h3>{faq.q}</h3>
+          <p>{faq.a}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="related">
+      <h2>More rental cost guides</h2>
+      <ul>
+        <li><a href="/tent-rental-cost/">Tent rental cost</a> by size, with wedding-size tents</li>
+        <li><a href="/table-and-chair-rental-costs/">Table and chair rental cost</a> by type</li>
+        <li><a href="/bounce-house-rental-costs/">Bounce house and water slide rental cost</a></li>
+        <li><a href="/">All metro areas we cover</a></li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 760px; }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  section { margin-bottom: var(--space-8); }
+  h2 { margin-top: var(--space-8); }
+  .callout {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-6);
+  }
+  .callout h2 { margin-top: 0; font-size: 1.15rem; }
+  .callout p { margin-bottom: 0; color: var(--color-text-muted); }
+  ul { padding-left: var(--space-6); }
+  li { margin-bottom: var(--space-2); }
+  .faq-item { margin-bottom: var(--space-6); }
+  .faq-item h3 { margin-bottom: var(--space-2); font-size: 1.05rem; }
+  .faq-item p { color: var(--color-text-muted); margin: 0; }
+</style>

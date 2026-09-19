@@ -1,0 +1,123 @@
+---
+import {
+  fmtMoney,
+  fmtRangeStats,
+  type CompanyRow,
+  type MetroRow,
+  type SubtypeRow,
+} from '../lib/categories';
+import { stateAbbr } from '../lib/listings';
+
+/** Data tables shared by the category guide pages. Each block renders only
+ * when it has rows, and every figure comes from lib/categories.ts, so a guide
+ * never shows a table it has no real data for. */
+export interface Props {
+  subtypes?: SubtypeRow[];
+  /** e.g. "per table" — appended to the typical-start column header. */
+  unit?: string;
+  metros?: MetroRow[];
+  companies?: CompanyRow[];
+  /** Singular noun for column headers, e.g. "table". */
+  noun: string;
+}
+const { subtypes = [], unit = '', metros = [], companies = [], noun } = Astro.props;
+---
+{subtypes.length > 0 && (
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Published range</th>
+          <th>Typical starting price{unit ? ` (${unit})` : ''}</th>
+          <th>Companies</th>
+          <th>Price points</th>
+        </tr>
+      </thead>
+      <tbody>
+        {subtypes.map((r) => (
+          <tr>
+            <td>
+              <strong>{r.label}</strong>
+              <span class="blurb">{r.blurb}</span>
+            </td>
+            <td>{fmtRangeStats(r.stats)}</td>
+            <td>${fmtMoney(r.stats.typicalStart)}</td>
+            <td class="muted">{r.stats.companies}</td>
+            <td class="muted">{r.stats.points}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+{metros.length > 0 && (
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Metro area</th>
+          <th>Published range</th>
+          <th>Typical starting price{unit ? ` (${unit})` : ''}</th>
+          <th>Companies</th>
+        </tr>
+      </thead>
+      <tbody>
+        {metros.map((r) => (
+          <tr>
+            <td><a href={`/${r.meta.slug}/`}>{r.meta.name}</a></td>
+            <td>{fmtRangeStats(r.stats)}</td>
+            <td>${fmtMoney(r.stats.typicalStart)}</td>
+            <td class="muted">{r.stats.companies}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+{companies.length > 0 && (
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Location</th>
+          <th>Published {noun} prices</th>
+          <th>Price points</th>
+        </tr>
+      </thead>
+      <tbody>
+        {companies.map((c) => (
+          <tr>
+            <td><a href={`/listing/${c.listing.slug}/`}>{c.listing.name}</a></td>
+            <td class="muted">{c.listing.city}, {stateAbbr(c.listing.state)}</td>
+            <td>{fmtRangeStats(c)}</td>
+            <td class="muted">{c.points}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+<style>
+  .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-block: var(--space-4);
+  }
+  .table-wrap table { width: 100%; min-width: 480px; }
+  .blurb {
+    display: block;
+    margin-top: 0.2em;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+  }
+  .muted { color: var(--color-text-muted); }
+</style>

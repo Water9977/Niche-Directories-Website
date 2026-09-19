@@ -25,6 +25,9 @@ EventRentalCosts.com collects real, published pricing directly from local rental
 ## Key pages
 - [Homepage](https://eventrentalcosts.com/): metro-area selector, overview of the comparison methodology
 - [How much does tent rental cost?](https://eventrentalcosts.com/tent-rental-cost/): national cost guide built from real cross-metro data
+- [Table and chair rental cost](https://eventrentalcosts.com/table-and-chair-rental-costs/): per-item prices by type and metro, from real published rates
+- [Bounce house and water slide rental cost](https://eventrentalcosts.com/bounce-house-rental-costs/): prices by unit type and billing period, from real published rates
+- [Photo booth rental cost](https://eventrentalcosts.com/photo-booth-rental-costs/): prices by booth type and how they are quoted, from real published rates
 ${metroLines}
 - [About & Methodology](https://eventrentalcosts.com/about/): exactly how pricing data is collected and verified
 
