@@ -12,3 +12,6 @@ __pycache__/
 .DS_Store
 pipeline/export/backlink-outreach-real-emails.csv
 pipeline/indexnow-key.txt
+
+# Freshness-pass reports (refresh_pricing.py) - large, regenerated each run
+pipeline/refresh_reports/

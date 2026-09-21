@@ -41,12 +41,20 @@ NVIDIA_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
 # (meta-llama/llama-3.3-70b-instruct:free, qwen/qwen3-next-80b-a3b-instruct:free)
 # 404'd on every single call this whole session -- confirmed via OpenRouter's own
 # free-models catalog that both were deprecated/removed, not a transient outage.
+# Chain replaced 2026-09-21. Every entry above this comment's predecessor was dead:
+# NVIDIA returned 410 Gone for both meta/llama models (retired) and both OpenRouter
+# free slugs 404'd, so the pipeline could not extract anything. Of the models the
+# NVIDIA catalog still LISTS for this key, only nvidia/nemotron-3-super-120b-a12b
+# actually serves chat completions (most others 404 despite being listed; gpt-oss-20b
+# timed out). Benchmarked against listings with known-correct data: it returned every
+# price, all of which passed the anti-hallucination gate (6/6 on Sunrise Party
+# Rental). It is slow (~40s a call) and 503s occasionally, so extract() now retries
+# the same model instead of abandoning it after one failure.
 PROVIDER_CHAIN = [
-    ("nvidia", "meta/llama-3.1-8b-instruct"),
-    ("nvidia", "meta/llama-3.3-70b-instruct"),
-    ("openrouter", "openai/gpt-oss-20b:free"),
-    ("openrouter", "nvidia/nemotron-3-nano-30b-a3b:free"),
+    ("nvidia", "nvidia/nemotron-3-super-120b-a12b"),
 ]
+REQUEST_TIMEOUT_SECONDS = 150
+SAME_MODEL_RETRIES = 3
 DB_PATH = Path(__file__).parent / "directory.db"
 
 JSON_SHAPE_INSTRUCTIONS = """Respond with ONLY a single JSON object, no markdown fences, \
@@ -145,7 +153,7 @@ def call_model(provider, model, content):
             "temperature": 0,
         }
 
-    resp = requests.post(endpoint, headers={"Authorization": f"Bearer {key}"}, json=body, timeout=60)
+    resp = requests.post(endpoint, headers={"Authorization": f"Bearer {key}"}, json=body, timeout=REQUEST_TIMEOUT_SECONDS)
     if resp.status_code == 429:
         try:
             retry_after = resp.json().get("error", {}).get("metadata", {}).get("retry_after_seconds", 5)
@@ -165,7 +173,7 @@ def call_model(provider, model, content):
 
 def extract(content):
     for provider, model in PROVIDER_CHAIN:
-        for attempt in range(2):
+        for attempt in range(SAME_MODEL_RETRIES):
             try:
                 result, retry_after = call_model(provider, model, content)
             except json.JSONDecodeError as e:
@@ -178,6 +186,22 @@ def extract(content):
                 # (70B times out, the free OpenRouter model IDs below 404).
                 print(f"    {provider}/{model} produced malformed JSON ({e}), retrying...")
                 continue
+            except requests.exceptions.HTTPError as e:
+                # 5xx is a transient server-side hiccup (seen live: one 503 then success on
+                # the same model); 4xx (404/410) means the model is gone, so move on.
+                status = e.response.status_code if e.response is not None else 0
+                if status >= 500 and attempt < SAME_MODEL_RETRIES - 1:
+                    print(f"    {provider}/{model} HTTP {status}, retrying same model...")
+                    time.sleep(8)
+                    continue
+                print(f"    {provider}/{model} failed ({e}), trying next...")
+                break
+            except requests.exceptions.Timeout as e:
+                if attempt < SAME_MODEL_RETRIES - 1:
+                    print(f"    {provider}/{model} timed out, retrying same model...")
+                    continue
+                print(f"    {provider}/{model} failed ({e}), trying next...")
+                break
             except (RuntimeError, KeyError, requests.exceptions.RequestException) as e:
                 print(f"    {provider}/{model} failed ({e}), trying next...")
                 break
