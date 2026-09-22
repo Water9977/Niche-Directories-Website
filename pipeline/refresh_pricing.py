@@ -802,9 +802,38 @@ def main():
     ap.add_argument("--workers", type=int, default=5, help="parallel page fetches per listing")
     ap.add_argument("--listing-timeout-min", type=float, default=12, help="give up waiting on the whole pass after this long")
     ap.add_argument("--resume", help="a run-*.jsonl file: skip listings already finished in it (and keep appending to it)")
+    ap.add_argument("--apply-from-report", help="skip fetching entirely; apply exactly the verdicts already saved in this run-*.jsonl (still needs --apply)")
     args = ap.parse_args()
 
     conn = sqlite3.connect(DB_PATH)
+
+    if args.apply_from_report:
+        if not args.apply:
+            print("--apply-from-report needs --apply too (it only ever writes what --apply allows).")
+            return
+        results = load_run(Path(args.apply_from_report))
+        print(f"[APPLY FROM REPORT] {len(results)} listing(s) loaded from {args.apply_from_report}", flush=True)
+        backup = DB_PATH.with_name(f"directory-backup-{datetime.now().strftime('%Y%m%d-%H%M%S')}.db")
+        shutil.copy2(DB_PATH, backup)
+        print(f"  DB backed up to {backup.name}", flush=True)
+        ensure_tables(conn)
+        now = datetime.now(timezone.utc).isoformat()
+        totals = {}
+        bump = lambda k, n=1: totals.__setitem__(k, totals.get(k, 0) + n)  # noqa: E731
+        for res in results.values():
+            c = apply_result(conn, res, now, args.allow_removals, args.add_new, args.remove_unlocated)
+            for k, v in c.items():
+                bump("applied_" + k, v)
+            for r in res["rows"]:
+                bump(r["verdict"])
+            bump("rows", len(res["rows"]))
+        conn.execute("INSERT INTO refresh_runs (started_at, mode, summary_json) VALUES (?,?,?)", (now, "APPLY-FROM-REPORT", json.dumps(totals)))
+        conn.commit()
+        print(f"applied: {{{', '.join(f'{k[8:]}={v}' for k, v in totals.items() if k.startswith('applied_'))}}}")
+        print(f"rows by verdict: {{{', '.join(f'{k}={v}' for k, v in totals.items() if k in (CONFIRMED_VERBATIM, CONFIRMED_NEAR, CONFIRMED_LLM, CHANGED, MISSING, UNLOCATED, UNVERIFIABLE))}}}")
+        conn.close()
+        return
+
     listings = select_listings(conn)
     if args.listing:
         listings = [l for l in listings if args.listing.lower() in l[2].lower()]
