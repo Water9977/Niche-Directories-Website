@@ -5,6 +5,15 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-10-10 — Session 32 (cont.): fresh GSC export (Jul 12 – Oct 6) — traffic is flat, not growing
+- **Totals, 87 days:** 29 clicks, 9,398 impressions (CTR ~0.3%, avg position ~40-56, i.e. pages 4-6). US = 26 of 29 clicks. Desktop 16 / mobile 13.
+- **Trend:** weekly impressions climbed from ~180 (mid-Jul) to a peak of **1,248 the week of Aug 24**, then slipped to 673 (week of Sep 21) and 932 (Sep 28). **Last 28 days: 15 clicks / 3,487 impressions vs prior 28: 13 clicks / 4,590 impressions** — impressions -24%, clicks +15% (noise at this scale). Plateau, no growth. This is the honest answer to the "genuine user interest" bullet in the AdSense rejection: ~10-15 organic clicks a month.
+- **New guides (live since Sep 19, ~3 weeks):** all indexed and ranking, 0 clicks yet. `/table-and-chair-rental-costs/` 116 imp @ pos 26; `/bounce-house-rental-costs/` 88 imp @ pos 34; `/photo-booth-rental-costs/` 104 imp @ pos 78. `/tent-rental-cost/` 196 imp @ pos 66, 2 clicks. Early signal only.
+- **Where clicks come from:** metro pages (Indianapolis 4, Charlotte 2, Columbus 2) and a few listing pages that rank high (e.g. wellington-party-rental-bluffton pos 5.8, sunrise-party-rental-pooler pos 1.5). 936 distinct queries, almost all single-digit impressions.
+- **Biggest unconverted pool:** "wedding rentals in [city]" queries (Wilmington 172, Indianapolis 158, Charleston 139, Jacksonville 94, Columbus 92, Knoxville 85, Savannah 81 impressions) at positions 64-87 = pages 7-9, 0 clicks. The Aug 22 wording fix put the phrase on the pages but did not move rankings; moving them needs authority (links/age), not copy.
+- **Striking distance (pos 8-20):** "tent rental" 19, "tent rental prices" 18.7, "tent rental companies near me" 19.9, "table and chair rentals near me" 19.6, "how much is it to rent a bounce house" 8.3. Tiny volumes (9-15 impressions each).
+- **Decision:** do not resubmit AdSense on a short cycle; nothing in the data supports a different outcome yet. Backlink outreach stays off the table (human's standing decision, no replies in practice).
+
 ### 2026-10-06 — Session 32: fourth AdSense rejection, identical text to the third
 - Rejection text is word-for-word the 2026-09-21 message ("Low-value content": substantial unique value, consistent web presence, genuine user interest; ongoing curation; sustained interest). **No new reason given.** Content-depth, legal-page, sitemap and freshness fixes (Sessions 28-31) are all live; the remaining stated signals (user interest, presence/age) are not fixable with code.
 - Newest Search Console export on hand is still 2026-08-22 — no current traffic data, so growth since then is unmeasured. Site age ~86 days. Newest price check is 2026-09-22 (54 listings still carry July dates: their pages couldn't be re-verified, mostly the large-catalog extraction-budget bug logged in Session 31).
