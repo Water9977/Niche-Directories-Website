@@ -1,0 +1,3 @@
+# Pages removed as duplicates of another listing -> the listing they duplicated.
+# (Cloudflare static assets read this file; one rule per line: source target status.)
+/listing/bounce-house-rentals-cleveland-tn-chattanooga/ /listing/partytime-inflatable-chattanooga/ 301

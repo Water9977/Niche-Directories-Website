@@ -45,6 +45,19 @@ WEBSITE_DATA_PATH = Path(__file__).parent.parent / "website" / "src" / "data" / 
 # businesses (e.g. "Aaron's Lowcountry Event Rentals").
 NAME_EXCLUDE_KEYWORDS = ["glamping", "rent-a-center", "rent a center", "aaron's rent to own", "buddy's home furnishings"]
 
+# Second Google Maps entries for a business that is already listed, so the site
+# would publish two pages with the same catalog. Keyed by a distinctive lowercase
+# name fragment; the value is why, and what replaces it. Add a matching 301 to
+# website/public/_redirects so the old URL still lands somewhere useful.
+#   2026-10-12: "Bounce House Rentals Cleveland TN" shares partytimeinflatable.com
+#   with Partytime Inflatable (adjacent Perimeter Dr addresses, the same ~75-item
+#   catalog scraped from the same pages, 2 Google reviews against 45). Two
+#   near-identical 70+ row pages is duplicate content. Kept the real brand.
+SUPERSEDED_LISTINGS = {
+    "bounce house rentals cleveland tn": "duplicate Maps entry of Partytime Inflatable (same website and catalog)",
+}
+NAME_EXCLUDE_KEYWORDS = NAME_EXCLUDE_KEYWORDS + list(SUPERSEDED_LISTINGS)
+
 
 def main():
     conn = sqlite3.connect(DB_PATH)
@@ -64,7 +77,8 @@ def main():
     published, excluded = [], []
     for row in candidates:
         if any(kw in row["name"].lower() for kw in NAME_EXCLUDE_KEYWORDS):
-            excluded.append((row["id"], row["name"], "off-niche name match"))
+            why = next((v for k, v in SUPERSEDED_LISTINGS.items() if k in row["name"].lower()), "off-niche name match")
+            excluded.append((row["id"], row["name"], why))
             continue
         item_types = [
             r[0]
