@@ -5,6 +5,11 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-10-12 — Session 32 (cont.): human re-applied to AdSense now (advice was mid/late November)
+- Human chose to request review on 2026-10-12 rather than wait; their call, no cost. Pre-flight on the live site passed: all key pages 200, `ads.txt` correct, AdSense script present, `www`/`http` redirects are 1 hop, no stray `noindex`, sitemap clean (176 URLs, no `quote-sent`).
+- **Freeze the site while it is under review:** avoid big structural changes (URLs, nav, removing pages) until the result comes back, so the reviewer sees what was submitted. Price refreshes are fine.
+- If rejected with the same text again: treat it as a traffic/age gate; the next attempt should follow a second refresh run and a fresh GSC export showing the guides earning clicks.
+
 ### 2026-10-12 — Session 32 (cont.): duplicate-listing review
 - Reviewed the 19 listings that share 8 websites by address, phone and price-row overlap. **Most are real multi-location businesses** (Sunrise Party Rental ×4, EventWorks ×2, Party Saving ×2, Wellington ×2, Carolinas Photobooths ×4: different cities and street addresses, same chain-wide prices), so they stay — merging would delete legitimate city pages.
 - **One real duplicate removed:** "Bounce House Rentals Cleveland TN" (same website, same ~75-item catalog, adjacent Perimeter Dr address as Partytime Inflatable; 2 reviews vs 45). Added `SUPERSEDED_LISTINGS` to [export_json.py](pipeline/export_json.py) (excluded from export and from the freshness pass) and [public/_redirects](website/public/_redirects) 301s the old URL to `/listing/partytime-inflatable-chattanooga/`. Verified live: 301 → 200, sitemap entry gone, Chattanooga 7 → 6 companies (floor `MIN_LISTINGS` = 5, so the metro page stays). Site is now **153 published listings**.
