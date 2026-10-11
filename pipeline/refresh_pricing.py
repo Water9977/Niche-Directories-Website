@@ -314,7 +314,21 @@ def fetch_page(url, engine_mode, stored_dollars):
             best = cand
 
     def needs_more():
-        return not best["ok"] or (stored_dollars >= 1 and dollar_count(best["text"]) == 0)
+        """Keep escalating while the page is unusable, shows no prices where the
+        stored copy had some, or is materially SMALLER than the stored copy.
+
+        The last condition is the one that was missing. A first full run accepted
+        the first engine that returned any prices at all, so catalog pages that
+        load lazily/paginated came back with half their items (150 stored dollar
+        figures vs 72 fresh) and every row beyond the cut-off was judged
+        "missing" -- 454 rows, mostly at large-catalog businesses, none of them
+        evidence the business removed anything. 32 pages across 23 listings."""
+        if not best["ok"]:
+            return True
+        got = dollar_count(best["text"])
+        if stored_dollars >= 1 and got == 0:
+            return True
+        return stored_dollars >= 5 and got < 0.7 * stored_dollars
 
     plans = {
         "auto": ["scrapling", "scrapling-browser", "firecrawl"],
@@ -801,6 +815,7 @@ def main():
     ap.add_argument("--parallel", type=int, default=4, help="listings processed at once")
     ap.add_argument("--workers", type=int, default=5, help="parallel page fetches per listing")
     ap.add_argument("--listing-timeout-min", type=float, default=12, help="give up waiting on the whole pass after this long")
+    ap.add_argument("--redo-from", help="a run-*.jsonl file: re-run ONLY the listings that have missing/unverifiable rows in it (writes a new run file)")
     ap.add_argument("--resume", help="a run-*.jsonl file: skip listings already finished in it (and keep appending to it)")
     ap.add_argument("--apply-from-report", help="skip fetching entirely; apply exactly the verdicts already saved in this run-*.jsonl (still needs --apply)")
     args = ap.parse_args()
@@ -835,7 +850,12 @@ def main():
         return
 
     listings = select_listings(conn)
-    if args.listing:
+    if args.redo_from:
+        prior = load_run(Path(args.redo_from))
+        want = {lid for lid, r in prior.items() if any(x["verdict"] in (MISSING, UNVERIFIABLE) for x in r["rows"])}
+        listings = [l for l in listings if l[0] in want]
+        print(f"--redo-from: {len(listings)} listing(s) had missing/unverifiable rows in {Path(args.redo_from).name}", flush=True)
+    elif args.listing:
         listings = [l for l in listings if args.listing.lower() in l[2].lower()]
     elif not args.all:
         listings = listings[args.offset: args.offset + args.limit]
