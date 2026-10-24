@@ -1,3 +1,54 @@
 # Pages removed as duplicates of another listing -> the listing they duplicated.
-# (Cloudflare static assets read this file; one rule per line: source target status.)
 /listing/bounce-house-rentals-cleveland-tn-chattanooga/ /listing/partytime-inflatable-chattanooga/ 301
+
+# 2026-10-24: metro pages that fell below the 5-company floor after invented prices
+# were removed -> homepage (lists every metro still covered).
+/columbia-sc/ / 301
+/greensboro-nc/ / 301
+/greenville-sc/ / 301
+/savannah-ga/ / 301
+/wilmington-nc/ / 301
+
+# 2026-10-24: listings whose only prices were invented by the old extraction model.
+# -> their metro page if it still exists, otherwise the homepage.
+/listing/24k-event-rentals-greensboro/ / 301
+/listing/ace-party-rental-indianapolis/ /indianapolis-in/ 301
+/listing/all-about-events-jacksonville-jacksonville/ /jacksonville-fl/ 301
+/listing/all-occasion-tent-rental-indianapolis/ /indianapolis-in/ 301
+/listing/ampa-events-henrico/ /richmond-va/ 301
+/listing/carolina-s-luxury-events-cluxe-charlotte/ /charlotte-nc/ 301
+/listing/ch-rie-co-event-rentals-raleigh/ /raleigh-durham-nc/ 301
+/listing/crisp-event-rentals-upstate-greer/ / 301
+/listing/curated-events-savannah-savannah/ / 301
+/listing/dappy-hays-event-photo-booth-services-inc-indianapolis/ /indianapolis-in/ 301
+/listing/elegant-and-classy-events-mooresville/ /charlotte-nc/ 301
+/listing/epic-event-rentals-concord/ /charlotte-nc/ 301
+/listing/event-rentals-by-rothchild-knoxville/ /knoxville-tn/ 301
+/listing/eventworks-north-charleston/ /charleston-sc/ 301
+/listing/eventworks-rentals-jacksonville/ /jacksonville-fl/ 301
+/listing/everbloom-party-rentals-charlotte/ /charlotte-nc/ 301
+/listing/furniture-rentals-inc-charleston-sc-mt-pleasant/ /charleston-sc/ 301
+/listing/fuselage-productions-columbia/ / 301
+/listing/harkleroad-event-rentals-savannah/ / 301
+/listing/jacksonville-event-rentals-jacksonville/ /jacksonville-fl/ 301
+/listing/jax-party-company-jacksonville/ /jacksonville-fl/ 301
+/listing/jesp-360-llc-raleigh/ /raleigh-durham-nc/ 301
+/listing/karolina-throne-king-north-charleston/ /charleston-sc/ 301
+/listing/kreative-entertainers-raleigh/ /raleigh-durham-nc/ 301
+/listing/lasting-impressions-event-rental-of-columbus-columbus/ /columbus-oh/ 301
+/listing/let-us-party-event-rental-columbus/ /columbus-oh/ 301
+/listing/luma-designs-chattanooga/ /chattanooga-tn/ 301
+/listing/luxe-party-rentals-llc-jacksonville/ /jacksonville-fl/ 301
+/listing/montgomery-tent-awning-company-inc-indianapolis/ /indianapolis-in/ 301
+/listing/party-reflections-greensboro/ / 301
+/listing/party-suppliers-rentals-wilmington/ / 301
+/listing/pitch-perfect-events-nc-raleigh/ /raleigh-durham-nc/ 301
+/listing/ranco-event-rentals-pooler/ / 301
+/listing/rentmeusa-party-rentals-charlotte/ /charlotte-nc/ 301
+/listing/republic-event-rentals-charleston-event-rentals-charleston/ /charleston-sc/ 301
+/listing/republic-event-rentals-charleston-wedding-event-rentals-charleston/ /charleston-sc/ 301
+/listing/seaside-party-rentals-wilmington/ / 301
+/listing/shutterbooth-columbia/ / 301
+/listing/space-walk-of-jacksonville-jacksonville/ /jacksonville-fl/ 301
+/listing/ultimate-celebration-rentals-jacksonville/ /jacksonville-fl/ 301
+/listing/ultimate-mega-parties-knoxville/ /knoxville-tn/ 301

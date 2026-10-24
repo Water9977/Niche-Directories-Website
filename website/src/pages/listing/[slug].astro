@@ -6,6 +6,7 @@ import {
   getAllListings,
   getListingsByMetroKey,
   getMetroForListing,
+  getPublishedMetros,
   stateAbbr,
   comparePricingToPeers,
   pricePosition,
@@ -23,8 +24,12 @@ export function getStaticPaths() {
 
 const { listing } = Astro.props;
 const metro = getMetroForListing(listing);
-// Every published listing belongs to a published metro, but fall back gracefully.
-const areaHref = metro ? `/${metro.slug}/` : '/';
+// A listing's metro only has a page while it clears MIN_LISTINGS. Five metros
+// dropped below it on 2026-10-24 (invented prices removed), and their listings
+// were linking to pages that now 301 to the homepage. Link the metro only when
+// its page exists; otherwise point at the guide that lists every such company.
+const metroPublished = !!metro && getPublishedMetros().some((m) => m.meta.key === metro.key);
+const areaHref = metroPublished ? `/${metro!.slug}/` : '/tent-rental-cost/#other-areas';
 const areaLabel = metro ? metro.name : 'All metros';
 
 const state = stateAbbr(listing.state);
@@ -39,11 +44,16 @@ const descPrefix = 'Real published pricing for ';
 const descTail = ` in ${listing.city}, ${state} — ${listing.pricing.length} verified price point${listing.pricing.length === 1 ? '' : 's'} sourced directly from their own website, not a vague quote.`;
 const description = `${descPrefix}${clampText(listing.name, Math.max(20, 160 - descPrefix.length - descTail.length))}${descTail}`;
 
-const breadcrumbs = [
-  { label: 'Home', href: '/' },
-  { label: areaLabel, href: areaHref },
-  { label: listing.name, href: `/listing/${listing.slug}/` },
-];
+const breadcrumbs = metroPublished
+  ? [
+      { label: 'Home', href: '/' },
+      { label: areaLabel, href: areaHref },
+      { label: listing.name, href: `/listing/${listing.slug}/` },
+    ]
+  : [
+      { label: 'Home', href: '/' },
+      { label: listing.name, href: `/listing/${listing.slug}/` },
+    ];
 
 const url = `https://eventrentalcosts.com/listing/${listing.slug}/`;
 const jsonLd = [breadcrumbJsonLd(breadcrumbs), localBusinessJsonLd(listing, url)];
@@ -241,7 +251,11 @@ const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
       </section>
     )}
 
-    <p class="back-link"><a href={areaHref}>&larr; Back to all {areaLabel} rental companies</a></p>
+    <p class="back-link">
+      {metroPublished
+        ? <a href={areaHref}>&larr; Back to all {areaLabel} rental companies</a>
+        : <a href={areaHref}>&larr; See every company we have prices for outside our metro pages</a>}
+    </p>
   </div>
 </BaseLayout>
 
