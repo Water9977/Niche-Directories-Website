@@ -172,6 +172,23 @@ export function coverage(points: CategoryPoint[]): { companies: number; metros: 
 
 export const fmtMoney = (n: number): string => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
+/** Year of the most recent price check, for titles. Derived from the data rather
+ * than hardcoded, so a title can only say "2026" while 2026 prices are actually
+ * being re-verified, and moves on by itself once the monthly refresh runs in 2027. */
+export function dataYear(): number {
+  let latest = '';
+  for (const l of getAllListings()) for (const p of l.pricing) if (p.last_checked && p.last_checked > latest) latest = p.last_checked;
+  return latest ? Number(latest.slice(0, 4)) : new Date().getFullYear();
+}
+
+/** Published metros with their company count and cheapest 10x10-ish tent, for the
+ * "find companies near you" blocks that serve "... near me" searches. */
+export function metroDirectory(): { slug: string; name: string; companies: number }[] {
+  return getPublishedMetros()
+    .map(({ meta, listings }) => ({ slug: meta.slug, name: meta.name, companies: listings.length }))
+    .sort((a, b) => b.companies - a.companies);
+}
+
 export function fmtRangeStats(s: Pick<CategoryStats, 'low' | 'high'>): string {
   return s.low === s.high ? `$${fmtMoney(s.low)}` : `$${fmtMoney(s.low)}–$${fmtMoney(s.high)}`;
 }

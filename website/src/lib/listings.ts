@@ -205,6 +205,9 @@ export interface TentSizeStat {
   low: number;
   high: number;
   count: number;
+  /** Middle published price for the size. Ranges run wide (a 10x10 from a $35
+   * pop-up canopy to an $800 frame tent), so the median is the honest "typical". */
+  median: number;
 }
 
 /** Real per-size tent pricing, aggregated from `item_type` values that name an
@@ -257,12 +260,17 @@ export function tentSizeBreakdown(items: Listing[], minCount = 1): TentSizeStat[
     }
   }
   return [...bySize.entries()]
-    .map(([size, prices]) => ({
-      size,
-      low: Math.min(...prices),
-      high: Math.max(...prices),
-      count: prices.length,
-    }))
+    .map(([size, prices]) => {
+      const sorted = [...prices].sort((x, y) => x - y);
+      const mid = Math.floor(sorted.length / 2);
+      return {
+        size,
+        low: sorted[0],
+        high: sorted[sorted.length - 1],
+        count: prices.length,
+        median: sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2,
+      };
+    })
     .filter((s) => s.count >= minCount)
     .sort((a, b) => {
       const [aw, ah] = a.size.split('x').map(Number);
