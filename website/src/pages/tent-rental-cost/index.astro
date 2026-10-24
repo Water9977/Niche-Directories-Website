@@ -16,6 +16,7 @@ import {
   formatPriceRange,
 } from '../../lib/listings';
 import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+import { dataYear, metroDirectory } from '../../lib/categories';
 
 // The single biggest content gap found in the Fable-5 audit: metro pages and
 // listing pages exist, but nothing targets the national head terms ("tent
@@ -52,8 +53,21 @@ const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.h
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
-const title = 'How Much Does Tent Rental Cost? (Real Prices)';
-const description = `Real published tent rental prices from ${allListings.length} verified companies across ${metros.length} US metros, broken down by size — not a made-up "average cost."`;
+// 2026-10-24, striking-distance pass: this page ranked ~19-24 for "tent rental
+// cost", "tent rental prices", "how much does it cost to rent a tent" and "tent
+// rental companies near me" with 0 clicks. Title now carries the exact head terms
+// and the year of the data; the description and first paragraph answer the
+// question with typical prices instead of only a min-max range.
+const year = dataYear();
+const sizeStat = (sz: string) => tentSizes.find((t) => t.size === sz);
+const s10 = sizeStat('10x10');
+const s20 = sizeStat('20x20');
+const s2040 = sizeStat('20x40');
+const directory = metroDirectory();
+const title = `Tent Rental Cost ${year}: Real Prices by Tent Size`;
+const description = s10 && s2040
+  ? `A 10x10 tent typically rents for about $${fmt(Math.round(s10.median))} and a 20x40 for about $${fmt(Math.round(s2040.median))}. Real published prices by size from ${allListings.length} rental companies.`
+  : `Real published tent rental prices by size from ${allListings.length} rental companies across ${metros.length} US metros.`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -61,6 +75,12 @@ const breadcrumbs = [
 ];
 
 const faqs = [
+  ...(s10 && s20
+    ? [{
+        q: 'How much does it cost to rent a tent for a party?',
+        a: `For a backyard party, a 10x10 tent typically rents for about $${fmt(Math.round(s10.median))} and a 20x20 (roughly 30-40 guests seated) for about $${fmt(Math.round(s20.median))}, based on real published prices. Delivery, setup and sidewalls are often extra, so ask for the total.`,
+      }]
+    : []),
   {
     q: 'How much does a tent rental cost?',
     a: tentMin != null
@@ -121,6 +141,10 @@ const faqs = [
       }]
     : []),
   {
+    q: 'Where can I find tent rental companies near me?',
+    a: `We list tent rental companies with their own published prices in ${directory.length} metro areas: ${directory.map((m) => m.name).join('; ')}. Each metro page compares every company side by side.`,
+  },
+  {
     q: 'How is this pricing data collected?',
     a: `We scrape each rental company's own website directly and extract real dollar figures they've published — we never estimate or fabricate a price. See our methodology page for the full process.`,
   },
@@ -134,33 +158,57 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
     <h1>How much does tent rental cost?</h1>
 
     <p class="intro">
-      Real answer, from real data: we collected published pricing directly from
-      {' '}{allListings.length} verified tent, table, and chair rental companies across
-      {' '}{metros.length} US metro areas.
+      {s10 && s20 && s2040 ? (
+        <>
+          <strong>Short answer:</strong> a small 10x10 tent typically rents for about
+          {' '}<strong>${fmt(Math.round(s10.median))}</strong>, a 20x20 for about <strong>${fmt(Math.round(s20.median))}</strong>,
+          and a 20x40 (a common wedding size) for about <strong>${fmt(Math.round(s2040.median))}</strong>.
+          {' '}
+        </>
+      ) : null}
+      These are the middle of real prices published by tent rental companies on their own
+      websites: {allListings.length} companies across {metros.length} US metro areas.
       {tentMin != null && tentMax != null && (
-        <> Tent rental starts around <strong>${fmt(tentMin)}</strong> and runs up to
-        {' '}<strong>${fmt(tentMax)}</strong>+ for the largest sizes — the table below breaks
-        it down by exact size.</>
+        <> Across every size, published prices run from <strong>${fmt(tentMin)}</strong> for a
+        basic pop-up canopy to <strong>${fmt(tentMax)}</strong>+ for the largest frame and pole
+        tents. The table below breaks it down by exact size.</>
       )}
     </p>
+
+    {directory.length > 0 && (
+      <section class="near-you">
+        <h2>Tent rental companies near you</h2>
+        <p>
+          See every tent rental company we track in your area, with each one's own published
+          prices:
+          {' '}{directory.map((m, i) => (
+            <>
+              <a href={`/${m.slug}/`}>{m.name}</a> ({m.companies}){i < directory.length - 1 ? ' · ' : ''}
+            </>
+          ))}
+        </p>
+      </section>
+    )}
 
     {tentSizes.length > 0 && (
       <section class="size-breakdown">
         <h2>Tent rental cost by size</h2>
         <p class="muted">
-          Real starting prices pulled directly from rental companies' own published rate sheets,
-          aggregated across all metros we cover. Sizes with only one data point are omitted here —
+          Real prices pulled directly from rental companies' own published rate sheets,
+          aggregated across all metros we cover. "Typical" is the middle published price for
+          that size. Sizes with only one data point are omitted here —
           see individual metro pages for the full picture in your area.
         </p>
         <div class="table-wrap">
           <table>
             <thead>
-              <tr><th>Tent size</th><th>Price range</th><th>Companies</th></tr>
+              <tr><th>Tent size</th><th>Typical price</th><th>Published range</th><th>Price points</th></tr>
             </thead>
             <tbody>
               {tentSizes.map((t) => (
                 <tr>
                   <td>{t.size} ft</td>
+                  <td>${fmt(Math.round(t.median))}</td>
                   <td>{t.low === t.high ? <>${fmt(t.low)}</> : <>${fmt(t.low)}–${fmt(t.high)}</>}</td>
                   <td class="muted">{t.count}</td>
                 </tr>
@@ -313,7 +361,9 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
 
 <style>
   .narrow { max-width: 760px; }
-  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-6); }
+  .near-you { margin-bottom: var(--space-8); }
+  .near-you h2 { margin-top: 0; font-size: 1.2rem; }
   h2 { margin-top: var(--space-8); }
   .size-breakdown .muted { color: var(--color-text-muted); margin-bottom: var(--space-3); font-size: 0.9rem; }
   .table-wrap {

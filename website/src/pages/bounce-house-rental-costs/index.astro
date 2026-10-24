@@ -20,6 +20,8 @@ import {
   subtypeBreakdown,
   topCompanies,
   type SubtypeSpec,
+  dataYear,
+  metroDirectory,
 } from '../../lib/categories';
 import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
 
@@ -63,8 +65,16 @@ const waterMetros = metroBreakdown(isWaterSlidePrice);
 const combo = bounceSubs.find((r) => r.label.startsWith('Combo'));
 const standard = bounceSubs.find((r) => r.label === 'Standard bounce houses');
 
-const title = 'Bounce House & Water Slide Rental Cost: Real Prices';
-const description = `What bounce houses and water slides actually rent for: real published prices from ${bCov.companies} bounce house and ${wCov.companies} water slide companies, by type and metro.`;
+// 2026-10-24, striking-distance pass: ranked ~8-25 for "how much to rent a bounce
+// house", "how much is it to rent a bounce house", "bounce house rental prices" and
+// "...for a day" with 0 clicks. The title now matches those phrasings and the
+// description gives the number instead of describing the page.
+const year = dataYear();
+const perDay = bounceQuote.find((r) => r.label.startsWith('Quoted per day'));
+const perEvent = bounceQuote.find((r) => r.label.startsWith('Quoted per event'));
+const directory = metroDirectory().filter((m) => bounceMetros.some((b) => b.meta.slug === m.slug));
+const title = `How Much to Rent a Bounce House? Real ${year} Prices`;
+const description = `A bounce house typically starts at about $${fmtMoney(Math.round(bStats.typicalStart))} to rent; combo units with a slide cost more. Real published prices from ${bStats.companies} companies, per event and per day.`;
 const breadcrumbs = [
   { label: 'Home', href: '/' },
   { label: 'Bounce House Rental Cost', href: '/bounce-house-rental-costs/' },
@@ -75,6 +85,12 @@ const faqs: { q: string; a: string }[] = [
     q: 'How much does it cost to rent a bounce house?',
     a: `Across ${bStats.points} real published bounce house prices from ${bStats.companies} companies, rentals cost ${fmtRangeStats(bStats)}. The typical starting price — the median of each company's own cheapest bounce house — is $${fmtMoney(bStats.typicalStart)}.${standard ? ` A standard bounce house starts at a typical $${fmtMoney(standard.stats.typicalStart)}.` : ''}`,
   },
+  ...(perDay
+    ? [{
+        q: 'How much does it cost to rent a bounce house for a day?',
+        a: `Among companies that quote a full-day price, a bounce house starts at a typical $${fmtMoney(Math.round(perDay.stats.typicalStart))}, with published day rates from ${fmtRangeStats(perDay.stats)} across ${perDay.stats.companies} companies.${perEvent ? ` Companies that quote per event (usually a few hours) start at a typical $${fmtMoney(Math.round(perEvent.stats.typicalStart))}.` : ''} Confirm how long the rental period is before comparing two quotes.`,
+      }]
+    : []),
   {
     q: 'Are combo bounce houses more expensive?',
     a: combo && standard && combo.stats.typicalStart > standard.stats.typicalStart
@@ -114,6 +130,14 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
     <h1>How much does a bounce house rental cost?</h1>
 
     <p class="intro">
+      <strong>Short answer:</strong>
+      {combo && standard && combo.stats.typicalStart > standard.stats.typicalStart
+        ? <> a standard bounce house typically starts at about <strong>${fmtMoney(Math.round(standard.stats.typicalStart))}</strong>
+            {' '}to rent, and a combo unit with a slide at about <strong>${fmtMoney(Math.round(combo.stats.typicalStart))}</strong>.</>
+        : <> renting a bounce house typically starts at about <strong>${fmtMoney(Math.round(bStats.typicalStart))}</strong>.</>}
+      {perDay ? <> Companies that quote by the day start at a typical ${fmtMoney(Math.round(perDay.stats.typicalStart))} for a full day.</> : null}
+    </p>
+    <p class="intro">
       We collected published prices straight from rental companies' own websites:
       {' '}<strong>{bStats.points} bounce house prices from {bStats.companies} companies</strong> and
       {' '}<strong>{wStats.points} water slide prices from {wStats.companies} companies</strong>, across
@@ -123,6 +147,19 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
       {' '}<strong>{fmtRangeStats(wStats)}</strong>, starting at a typical
       {' '}<strong>${fmtMoney(wStats.typicalStart)}</strong>.
     </p>
+
+    {directory.length > 0 && (
+      <section class="near-you">
+        <h2>Bounce house rental companies near you</h2>
+        <p>
+          Compare every bounce house company we track in your area, with each one's own published
+          prices:
+          {' '}{directory.map((m, i) => (
+            <><a href={`/${m.slug}/`}>{m.name}</a>{i < directory.length - 1 ? ' · ' : ''}</>
+          ))}
+        </p>
+      </section>
+    )}
 
     <section>
       <h2>How to read these numbers</h2>
@@ -258,7 +295,9 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
 
 <style>
   .narrow { max-width: 760px; }
-  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-4); }
+  .near-you { margin-block: var(--space-6) var(--space-8); }
+  .near-you h2 { margin-top: 0; font-size: 1.2rem; }
   section { margin-bottom: var(--space-8); }
   h2 { margin-top: var(--space-8); }
   ul { padding-left: var(--space-6); }

@@ -13,6 +13,8 @@ import {
   subtypeBreakdown,
   topCompanies,
   type SubtypeSpec,
+  dataYear,
+  metroDirectory,
 } from '../../lib/categories';
 import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
 
@@ -53,14 +55,39 @@ const banquet = tableSubs.find((r) => r.label === 'Rectangular & banquet tables'
 const folding = chairSubs.find((r) => r.label === 'Folding chairs');
 const chiavari = chairSubs.find((r) => r.label === 'Chiavari & specialty chairs');
 
-const title = 'Table & Chair Rental Cost: Real Prices by Type';
-const description = `What tables and chairs actually rent for: real published per-item prices from ${tCov.companies} table and ${cCov.companies} chair rental companies, by type and metro.`;
+// 2026-10-24, striking-distance pass: ranked ~10-25 for "table and chair rentals",
+// "...near me", "how much does it cost to rent tables" and "how much to rent tables
+// and chairs for 50 people" (the one query on this page that has earned a click).
+// So the page now leads with the per-item answer and a worked guest-count example.
+const year = dataYear();
+const directory = metroDirectory().filter((m) => tableMetros.some((t) => t.meta.slug === m.slug) || chairMetros.some((c) => c.meta.slug === m.slug));
+const chairEach = folding ? Math.round(folding.stats.typicalStart * 100) / 100 : null;
+const tableEach = round ? Math.round(round.stats.typicalStart * 100) / 100 : null;
+// One chair per guest; 60-inch rounds seat 8. Folding chairs + round tables at
+// their typical starting prices: the cheapest common setup, before delivery.
+const examples = chairEach != null && tableEach != null
+  ? [50, 100, 150].map((guests) => {
+      const tables = Math.ceil(guests / 8);
+      return { guests, tables, chairsCost: guests * chairEach, tablesCost: tables * tableEach, total: guests * chairEach + tables * tableEach };
+    })
+  : [];
+const ex50 = examples.find((e) => e.guests === 50);
+const title = `Table & Chair Rental Cost ${year}: Prices per Item`;
+const description = chairEach != null && tableEach != null
+  ? `Folding chairs typically rent from about $${fmtMoney(chairEach)} each and 60" round tables from $${fmtMoney(tableEach)}${ex50 ? `; 50 guests comes to about $${fmtMoney(Math.round(ex50.total))}` : ''}. Real prices from ${tCov.companies} companies.`
+  : `What tables and chairs actually rent for: real published per-item prices from ${tCov.companies} table and ${cCov.companies} chair rental companies.`;
 const breadcrumbs = [
   { label: 'Home', href: '/' },
   { label: 'Table & Chair Rental Cost', href: '/table-and-chair-rental-costs/' },
 ];
 
 const faqs: { q: string; a: string }[] = [
+  ...(ex50
+    ? [{
+        q: 'How much does it cost to rent tables and chairs for 50 people?',
+        a: `About $${fmtMoney(Math.round(ex50.total))} for the basics: 50 folding chairs at a typical $${fmtMoney(chairEach!)} each ($${fmtMoney(Math.round(ex50.chairsCost))}) and ${ex50.tables} 60-inch round tables at a typical $${fmtMoney(tableEach!)} each ($${fmtMoney(Math.round(ex50.tablesCost))}), based on real published prices. Delivery, linens and upgraded chairs are extra.`,
+      }]
+    : []),
   {
     q: 'How much does it cost to rent a table?',
     a: `Across ${tStats.points} real published table prices from ${tStats.companies} companies, tables rent for ${fmtRangeStats(tStats)} each. The typical starting price — the median of each company's own cheapest table — is $${fmtMoney(tStats.typicalStart)}.${round ? ` Round tables start at a typical $${fmtMoney(round.stats.typicalStart)}.` : ''}`,
@@ -94,6 +121,55 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
   <div class="container narrow">
     <Breadcrumbs items={breadcrumbs} />
     <h1>How much does table and chair rental cost?</h1>
+
+    {chairEach != null && tableEach != null && (
+      <p class="intro">
+        <strong>Short answer:</strong> folding chairs typically rent from about
+        {' '}<strong>${fmtMoney(chairEach)}</strong> each and 60-inch round tables from about
+        {' '}<strong>${fmtMoney(tableEach)}</strong> each{ex50 ? <>, so seating 50 guests costs roughly
+        {' '}<strong>${fmtMoney(Math.round(ex50.total))}</strong> before delivery</> : null}.
+      </p>
+    )}
+
+    {examples.length > 0 && (
+      <section class="examples">
+        <h2>What tables and chairs cost for your guest count</h2>
+        <p>
+          The cheapest common setup: one folding chair per guest and one 60-inch round table per
+          8 guests, each at its typical starting price from our data. Delivery, linens and setup
+          are extra and vary by company.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Guests</th><th>Chairs</th><th>Round tables</th><th>Estimated total</th></tr>
+            </thead>
+            <tbody>
+              {examples.map((e) => (
+                <tr>
+                  <td>{e.guests}</td>
+                  <td>{e.guests} × ${fmtMoney(chairEach!)} = ${fmtMoney(Math.round(e.chairsCost))}</td>
+                  <td>{e.tables} × ${fmtMoney(tableEach!)} = ${fmtMoney(Math.round(e.tablesCost))}</td>
+                  <td><strong>${fmtMoney(Math.round(e.total))}</strong></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {directory.length > 0 && (
+      <section class="near-you">
+        <h2>Table and chair rental companies near you</h2>
+        <p>
+          Compare every company we track in your area, with each one's own published prices:
+          {' '}{directory.map((m, i) => (
+            <><a href={`/${m.slug}/`}>{m.name}</a>{i < directory.length - 1 ? ' · ' : ''}</>
+          ))}
+        </p>
+      </section>
+    )}
 
     <p class="intro">
       Tables and chairs are almost always priced per item, so the number that decides your bill
@@ -253,7 +329,19 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
 
 <style>
   .narrow { max-width: 760px; }
-  .intro { color: var(--color-text-muted); margin-bottom: var(--space-8); }
+  .intro { color: var(--color-text-muted); margin-bottom: var(--space-6); }
+  .near-you { margin-bottom: var(--space-8); }
+  .near-you h2, .examples h2 { margin-top: 0; font-size: 1.2rem; }
+  .examples { margin-bottom: var(--space-8); }
+  .examples .table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-block: var(--space-4);
+  }
+  .examples table { width: 100%; min-width: 420px; }
   section { margin-bottom: var(--space-8); }
   h2 { margin-top: var(--space-8); }
   ul { padding-left: var(--space-6); }
