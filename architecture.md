@@ -5,6 +5,11 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-10-24 — Session 33: fifth AdSense rejection (applied 2026-10-12), identical text
+- Same "Low-value content" message, word for word, for the third time running (Sep 21, Oct 6, Oct 24). Every code-fixable item has been live since Oct 12; the only remaining stated signals are traffic ("genuine user interest") and age ("consistent presence"). GSC through Oct 6: ~12-15 clicks/month, flat since late August.
+- **Conclusion: this is a traffic/age gate, not a content defect.** Further resubmissions on a short cycle add no information. Stop resubmitting until a fresh GSC export shows real growth (target: guides earning clicks, clicks/month clearly up).
+- Next: evaluate ad networks with documented low/no traffic minimums, and the lead-referral path, rather than more AdSense attempts.
+
 ### 2026-10-12 — Session 32 (cont.): human re-applied to AdSense now (advice was mid/late November)
 - Human chose to request review on 2026-10-12 rather than wait; their call, no cost. Pre-flight on the live site passed: all key pages 200, `ads.txt` correct, AdSense script present, `www`/`http` redirects are 1 hop, no stray `noindex`, sitemap clean (176 URLs, no `quote-sent`).
 - **Freeze the site while it is under review:** avoid big structural changes (URLs, nav, removing pages) until the result comes back, so the reviewer sees what was submitted. Price refreshes are fine.
