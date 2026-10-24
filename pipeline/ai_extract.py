@@ -134,6 +134,26 @@ def build_content(pages):
     return separator.join(chunks)
 
 
+def _norm(text):
+    t = (text or "").lower()
+    t = re.sub(r"\$\s+(?=\d)", "$", t)
+    t = re.sub(r"(\d)\.\s+(\d)", r"\1.\2", t)
+    t = re.sub(r"[*_`|>#\\]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def snippet_in_content(snippet, content):
+    """The model must QUOTE the page, not write about it. Found 2026-10-24: the old
+    8B model wrote its own sentences ("Our 10x10 tents are available for $150 per
+    day.") with prices that appear nowhere on the business's site; 194 such rows
+    across 41 listings were published before anyone noticed. validate_pricing.py
+    only checks that the price is inside the snippet, which an invented snippet
+    always satisfies. This checks the snippet is actually in the text the model
+    was given, so an invented quote can never be stored."""
+    s = _norm(snippet)
+    return len(s) >= 4 and s in _norm(content)
+
+
 def call_model(provider, model, content):
     prompt_text = PROMPT.format(shape=JSON_SHAPE_INSTRUCTIONS, content=content[:CONTENT_CHAR_BUDGET])
     if provider == "nvidia":
@@ -292,6 +312,12 @@ def main():
             failed += 1
             continue
 
+        before = len(result.get("pricing_items", []))
+        result["pricing_items"] = [
+            i for i in result.get("pricing_items", []) if snippet_in_content(i.get("source_snippet"), content)
+        ]
+        if before != len(result["pricing_items"]):
+            print(f"    dropped {before - len(result['pricing_items'])} item(s) whose quoted snippet is not in the page text")
         listing_id, n_items = upsert_listing(conn, raw_id, result, model_used)
         if n_items > 0:
             print(f"  OK: {name} ({model_used}) -> {n_items} real pricing item(s) extracted")
