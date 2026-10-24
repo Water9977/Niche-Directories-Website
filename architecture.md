@@ -5,6 +5,22 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-10-24 — Session 33 (cont.): removed 4 listings whose prices could not be verified (live)
+
+The July-era listings still flagged after the refresh pass were checked live; each failed the "real, verifiable price" rule:
+
+- **Charlotte Party Rentals** (32 rows): site now says "For pricing and configuration based on your event, request a quote". The July prices are no longer published anywhere on it (confirmed with a live Firecrawl scrape of the old inventory page, which redirects to `/catalog/` with zero prices).
+- **Party Rentals Pros** (50 bare `$150`-style rows): HTTPS handshake fails (TLS internal error from the server), plain HTTP returns 404. Nothing to verify against.
+- **Blake's Event Rentals** and **Blake's Event Rentals LLC.** (4 rows each, the same catalog): `www.blakeseventrentals.com` does not resolve, and `blakesfunbounce.com` redirects to it. Dead business site.
+
+90 price rows deleted (logged to `price_history` as `removed`, run recorded as `REMOVE-UNVERIFIABLE` in `refresh_runs`, DB backup `directory-backup-20261024-215958.db`). Re-exported: **108 published listings** (was 112). Metro floors unaffected (Charlotte 16, Jacksonville 16, Indianapolis 10). Four 301s appended to [public/_redirects](website/public/_redirects) to the metro pages; sitemap 130 → 126.
+
+Side effect, by design: the cost guides recompute from data, so typical prices moved (10x10 tent $130 → $125, 20x40 $693 → $613, bounce house $168 → $185, which the cheap Blake's rows had been pulling down). Table/chair unchanged ($2 chair, $12 round table, $184 for 50 guests).
+
+Verified live: all four listing URLs 301, sitemap has none of them, live tent description shows the new medians. IndexNow pinged (200).
+
+**Still open from the refresh pass:** metro page titles (positions 40-80, low value), the 44 "new items found" and 85 "missing" / 91 "unverifiable" rows, scheduling the monthly refresh (roadmap 21).
+
 ### 2026-10-24 — Session 33 (cont.): striking-distance pass on the three cost guides (live)
 - Targets from the Oct 6 GSC export (positions ~8-25, 0 clicks): tent ("tent rental cost", "tent rental prices", "how much does it cost to rent a tent", "...companies near me"), bounce house ("how much to rent a bounce house", "...for a day", "bounce house rental prices"), table & chair ("table and chair rentals (near me)", "how much to rent tables and chairs for 50 people" — the one that already earned a click).
 - **Tent guide:** title `Tent Rental Cost {year}: Real Prices by Tent Size`; description + first line give typical prices per size (new `median` on `TentSizeStat`; 10x10 ~$130, 20x20 ~$378, 20x40 ~$693) instead of only the $35-$4,200 range; size table gains "Typical price"; the old "Companies" column actually counted price points — relabelled. "Tent rental companies near you" block (metro links + counts); FAQs for "...for a party" and "...near me".

@@ -52,3 +52,10 @@
 /listing/space-walk-of-jacksonville-jacksonville/ /jacksonville-fl/ 301
 /listing/ultimate-celebration-rentals-jacksonville/ /jacksonville-fl/ 301
 /listing/ultimate-mega-parties-knoxville/ /knoxville-tn/ 301
+
+# 2026-10-24: listings whose prices could not be verified (site quote-only or unreachable).
+# -> their metro page.
+/listing/charlotte-party-rentals-charlotte/ /charlotte-nc/ 301
+/listing/party-rentals-pros-indianapolis/ /indianapolis-in/ 301
+/listing/blake-s-event-rentals-jacksonville/ /jacksonville-fl/ 301
+/listing/blake-s-event-rentals-llc-jacksonville/ /jacksonville-fl/ 301
