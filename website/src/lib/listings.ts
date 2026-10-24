@@ -215,14 +215,42 @@ export interface TentSizeStat {
  * unrelated catalog entries that happen to share a `tent_` prefix (a few
  * furniture-rental listings use it oddly, e.g. `tent_kingston_farm_table`)
  * are excluded automatically. */
+// Tent ACCESSORIES whose item_type carries a tent size ("tent_side_panels_10x20",
+// "tent_20x20_solid_tent_sidewall"). Found 2026-10-24: a $20 side panel had become
+// the tent guide's headline "tent rental starts around $20", and a $60 sidewall the
+// floor of the 20x20 range. They are add-ons to a tent, never the tent's price.
+const TENT_ACCESSORY_RE =
+  /side.?panel|side.?wall|sidewall|wall|leg.?cover|weight|stake|ballast|liner|drape|lighting|light|heater|fan|floor|gutter|cover|sandbag/i;
+
+/** Does the snippet text actually support this size? A snippet with real words
+ * that never mentions the size means the extraction model attached the size on
+ * its own: "Frame Tents - $800 per day" filed as tent_10x10, or generic copy
+ * ("$200-$2,000+ depending on size") filed as a $2,000 10x10. Bare-price
+ * snippets ("$255.00", usually from a single-product page) carry no words to
+ * check either way, so they are kept. */
+function snippetSupportsSize(snippet: string | null, w: string, h: string): boolean {
+  const text = (snippet ?? '').replace(/\u00d7/g, 'x');
+  // Price-only boilerplate ("1 day 200 US dollars", "Regular price ... Sale price")
+  // describes the price, not the item, so it can't contradict the size either way.
+  const words = text
+    .replace(/us dollars|dollars|usd|regular price|sale price|unit price|price/gi, '')
+    .replace(/[$\d.,\s\-\u2013*~#_()/+]|per|each|day|event|flat|from/gi, '');
+  if (words.length < 4) return true;
+  // Digit lookarounds rather than \b: "_10x10 Tent Frame" has no \b before the 1.
+  const sizeRe = new RegExp(`(?<!\\d)${w}\\s*['\u2019\u2032]?\\s*(?:x|by)\\s*${h}(?!\\d)|(?<!\\d)${h}\\s*['\u2019\u2032]?\\s*(?:x|by)\\s*${w}(?!\\d)`, 'i');
+  return sizeRe.test(text);
+}
+
 export function tentSizeBreakdown(items: Listing[], minCount = 1): TentSizeStat[] {
   const bySize = new Map<string, number[]>();
   for (const l of items) {
     for (const p of l.pricing) {
-      if (p.price_low == null) continue;
+      if (p.price_low == null || p.price_low <= 0) continue;
       if (!/tent/i.test(p.item_type)) continue;
+      if (TENT_ACCESSORY_RE.test(p.item_type)) continue;
       const m = p.item_type.match(/(\d+)\s*x\s*(\d+)/);
       if (!m) continue;
+      if (!snippetSupportsSize(p.source_snippet, m[1], m[2])) continue;
       const size = `${m[1]}x${m[2]}`;
       if (!bySize.has(size)) bySize.set(size, []);
       bySize.get(size)!.push(p.price_low);
