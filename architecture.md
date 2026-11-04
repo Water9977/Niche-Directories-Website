@@ -5,6 +5,16 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-05 — Session 34: monthly freshness pass (live)
+
+Ran `refresh_pricing.py --all` (dry run, 1273 s, 108 listings, 323 pages fetched OK of 308+; run file `run-20261104-211133.jsonl`), then `--apply --apply-from-report`. Result over 1,796 rows: **1,387 confirmed (77%)** against the live sites (865 verbatim, 522 near-item) and re-dated to 2026-11; 0 changed; 106 missing; 122 unlocated; 181 unverifiable. Applied only re-dating: **0 removed, 0 added, 0 changed**. DB backup `directory-backup-20261105-002815.db`. Rows still carrying older dates: 304 July, 122 Sept, 119 Oct (all in the missing/unlocated/unverifiable buckets, left alone by rule).
+
+**Known gap:** the LLM re-extraction phase failed on every listing (`nvidia/nemotron-3-super-120b-a12b` now 404s at `integrate.api.nvidia.com`), so "missing" rows could not be separated into price-changed vs price-gone. `ai_extract.py` `PROVIDER_CHAIN` needs a working model before the next pass (same chain `refresh_pricing.py` uses).
+
+Deployed; live pages show "checked November 5, 2026". IndexNow pinged.
+
+**Open:** 106 missing + 122 unlocated rows need review (page loaded fine but price not on it: likely changed or removed by the business); fix the dead LLM model; schedule the monthly run.
+
 ### 2026-10-24 — Session 33 (cont.): removed 4 listings whose prices could not be verified (live)
 
 The July-era listings still flagged after the refresh pass were checked live; each failed the "real, verifiable price" rule:
