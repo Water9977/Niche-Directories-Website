@@ -59,3 +59,7 @@
 /listing/party-rentals-pros-indianapolis/ /indianapolis-in/ 301
 /listing/blake-s-event-rentals-jacksonville/ /jacksonville-fl/ 301
 /listing/blake-s-event-rentals-llc-jacksonville/ /jacksonville-fl/ 301
+
+# 2026-11-07: listings whose only prices could not be verified (site unreachable). -> metro page.
+/listing/columbus-bounce-house-rentals-columbus/ /columbus-oh/ 301
+/listing/cheers-charleston/ /charleston-sc/ 301

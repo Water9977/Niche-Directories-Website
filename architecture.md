@@ -5,6 +5,12 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-07 — Session 34 (cont. 3): removed 225 unverifiable price rows (live)
+
+Owner chose "remove all six" for listings whose prices could not be confirmed. Deleted every row dated before 2026-10-15 for: Aaro Rental Center (125; 2 verified rows remain, listing stays), Columbus Bounce House Rentals (46, listing gone), Bounce Geeks (18; 11 remain), Magic Special Events (12; 2 remain), Violet Vintage (15; 14 remain), CHEERS (9, listing gone). 225 rows total, logged to `price_history`, run `REMOVE-UNVERIFIABLE`, backup `directory-backup-20261107-203743.db`. Published listings **108 -> 106**; Columbus (7) and Charleston (8) metros unaffected. 301s added for the two dropped listings (`/listing/columbus-bounce-house-rentals-columbus/` -> `/columbus-oh/`, `/listing/cheers-charleston/` -> `/charleston-sc/`), verified live. Tent guide now cites 85 companies.
+
+Still published with older dates (not re-verified, not claimed as checked): **81 of 1,553 rows across 30 listings**, dated 2026-07-12 to 2026-10-11 (largest: Elite Tent Rental 8 (site unreachable), Interactive Playgrounds 8, Celebration Party Rental 7, Party Rentals by Us 5, Parties n Motion 5, Sage Hill 5). These are the leftover 'missing'/'unlocated' rows from the refresh pass: mostly extraction artifacts (paginated or JS catalogs), not proven removals.
+
 ### 2026-11-07 — Session 34 (cont. 2): PDF price lists, two false "unverifiable" listings re-verified (live)
 
 - **`refresh_pricing.py` now reads PDFs.** Show Time Event Rentals publishes its prices as a PDF; the fetch layer decoded the raw bytes as text (428k characters of noise), so all 20 stored prices came back "missing" although every one is on the live list. `_pdf_text()` extracts text with `pypdf` when the body starts with `%PDF`. `norm()` also collapses a space before a period (PDF text like `6 Ft . Round` and `$21 .00`). Re-run: Show Time **27/27 confirmed**; re-dated.
