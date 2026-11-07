@@ -1813,7 +1813,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_double_ocean_splash",
@@ -1822,7 +1822,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_good_vibes",
@@ -1831,7 +1831,7 @@
         "unit": "per event",
         "source_snippet": "$575.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_artic_breeze",
@@ -1840,7 +1840,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_xtra_large_combo",
@@ -1849,7 +1849,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_justice_league",
@@ -1858,7 +1858,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_disney_playhouse",
@@ -1867,7 +1867,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_dalmatian_firefighter",
@@ -1876,7 +1876,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_zap_a_mole",
@@ -1894,7 +1894,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_mermaid",
@@ -1903,7 +1903,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 - Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_mega",
@@ -1912,7 +1912,7 @@
         "unit": "per event",
         "source_snippet": "$550.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_skee_ball",
@@ -1930,7 +1930,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_basketball",
@@ -1939,7 +1939,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_jousting",
@@ -1948,7 +1948,7 @@
         "unit": "per event",
         "source_snippet": "$275.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_fiesta_splash",
@@ -1957,7 +1957,7 @@
         "unit": "per event",
         "source_snippet": "$400.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_wave",
@@ -1966,7 +1966,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_connect_four",
@@ -1975,7 +1975,7 @@
         "unit": "per event",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "game_dunk_tank",
@@ -1984,7 +1984,7 @@
         "unit": "per event",
         "source_snippet": "$300.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_shark_attack",
@@ -1993,7 +1993,7 @@
         "unit": "per event",
         "source_snippet": "$450.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_dino_splash",
@@ -2002,7 +2002,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_lava_wave",
@@ -2011,7 +2011,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_tiki_plunge",
@@ -2020,7 +2020,7 @@
         "unit": "per event",
         "source_snippet": "$550.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_summer_breeze",
@@ -2029,7 +2029,7 @@
         "unit": "per event",
         "source_snippet": "$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_lol_surprise",
@@ -2038,7 +2038,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_reggae_rush",
@@ -2047,7 +2047,7 @@
         "unit": "per event",
         "source_snippet": "$400.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_rush",
@@ -2056,7 +2056,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_frozen",
@@ -2065,7 +2065,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_purple_splash",
@@ -2074,7 +2074,7 @@
         "unit": "per event",
         "source_snippet": "$399.99",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_roblox",
@@ -2083,7 +2083,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_tropical",
@@ -2092,7 +2092,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_superhero",
@@ -2101,7 +2101,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_dolphins",
@@ -2110,7 +2110,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_castle",
@@ -2119,7 +2119,7 @@
         "unit": "per event",
         "source_snippet": "$169.99",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_ripcurl",
@@ -2128,7 +2128,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_rainbow_splash",
@@ -2137,7 +2137,7 @@
         "unit": "per event",
         "source_snippet": "$399.99",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_happy_birthday",
@@ -2146,7 +2146,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cotton_candy_machine",
@@ -2155,7 +2155,7 @@
         "unit": "per event",
         "source_snippet": "$75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "popcorn_machine",
@@ -2164,7 +2164,7 @@
         "unit": "per event",
         "source_snippet": "$75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "snow_cone_machine",
@@ -2173,7 +2173,7 @@
         "unit": "per event",
         "source_snippet": "$75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_tropical_rapids",
@@ -2182,7 +2182,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_diamond_princess",
@@ -2191,7 +2191,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_unicorn",
@@ -2200,7 +2200,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_marble",
@@ -2209,7 +2209,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_reggae_splash",
@@ -2218,7 +2218,7 @@
         "unit": "per event",
         "source_snippet": "$269.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_big_top",
@@ -2227,7 +2227,7 @@
         "unit": "per event",
         "source_snippet": "$275.00 Wet | $250.00 Dry",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_sports",
@@ -2236,7 +2236,7 @@
         "unit": "per event",
         "source_snippet": "$550.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -2266,7 +2266,7 @@
         "unit": "per day",
         "source_snippet": "Generator \\$100.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "popcorn",
@@ -2284,7 +2284,7 @@
         "unit": "per day",
         "source_snippet": "Palm Island Combo \\$325",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_combo",
@@ -2293,7 +2293,7 @@
         "unit": "per day",
         "source_snippet": "Princess Castle Combo \\$275",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_combo",
@@ -2302,7 +2302,7 @@
         "unit": "per day",
         "source_snippet": "Queen City Castle Combo \\$250",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_combo",
@@ -2311,7 +2311,7 @@
         "unit": "per day",
         "source_snippet": "Jurastic Combo \\$350",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -2320,7 +2320,7 @@
         "unit": "per day",
         "source_snippet": "Block Party Obstical Course \\$350",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -2329,7 +2329,7 @@
         "unit": "per day",
         "source_snippet": "Block Party Mega Combo \\$375",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -2338,7 +2338,7 @@
         "unit": "per day",
         "source_snippet": "The Play Pen \\$325",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -2347,7 +2347,7 @@
         "unit": "per day",
         "source_snippet": "Block Party Run Through Combo \\$350",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -2356,7 +2356,7 @@
         "unit": "per day",
         "source_snippet": "Blue Thunder Obstacle and Slide Combo \\$495.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -2365,7 +2365,7 @@
         "unit": "per day",
         "source_snippet": "Blue Wave Tsunami \\$325.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -2374,7 +2374,7 @@
         "unit": "per day",
         "source_snippet": "Palm Island Slide \\$300",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -2383,7 +2383,7 @@
         "unit": "per day",
         "source_snippet": "Mount Everest Slide \\$700.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -2392,7 +2392,7 @@
         "unit": "per day",
         "source_snippet": "Blue Rush Double Slide w/ Pool \\$325",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive",
@@ -2401,7 +2401,7 @@
         "unit": "per event",
         "source_snippet": "Queens Snow Globe \\$125.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive",
@@ -2410,7 +2410,7 @@
         "unit": "per day",
         "source_snippet": "Last Man Standing Joust \\$275",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive",
@@ -2419,7 +2419,7 @@
         "unit": "per day",
         "source_snippet": "Queen City Twist and Turn Twister \\$225",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive",
@@ -2428,7 +2428,7 @@
         "unit": "per day",
         "source_snippet": "Sumo Wrestling \\$350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive",
@@ -2437,7 +2437,7 @@
         "unit": "per day",
         "source_snippet": "Whack-A-Mole \\$225",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_unit",
@@ -2446,7 +2446,7 @@
         "unit": "per day",
         "source_snippet": "Queen City Splash Run \\$325.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_unit",
@@ -2455,7 +2455,7 @@
         "unit": "per day",
         "source_snippet": "Queen City Double Splash Run \\$275",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -2599,7 +2599,7 @@
         "unit": "per rental period",
         "source_snippet": "$100.00\u2013$175.00Price range: $100.00 through $175.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "sod_cutter_gas",
@@ -2608,7 +2608,7 @@
         "unit": "per rental period",
         "source_snippet": "$115.00\u2013$175.00Price range: $115.00 through $175.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "excavator_mini_kubota_kx033",
@@ -2617,7 +2617,7 @@
         "unit": "per rental period",
         "source_snippet": "Excavator Mini Kubota KX033 - $340.00-$395.00 (Rental Period: 4 hours / 9 hours / 24 hours)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "mini_tracked_loader_bobcat_mt55",
@@ -4663,7 +4663,7 @@
         "unit": "per day",
         "source_snippet": "$275.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x20",
@@ -4672,7 +4672,7 @@
         "unit": "per day",
         "source_snippet": "$300.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x30",
@@ -4681,7 +4681,7 @@
         "unit": "per day",
         "source_snippet": "$345.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40",
@@ -4690,7 +4690,7 @@
         "unit": "per day",
         "source_snippet": "$450.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_30x30",
@@ -4699,7 +4699,7 @@
         "unit": "per day",
         "source_snippet": "$475.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "linen_90_round_table",
@@ -4708,7 +4708,7 @@
         "unit": "per event",
         "source_snippet": "$10.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "linen_132_round_table",
@@ -4717,7 +4717,7 @@
         "unit": "per event",
         "source_snippet": "$22.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "linen_108_round_table",
@@ -4726,7 +4726,7 @@
         "unit": "per event",
         "source_snippet": "$14.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "lighting_cafe_style",
@@ -4735,7 +4735,7 @@
         "unit": "per event",
         "source_snippet": "$75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "wall_champagne",
@@ -4744,7 +4744,7 @@
         "unit": "per event",
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "trash_bin_cover",
@@ -4753,7 +4753,7 @@
         "unit": "per event",
         "source_snippet": "$14.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_30_cocktail",
@@ -4762,7 +4762,7 @@
         "unit": "per event",
         "source_snippet": "$12.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_5_round_umbrella",
@@ -4771,7 +4771,7 @@
         "unit": "per event",
         "source_snippet": "$45.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_5_round",
@@ -4780,7 +4780,7 @@
         "unit": "per event",
         "source_snippet": "$11.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_6_banquet",
@@ -4789,7 +4789,7 @@
         "unit": "per event",
         "source_snippet": "$10.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_8_banquet",
@@ -4798,7 +4798,7 @@
         "unit": "per event",
         "source_snippet": "$10.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "pipe_drape_8x10",
@@ -4807,7 +4807,7 @@
         "unit": "per event",
         "source_snippet": "$40.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "marquee_letters",
@@ -5641,7 +5641,7 @@
         "unit": "flat",
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x20_open",
@@ -5650,7 +5650,7 @@
         "unit": "flat",
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x20_red",
@@ -5659,7 +5659,7 @@
         "unit": "flat",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x20",
@@ -5668,7 +5668,7 @@
         "unit": "flat",
         "source_snippet": "$250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x30",
@@ -5677,7 +5677,7 @@
         "unit": "flat",
         "source_snippet": "$290.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40",
@@ -5686,7 +5686,7 @@
         "unit": "flat",
         "source_snippet": "$360.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40_new",
@@ -5695,7 +5695,7 @@
         "unit": "flat",
         "source_snippet": "$360.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_round_4ft_6people",
@@ -5704,7 +5704,7 @@
         "unit": "each",
         "source_snippet": "$13.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_40x40",
@@ -5713,7 +5713,7 @@
         "unit": "flat",
         "source_snippet": "$720.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_rectangular_6ft_8people",
@@ -5722,7 +5722,7 @@
         "unit": "each",
         "source_snippet": "$8.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_avengers",
@@ -5731,7 +5731,7 @@
         "unit": "flat",
         "source_snippet": "$220.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_balloon_castle",
@@ -5740,7 +5740,7 @@
         "unit": "flat",
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_lego_basic",
@@ -5749,7 +5749,7 @@
         "unit": "flat",
         "source_snippet": "$160.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_lego_combo",
@@ -5758,7 +5758,7 @@
         "unit": "flat",
         "source_snippet": "$260.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_mechanical_bull",
@@ -5776,7 +5776,7 @@
         "unit": "flat",
         "source_snippet": "$230.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_mini_toboggan",
@@ -5785,7 +5785,7 @@
         "unit": "flat",
         "source_snippet": "$125.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_paw_patrol",
@@ -5794,7 +5794,7 @@
         "unit": "flat",
         "source_snippet": "$230.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_pink_castle",
@@ -5803,7 +5803,7 @@
         "unit": "flat",
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -6190,7 +6190,7 @@
         "unit": "per event",
         "source_snippet": "From $339",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_with_water_slide",
@@ -6199,7 +6199,7 @@
         "unit": "per event",
         "source_snippet": "From $369",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -6208,7 +6208,7 @@
         "unit": "per event",
         "source_snippet": "From $849",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -6217,7 +6217,7 @@
         "unit": "per event",
         "source_snippet": "From $599",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -6226,7 +6226,7 @@
         "unit": "per event",
         "source_snippet": "From $569",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide",
@@ -6235,7 +6235,7 @@
         "unit": "per event",
         "source_snippet": "From $519",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dry_slide",
@@ -6244,7 +6244,7 @@
         "unit": "per event",
         "source_snippet": "From $299",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dry_slide",
@@ -6253,7 +6253,7 @@
         "unit": "per event",
         "source_snippet": "From $349",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dry_slide",
@@ -6262,7 +6262,7 @@
         "unit": "per event",
         "source_snippet": "From $479",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dry_slide",
@@ -6271,7 +6271,7 @@
         "unit": "per event",
         "source_snippet": "From $569",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dry_slide",
@@ -6280,7 +6280,7 @@
         "unit": "per event",
         "source_snippet": "From $549",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -6289,7 +6289,7 @@
         "unit": "per event",
         "source_snippet": "From $1449",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -6298,7 +6298,7 @@
         "unit": "per event",
         "source_snippet": "From $895",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -6307,7 +6307,7 @@
         "unit": "per event",
         "source_snippet": "From $369",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -6316,7 +6316,7 @@
         "unit": "per event",
         "source_snippet": "From $639",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course",
@@ -6325,7 +6325,7 @@
         "unit": "per event",
         "source_snippet": "From $439",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house",
@@ -6334,7 +6334,7 @@
         "unit": "per event",
         "source_snippet": "From $299",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house",
@@ -6343,7 +6343,7 @@
         "unit": "per event",
         "source_snippet": "From $219",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house",
@@ -6352,7 +6352,7 @@
         "unit": "per event",
         "source_snippet": "From $209",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "inflatable_game",
@@ -6361,7 +6361,7 @@
         "unit": "per event",
         "source_snippet": "From $399",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "inflatable_game",
@@ -6370,7 +6370,7 @@
         "unit": "per event",
         "source_snippet": "From $379",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "inflatable_game",
@@ -6379,7 +6379,7 @@
         "unit": "per event",
         "source_snippet": "From $1595",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "inflatable_game",
@@ -6388,7 +6388,7 @@
         "unit": "per event",
         "source_snippet": "From $549",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_attraction",
@@ -6397,7 +6397,7 @@
         "unit": "per event",
         "source_snippet": "From $2399",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_attraction",
@@ -6406,7 +6406,7 @@
         "unit": "per event",
         "source_snippet": "From $2499",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_attraction",
@@ -6415,7 +6415,7 @@
         "unit": "per event",
         "source_snippet": "From $1500",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_attraction",
@@ -6424,7 +6424,7 @@
         "unit": "per event",
         "source_snippet": "From $1349",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_attraction",
@@ -6433,7 +6433,7 @@
         "unit": "per event",
         "source_snippet": "From $999",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "carnival_game",
@@ -6442,7 +6442,7 @@
         "unit": "per event",
         "source_snippet": "From $899",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "carnival_game",
@@ -6451,7 +6451,7 @@
         "unit": "per event",
         "source_snippet": "From $599",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "carnival_game",
@@ -6460,7 +6460,7 @@
         "unit": "per event",
         "source_snippet": "From $399",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "carnival_game",
@@ -6469,7 +6469,7 @@
         "unit": "per event",
         "source_snippet": "From $299",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "large_event_suggestion",
@@ -6487,7 +6487,7 @@
         "unit": "per event",
         "source_snippet": "From $1550",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "large_event_suggestion",
@@ -6496,7 +6496,7 @@
         "unit": "per event",
         "source_snippet": "From $1750",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "large_event_suggestion",
@@ -6505,7 +6505,7 @@
         "unit": "per event",
         "source_snippet": "From $1595",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "large_event_suggestion",
@@ -6514,7 +6514,7 @@
         "unit": "per event",
         "source_snippet": "From $1500",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6523,7 +6523,7 @@
         "unit": "per event",
         "source_snippet": "From $449",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6532,7 +6532,7 @@
         "unit": "per event",
         "source_snippet": "From $519",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6541,7 +6541,7 @@
         "unit": "per event",
         "source_snippet": "From $789",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6550,7 +6550,7 @@
         "unit": "per event",
         "source_snippet": "From $739",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6559,7 +6559,7 @@
         "unit": "per event",
         "source_snippet": "From $809",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "party_package",
@@ -6568,7 +6568,7 @@
         "unit": "per event",
         "source_snippet": "From $990",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -6841,7 +6841,7 @@
         "unit": "per event",
         "source_snippet": "$469.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_28_fiesta_fire_dual_lane_waterslide_with_slip_and_slide",
@@ -6850,7 +6850,7 @@
         "unit": "per event",
         "source_snippet": "$785.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_16_fire_island_center_climb_with_pool",
@@ -6859,7 +6859,7 @@
         "unit": "per event",
         "source_snippet": "$324.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_28_tropical_hurricane_double_lane_slip_and_slide_with_deep_pool",
@@ -6868,7 +6868,7 @@
         "unit": "per event",
         "source_snippet": "$785.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_28_purple_crush_dual_lane_slide_with_slip_n_slide",
@@ -6877,7 +6877,7 @@
         "unit": "per event",
         "source_snippet": "$785.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_22_tropical_hurricane_dual_lane_extended_lane_with_inflated_pool_marble_red",
@@ -6886,7 +6886,7 @@
         "unit": "per event",
         "source_snippet": "$469.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_22_fire_island_waterslide_dual_lane_with_pool",
@@ -6895,7 +6895,7 @@
         "unit": "per event",
         "source_snippet": "$469.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_slide_28_tropical_fireblast_dual_lane_water_slide_with_slip_slide",
@@ -6904,7 +6904,7 @@
         "unit": "per event",
         "source_snippet": "$785.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_boom_box_bounce_house",
@@ -6913,7 +6913,7 @@
         "unit": "per event",
         "source_snippet": "$365.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_glitter_unicorn_bounce",
@@ -6922,7 +6922,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_under_construction",
@@ -6931,7 +6931,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_king",
@@ -6940,7 +6940,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_yellow_module",
@@ -6949,7 +6949,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_pixel_combo_bounce_house_with_dual_lane_slide",
@@ -6958,7 +6958,7 @@
         "unit": "per event",
         "source_snippet": "$379.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_magical_mermaid_bounce_house_slide_combo",
@@ -7003,7 +7003,7 @@
         "unit": "per event",
         "source_snippet": "$389.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_dual_lap_challenger",
@@ -7012,7 +7012,7 @@
         "unit": "per event",
         "source_snippet": "$535.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_95_tropical_radical_run_obstacle_course",
@@ -7021,7 +7021,7 @@
         "unit": "per event",
         "source_snippet": "$790.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_extreme_iii_dual_lane_obstacle_course",
@@ -7030,7 +7030,7 @@
         "unit": "per event",
         "source_snippet": "$439.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "obstacle_course_haunted_house_obstacle_course_and_slide",
@@ -7039,7 +7039,7 @@
         "unit": "per event",
         "source_snippet": "$439.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_and_sports_mvp_sports_challenge",
@@ -7048,7 +7048,7 @@
         "unit": "per event",
         "source_snippet": "$298.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_and_sports_basketball_tournament",
@@ -7066,7 +7066,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_and_sports_box_and_bounce",
@@ -7075,7 +7075,7 @@
         "unit": "per event",
         "source_snippet": "$259.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "interactive_and_sports_3_n_1_sports_challenge",
@@ -7093,7 +7093,7 @@
         "unit": "per event",
         "source_snippet": "$229.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "for_the_younger_ones_tiger_safari_bounce_house",
@@ -7102,7 +7102,7 @@
         "unit": "per event",
         "source_snippet": "$295.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "for_the_younger_ones_ocean_safari_toodler_playland",
@@ -7111,7 +7111,7 @@
         "unit": "per event",
         "source_snippet": "$295.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "for_the_younger_ones_petting_zoo",
@@ -7120,7 +7120,7 @@
         "unit": "per event",
         "source_snippet": "$295.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "for_the_younger_ones_kids_mini_castle",
@@ -7129,7 +7129,7 @@
         "unit": "per event",
         "source_snippet": "$189.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tents_tables_chairs_and_more_tent_20x30",
@@ -7138,7 +7138,7 @@
         "unit": "per event",
         "source_snippet": "$679.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tents_tables_chairs_and_more_tent_20x20",
@@ -7147,7 +7147,7 @@
         "unit": "per event",
         "source_snippet": "$479.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tents_tables_chairs_and_more_white_resin_chair",
@@ -7156,7 +7156,7 @@
         "unit": "each",
         "source_snippet": "$4.50",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tents_tables_chairs_and_more_white_chairs_b_stock_chairs_see_description",
@@ -7165,7 +7165,7 @@
         "unit": "each",
         "source_snippet": "$2.29",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tents_tables_chairs_and_more_black_chairs",
@@ -7174,7 +7174,7 @@
         "unit": "each",
         "source_snippet": "$2.29",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "concessions_and_supplies_popcorn_machine",
@@ -7183,7 +7183,7 @@
         "unit": "per event",
         "source_snippet": "$75.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "concessions_and_supplies_popcorn",
@@ -7192,7 +7192,7 @@
         "unit": "each",
         "source_snippet": "$3.29",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "concessions_and_supplies_stand_for_popcorn_machine_stand_only",
@@ -7201,7 +7201,7 @@
         "unit": "per event",
         "source_snippet": "$39.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "concessions_and_supplies_sno_cone_machine",
@@ -7210,7 +7210,7 @@
         "unit": "per event",
         "source_snippet": "$75.90",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "concessions_and_supplies_sno_cone_cherry_or_tiger_blood",
@@ -7324,7 +7324,7 @@
         "unit": "per day",
         "source_snippet": "$350.00/1 day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "360_photo_booth",
@@ -7333,7 +7333,7 @@
         "unit": "per day",
         "source_snippet": "$350.00/1 day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "70_mirror_photo_booth",
@@ -8128,7 +8128,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$300/24 hours\nOR\n$400/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_5ft_waterslide_basketball_hoop_pool",
@@ -8137,7 +8137,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$300/24 hours\nOR\n$400/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "12ft_waterslide_pool",
@@ -8146,7 +8146,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$300/24 hours\nOR\n$400/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "castle_1",
@@ -8155,7 +8155,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$220/24 hours\nOR\n$320/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "castle_2",
@@ -8173,7 +8173,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$220/24 hours\nOR\n$320/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "animal_kingdom",
@@ -8182,7 +8182,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$280/24 hours\nOR\n$380/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_3ft_dry_slide_obstacles",
@@ -8191,7 +8191,7 @@
         "unit": "per 24 hours",
         "source_snippet": "$280/24 hours\nOR\n$380/48 hours",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "foam_party",
@@ -8200,7 +8200,7 @@
         "unit": "per 1 hour",
         "source_snippet": "$250/ 1hr (operator included)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "delivery_fee",
@@ -9934,7 +9934,7 @@
         "unit": "per rental",
         "source_snippet": "MEGA Rainbow Wet or Dry Bounce House and Slide Combo | [![MEGA Rainbow Wet or Dry Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Rainbow-Combo-Kid-2.jpg)](https://www.partytogoevents.com/items/wet-or-dry-rainbow-bounce-house-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-rainbow-bounce-house-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_rental",
@@ -9943,7 +9943,7 @@
         "unit": "per rental",
         "source_snippet": "Tropical Splash Wet or Dry Bounce House Slide Combo | [![Tropical Splash Wet or Dry Bounce House Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Mega-Tropical-Splash-Combo-3R.jpg)](https://www.partytogoevents.com/items/wet-or-dry-tropical-splash-bounce-house-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-tropical-splash-bounce-house-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_rental",
@@ -9952,7 +9952,7 @@
         "unit": "per rental",
         "source_snippet": "Wet or Dry Block Party Bounce House and Slide Combo | [![Wet or Dry Block Party Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Block-Party-Combo-7.jpg)](https://www.partytogoevents.com/items/wet-or-dry-block-party-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-block-party-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_rental",
@@ -9961,7 +9961,7 @@
         "unit": "per rental",
         "source_snippet": "Wet or Dry Pixelated Bounce House and Slide Combo | [![Wet or Dry Pixelated Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Pixelated-Combo-5_11zon.jpg)](https://www.partytogoevents.com/items/wet-or-dry-pixelated-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-pixelated-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bounce_house_rental",
@@ -9970,7 +9970,7 @@
         "unit": "per rental",
         "source_snippet": "Wet or Dry Purple Ice Palace Bounce House and Slide Combo | [![Wet or Dry Purple Ice Palace Bounce House and Slide Combo](https://files.sysers.com/cp/upload/partytogoers/items/med/Purple-Ice-Palace-Combo-3.jpg)](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/) | * * * | [Info and Pricing >](https://www.partytogoevents.com/items/wet-or-dry-purple-ice-palace-bounce-house-and-slide-combo/)<br>Add to Cart | $400.00 |",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -11905,7 +11905,7 @@
         "unit": "per day",
         "source_snippet": "$15/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "umbrella_with_2_chairs",
@@ -11914,7 +11914,7 @@
         "unit": "per day",
         "source_snippet": "$15/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "beach_chair",
@@ -11932,7 +11932,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stroller_organizer",
@@ -11941,7 +11941,7 @@
         "unit": "per day",
         "source_snippet": "$3/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "yogasleep_hushh_white_noise_machine",
@@ -11950,7 +11950,7 @@
         "unit": "per day",
         "source_snippet": "$3/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stroller",
@@ -11959,7 +11959,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "double_stroller_jogger",
@@ -11968,7 +11968,7 @@
         "unit": "per day",
         "source_snippet": "$19/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cosco_simple_fold_high_chair",
@@ -11977,7 +11977,7 @@
         "unit": "per day",
         "source_snippet": "$9/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "booster_seat",
@@ -11986,7 +11986,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "booster_chair_with_tray",
@@ -11995,7 +11995,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "skip_hop_baby_activity_center",
@@ -12004,7 +12004,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "6_ft_folding_table",
@@ -12013,7 +12013,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "8_black_folding_plastic_chairs",
@@ -12022,7 +12022,7 @@
         "unit": "per day",
         "source_snippet": "$10/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "nursing_pillow",
@@ -12031,7 +12031,7 @@
         "unit": "per day",
         "source_snippet": "$4/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "rocker",
@@ -12040,7 +12040,7 @@
         "unit": "per day",
         "source_snippet": "$8/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "lifetime_kids_picnic_table",
@@ -12058,7 +12058,7 @@
         "unit": "per day",
         "source_snippet": "$12/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "playpen_with_8_panel_safety_gate",
@@ -12067,7 +12067,7 @@
         "unit": "per day",
         "source_snippet": "$12/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "folding_chair",
@@ -12076,7 +12076,7 @@
         "unit": "per day",
         "source_snippet": "$4/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "water_table",
@@ -12085,7 +12085,7 @@
         "unit": "per day",
         "source_snippet": "$8/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "beach_tent",
@@ -12094,7 +12094,7 @@
         "unit": "per day",
         "source_snippet": "$15/day",
         "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-super-120b-a12b",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "corn_hole",
@@ -12103,7 +12103,7 @@
         "unit": "per day",
         "source_snippet": "$15/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "hiking_backpack_carrier",
@@ -12112,7 +12112,7 @@
         "unit": "per day",
         "source_snippet": "$6/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "pool_toys",
@@ -12121,7 +12121,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "pop_up_tent",
@@ -12130,7 +12130,7 @@
         "unit": "per day",
         "source_snippet": "$4/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "toddler_sensory_table",
@@ -12139,7 +12139,7 @@
         "unit": "per day",
         "source_snippet": "$8/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "moby_wrap_baby_carrier",
@@ -12148,7 +12148,7 @@
         "unit": "per day",
         "source_snippet": "$5/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "igloo_38_quart_wheelie_cooler",
@@ -12157,7 +12157,7 @@
         "unit": "per day",
         "source_snippet": "$4/day",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -12292,7 +12292,7 @@
         "unit": "per event",
         "source_snippet": "10 \u00d7 10 $250.00 white Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x20",
@@ -12301,7 +12301,7 @@
         "unit": "per event",
         "source_snippet": "10 \u00d7 20 $325.00 white Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x30",
@@ -12310,7 +12310,7 @@
         "unit": "per event",
         "source_snippet": "10 \u00d7 30 $375.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x40",
@@ -12319,7 +12319,7 @@
         "unit": "per event",
         "source_snippet": "10 \u00d7 40 $475.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x50",
@@ -12328,7 +12328,7 @@
         "unit": "per event",
         "source_snippet": "10 \u00d7 50 $550.00\n10 \u00d7 50 $650.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_15x15",
@@ -12346,7 +12346,7 @@
         "unit": "per event",
         "source_snippet": "20 x 20 Frame tent $450.00 White Top\n$752.00 Clear Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x30",
@@ -12355,7 +12355,7 @@
         "unit": "per event",
         "source_snippet": "Tent 20 x 30 $675.00 White Top\n$1,125.00 Clear Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40",
@@ -12364,7 +12364,7 @@
         "unit": "per event",
         "source_snippet": "20 x 40 $900.00 White Top\n$1,500.00 Clear Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x50",
@@ -12373,7 +12373,7 @@
         "unit": "per event",
         "source_snippet": "20 \u00d7 50 $1130.00\n20 \u00d7 50 $1880.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x60",
@@ -12382,7 +12382,7 @@
         "unit": "per event",
         "source_snippet": "Frame Tent 20 x 60 $1356.00 white Top\n$2256.00. Clear Top",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_40x60",
@@ -12400,7 +12400,7 @@
         "unit": "per event",
         "source_snippet": "40 \u00d7 80 $2975.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_40x100",
@@ -12409,7 +12409,7 @@
         "unit": "per event",
         "source_snippet": "40 \u00d7 100 $ 3,750.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_40x120",
@@ -12418,7 +12418,7 @@
         "unit": "per event",
         "source_snippet": "40 \u00d7 120- $4,550.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x10_pop_up",
@@ -12427,7 +12427,7 @@
         "unit": "per event",
         "source_snippet": "10 x 10 Pop Up Tent $125.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x20_pop_up",
@@ -12436,7 +12436,7 @@
         "unit": "per event",
         "source_snippet": "10 x 20 Pop Up Tent $175.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_10x10_pop_up_side_walls",
@@ -12445,7 +12445,7 @@
         "unit": "per event",
         "source_snippet": "Tent w option side walls 10x10 pop up $100.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_side_walls",
@@ -12454,7 +12454,7 @@
         "unit": "each",
         "source_snippet": "Weights $5.00 each\nside walls $10.00 each\nside walls 8x20 $75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_fan",
@@ -12463,7 +12463,7 @@
         "unit": "per event",
         "source_snippet": "Mounted Tent Fan $65.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "fire_extinguisher",
@@ -12472,7 +12472,7 @@
         "unit": "each",
         "source_snippet": "Fire Extinguisher $25.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "vinyl_exit_sign",
@@ -12481,7 +12481,7 @@
         "unit": "each",
         "source_snippet": "Vinyl Exit Sign $3.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "no_smoking_sign",
@@ -12490,7 +12490,7 @@
         "unit": "each",
         "source_snippet": "No Smoking Sign $3.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_4x4",
@@ -12499,7 +12499,7 @@
         "unit": "each",
         "source_snippet": "4x 4 stage $50.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_4x8",
@@ -12508,7 +12508,7 @@
         "unit": "each",
         "source_snippet": "4\u00d78 section - $100.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_12",
@@ -12517,7 +12517,7 @@
         "unit": "per 4x8 section",
         "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_16",
@@ -12526,7 +12526,7 @@
         "unit": "per 4x8 section",
         "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_24",
@@ -12535,7 +12535,7 @@
         "unit": "per 4x8 section",
         "source_snippet": "$100.00 per 4 x 8 section up to 36\u201d In height",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting",
@@ -12544,7 +12544,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_white",
@@ -12553,7 +12553,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_black",
@@ -12562,7 +12562,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_ivory",
@@ -12571,7 +12571,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_gold",
@@ -12580,7 +12580,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_beige",
@@ -12589,7 +12589,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_nude",
@@ -12598,7 +12598,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_baby_pink",
@@ -12607,7 +12607,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_royal_blue",
@@ -12616,7 +12616,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_navy_blue",
@@ -12625,7 +12625,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_skirting_red",
@@ -12634,7 +12634,7 @@
         "unit": "each",
         "source_snippet": "White Single Step 48\u201d long x 8\u201d tall $45.00 each\nWhite Stage Steps. Good for 24\u201d high $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "arbor_dark_stain",
@@ -12643,7 +12643,7 @@
         "unit": "per event",
         "source_snippet": "Dark Stain Arbor $100.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "arbor_white",
@@ -12652,7 +12652,7 @@
         "unit": "per event",
         "source_snippet": "White Wooden Arbor $100.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "arbor_copper",
@@ -12661,7 +12661,7 @@
         "unit": "per event",
         "source_snippet": "Copper Arbor $150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_white_doors",
@@ -12670,7 +12670,7 @@
         "unit": "per event",
         "source_snippet": "White Doors $250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_natural_woven_fiber_screen",
@@ -12679,7 +12679,7 @@
         "unit": "per event",
         "source_snippet": "Natural Woven Fiber Screen $80.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_trident_tec",
@@ -12688,7 +12688,7 @@
         "unit": "per event",
         "source_snippet": "Trident Tec $300.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_pallet",
@@ -12697,7 +12697,7 @@
         "unit": "per event",
         "source_snippet": "Pallet Backdrop 7ft wide x 8 ft tall $125.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_grass",
@@ -12706,7 +12706,7 @@
         "unit": "per event",
         "source_snippet": "Grass Backdrop $150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_doors",
@@ -12715,7 +12715,7 @@
         "unit": "per event",
         "source_snippet": "Doors $250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_brick_wall",
@@ -12724,7 +12724,7 @@
         "unit": "per event",
         "source_snippet": "Brick wall Backdrop Panel $75.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_wooden_partitions",
@@ -12733,7 +12733,7 @@
         "unit": "per event",
         "source_snippet": "Wooden Partitions $40.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_castle",
@@ -12742,7 +12742,7 @@
         "unit": "per event",
         "source_snippet": "Castle Backdrop $60.00 canvas only\ncanvas with poles $80.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_castle_stairs",
@@ -12751,7 +12751,7 @@
         "unit": "per event",
         "source_snippet": "Castle Stairs $50.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_boxwood_wall",
@@ -12760,7 +12760,7 @@
         "unit": "per event",
         "source_snippet": "Boxwood Wall Backdrop $400.00 7 ft tall x 8 ft wide",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_forest_tapestry",
@@ -12769,7 +12769,7 @@
         "unit": "per event",
         "source_snippet": "Forest Tapestry $40.00 canvas only\ncanvas w poles $60.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_garden_tapestry",
@@ -12778,7 +12778,7 @@
         "unit": "per event",
         "source_snippet": "Garden Tapestry w Mushrooms $45.00 canvas only\ncanvas w poles $65.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_old_wood_tapestry",
@@ -12787,7 +12787,7 @@
         "unit": "per event",
         "source_snippet": "Old Wood Tapestry $45.00 canvas only\ncanvas w poles $65.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_boxwood_wall_canvas",
@@ -12796,7 +12796,7 @@
         "unit": "per event",
         "source_snippet": "Boxwood wall on canvas $55.00 for just canvas\n$75.00 includes poles",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_canvas_black_white_walkway",
@@ -12805,7 +12805,7 @@
         "unit": "per event",
         "source_snippet": "Canvas with Black& White walkway Canvas $45.00\nw poles $65.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backdrop_boxwood_wall",
@@ -12814,7 +12814,7 @@
         "unit": "per event",
         "source_snippet": "Boxwood wall 7ft tall x 8 ft wide $500.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_white_7ft",
@@ -12823,7 +12823,7 @@
         "unit": "per event",
         "source_snippet": "White 7 ft bar $300.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_gold_leaf_8ft",
@@ -12832,7 +12832,7 @@
         "unit": "per event",
         "source_snippet": "Gold Leaf Bar 8ft $350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_5ft_white",
@@ -12841,7 +12841,7 @@
         "unit": "per event",
         "source_snippet": "5 ft White Bar $275.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_black_4ft",
@@ -12850,7 +12850,7 @@
         "unit": "per event",
         "source_snippet": "Black Bar 4 ft $200.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_6ft_or_8ft",
@@ -12859,7 +12859,7 @@
         "unit": "per event",
         "source_snippet": "6ft or 8ft Bar $24.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_serpentine_curved",
@@ -12868,7 +12868,7 @@
         "unit": "per event",
         "source_snippet": "Serpentine Curved Bar w Table $30.00 set",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_boxwood",
@@ -12877,7 +12877,7 @@
         "unit": "per event",
         "source_snippet": "Boxwood Bar $300.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_truck",
@@ -12886,7 +12886,7 @@
         "unit": "per event",
         "source_snippet": "Truck Bar $350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_vintage_volkswagen",
@@ -12895,7 +12895,7 @@
         "unit": "per event",
         "source_snippet": "Vintage Volkswagen Bar $350.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_shelf",
@@ -12904,7 +12904,7 @@
         "unit": "per event",
         "source_snippet": "Bar Shelf $200",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_gold_book_shelves",
@@ -12913,7 +12913,7 @@
         "unit": "per event",
         "source_snippet": "Gold Modern Book Shelves $125.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_black_glass_book_shelves",
@@ -12922,7 +12922,7 @@
         "unit": "per event",
         "source_snippet": "Black Glass Book Shelves $125.00 Each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_tiffany_cabinet",
@@ -12931,7 +12931,7 @@
         "unit": "per event",
         "source_snippet": "Tiffany Cabinet $150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_vintage_metal_tub",
@@ -12940,7 +12940,7 @@
         "unit": "per event",
         "source_snippet": "Vintage Metal Tub on legs $35.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_castle_columns",
@@ -12949,7 +12949,7 @@
         "unit": "per event",
         "source_snippet": "Castle Columns $300.00 w no Banner\n$350.00 w banner",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_silver_bookshelves",
@@ -12958,7 +12958,7 @@
         "unit": "per event",
         "source_snippet": "Silver Bookshelves $80.00 each",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_mimosa_bar_led_light_up_sign",
@@ -12967,7 +12967,7 @@
         "unit": "per event",
         "source_snippet": "Mimosa Bar LED light up sign $25.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -13339,7 +13339,7 @@
         "unit": "per event",
         "source_snippet": "Price$150.00](https://www.sagehillrentals.com/product-page/natural-beige-arm-chair)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_tree_decoration",
@@ -13366,7 +13366,7 @@
         "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dance_floor",
@@ -13375,7 +13375,7 @@
         "unit": "per event",
         "source_snippet": "Price$900.00](https://www.sagehillrentals.com/product-page/20-x-20-white-acrylic-dance-floor)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_17ft_oval",
@@ -13384,7 +13384,7 @@
         "unit": "per event",
         "source_snippet": "Price$2,400.00](https://www.sagehillrentals.com/product-page/17-oval-classic-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_14ft_modular",
@@ -13393,7 +13393,7 @@
         "unit": "per event",
         "source_snippet": "Price$1,150.00](https://www.sagehillrentals.com/product-page/14-modular-fluted-event-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_14ft_modular",
@@ -13402,7 +13402,7 @@
         "unit": "per event",
         "source_snippet": "Price$1,050.00](https://www.sagehillrentals.com/product-page/14-modular-classic-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_14ft_modular",
@@ -13411,7 +13411,7 @@
         "unit": "per event",
         "source_snippet": "Price$1,300.00](https://www.sagehillrentals.com/product-page/the-grand-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_7ft_arched",
@@ -13420,7 +13420,7 @@
         "unit": "per event",
         "source_snippet": "Price$550.00](https://www.sagehillrentals.com/product-page/7ft-arched-bar-back-unit)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_7ft_arched",
@@ -13429,7 +13429,7 @@
         "unit": "per event",
         "source_snippet": "Price$800.00](https://www.sagehillrentals.com/product-page/the-column-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bar_7ft_arched",
@@ -13438,7 +13438,7 @@
         "unit": "per event",
         "source_snippet": "Price$1,450.00](https://www.sagehillrentals.com/product-page/grand-estate-bar)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bench_cream_waterfall",
@@ -13447,7 +13447,7 @@
         "unit": "per event",
         "source_snippet": "Price$95.00](https://www.sagehillrentals.com/product-page/cream-waterfall-bench)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "plate_white_textured",
@@ -13456,7 +13456,7 @@
         "unit": "per event",
         "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "sofa_cream_boucle",
@@ -13465,7 +13465,7 @@
         "unit": "per event",
         "source_snippet": "Price$400.00](https://www.sagehillrentals.com/product-page/cream-boucle-sherpa-sofa)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "lamp_table_white",
@@ -13474,7 +13474,7 @@
         "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tree_9ft_white",
@@ -13483,7 +13483,7 @@
         "unit": "per event",
         "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tree_9ft_white",
@@ -13510,7 +13510,7 @@
         "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_8ft_white",
@@ -13519,7 +13519,7 @@
         "unit": "per event",
         "source_snippet": "Price$600.00](https://www.sagehillrentals.com/product-page/8-white-cylinder-riser-stage)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_8ft_white",
@@ -13528,7 +13528,7 @@
         "unit": "per event",
         "source_snippet": "Price$2.00](https://www.sagehillrentals.com/product-page/white-textured-plate)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_8ft_white",
@@ -13537,7 +13537,7 @@
         "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/16-white-table-lamp)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_8ft_white",
@@ -13546,7 +13546,7 @@
         "unit": "per event",
         "source_snippet": "Price$120.00](https://www.sagehillrentals.com/product-page/9-white-pre-lit-tree)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "stage_8ft_white",
@@ -13564,7 +13564,7 @@
         "unit": "per event",
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -13789,25 +13789,25 @@
         "unit": "per day",
         "source_snippet": "$ 70.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x20",
-        "price_low": 495.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 495.00 - 1 - 3 Days",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "price_low": 545.0,
+        "price_high": 545.0,
+        "unit": "per event",
+        "source_snippet": "$ 545.00 - 1 - 3 Days",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x30",
-        "price_low": 795.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 795.00 - 1 - 3 Days",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "price_low": 845.0,
+        "price_high": 845.0,
+        "unit": "per event",
+        "source_snippet": "$ 845.00 - 1 - 3 Days",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40",
@@ -13816,16 +13816,16 @@
         "unit": "per day",
         "source_snippet": "$ 1595.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x40_clear_top",
-        "price_low": 995.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 995.00 - 1 - 3 Days",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "price_low": 1695.0,
+        "price_high": 1695.0,
+        "unit": "per event",
+        "source_snippet": "$ 1695.00 - 1 - 3 Days",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_20x50_clear_top",
@@ -13834,7 +13834,7 @@
         "unit": "per day",
         "source_snippet": "$ 1995.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_30x30",
@@ -13843,16 +13843,16 @@
         "unit": "per day",
         "source_snippet": "$ 1095.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_30x45",
-        "price_low": 1495.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 1495.00 - 1 - 3 Days",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "price_low": 1595.0,
+        "price_high": 1595.0,
+        "unit": "per event",
+        "source_snippet": "$ 1595.00 - 1 - 3 Days",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tent_30x60",
@@ -13861,7 +13861,7 @@
         "unit": "per day",
         "source_snippet": "$ 1695.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_round_60in",
@@ -13870,7 +13870,7 @@
         "unit": "per day",
         "source_snippet": "$ 12.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_6ft_rectangular",
@@ -13879,7 +13879,7 @@
         "unit": "per day",
         "source_snippet": "$ 9.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_8ft_rectangular",
@@ -13888,7 +13888,7 @@
         "unit": "per day",
         "source_snippet": "$ 12.00 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "chair_folding",
@@ -13906,7 +13906,7 @@
         "unit": "per day",
         "source_snippet": "$ 2.95 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "chair_white_resin_frame",
@@ -13915,7 +13915,7 @@
         "unit": "per day",
         "source_snippet": "$ 3.95 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -14689,7 +14689,7 @@
         "unit": "flat",
         "source_snippet": "4 Ft. Round Table. . . . . . . . . . . . . . . . . . . . . . . . $8. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_3ft_round",
@@ -14698,7 +14698,7 @@
         "unit": "flat",
         "source_snippet": "3 Ft. Round Table. . . . . . . . . . . . . . . . . . . . . . . . $7. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_30in_pedestal",
@@ -14761,7 +14761,7 @@
         "unit": "flat",
         "source_snippet": "5 Ft. Serpentine Table. . . . . . . . . . . . . $12. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_4ft_serpentine",
@@ -14770,7 +14770,7 @@
         "unit": "flat",
         "source_snippet": "4 Ft. Serpentine Table. . . . . . . . . . . . . $10. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "table_leg_extension",
@@ -14779,7 +14779,7 @@
         "unit": "each",
         "source_snippet": "4 PVC Leg Extensions. . . . . . . . . . . . . . . . $1. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "chair_gold_chivari",
@@ -14788,7 +14788,7 @@
         "unit": "flat",
         "source_snippet": "Gold Chivari Ballroom Chairs . . . . . . . . . . . . . . . . . $8. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "chair_white_folding",
@@ -14797,7 +14797,7 @@
         "unit": "flat",
         "source_snippet": "White Folding Chair (metal frame w/heavy gauge plastic seat and back). . . . . . . . . . . . . $2. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "linen_90x132_rectangular",
@@ -14935,7 +14935,7 @@
         "unit": "per day",
         "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "marvel_avengers_inflatable_combo_wet",
@@ -14944,7 +14944,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "marble_combo_wet",
@@ -14953,7 +14953,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "kingdom_combo_wet",
@@ -14962,7 +14962,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "jurassic_park",
@@ -14971,7 +14971,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "epic_combo_wet",
@@ -14980,7 +14980,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dual_lane_shark_combo_inflatable_rental_wet",
@@ -14989,7 +14989,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dinosaur_inflatable_combo",
@@ -14998,7 +14998,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "castle_chase_combo_wet",
@@ -15007,7 +15007,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "balloon_combo_wet",
@@ -15016,7 +15016,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "mickey_mouse_club_house_wet",
@@ -15025,7 +15025,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "toddler_pirate_ship_inflatable_combo",
@@ -15034,7 +15034,7 @@
         "unit": "per day",
         "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "toddler_combo",
@@ -15043,7 +15043,7 @@
         "unit": "per day",
         "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "lil_farm_toddler_inflatable_rentals",
@@ -15052,7 +15052,7 @@
         "unit": "per day",
         "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "animal_kingdom",
@@ -15061,7 +15061,7 @@
         "unit": "per day",
         "source_snippet": "$350.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "black_folding_chair",
@@ -15070,7 +15070,7 @@
         "unit": "per day",
         "source_snippet": "$3.85",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "6_foot_table",
@@ -15079,7 +15079,7 @@
         "unit": "per day",
         "source_snippet": "$16.50",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "4_foot_table",
@@ -15088,7 +15088,7 @@
         "unit": "per day",
         "source_snippet": "$16.50",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "rocky_falls_dual_lane_super_slide",
@@ -15115,7 +15115,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "wildfire_inflatable_water_slide",
@@ -15124,7 +15124,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "slippery_slope",
@@ -15133,7 +15133,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "rockin_dual_lane_inflatable_water_slide_rental",
@@ -15142,7 +15142,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "red_canyon_inflatable_slide_wet",
@@ -15151,7 +15151,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "rainbow_run_inflatable_slide_wet",
@@ -15160,7 +15160,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "purple_hurricane_dual_lane_slide",
@@ -15169,7 +15169,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "oasis_slide_wet",
@@ -15178,7 +15178,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "everest",
@@ -15187,7 +15187,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "electric_slide_wet",
@@ -15196,7 +15196,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dual_lane_fiesta_super_slide",
@@ -15214,7 +15214,7 @@
         "unit": "per day",
         "source_snippet": "$495.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "unicorn_inflatable_combo_with_slide_wet",
@@ -15223,7 +15223,7 @@
         "unit": "per day",
         "source_snippet": "$425.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tropical_falls_combo_wet",
@@ -15232,7 +15232,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tiki_plunge_dual_lane_wet_combo",
@@ -15241,7 +15241,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "sports_3_d_combo_wet",
@@ -15250,7 +15250,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "river_rush_combo_wet",
@@ -15259,7 +15259,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "paw_patrol_combo_wet",
@@ -15268,7 +15268,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "minnie_mouse_wet_combo",
@@ -15277,7 +15277,7 @@
         "unit": "per day",
         "source_snippet": "$379.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "epic_combo_dry",
@@ -15286,7 +15286,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "9_square_in_the_air",
@@ -15295,7 +15295,7 @@
         "unit": "per day",
         "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "connect_a_shot",
@@ -15304,7 +15304,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cash_machine",
@@ -15313,7 +15313,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "carnival_5_n_1_inflatable_game",
@@ -15322,7 +15322,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "axe_throw_inflatable_rental",
@@ -15331,7 +15331,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "3_point_basketball",
@@ -15340,7 +15340,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cornhole",
@@ -15349,7 +15349,7 @@
         "unit": "per day",
         "source_snippet": "$215.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "electric_slide_dry",
@@ -15358,7 +15358,7 @@
         "unit": "per day",
         "source_snippet": "$400.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "ninja_combo",
@@ -15367,7 +15367,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "bungee_run_twister_joust",
@@ -15376,7 +15376,7 @@
         "unit": "per day",
         "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dual_lane_shark_combo_inflatable_rental_dry",
@@ -15385,7 +15385,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "crayon_combo",
@@ -15394,7 +15394,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "castle_chase_combo_dry",
@@ -15403,7 +15403,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "balloon_combo_dry",
@@ -15412,7 +15412,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "backyard_combo",
@@ -15421,7 +15421,7 @@
         "unit": "per day",
         "source_snippet": "$365.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cotton_candy_machine",
@@ -15430,7 +15430,7 @@
         "unit": "per day",
         "source_snippet": "$135.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "down_a_clown",
@@ -15439,7 +15439,7 @@
         "unit": "per day",
         "source_snippet": "$145.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "disneys_princess_castle",
@@ -15448,7 +15448,7 @@
         "unit": "per day",
         "source_snippet": "$250.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "radical_run_through",
@@ -15457,7 +15457,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "baja_blast_dual_lane_inflatable_super_slide",
@@ -15475,7 +15475,7 @@
         "unit": "per day",
         "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "fire_slip_n_dip",
@@ -15484,7 +15484,7 @@
         "unit": "per day",
         "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "blazin_slip_n_dip",
@@ -15493,7 +15493,7 @@
         "unit": "per day",
         "source_snippet": "$295.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "u_turn_obstacle_course",
@@ -15502,7 +15502,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tn_river_run",
@@ -15511,7 +15511,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tiki_island_water_obstacle_course_rental",
@@ -15520,7 +15520,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "river_rush_obstacle_course",
@@ -15529,7 +15529,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "radical_u_turn",
@@ -15538,7 +15538,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "cowabunga_wet_bounce_house",
@@ -15547,7 +15547,7 @@
         "unit": "per day",
         "source_snippet": "$250.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "radical_run",
@@ -15556,7 +15556,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "radical_rock_slide",
@@ -15565,7 +15565,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "hop_skip_n_jump_obstacle_course",
@@ -15574,7 +15574,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "h2o_inflatable_obstacle_course_rental",
@@ -15583,7 +15583,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "crossfit_obstacle_course",
@@ -15592,7 +15592,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "camo_obstacle_course",
@@ -15601,7 +15601,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "7_element_obstacle_course",
@@ -15610,7 +15610,7 @@
         "unit": "per day",
         "source_snippet": "$395.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "dual_lane_slam_dunk",
@@ -15619,7 +15619,7 @@
         "unit": "per day",
         "source_snippet": "$375.00\n- or $99.00 Customer Pickup -",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       }
     ]
   },
@@ -16816,7 +16816,7 @@
         "unit": "per day",
         "source_snippet": "$50/ 3hrs, $65/ 4hrs, $75/ day",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "hand_cutoff_saw",
@@ -16825,7 +16825,7 @@
         "unit": "per day",
         "source_snippet": "$50/ 3hrs, $65/ 4hrs, $75/ day",
         "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
+        "last_checked": "2026-11-07T14:46:53.442722+00:00"
       },
       {
         "item_type": "tub_tile_saw",

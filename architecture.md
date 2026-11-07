@@ -5,6 +5,15 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-07 — Session 34 (cont.): LLM model fixed, "missing" rows re-run (live)
+
+- **`ai_extract.py` model chain replaced.** `nvidia/nemotron-3-super-120b-a12b` still appears in NVIDIA's `/v1/models` list but its chat function 404s, which had silently failed every listing in the refresh pass's re-extraction phase. `PROVIDER_CHAIN` is now `nemotron-3-ultra-550b-a55b` then `mistral-large-4-1t-a52b` (both smoke-tested live). Also: empty completions (`content: null` from a reasoning model) now raise `RuntimeError` and fall through the chain instead of crashing the listing; `max_tokens` 6000 → 16000 (reasoning models burned the budget and returned truncated JSON).
+- **Re-ran the 26 listings with missing/unverifiable rows** (`--redo-from`, run `run-20261107-174235.jsonl`, 6814 s). Outcome over 675 rows: 420 confirmed, 7 "changed", 98 missing, 49 unlocated, 101 unverifiable.
+- **Applied (curated):** re-dated 420 confirmed rows; applied 4 verified price changes for Rental Me This (each name+price pair checked on the live page: 20x20 $495→$545, 20x30 $795→$845, 20x40 clear top $995→$1,695, 30x45 $1,495→$1,595). Rejected the other 3 "changed" verdicts (Bouncing Kingdom delivery fee: still $60; Party Rentals by Us and BabyQuip: matched a different product). Removed 0, added 0. DB backup `directory-backup-20261107-201653.db`.
+- **Missing rows are mostly extraction artifacts, not removed prices**, so none were removed: Show Time's source is a GoDaddy-hosted PDF price list, Partytime/Sage Hill are JS/paginated catalogs, Aaro's special-event page renders no text prices to the fetcher, and Columbus Bounce House Rentals' 45 "unlocated" rows have no stored source page. They stay on their old dates (honest: not re-verified).
+- **Search Console (export to 2026-11-02):** clicks flat (37 in 3 months, 14 in last 30 days vs 11 in prior 30; tools site 0). Guide impressions up after the 24 Oct title pass: table & chair 116 → 555 (pos 25.9 → 17.1), bounce house 88 → 216 (33.7 → 27.1), tent 196 → 267 (65.6 → 58.0). Not yet page 1; windows overlap and titles are only ~2 weeks old.
+- **Open:** 196 "new items found" not reviewed; Columbus Bounce House Rentals and Aaro need a browser-rendered check; schedule the monthly run; re-measure GSC around 20 Nov before any AdSense resubmission.
+
 ### 2026-11-05 — Session 34: monthly freshness pass (live)
 
 Ran `refresh_pricing.py --all` (dry run, 1273 s, 108 listings, 323 pages fetched OK of 308+; run file `run-20261104-211133.jsonl`), then `--apply --apply-from-report`. Result over 1,796 rows: **1,387 confirmed (77%)** against the live sites (865 verbatim, 522 near-item) and re-dated to 2026-11; 0 changed; 106 missing; 122 unlocated; 181 unverifiable. Applied only re-dating: **0 removed, 0 added, 0 changed**. DB backup `directory-backup-20261105-002815.db`. Rows still carrying older dates: 304 July, 122 Sept, 119 Oct (all in the missing/unlocated/unverifiable buckets, left alone by rule).

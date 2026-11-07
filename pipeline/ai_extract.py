@@ -50,8 +50,12 @@ NVIDIA_ENDPOINT = "https://integrate.api.nvidia.com/v1/chat/completions"
 # price, all of which passed the anti-hallucination gate (6/6 on Sunrise Party
 # Rental). It is slow (~40s a call) and 503s occasionally, so extract() now retries
 # the same model instead of abandoning it after one failure.
+# 2026-11-05: nemotron-3-super-120b-a12b still appears in /v1/models but its chat
+# function returns 404, which silently broke the refresh pass's re-extraction phase
+# (every listing "failed"). Replaced with models smoke-tested live that day.
 PROVIDER_CHAIN = [
-    ("nvidia", "nvidia/nemotron-3-super-120b-a12b"),
+    ("nvidia", "nvidia/nemotron-3-ultra-550b-a55b"),
+    ("nvidia", "mistralai/mistral-large-4-1t-a52b"),
 ]
 REQUEST_TIMEOUT_SECONDS = 150
 SAME_MODEL_RETRIES = 3
@@ -162,7 +166,9 @@ def call_model(provider, model, content):
             "model": model,
             "messages": [{"role": "user", "content": prompt_text}],
             "temperature": 0,
-            "max_tokens": 6000,
+            # The reasoning models spend part of this budget thinking; 6000 left big
+            # catalogs with truncated, unterminated JSON (seen 2026-11-05).
+            "max_tokens": 16000,
         }
     else:
         endpoint, key = OPENROUTER_ENDPOINT, OPENROUTER_KEY
@@ -185,7 +191,10 @@ def call_model(provider, model, content):
     choice = data["choices"][0]
     if choice.get("finish_reason") == "error":
         raise RuntimeError(f"provider error: {choice.get('error')}")
-    text = choice["message"]["content"].strip()
+    text = choice["message"].get("content")
+    if not text:
+        raise RuntimeError(f"empty completion (finish_reason={choice.get('finish_reason')})")
+    text = text.strip()
     if text.startswith("```"):
         text = text.strip("`").removeprefix("json").strip()
     return json.loads(text), None
