@@ -5,6 +5,13 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-07 — Session 34 (cont. 2): PDF price lists, two false "unverifiable" listings re-verified (live)
+
+- **`refresh_pricing.py` now reads PDFs.** Show Time Event Rentals publishes its prices as a PDF; the fetch layer decoded the raw bytes as text (428k characters of noise), so all 20 stored prices came back "missing" although every one is on the live list. `_pdf_text()` extracts text with `pypdf` when the body starts with `%PDF`. `norm()` also collapses a space before a period (PDF text like `6 Ft . Round` and `$21 .00`). Re-run: Show Time **27/27 confirmed**; re-dated.
+- **Professional Party Rentals - Asheville** (47 rows) was "unverifiable" in the first pass because the fetch failed; re-run: **47/47 confirmed**; re-dated.
+- Applied re-dating only (0 changed, 0 removed, 0 added). DB backups `directory-backup-20261107-203304.db`, `-203527.db`.
+- **Still unverifiable (published, old dates, not claimed as checked):** Aaro Rental Center (125 rows; the special-event page now lists item names with no prices, Wix gallery), Columbus Bounce House Rentals (46; HTTPS handshake fails, HTTP 404), Bounce Geeks (18; prices only appear after a date is entered in its booking form), Magic Special Events (12), Violet Vintage (10), CHEERS (9). Decision pending with the owner on whether to remove these.
+
 ### 2026-11-07 — Session 34 (cont.): LLM model fixed, "missing" rows re-run (live)
 
 - **`ai_extract.py` model chain replaced.** `nvidia/nemotron-3-super-120b-a12b` still appears in NVIDIA's `/v1/models` list but its chat function 404s, which had silently failed every listing in the refresh pass's re-extraction phase. `PROVIDER_CHAIN` is now `nemotron-3-ultra-550b-a55b` then `mistral-large-4-1t-a52b` (both smoke-tested live). Also: empty completions (`content: null` from a reasoning model) now raise `RuntimeError` and fall through the chain instead of crashing the listing; `max_tokens` 6000 → 16000 (reasoning models burned the budget and returned truncated JSON).

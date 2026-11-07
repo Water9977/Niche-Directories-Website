@@ -14011,7 +14011,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Salad Fork $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "copper hammered dinner fork",
@@ -14020,7 +14020,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Dinner Fork $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "copper hammered knife",
@@ -14029,7 +14029,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Knife $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "copper hammered soup spoon",
@@ -14038,7 +14038,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Soup Spoon $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "copper hammered teaspoon",
@@ -14047,7 +14047,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Teaspoon $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "copper hammered butter knife",
@@ -14056,7 +14056,7 @@
         "unit": "each",
         "source_snippet": "Copper Hammered Butter Knife $1.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "amy charger (13\")",
@@ -14065,7 +14065,7 @@
         "unit": "each",
         "source_snippet": "Amy Charger (13\u2033) $4.50",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "bailey blue charger (12\")",
@@ -14074,7 +14074,7 @@
         "unit": "each",
         "source_snippet": "Bailey Blue Charger (12\u2033) $4.25",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "caroline dinner plate (10\")",
@@ -14083,7 +14083,7 @@
         "unit": "each",
         "source_snippet": "Caroline Dinner Plate (10\u2033) $1.85",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jane blue charger (12\")",
@@ -14092,7 +14092,7 @@
         "unit": "each",
         "source_snippet": "Jane Blue Charger (12\u2033) $4.25",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jane blue dinner plate (10\")",
@@ -14101,7 +14101,7 @@
         "unit": "each",
         "source_snippet": "Jane Blue Dinner Plate (10\u2033) $2.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jane blue salad plate (8\")",
@@ -14110,7 +14110,7 @@
         "unit": "each",
         "source_snippet": "Jane Blue Salad Plate (8\u2033) $1.75",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jane blue b&b plate (6\")",
@@ -14119,7 +14119,7 @@
         "unit": "each",
         "source_snippet": "Jane Blue B&B Plate (6\u2033) $1.50",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jane green charger (12\")",
@@ -14128,7 +14128,7 @@
         "unit": "each",
         "source_snippet": "Jane Green Charger (12\u2033) $4.25",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "laura pink charger (12\")",
@@ -14137,7 +14137,7 @@
         "unit": "each",
         "source_snippet": "Laura Pink Charger (12\u2033) $4.25",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "laura yellow charger (12\")",
@@ -14146,7 +14146,7 @@
         "unit": "each",
         "source_snippet": "Laura Yellow Charger (12\u2033) $4.25",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "harlowe charger (12\")",
@@ -14155,7 +14155,7 @@
         "unit": "each",
         "source_snippet": "Harlowe Charger (12\u2033) $7.50",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "caroline charger (13\")",
@@ -14164,7 +14164,7 @@
         "unit": "each",
         "source_snippet": "Caroline Charger (13\u2033) $4.35",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "caroline salad plate (8\")",
@@ -14173,7 +14173,7 @@
         "unit": "each",
         "source_snippet": "Caroline Salad Plate (8\u2033) $1.55",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "caroline b&b plate (6\")",
@@ -14182,7 +14182,7 @@
         "unit": "each",
         "source_snippet": "Caroline B&B Plate (6\u2033) $1.40",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor black floral b&b plate 6\"",
@@ -14191,7 +14191,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Black Floral B&B Plate 6\u2033 $1.55",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor black floral salad plate 8\"",
@@ -14200,7 +14200,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Black Floral Salad Plate 8\u2033 $1.65",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor black floral dinner plate 11\"",
@@ -14209,7 +14209,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Black Floral Dinner Plate 11\u2033 $2.15",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor rose floral b&b plate 6\"",
@@ -14218,7 +14218,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Rose Floral B&B Plate 6\u2033 $1.55",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "florette b&b plate 6\"",
@@ -14227,7 +14227,7 @@
         "unit": "each",
         "source_snippet": "Florette B&B Plate 6\u2033 $1.55",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor rose floral salad plate 8\"",
@@ -14236,7 +14236,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Rose Floral Salad Plate 8\u2033 $1.65",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor rose floral dinner plate 11\"",
@@ -14245,7 +14245,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Rose Floral Dinner Plate 11\u2033 $2.15",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor wheat floral salad plate 8\"",
@@ -14254,7 +14254,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Wheat Floral Salad Plate 8\u2033 $1.65",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "florette salad plate 8\"",
@@ -14263,7 +14263,7 @@
         "unit": "each",
         "source_snippet": "Florette Salad Plate 8\u2033 $1.65",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "eleanor wheat floral dinner plate 11\"",
@@ -14272,7 +14272,7 @@
         "unit": "each",
         "source_snippet": "Eleanor Wheat Floral Dinner Plate 11\u2033 $2.15",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "florette dinner plate 10\"",
@@ -14281,7 +14281,7 @@
         "unit": "each",
         "source_snippet": "Florette Dinner Plate 10\u2033 $2.15",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "white square banquette",
@@ -14290,7 +14290,7 @@
         "unit": "each",
         "source_snippet": "White Square Banquette $1,248.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "rory clementine sofa",
@@ -14299,7 +14299,7 @@
         "unit": "each",
         "source_snippet": "Rory Clementine Sofa $400.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "rory storm blue sofa",
@@ -14308,7 +14308,7 @@
         "unit": "each",
         "source_snippet": "Rory Storm Blue Sofa $400.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jackson pink velvet sofa",
@@ -14317,7 +14317,7 @@
         "unit": "each",
         "source_snippet": "Jackson Pink Velvet Sofa $442.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "jean slipcover dining bench",
@@ -14326,7 +14326,7 @@
         "unit": "each",
         "source_snippet": "Jean Slipcover Dining Bench $150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "lila cream loveseat",
@@ -14335,7 +14335,7 @@
         "unit": "each",
         "source_snippet": "Lila Cream Loveseat $234.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "meridian brown loveseat",
@@ -14344,7 +14344,7 @@
         "unit": "each",
         "source_snippet": "Meridian Brown Loveseat $312.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "laguna linen armchair",
@@ -14353,7 +14353,7 @@
         "unit": "each",
         "source_snippet": "Laguna Linen Armchair $182.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "dylan blue/white stripe accent chair",
@@ -14362,7 +14362,7 @@
         "unit": "each",
         "source_snippet": "Dylan Blue/White Stripe Accent Chair $150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "rory storm blue armchair",
@@ -14371,7 +14371,7 @@
         "unit": "each",
         "source_snippet": "Rory Storm Blue Armchair $160.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "rory clementine armchair",
@@ -14380,7 +14380,7 @@
         "unit": "each",
         "source_snippet": "Rory Clementine Armchair $160.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "marley linen armchair",
@@ -14389,7 +14389,7 @@
         "unit": "each",
         "source_snippet": "Marley Linen Armchair $120.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "drum pendant chandelier (23x26\")",
@@ -14398,7 +14398,7 @@
         "unit": "each",
         "source_snippet": "Drum Pendant Chandelier (23X26\u2033) $195.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "gold arc chandelier (40\")",
@@ -14407,7 +14407,7 @@
         "unit": "each",
         "source_snippet": "Gold Arc Chandelier (40\u2033) $250.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "bentwood bar stool",
@@ -14416,7 +14416,7 @@
         "unit": "each",
         "source_snippet": "Bentwood Bar Stool $20.40",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       },
       {
         "item_type": "willow chair - natural",
@@ -14425,7 +14425,7 @@
         "unit": "each",
         "source_snippet": "Willow Chair \u2013 Natural $14.30",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-09-22T15:22:56.006832+00:00"
+        "last_checked": "2026-11-07T15:03:04.923596+00:00"
       }
     ]
   },
@@ -14671,7 +14671,7 @@
         "unit": "flat",
         "source_snippet": "6 Ft. Round Folding Table. . . . . . . . . . . $12. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_5ft_round_folding",
@@ -14680,7 +14680,7 @@
         "unit": "flat",
         "source_snippet": "5 Ft. Round Folding Table. . . . . . . . . . . $10. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_4ft_round",
@@ -14689,7 +14689,7 @@
         "unit": "flat",
         "source_snippet": "4 Ft. Round Table. . . . . . . . . . . . . . . . . . . . . . . . $8. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_3ft_round",
@@ -14698,7 +14698,7 @@
         "unit": "flat",
         "source_snippet": "3 Ft. Round Table. . . . . . . . . . . . . . . . . . . . . . . . $7. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_30in_pedestal",
@@ -14707,7 +14707,7 @@
         "unit": "flat",
         "source_snippet": "30\u201d Round Pedestal Table. . . . . . . . . . . . $10. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_26in_pedestal",
@@ -14716,7 +14716,7 @@
         "unit": "flat",
         "source_snippet": "26\u201d Round Pedestal Table. . . . . . . . . . . . . $8. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_8ft_rectangular",
@@ -14725,7 +14725,7 @@
         "unit": "flat",
         "source_snippet": "8 Ft. Rectangular Table.............. $10. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_6ft_rectangular",
@@ -14734,7 +14734,7 @@
         "unit": "flat",
         "source_snippet": "6 Ft. Rectangular Table............... $9. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_36in_card",
@@ -14743,7 +14743,7 @@
         "unit": "flat",
         "source_snippet": "36\u201d x 36\u201d Card Table. . . . . . . . . . . . . . . . $7. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_heart_shaped",
@@ -14752,7 +14752,7 @@
         "unit": "flat",
         "source_snippet": "Heart-shaped Table . . . . . . . . . . . . . . . . $10. 00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_5ft_serpentine",
@@ -14761,7 +14761,7 @@
         "unit": "flat",
         "source_snippet": "5 Ft. Serpentine Table. . . . . . . . . . . . . $12. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_4ft_serpentine",
@@ -14770,7 +14770,7 @@
         "unit": "flat",
         "source_snippet": "4 Ft. Serpentine Table. . . . . . . . . . . . . $10. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "table_leg_extension",
@@ -14779,7 +14779,7 @@
         "unit": "each",
         "source_snippet": "4 PVC Leg Extensions. . . . . . . . . . . . . . . . $1. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "chair_gold_chivari",
@@ -14788,7 +14788,7 @@
         "unit": "flat",
         "source_snippet": "Gold Chivari Ballroom Chairs . . . . . . . . . . . . . . . . . $8. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "chair_white_folding",
@@ -14797,7 +14797,7 @@
         "unit": "flat",
         "source_snippet": "White Folding Chair (metal frame w/heavy gauge plastic seat and back). . . . . . . . . . . . . $2. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-07T14:46:53.442722+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_90x132_rectangular",
@@ -14806,7 +14806,7 @@
         "unit": "flat",
         "source_snippet": "90\u201d x 132\u201d Rectangular Tablecloth..... $21.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_90x156_rectangular",
@@ -14815,7 +14815,7 @@
         "unit": "flat",
         "source_snippet": "90\u201d x 156\u201d Rectangular Tablecloth..... $24.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_120_round",
@@ -14824,7 +14824,7 @@
         "unit": "flat",
         "source_snippet": "120\u201d Round Tablecloth ..... $19.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_108_round",
@@ -14833,7 +14833,7 @@
         "unit": "flat",
         "source_snippet": "108\u201d Round Tablecloth ..... $16.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_90_round",
@@ -14842,7 +14842,7 @@
         "unit": "flat",
         "source_snippet": "90\u201d Round Tablecloth ..... $14.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_60x120_rectangular",
@@ -14851,7 +14851,7 @@
         "unit": "flat",
         "source_snippet": "60\u201d x 120\u201d Rectangular Tablecloth..... $15.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "linen_napkin",
@@ -14860,7 +14860,7 @@
         "unit": "each",
         "source_snippet": "20\u201d x 20\u201d Napkins ..... $0.85",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "tablecover_4ft_serpentine",
@@ -14869,7 +14869,7 @@
         "unit": "flat",
         "source_snippet": "4\u2019 Serpentine Tablecover - Black or White. . . . . . . . . . . . .$15. 00/$18. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "tablecover_5ft_serpentine",
@@ -14878,7 +14878,7 @@
         "unit": "flat",
         "source_snippet": "5\u2019 Serpentine Tablecover - Black or White. . . . . . . . . . . . .$15. 00/$18. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "tablecover_6ft",
@@ -14887,7 +14887,7 @@
         "unit": "flat",
         "source_snippet": "6\u2019 Tablecover - Black . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $15. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "tablecover_8ft",
@@ -14896,7 +14896,7 @@
         "unit": "flat",
         "source_snippet": "8\u2019 Tablecover - Black . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $16. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       },
       {
         "item_type": "tablecover_30in_pedestal",
@@ -14905,7 +14905,7 @@
         "unit": "flat",
         "source_snippet": "30\u201d Black Cover for Pedestal Table. . . . . . . . . . . . . . . . . . . . . . . . . $11. 00 ",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-07-26T06:30:02.051342+00:00"
+        "last_checked": "2026-11-07T15:05:27.532552+00:00"
       }
     ]
   },

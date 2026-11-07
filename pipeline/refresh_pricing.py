@@ -121,6 +121,7 @@ def norm(text):
     t = t.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     t = re.sub(r"\$\s+(?=\d)", "$", t)  # Webflow-style "$\n\n185.00"
     t = re.sub(r"(\d)\.\s+(\d)", r"\1.\2", t)  # PDF-style "$3. 50"
+    t = re.sub(r"\s+\.", ".", t)  # PDF-style "6 Ft . Round" / "$21 .00" (Show Time's price list)
     t = re.sub(r"[*_`|>#\\]", " ", t)  # markdown decoration
     t = re.sub(r"\s+", " ", t)
     return t.strip()
@@ -253,6 +254,27 @@ def _scrapling_text(page):
         return "", f"decode error: {type(e).__name__}"
 
 
+def _pdf_text(page):
+    """Text of a PDF response, or None when the response is not a PDF.
+
+    Some businesses publish their price list as a PDF (Show Time Event Rentals).
+    Decoding those bytes as text produced ~430k characters of noise, so all 20 of
+    its stored prices came back "missing" although every one is on the live list
+    (checked by hand 2026-11-07)."""
+    body = getattr(page, "body", b"") or b""
+    if not isinstance(body, (bytes, bytearray)) or not bytes(body[:5]).startswith(b"%PDF"):
+        return None
+    try:
+        import io
+
+        from pypdf import PdfReader
+
+        reader = PdfReader(io.BytesIO(bytes(body)))
+        return chr(10).join((pg.extract_text() or "") for pg in reader.pages)
+    except Exception:  # noqa: BLE001 — unreadable PDF is just "no content"
+        return ""
+
+
 def fetch_scrapling(url, browser=False):
     """HTTP fetch (curl_cffi browser impersonation) or, with browser=True, a real
     headless-Chromium render for JS-built pages. Free, and not subject to
@@ -288,6 +310,9 @@ def fetch_scrapling(url, browser=False):
         return "", f"{label} error: {type(e).__name__}"
     if page.status != 200:
         return "", f"{label} HTTP {page.status}"
+    pdf_text = _pdf_text(page)
+    if pdf_text is not None:
+        return pdf_text, f"{label} pdf"
     text, note = _scrapling_text(page)
     return text, note
 
