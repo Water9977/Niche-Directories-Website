@@ -4274,6 +4274,258 @@
         "source_snippet": "$50.00\u2013$1,125.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-09-22T15:22:56.006832+00:00"
+      },
+      {
+        "item_type": "equipment_water_boiler_2_1gal",
+        "price_low": 30.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [2.1 Gallon 54 cup (8 Liter) Water Boiler](https://www.hoosiertent.com/product/2-1-gallon-54-cup-8-liter-water-boiler/)  $30.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "decor_grand_opening_scissors",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [Grand Opening Scissors](https://www.hoosiertent.com/product/grand-opening-scissors/)  $75.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "equipment_beverage_dispenser_3_5gal",
+        "price_low": 20.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [3.5 Gallon Beverage Dispenser](https://www.hoosiertent.com/product/3-5-gallon-beverage-dispenser/)  $20.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_cocktail_30in",
+        "price_low": 12.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [30\u2033 Cocktail Table](https://www.hoosiertent.com/product/30-cocktail-table/)  $12.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_round_5ft_umbrella",
+        "price_low": 45.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [5' Round Umbrella Table](https://www.hoosiertent.com/product/5-round-umbrella-table/)  $45.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_round_5ft",
+        "price_low": 11.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [5\u2032 Round Table](https://www.hoosiertent.com/product/5-round-table/)  $11.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "cover_kwik_6ft_banquet",
+        "price_low": 8.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [6\u2032 Banquet Kwik-Covers](https://www.hoosiertent.com/product/6-banquet-kwik-covers/)  $8.50",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_banquet_6ft",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [6\u2032 Banquet Table](https://www.hoosiertent.com/product/6-banquet-table/)  $10.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "cover_kwik_8ft_banquet",
+        "price_low": 8.5,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [8\u2032 Banquet Kwik-Covers](https://www.hoosiertent.com/product/8-banquet-kwik-covers/)  $8.50",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_banquet_8ft",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [8\u2032 Banquet Table](https://www.hoosiertent.com/product/8-banquet-table/)  $10.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "decor_pipe_drape_8x10ft",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [8\u2032 x 10\u2032 Pipe and Drape](https://www.hoosiertent.com/product/8-x-10-pipe-and-drape/)  $40.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_banquet_8x18in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [8\u2032 x 18\u2033 Banquet Table (conference style table)](https://www.hoosiertent.com/product/8-x-18-banquet-table/)  $10.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tent_15x20_frame",
+        "price_low": 275.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [15\u2032 x 20\u2032 Frame Tents](https://www.hoosiertent.com/product/15-x-20-frame-tents/)  $275.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tent_20x20_frame",
+        "price_low": 300.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [20\u2032 x 20\u2032 Frame Tent](https://www.hoosiertent.com/product/20-x-20-frame-tent/)  $300.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tent_20x30_pole",
+        "price_low": 345.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [20\u2032 x 30\u2032 Pole Tents](https://www.hoosiertent.com/product/20-x-30-pole-tents/)  $345.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tent_20x40_pole",
+        "price_low": 450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [20\u2032 x 40\u2032 Pole Tents](https://www.hoosiertent.com/product/20-x-40-pole-tents/)  $450.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tent_30x30_pole",
+        "price_low": 475.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [30\u2032 x 30\u2032 Pole Tents](https://www.hoosiertent.com/product/30-x-30-pole-tents/)  $475.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "linen_round_108in",
+        "price_low": 14.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [108\u2033 Round Table Linens](https://www.hoosiertent.com/product/108-round-table-linens/)  $14.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "linen_round_90in",
+        "price_low": 10.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [90\u2033 Round Table Linens](https://www.hoosiertent.com/product/90-round-table-linens/)  $10.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "linen_round_132in",
+        "price_low": 22.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [132\u2033 Round Table Linens](https://www.hoosiertent.com/product/132-round-table-linens/)  $22.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "decor_champagne_wall_large",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [Champagne Wall (large)](https://www.hoosiertent.com/product/champagne-wall-large/)  $150.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "linen_spandex_6ft_round",
+        "price_low": 28.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [6\u2032 Round Spandex Table Linen](https://www.hoosiertent.com/product/6-round-spandex-table-linen/)  $28.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "decor_marquee_letter_per_char",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per character",
+        "source_snippet": "**Pricing:** $50 per character",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "service_stacking_marquee",
+        "price_low": 75.0,
+        "price_high": null,
+        "unit": "flat",
+        "source_snippet": "We offer professional stacking for an additional $75.00.",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "decor_clear_glass_vase_6_5in",
+        "price_low": 5.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [Clear Glass Vase: 6.5\u2033](https://www.hoosiertent.com/product/clear-glass-vase-6-5/)  $5.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "equipment_concrete_block_350lb",
+        "price_low": 40.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [350 Pound Concrete Block](https://www.hoosiertent.com/product/350-pound-concrete-block/)  $40.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "glassware_iridescent_stemless",
+        "price_low": 1.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [Iridescent Stemless Glass](https://www.hoosiertent.com/product/iridescent-stemless-glass/)  $1.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "equipment_concrete_block_700lb",
+        "price_low": 50.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "#### [700 Pound Concrete Block](https://www.hoosiertent.com/product/700-pound-concrete-block/)  $50.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
       }
     ]
   },
@@ -5126,6 +5378,123 @@
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-11-07T14:46:53.442722+00:00"
+      },
+      {
+        "item_type": "table_round_4ft",
+        "price_low": 13.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[4 ft Round Table for 6 People](https://kikosbouncerentals.com/product/4-ft-round-table-for-6-people/)\n------------------------------------------------------------------------------------------------------\n\n$13.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "table_rectangular_6ft",
+        "price_low": 8.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[6 ft Rectangular Table for 8 people](https://kikosbouncerentals.com/product/6-ft-rectangular-table/)\n-----------------------------------------------------------------------------------------------------\n\n$8.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_avengers_combo",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Avengers Bounce House Combo](https://kikosbouncerentals.com/product/avengers-bounce-house-combo/)\n--------------------------------------------------------------------------------------------------\n\n$220.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_mini_game",
+        "price_low": 200.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Bounce House Mini Game](https://kikosbouncerentals.com/product/bounce-housemini-game/)\n---------------------------------------------------------------------------------------\n\n$200.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_combo_slide_climbing",
+        "price_low": 210.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Combo Bounce House with Slide & Climbing Wall](https://kikosbouncerentals.com/product/combo-bounce-house-with-slide-climbing-wall/)\n------------------------------------------------------------------------------------------------------------------------------------\n\n$210.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_disney_princess_5in1",
+        "price_low": 250.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Disney Princess 5-in-1 Combo](https://kikosbouncerentals.com/product/disney-princess-5-in-1-combo/)\n----------------------------------------------------------------------------------------------------\n\n$250.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "mechanical_bull_el_matador",
+        "price_low": 700.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Mechanical Bull Rental \u201cEl Matador\u201d](https://kikosbouncerentals.com/product/mechanical-bull-rental-el-matador/)\n----------------------------------------------------------------------------------------------------------------\n\n$700.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_obstacle_course",
+        "price_low": 350.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[obstacle course bounce house](https://kikosbouncerentals.com/product/obstacles-bounce-house/)\n----------------------------------------------------------------------------------------------\n\n$350.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_paw_patrol_combo",
+        "price_low": 230.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Paw Patrol Bounce House Combo](https://kikosbouncerentals.com/product/paw-patrol-bounce-house-combo/)\n------------------------------------------------------------------------------------------------------\n\n$230.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_pj_masks",
+        "price_low": 220.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[PJ Masks Castle Bounce House](https://kikosbouncerentals.com/product/pj-masks-castle-bounce-house/)\n----------------------------------------------------------------------------------------------------\n\n$220.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_red_castle",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Red Castle Bounce House](https://kikosbouncerentals.com/product/red-castle-bounce-house/)\n------------------------------------------------------------------------------------------\n\n$150.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "water_slide_inflatable",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Water Slide Inflatable](https://kikosbouncerentals.com/product/water-slide-inflatable/)\n----------------------------------------------------------------------------------------\n\n$400.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bounce_house_unicorn_3d",
+        "price_low": 190.0,
+        "price_high": null,
+        "unit": "each",
+        "source_snippet": "[Unicorn Bounce House (3D Unicorn)](https://kikosbouncerentals.com/product/unicorn-bounce-house-3d-unicorn/)\n------------------------------------------------------------------------------------------------------------\n\n$190.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
       }
     ]
   },
@@ -12623,6 +12992,168 @@
         "source_snippet": "Price$16.00](https://www.sagehillrentals.com/product-page/white-faux-fur-square-throw-pillow)",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-11-07T14:46:53.442722+00:00"
+      },
+      {
+        "item_type": "bar_32ft_oval",
+        "price_low": 2400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 32' Oval Bar\n\nPrice$2,400.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_13ft_full_round",
+        "price_low": 2000.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 13' Full Round Bar\n\nPrice$2,000.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_17ft_oval_classic",
+        "price_low": 2400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 17' Oval Classic Bar\n\nPrice$2,400.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_14ft_modular_classic",
+        "price_low": 1050.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 14' Modular Classic Bar\n\nPrice$1,050.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_14ft_modular_fluted",
+        "price_low": 1150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 14' Modular Fluted Bar\n\nPrice$1,150.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_grand_estate",
+        "price_low": 1450.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### Grand Estate Bar\n\nPrice$1,450.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_the_grand",
+        "price_low": 1300.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### The Grand Bar\n\nPrice$1,300.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_the_column",
+        "price_low": 800.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### The Column Bar\n\nPrice$800.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "lamp_white_table",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### White Table Lamp\n\nPrice$16.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "riser_stage_8ft_white_cylinder",
+        "price_low": 600.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 8' White Cylinder Riser / Stage\n\nPrice$600.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "dance_floor_white_acrylic_20x20",
+        "price_low": 900.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### White Acrylic Dance Floor\n\nPrice$900.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "aisle_steps_modern_white",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### Modern White Aisle Steps\n\nPrice$150.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "bar_back_display_arched_7ft",
+        "price_low": 550.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### Arched Bar Back Display\n\nPrice$550.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "coffee_table_white_fluted_round",
+        "price_low": 166.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### White Fluted Round Coffee Table\n\nPrice$166.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "sofa_cream_boucle_sherpa",
+        "price_low": 400.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### Cream Boucle Sherpa Sofa\n\nPrice$400.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "chair_natural_beige_arm",
+        "price_low": 150.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### Natural Beige Arm Chair\n\nPrice$150.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "pillow_white_faux_fur_square_throw",
+        "price_low": 16.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### White Faux Fur Square Throw Pillow\n\nPrice$16.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
+      },
+      {
+        "item_type": "tree_9ft_white_pre_lit",
+        "price_low": 120.0,
+        "price_high": null,
+        "unit": "per event",
+        "source_snippet": "### 9' White Pre-Lit Tree\n\nPrice$120.00",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
       }
     ]
   },
@@ -12974,6 +13505,15 @@
         "source_snippet": "$ 3.95 - 1 - 3 Days",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-11-07T14:46:53.442722+00:00"
+      },
+      {
+        "item_type": "tent_side_walls_10ft_solid",
+        "price_low": 40.0,
+        "price_high": 40.0,
+        "unit": "each",
+        "source_snippet": "$ 40.00 - 10' Solid ea",
+        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+        "last_checked": "2026-11-07T15:10:41.846204+00:00"
       }
     ]
   },

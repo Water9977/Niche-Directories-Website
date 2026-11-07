@@ -5,6 +5,14 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-07 — Session 34 (cont. 4): 60 new items added from the refresh pass (live)
+
+Reviewed the 196 "new items found" from the re-run. Added **60** (`--apply --add-new` from a curated copy of `run-20261107-174235.jsonl`, DB backup `directory-backup-20261107-204041.db`): Hoosier Tent & Party 28 (incl. real tent prices: 15x20 frame $275, 20x20 frame $300, 20x30 pole $345, 20x40 pole $450, 30x30 pole $475; tables, linens), Brincolines Los Kikos 13 (tables, bounce houses), Sage Hill 18 (bars, chairs, decor), Rental Me This 1.
+
+Filters, so nothing doubtful went in: (1) only listings that are clearly event rentals (left out Holland Rent-All, a construction/lawn equipment yard, and BabyQuip's 94 baby-gear rows); (2) **the snippet must contain a word from the item's own name**, because a bare price snippet ("$2.00Price", "$300/24 hours") cannot be tied to an item (this dropped 22 candidates, including all of Bouncing Kingdom's and Party Rentals by Us's); (3) duplicates by (item, price) and the vague "general_range" row dropped; (4) a "card payment fee" row dropped. The source URL is not stored for added rows (the tool doesn't record one for new items).
+
+Effect on the guides (computed from data): tent 20x40 typical price $613 -> $475 (Hoosier's pole tents added), 10x10 unchanged at $125; table/chair and bounce descriptions unchanged ($2 chair, $12 round table; bounce $185).
+
 ### 2026-11-07 — Session 34 (cont. 3): removed 225 unverifiable price rows (live)
 
 Owner chose "remove all six" for listings whose prices could not be confirmed. Deleted every row dated before 2026-10-15 for: Aaro Rental Center (125; 2 verified rows remain, listing stays), Columbus Bounce House Rentals (46, listing gone), Bounce Geeks (18; 11 remain), Magic Special Events (12; 2 remain), Violet Vintage (15; 14 remain), CHEERS (9, listing gone). 225 rows total, logged to `price_history`, run `REMOVE-UNVERIFIABLE`, backup `directory-backup-20261107-203743.db`. Published listings **108 -> 106**; Columbus (7) and Charleston (8) metros unaffected. 301s added for the two dropped listings (`/listing/columbus-bounce-house-rentals-columbus/` -> `/columbus-oh/`, `/listing/cheers-charleston/` -> `/charleston-sc/`), verified live. Tent guide now cites 85 companies.
