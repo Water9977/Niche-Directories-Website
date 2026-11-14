@@ -23,7 +23,7 @@ export interface Props {
 const { subtypes = [], unit = '', metros = [], companies = [], noun } = Astro.props;
 ---
 {subtypes.length > 0 && (
-  <div class="table-wrap">
+  <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label={`Published pricing breakdown by ${noun} type`}>
     <table>
       <thead>
         <tr>
@@ -53,7 +53,7 @@ const { subtypes = [], unit = '', metros = [], companies = [], noun } = Astro.pr
 )}
 
 {metros.length > 0 && (
-  <div class="table-wrap">
+  <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label={`Published ${noun} pricing by metro area`}>
     <table>
       <thead>
         <tr>
@@ -78,7 +78,7 @@ const { subtypes = [], unit = '', metros = [], companies = [], noun } = Astro.pr
 )}
 
 {companies.length > 0 && (
-  <div class="table-wrap">
+  <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label={`Verified local ${noun} rental companies and pricing`}>
     <table>
       <thead>
         <tr>

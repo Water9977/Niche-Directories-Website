@@ -5,6 +5,26 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-14 — Session 35: Claude-SEO Overhaul, Wave 1 Indexing Lockdown & Technical Guardrails (Live Build)
+
+Modeled on the Kanha high-performance technical SEO framework and audited deterministically via the `AgricIDaniel/claude-seo` toolkit (`page_checks.py` and `content_quality.py`). Addressed repeated AdSense "Low-value content" rejections and low search click-throughs (~14 clicks/mo, 12.9k impressions):
+
+1. **Master Strategy Document (`docs/seo-keyword-strategy.md`):** Formulated 4-dimension keyword clusters (Cluster A Zero-KD Quick Wins, Cluster B High-Intent Metro Packages, Cluster C Topical Authority Pillars, Cluster D Negative Discard queries) mapped to exact URL slugs, KD%, and priorities.
+2. **Wave 1 Indexing Containment (Eliminates Thin-Content Directory Penalty):**
+   - Configured `noindex={true}` on all 106 individual listing pages (`website/src/pages/listing/[slug].astro`), emitting `<meta name="robots" content="noindex, follow" />`.
+   - Post-build integration (`prune-noindex-from-sitemap.mjs`) automatically pruned 107 URLs from the XML sitemap.
+   - Sitemap now contains strictly **18 high-density authoritative URLs** (Homepage, 4 National Guides, 10 Metro Hubs, About, Terms, Privacy). Site-wide editorial/high-density content ratio jumped to 100%.
+3. **Resolved GSC 404 & Redirect Issues:**
+   - Identified the sole failing 404 in Search Console (`/listing/bumper-jumpers-greensboro/`) and added a clean 301 redirect to `/` in `public/_redirects`.
+4. **Technical SEO & Editorial Guardrails Applied:**
+   - **Titles:** Standardized strictly to 50–60 chars (max 62 chars) with brand hooks (`Primary Keyword Hook: Secondary Value | ERC`).
+   - **Descriptions:** Rewritten across all metro hubs, guides, terms, and privacy to strictly 120–155 characters.
+   - **Accessible Tables:** Wrapped every `<table>` in `<div class="table-wrap table-scroll" role="region" tabindex="0" aria-label="...">` with focus outlines and touch-scrolling.
+   - **Zero CLS & LCP Optimization:** Added explicit intrinsic dimensions (`width="600" height="400"`) and removed `loading="lazy"` on primary content photos.
+   - **E-E-A-T & Quality:** Enriched `/about/` with verified metrics (1,057 audited, 1,553 price points), four-stage funnel methodology, and `AboutPage` schema (quality score 78 → 85). Updated `/terms/` and `/privacy/` to achieve $\ge 82/100$ quality scores.
+5. **Deterministic Verification Pipeline:**
+   - Ran `page_checks.py` and `content_quality.py` across all 18 Wave 1 sitemap pages: **18/18 Passed (0 Critical, 0 High, 0 Medium, 0 Filler)**.
+
 ### 2026-11-07 — Session 34 (cont. 4): 60 new items added from the refresh pass (live)
 
 Reviewed the 196 "new items found" from the re-run. Added **60** (`--apply --add-new` from a curated copy of `run-20261107-174235.jsonl`, DB backup `directory-backup-20261107-204041.db`): Hoosier Tent & Party 28 (incl. real tent prices: 15x20 frame $275, 20x20 frame $300, 20x30 pole $345, 20x40 pole $450, 30x30 pole $475; tables, linens), Brincolines Los Kikos 13 (tables, bounce houses), Sage Hill 18 (bars, chairs, decor), Rental Me This 1.

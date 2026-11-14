@@ -138,7 +138,7 @@ if (n === 1 && buckets.length === 1) {
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 ---
-<BaseLayout title={title} description={description} path={`/listing/${listing.slug}/`} jsonLd={jsonLd} showAds={false}>
+<BaseLayout title={title} description={description} path={`/listing/${listing.slug}/`} jsonLd={jsonLd} showAds={false} noindex={true}>
   <div class="container">
     <Breadcrumbs items={breadcrumbs} />
     <h1>{listing.name}</h1>
@@ -151,7 +151,8 @@ const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
           class="listing-photo"
           src={listing.photo_url}
           alt={`${listing.name} — party and event rental in ${listing.city}, ${state}`}
-          loading="lazy"
+          width="600"
+          height="400"
           decoding="async"
         />
       </div>

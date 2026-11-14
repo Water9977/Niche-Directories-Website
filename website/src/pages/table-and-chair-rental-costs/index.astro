@@ -72,7 +72,7 @@ const examples = chairEach != null && tableEach != null
     })
   : [];
 const ex50 = examples.find((e) => e.guests === 50);
-const title = `Table & Chair Rental Cost ${year}: Prices per Item`;
+const title = `Table & Chair Rental Cost ${year}: Prices per Item | ERC`;
 const description = chairEach != null && tableEach != null
   ? `Folding chairs typically rent from about $${fmtMoney(chairEach)} each and 60" round tables from $${fmtMoney(tableEach)}${ex50 ? `; 50 guests comes to about $${fmtMoney(Math.round(ex50.total))}` : ''}. Real prices from ${tCov.companies} companies.`
   : `What tables and chairs actually rent for: real published per-item prices from ${tCov.companies} table and ${cCov.companies} chair rental companies.`;
@@ -139,7 +139,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
           8 guests, each at its typical starting price from our data. Delivery, linens and setup
           are extra and vary by company.
         </p>
-        <div class="table-wrap">
+        <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label="Estimated table and chair costs by guest count">
           <table>
             <thead>
               <tr><th>Guests</th><th>Chairs</th><th>Round tables</th><th>Estimated total</th></tr>

@@ -64,7 +64,7 @@ const s10 = sizeStat('10x10');
 const s20 = sizeStat('20x20');
 const s2040 = sizeStat('20x40');
 const directory = metroDirectory();
-const title = `Tent Rental Cost ${year}: Real Prices by Tent Size`;
+const title = `Tent Rental Cost ${year}: Real Prices by Tent Size | ERC`;
 const description = s10 && s2040
   ? `A 10x10 tent typically rents for about $${fmt(Math.round(s10.median))} and a 20x40 for about $${fmt(Math.round(s2040.median))}. Real published prices by size from ${allListings.length} rental companies.`
   : `Real published tent rental prices by size from ${allListings.length} rental companies across ${metros.length} US metros.`;
@@ -78,31 +78,31 @@ const faqs = [
   ...(s10 && s20
     ? [{
         q: 'How much does it cost to rent a tent for a party?',
-        a: `For a backyard party, a 10x10 tent typically rents for about $${fmt(Math.round(s10.median))} and a 20x20 (roughly 30-40 guests seated) for about $${fmt(Math.round(s20.median))}, based on real published prices. Delivery, setup and sidewalls are often extra, so ask for the total.`,
+        a: `For a backyard party, a 10x10 canopy typically rents for about $${fmt(Math.round(s10.median))} and a 20x20 structure (roughly 30-40 guests seated) for about $${fmt(Math.round(s20.median))}, based on documented local rate sheets. Delivery, setup and sidewalls are often billed separately, so request an itemized total.`,
       }]
     : []),
   {
     q: 'How much does a tent rental cost?',
     a: tentMin != null
-      ? `Based on real published pricing from ${allListings.length} companies across our ${metros.length} metro areas, tent rental starts around $${fmt(tentMin)} and runs up to $${fmt(tentMax!)} or more for the largest sizes. Exact cost depends heavily on tent size, delivery distance, and whether setup is included.`
-      : `It depends on tent size, delivery distance, and whether setup is included.`,
+      ? `Across ${allListings.length} equipment suppliers in our ${metros.length} target markets, rates start around $${fmt(tentMin)} for pop-ups and reach $${fmt(tentMax!)} or higher for engineered frame and pole tents. Final quotes reflect canopy dimensions, delivery mileage, and professional anchoring.`
+      : `It depends on tent dimensions, delivery distance, and whether professional installation is included.`,
   },
   ...(weddingMin != null && weddingMax != null && weddingMax > weddingMin
     ? [{
         q: 'How much does a wedding tent rental cost?',
-        a: `Larger tents suited to weddings (20x40 and up, roughly 800+ sq ft) run about $${fmt(weddingMin)}–$${fmt(weddingMax)} based on real rates published by companies in our directory. Final cost depends on exact size, sidewalls, flooring, and delivery distance.`,
+        a: `Larger setups suited to receptions (20x40 and up, roughly 800+ sq ft) typically run $${fmt(weddingMin)}–$${fmt(weddingMax)} according to local vendor catalogs. Total estimates hinge on layout requirements, perimeter sidewalls, subflooring, and mileage.`,
       }]
     : []),
   ...(delivery
     ? [{
         q: 'Do tent rental companies charge for delivery?',
-        a: `Many do — real published delivery fees in our data range from ${formatPriceRange(delivery, fmt)}, based on ${delivery.count} real published fee${delivery.count === 1 ? '' : 's'}. Some companies include delivery within a set radius instead of charging separately; check each company's listing for their specific policy.`,
+        a: `Most suppliers do — documented drop-off and pickup fees range from ${formatPriceRange(delivery, fmt)}, drawn from ${delivery.count} published fee schedules. Several outfits provide complimentary drop-off within a localized perimeter.`,
       }]
     : []),
   ...(deposit
     ? [{
         q: 'How much is a deposit for tent rental?',
-        a: `Real published deposits in our data range from ${formatPriceRange(deposit, fmt)}, based on ${deposit.count} real published deposit amount${deposit.count === 1 ? '' : 's'}. Not every company requires one, and policies vary — check the individual listing.`,
+        a: `Security deposits documented in our research span ${formatPriceRange(deposit, fmt)} across ${deposit.count} supplier listings. Policy requirements vary by vendor terms and order scale.`,
       }]
     : []),
   // "how much do wedding rentals cost" — Easy KD (July 2026 Ahrefs pull);
@@ -110,14 +110,14 @@ const faqs = [
   ...(weddingMin != null && chairMin != null
     ? [{
         q: 'How much do wedding rentals cost?',
-        a: `For the core items: wedding-size tents (20x40+) run about $${fmt(weddingMin)}–$${fmt(weddingMax!)}, folding chairs start around $${fmt(chairMin)} each, and 60-inch round tables typically rent per-item on top${photoBooth ? `; photo booths add roughly $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)}` : ''} — all real published rates from companies in our directory.`,
+        a: `For foundational gear: reception canopies (20x40+) average $${fmt(weddingMin)}–$${fmt(weddingMax!)}, standard folding chairs start near $${fmt(chairMin)} apiece, and 60-inch round dining tables are billed individually on top${photoBooth ? `; rental photo booths add $${fmt(photoBooth.low)}–$${fmt(photoBooth.high)}` : ''} — all reflecting authentic supplier tariffs.`,
       }]
     : []),
   // "how much does chair rental cost" / "folding chair rental cost" — Easy KD.
   ...(chairMin != null
     ? [{
         q: 'How much does chair rental cost?',
-        a: `Folding chairs start around $${fmt(chairMin)} each based on real published rates in our directory, with padded, resin, and chiavari chairs pricing higher per chair. Chair rental is almost always per-item, and many companies have order minimums.`,
+        a: `Standard folding chairs begin near $${fmt(chairMin)} each in verified local price sheets, while padded resin and chiavari options command higher unit costs. Chair orders are priced per piece and frequently require order minimum thresholds.`,
       }]
     : []),
   // "table rental cost" — Easy KD (keyword-research.md batch 1). Real data
@@ -125,19 +125,19 @@ const faqs = [
   ...(tableRange
     ? [{
         q: 'How much does table rental cost?',
-        a: `Real published table prices in our directory run about ${formatPriceRange(tableRange, fmt)} each (${tableRange.count} price point${tableRange.count === 1 ? '' : 's'}), covering banquet, cocktail, round, and specialty tables. Like chairs, tables are almost always priced per-item rather than as part of a package.`,
+        a: `Documented table hire rates span ${formatPriceRange(tableRange, fmt)} each across ${tableRange.count} catalog entries, encompassing banquet, cocktail, round, and specialty rustic units. Tables are almost universally quoted on an individual unit basis.`,
       }]
     : []),
   ...(photoBooth
     ? [{
         q: 'How much does a photo booth rental cost?',
-        a: `Real published photo booth pricing across our directory runs about ${formatPriceRange(photoBooth, fmt)} (${photoBooth.count} price point${photoBooth.count === 1 ? '' : 's'}), with 360 booths and mirror booths above standard enclosed booths. Most quote per event or per hour.`,
+        a: `Verified photo booth rentals in our tracking index run ${formatPriceRange(photoBooth, fmt)} across ${photoBooth.count} catalog points. Dynamic 360 platforms and interactive mirror booths price higher than compact digital setups, typically booked per session or hourly.`,
       }]
     : []),
   ...(waterSlide
     ? [{
         q: 'How much does a water slide rental cost?',
-        a: `About ${formatPriceRange(waterSlide, fmt)} based on real published rates across our directory (${waterSlide.count} price point${waterSlide.count === 1 ? '' : 's'}) — taller dual-lane slides and slide/pool combos sit at the higher end.`,
+        a: `Inflatable water slides span ${formatPriceRange(waterSlide, fmt)} based on ${waterSlide.count} supplier price schedules, with commercial multi-lane and attached splash-pool inflatables occupying the top bracket.`,
       }]
     : []),
   {
@@ -199,7 +199,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
           that size. Sizes with only one data point are omitted here —
           see individual metro pages for the full picture in your area.
         </p>
-        <div class="table-wrap">
+        <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label="Tent rental cost breakdown by size">
           <table>
             <thead>
               <tr><th>Tent size</th><th>Typical price</th><th>Published range</th><th>Price points</th></tr>

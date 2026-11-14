@@ -15,3 +15,7 @@ pipeline/indexnow-key.txt
 
 # Freshness-pass reports (refresh_pricing.py) - large, regenerated each run
 pipeline/refresh_reports/
+
+# GSC exports
+*-Performance-on-Search-*/
+

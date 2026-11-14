@@ -73,7 +73,7 @@ const year = dataYear();
 const perDay = bounceQuote.find((r) => r.label.startsWith('Quoted per day'));
 const perEvent = bounceQuote.find((r) => r.label.startsWith('Quoted per event'));
 const directory = metroDirectory().filter((m) => bounceMetros.some((b) => b.meta.slug === m.slug));
-const title = `How Much to Rent a Bounce House? Real ${year} Prices`;
+const title = `How Much to Rent a Bounce House? Real ${year} Prices | ERC`;
 const description = `A bounce house typically starts at about $${fmtMoney(Math.round(bStats.typicalStart))} to rent; combo units with a slide cost more. Real published prices from ${bStats.companies} companies, per event and per day.`;
 const breadcrumbs = [
   { label: 'Home', href: '/' },

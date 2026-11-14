@@ -55,11 +55,9 @@ const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.h
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
-const title = `${meta.name} Rental Prices (${listings.length} Companies)`;
-// "Wedding rentals in [city]" added 2026-08-22 per real GSC data (see intro
-// paragraph comment below) — checked longest metro name (Greensboro &
-// Winston-Salem, NC) stays under the 155-char truncation threshold at 108.
-const description = `Wedding rentals in ${meta.name} — real prices from ${listings.length} verified companies, not vague quotes.`;
+const baseTitle = `${meta.name} Party & Tent Rental Prices: ${listings.length} Real Rates`;
+const title = baseTitle.length <= 60 ? baseTitle : `${meta.name} Event Rental Prices: ${listings.length} Rates`;
+const description = `Compare real party, wedding & tent rental prices in ${meta.name} from ${listings.length} verified local companies. View real rates for tents, tables, and chairs.`;
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -183,7 +181,7 @@ const jsonLd = [
           Real starting prices pulled directly from local companies' own published rate sheets,
           broken out by tent size.
         </p>
-        <div class="table-wrap">
+        <div class="table-wrap table-scroll" role="region" tabindex="0" aria-label={`Tent rental starting prices by size in ${meta.name}`}>
           <table>
             <thead>
               <tr><th>Tent size</th><th>Starting price</th><th>Companies</th></tr>

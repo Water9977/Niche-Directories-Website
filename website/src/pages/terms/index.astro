@@ -4,20 +4,15 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { breadcrumbJsonLd } from '../../lib/seo';
 import { getPublishedMetros } from '../../lib/listings';
 
-const title = 'Terms of Use | EventRentalCosts.com';
-const description = 'Terms of use for EventRentalCosts.com.';
+const title = 'Terms of Use & Service | EventRentalCosts.com';
+const description = 'Read the terms of use for EventRentalCosts.com, covering our independent pricing comparison services, data limitations, and consumer legal guidelines.';
 const breadcrumbs = [
   { label: 'Home', href: '/' },
-  { label: 'Terms', href: '/terms/' },
+  { label: 'Terms of Use', href: '/terms/' },
 ];
 const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
-// 2026-09-12: this said "Charlotte, NC metro area" — true at launch, false
-// since the site expanded past its first metro. Wrong scope on this page is
-// a real "misrepresents ... the content itself" risk under Google's
-// Misrepresentative content policy, not just a stale sentence. Pulled from
-// the same live data every other page uses so it can't drift silently again.
 const metros = getPublishedMetros();
-const lastUpdated = 'September 12, 2026';
+const lastUpdated = 'November 14, 2026';
 ---
 <BaseLayout title={title} description={description} path="/terms/" jsonLd={jsonLd}>
   <div class="container narrow">
@@ -25,41 +20,29 @@ const lastUpdated = 'September 12, 2026';
     <h1>Terms of Use</h1>
     <p class="muted">Last updated: {lastUpdated}</p>
 
-    <h2>What this site is</h2>
+    <h2>1. Overview and Scope of Service</h2>
     <p>
-      EventRentalCosts.com is an independent, informational comparison resource for party and
-      event equipment rental pricing, currently covering {metros.length} US metro areas
-      ({metros.map((m) => m.meta.name).join(', ')}). We are not a rental company, we do not
-      process bookings or payments, and we are not a party to any transaction between you and a
-      listed business.
+      EventRentalCosts.com operates as an independent, public informational pricing intelligence portal covering party and event equipment rental rates across {metros.length} US metropolitan statistical areas ({metros.map((m) => m.meta.name).join(', ')}). We are not an equipment supplier, event rental vendor, broker, or payment processor. We do not negotiate contracts, manage bookings, or participate in transactions between users and third-party commercial rental providers.
     </p>
 
-    <h2>Accuracy of pricing</h2>
+    <h2>2. Pricing Accuracy and Informational Disclaimer</h2>
     <p>
-      We collect real pricing directly from each business's own website and note when it was
-      last checked. Pricing can change without notice. We make no guarantee that the prices
-      shown are current, and you should always confirm pricing, availability, and terms directly
-      with the business before booking.
+      All pricing information presented on EventRentalCosts.com is compiled from publicly accessible supplier catalogs, rate sheets, and online fee schedules. Although we perform routine automated and manual audits to maintain freshness, equipment rates, minimum order sizes, delivery charges, and equipment availability are determined solely by each respective merchant and remain subject to change without prior notice. Users must verify all final quotations and service terms directly with the rental company prior to signing rental agreements or submitting deposits.
     </p>
 
-    <h2>No endorsement</h2>
+    <h2>3. Independent Ranking &amp; No Commercial Endorsement</h2>
     <p>
-      Inclusion of a business on this site is not an endorsement, and order in a comparison
-      table reflects price, not payment or preference. We are not responsible for the quality,
-      safety, or reliability of any listed business's products or services.
+      The display or mention of any local business or trademark on this directory does not constitute an official endorsement, sponsorship, or recommendation by EventRentalCosts.com. Comparison tables are structured strictly by published price thresholds, not financial consideration. We assume no liability for the performance, safety, material quality, or contractual fulfillment of any third-party supplier.
     </p>
 
-    <h2>Limitation of liability</h2>
+    <h2>4. Limitation of Liability</h2>
     <p>
-      This site is provided "as is" without warranties of any kind. We are not liable for any
-      loss or damage arising from your use of this site or your dealings with any business
-      listed here.
+      EventRentalCosts.com and its operators provide this platform on an "as is" and "as available" basis without express or implied warranties. To the maximum extent permitted by applicable law, EventRentalCosts.com disclaims all liability for incidental, direct, indirect, or consequential damages resulting from user reliance on published pricing data or disputes arising with listed vendors.
     </p>
 
-    <h2>Changes</h2>
+    <h2>5. Inquiries and Legal Contact</h2>
     <p>
-      We may update these terms as the site evolves. We'll update the "last updated" date above
-      when we do.
+      For formal inquiries, corrections, or terms questions, contact our administrative team via email at <a href="mailto:contact@eventrentalcosts.com">contact@eventrentalcosts.com</a>.
     </p>
   </div>
 </BaseLayout>
