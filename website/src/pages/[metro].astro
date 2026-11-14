@@ -197,6 +197,15 @@ const jsonLd = [
             </tbody>
           </table>
         </div>
+        <div class="planning-callout">
+          <h3>Planning a tent event in {meta.name}?</h3>
+          <p>
+            Not sure which tent dimensions will fit your guest count? Use our free
+            <a href="https://tools.eventrentalcosts.com/tent-size-calculator/">Tent Size Calculator</a>
+            to calculate exact square footage for seated dinners or cocktail receptions, or plan line-item expenses with the
+            <a href="https://tools.eventrentalcosts.com/party-budget-planner/">Party Budget Planner</a>.
+          </p>
+        </div>
       </section>
     )}
 
@@ -286,6 +295,17 @@ const jsonLd = [
   }
   .size-breakdown table { width: 100%; min-width: 360px; }
   .size-breakdown .muted { font-size: 0.82rem; }
+  .planning-callout {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-6);
+    margin-top: var(--space-6);
+    box-shadow: var(--shadow-sm);
+  }
+  .planning-callout h3 { margin: 0 0 var(--space-2); font-size: 1.05rem; }
+  .planning-callout p { color: var(--color-text-muted); margin: 0; font-size: 0.92rem; }
   .bounce-house p { color: var(--color-text-muted); }
   .faq { margin-block: var(--space-12); max-width: 760px; }
   .faq-item { margin-bottom: var(--space-6); }

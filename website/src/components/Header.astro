@@ -8,6 +8,7 @@ const metros = getPublishedMetros().slice(0, 3);
     <a href="/" class="brand">EventRentalCosts<span class="brand-dot">.com</span></a>
     <nav class="nav" aria-label="Main navigation">
       {metros.map((m) => <a class="metro-link" href={`/${m.meta.slug}/`}>{m.meta.name}</a>)}
+      <a href="https://tools.eventrentalcosts.com/">Planning Tools</a>
       <a href="/about/">About</a>
     </nav>
   </div>
