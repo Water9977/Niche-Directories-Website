@@ -5,6 +5,11 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-18 — Session 35 (cont. 3): contact email + Cloudflare AI-crawler check (live)
+
+- **Contact email changed** from `contact@eventrentalcosts.com` (a mailbox that does not exist) to the owner's `sidds9779@gmail.com` on `/about/` (visible text, mailto links and ContactPoint schema), `/contact/` and `/terms/`. Verified live: 0 occurrences of the old address, new one present on all three pages.
+- **Cloudflare AI crawlers:** owner changed the AI Crawler/Agent access policies. The dashboard (AI Crawl Control overview, last 7 days: 936 requests, 605 allowed, 331 unsuccessful) shows real PerplexityBot (11), ClaudeBot/Claude-User (6), OpenAI (100, incl. ChatGPT-User), Googlebot (98), Bingbot (366) and Applebot (23) being allowed; CCBot 0 requests. Note: curl with a spoofed `PerplexityBot`/`GPTBot`/`ClaudeBot` user-agent from a normal IP still returns 403 because Cloudflare treats a spoofed bot UA from a non-verified IP as fake. That is expected and is not evidence that the real crawlers are blocked; use the dashboard, not UA-spoofing curl, to check crawler access.
+
 ### 2026-11-18 — Session 35 (cont. 2): owner named on About (live)
 
 Owner supplied: Siddharth Sharma, student developer, built the site to make it easy for people to find rental furniture for events. Added a "Who runs this site" section to `/about/` (first person, only what the owner stated plus the July 2026 launch date, which also makes `foundingDate` visible on the page) and a `founder` Person node in the About schema. Closes the content audit's "nobody is named as running the site" finding. Owner decided to wait on indexing listing pages.
