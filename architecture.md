@@ -5,6 +5,10 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-18 — Session 35 (cont. 2): owner named on About (live)
+
+Owner supplied: Siddharth Sharma, student developer, built the site to make it easy for people to find rental furniture for events. Added a "Who runs this site" section to `/about/` (first person, only what the owner stated plus the July 2026 launch date, which also makes `foundingDate` visible on the page) and a `founder` Person node in the About schema. Closes the content audit's "nobody is named as running the site" finding. Owner decided to wait on indexing listing pages.
+
 ### 2026-11-18 — Session 35 (cont.): search-intent changes and trust pages (live)
 
 Applied the SXO findings that did not need new data or an owner decision:

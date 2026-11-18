@@ -26,6 +26,7 @@ const aboutSchema = {
     name: 'EventRentalCosts.com',
     url: 'https://eventrentalcosts.com',
     foundingDate: '2026-07-12',
+    founder: { '@type': 'Person', name: 'Siddharth Sharma', jobTitle: 'Student developer' },
     knowsAbout: [
       'Event Equipment Rental',
       'Tent Rental Pricing',
@@ -69,6 +70,15 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), aboutSchema];
         <span class="metric-lbl">US Metro Markets</span>
       </div>
     </div>
+
+    <h2>Who runs this site</h2>
+    <p>
+      I'm Siddharth Sharma, a student developer. I built EventRentalCosts.com to make it easy for
+      people to find rental furniture for events and to see what it really costs before they call
+      anyone. The site launched in July 2026. If a price looks wrong, or you run a listed company
+      and want something updated, use the <a href="/contact/">contact page</a> or email
+      {' '}<a href="mailto:contact@eventrentalcosts.com">contact@eventrentalcosts.com</a>.
+    </p>
 
     <h2>1. The Four-Stage Data Verification Funnel</h2>
     <p>
