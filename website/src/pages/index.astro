@@ -74,7 +74,7 @@ const cards = metros
 const title = 'Party & Event Rental Prices: Tents, Tables, Chairs Compared';
 // Trimmed 2026-07-31 (SEO audit) — the old wording ran 155 chars, right at
 // the desktop SERP truncation edge and already clipped on mobile (~120).
-const description = `Real, published prices from ${totalListings} verified tent, table, and chair rental companies across ${metros.length} US metros — actual numbers, not vague quotes.`;
+const description = `Real published prices from ${allListings.length} party and event rental companies across ${metros.length} US metros: tents, tables, chairs, bounce houses and more.`;
 ---
 <BaseLayout title={title} description={description} path="/" jsonLd={siteJsonLd()}>
   <section class="hero">
@@ -82,8 +82,8 @@ const description = `Real, published prices from ${totalListings} verified tent,
       <h1>Real party &amp; event rental prices, compared</h1>
       <p class="lede">
         We collect actual published pricing directly from local tent, table, and chair rental
-        companies — not vague "call for quote" estimates. {totalListings} verified companies across
-        {metros.length} metro areas, and growing.
+        companies — not vague "call for quote" estimates. {allListings.length} companies across
+        {metros.length} metro areas and a few smaller markets, and growing.
       </p>
     </div>
   </section>

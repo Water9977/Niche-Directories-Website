@@ -15,8 +15,10 @@ import {
   tablePriceRange,
   formatPriceRange,
 } from '../../lib/listings';
-import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
-import { dataYear, metroDirectory } from '../../lib/categories';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../lib/seo';
+import { dataYear, metroDirectory,
+  latestChecked,
+} from '../../lib/categories';
 
 // The single biggest content gap found in the Fable-5 audit: metro pages and
 // listing pages exist, but nothing targets the national head terms ("tent
@@ -150,12 +152,15 @@ const faqs = [
   },
 ];
 
-const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+const checkedOn = latestChecked();
+const checkedLabel = new Date(checkedOn + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonLd(title, 'https://eventrentalcosts.com/tent-rental-cost/', checkedOn)];
 ---
 <BaseLayout title={title} description={description} path="/tent-rental-cost/" jsonLd={jsonLd}>
   <div class="container narrow">
     <Breadcrumbs items={breadcrumbs} />
     <h1>How much does tent rental cost?</h1>
+    <p class="checked-note">Prices last checked {checkedLabel}.</p>
 
     <p class="intro">
       {s10 && s20 && s2040 ? (

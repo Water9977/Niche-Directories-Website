@@ -64,3 +64,6 @@
 /listing/columbus-bounce-house-rentals-columbus/ /columbus-oh/ 301
 /listing/cheers-charleston/ /charleston-sc/ 301
 /listing/bumper-jumpers-greensboro/ / 301
+
+# 2026-11-18: duplicate Maps entry of ACC Rental (same address, phone and price rows).
+/listing/buckeye-party-rental-hilliard/ /listing/acc-rental-hilliard/ 301

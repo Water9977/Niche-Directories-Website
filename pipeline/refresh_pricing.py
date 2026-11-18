@@ -731,6 +731,34 @@ def unsupported_by_site(row):
     return d.get("site_dollars") == 0 and d.get("substantial_pages", 0) >= 2
 
 
+_SIZE_RE = re.compile(r"\d+x\d+")
+_NAME_STOP = {"per", "each", "event", "day", "frame", "pole", "tent", "tents", "ft", "in"}
+
+
+def _name_tokens(item_type):
+    return {t for t in re.split(r"[_\W]+", item_type.lower()) if t and not t.isdigit() and t not in _NAME_STOP}
+
+
+def _duplicates_existing_row(conn, listing_id, item):
+    """True when the listing already has this item at this price under a different
+    item_type. type_key() treats `tent_20x20_frame` and `tent_20x20` as different, so
+    the 2026-11-07 add-new pass wrote 27 rows that repeated rows already published
+    (tents, tables and linens at the same price), which the 2026-11-18 audit caught.
+    Same price plus the same size, or mostly the same name words, counts as a repeat."""
+    new_sizes, new_tokens = _SIZE_RE.findall(item["item_type"].lower()), _name_tokens(item["item_type"])
+    rows = conn.execute(
+        "SELECT item_type FROM listing_pricing WHERE listing_id = ? AND ABS(price_low - ?) < 0.005",
+        (listing_id, item["price_low"]),
+    ).fetchall()
+    for (existing,) in rows:
+        sizes, tokens = _SIZE_RE.findall(existing.lower()), _name_tokens(existing)
+        if new_sizes and new_sizes == sizes:
+            return True
+        if new_tokens and tokens and len(new_tokens & tokens) / min(len(new_tokens), len(tokens)) >= 0.75:
+            return True
+    return False
+
+
 def apply_result(conn, res, now, allow_removals, add_new, remove_unlocated=False):
     counts = {"redated": 0, "changed": 0, "removed": 0, "added": 0}
     lid = res["listing_id"]
@@ -773,6 +801,8 @@ def apply_result(conn, res, now, allow_removals, add_new, remove_unlocated=False
             counts["removed"] += 1
     if add_new:
         for it in res["new_items"]:
+            if _duplicates_existing_row(conn, lid, it):
+                continue
             conn.execute(
                 "INSERT INTO listing_pricing (listing_id, item_type, price_low, price_high, unit, source_snippet, source_url, extracted_by_model, last_checked) VALUES (?,?,?,?,?,?,?,?,?)",
                 (lid, it["item_type"], it["price_low"], it["price_high"], it.get("unit"), it["source_snippet"], None,

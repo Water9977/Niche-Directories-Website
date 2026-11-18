@@ -181,6 +181,14 @@ export function dataYear(): number {
   return latest ? Number(latest.slice(0, 4)) : new Date().getFullYear();
 }
 
+/** Date (YYYY-MM-DD) of the newest price check in the data. Shown on the guide pages
+ * and used as their dateModified, so the page only claims to be as fresh as the data. */
+export function latestChecked(): string {
+  let latest = '';
+  for (const l of getAllListings()) for (const p of l.pricing) if (p.last_checked && p.last_checked > latest) latest = p.last_checked;
+  return latest.slice(0, 10);
+}
+
 /** Published metros with their company count and cheapest 10x10-ish tent, for the
  * "find companies near you" blocks that serve "... near me" searches. */
 export function metroDirectory(): { slug: string; name: string; companies: number }[] {

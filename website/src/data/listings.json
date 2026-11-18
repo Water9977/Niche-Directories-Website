@@ -3423,81 +3423,6 @@
     ]
   },
   {
-    "name": "Bumper Jumpers",
-    "metro": "Greensboro-Winston-Salem",
-    "address": "4217 W Gate City Blvd, Greensboro, NC 27407",
-    "city": "Greensboro",
-    "state": "North Carolina",
-    "postal_code": "27407",
-    "lat": 36.0344494,
-    "lng": -79.863721,
-    "phone": "",
-    "website": "https://www.bumperjumpers.com/",
-    "rating": 4.0,
-    "review_count": 4,
-    "category": "Party equipment rental service",
-    "photo_url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlE_yq60aCNM7KhZawVuihcAtp6dcQU7MmCcK55TX4EzosnErE1-sYC0DwtpSQV5Yuz8x5wgSyrUOKbvzY9s9xG_HeZPUZQjRONaQJk7eRVSZqiDq8auNTnJx-NVYWQu2Y2urI4Lxf8vh3U=w519-h240-k-no",
-    "delivery_available": "unknown",
-    "setup_included": "unknown",
-    "weekend_surcharge": "yes",
-    "pricing": [
-      {
-        "item_type": "child_admission",
-        "price_low": 12.0,
-        "price_high": null,
-        "unit": "per child",
-        "source_snippet": "$12.00 / Child (Ages 1 to 12)",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "mining_ticket",
-        "price_low": 10.0,
-        "price_high": null,
-        "unit": "per bag",
-        "source_snippet": "Mining Ticket - $10.00 for 1 Bag",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "socks",
-        "price_low": 2.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "Socks $2.00 \u2013 you can bring your own socks",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "bj_cool_jump",
-        "price_low": 285.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Saturday / Sunday: $285.00 Plus Tax",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "bj_amazing_jump",
-        "price_low": 355.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Saturday / Sunday: $355.00 Plus Tax",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "bj_brilliant_jump",
-        "price_low": 445.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "Saturday / Sunday: $445.00 Plus Tax",
-        "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      }
-    ]
-  },
-  {
     "name": "Carolinas Photobooths",
     "metro": "Greensboro-Winston-Salem",
     "address": "1633 New Garden Rd #1052, Greensboro, NC 27410",
@@ -4303,47 +4228,11 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "table_cocktail_30in",
-        "price_low": 12.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [30\u2033 Cocktail Table](https://www.hoosiertent.com/product/30-cocktail-table/)  $12.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "table_round_5ft_umbrella",
-        "price_low": 45.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [5' Round Umbrella Table](https://www.hoosiertent.com/product/5-round-umbrella-table/)  $45.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "table_round_5ft",
-        "price_low": 11.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [5\u2032 Round Table](https://www.hoosiertent.com/product/5-round-table/)  $11.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "cover_kwik_6ft_banquet",
         "price_low": 8.5,
         "price_high": null,
         "unit": "per event",
         "source_snippet": "#### [6\u2032 Banquet Kwik-Covers](https://www.hoosiertent.com/product/6-banquet-kwik-covers/)  $8.50",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "table_banquet_6ft",
-        "price_low": 10.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [6\u2032 Banquet Table](https://www.hoosiertent.com/product/6-banquet-table/)  $10.00",
         "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
@@ -4366,15 +4255,6 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "decor_pipe_drape_8x10ft",
-        "price_low": 40.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [8\u2032 x 10\u2032 Pipe and Drape](https://www.hoosiertent.com/product/8-x-10-pipe-and-drape/)  $40.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "table_banquet_8x18in",
         "price_low": 10.0,
         "price_high": null,
@@ -4384,101 +4264,11 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "tent_15x20_frame",
-        "price_low": 275.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [15\u2032 x 20\u2032 Frame Tents](https://www.hoosiertent.com/product/15-x-20-frame-tents/)  $275.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "tent_20x20_frame",
-        "price_low": 300.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [20\u2032 x 20\u2032 Frame Tent](https://www.hoosiertent.com/product/20-x-20-frame-tent/)  $300.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "tent_20x30_pole",
-        "price_low": 345.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [20\u2032 x 30\u2032 Pole Tents](https://www.hoosiertent.com/product/20-x-30-pole-tents/)  $345.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "tent_20x40_pole",
-        "price_low": 450.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [20\u2032 x 40\u2032 Pole Tents](https://www.hoosiertent.com/product/20-x-40-pole-tents/)  $450.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "tent_30x30_pole",
-        "price_low": 475.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [30\u2032 x 30\u2032 Pole Tents](https://www.hoosiertent.com/product/30-x-30-pole-tents/)  $475.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "linen_round_108in",
-        "price_low": 14.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [108\u2033 Round Table Linens](https://www.hoosiertent.com/product/108-round-table-linens/)  $14.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "linen_round_90in",
-        "price_low": 10.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [90\u2033 Round Table Linens](https://www.hoosiertent.com/product/90-round-table-linens/)  $10.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "linen_round_132in",
-        "price_low": 22.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [132\u2033 Round Table Linens](https://www.hoosiertent.com/product/132-round-table-linens/)  $22.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "decor_champagne_wall_large",
-        "price_low": 150.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "#### [Champagne Wall (large)](https://www.hoosiertent.com/product/champagne-wall-large/)  $150.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "linen_spandex_6ft_round",
         "price_low": 28.0,
         "price_high": null,
         "unit": "per event",
         "source_snippet": "#### [6\u2032 Round Spandex Table Linen](https://www.hoosiertent.com/product/6-round-spandex-table-linen/)  $28.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "decor_marquee_letter_per_char",
-        "price_low": 50.0,
-        "price_high": null,
-        "unit": "per character",
-        "source_snippet": "**Pricing:** $50 per character",
         "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
@@ -5378,33 +5168,6 @@
         "source_snippet": "$150.00",
         "extracted_by_model": "nvidia/meta/llama-3.1-8b-instruct",
         "last_checked": "2026-11-07T14:46:53.442722+00:00"
-      },
-      {
-        "item_type": "table_round_4ft",
-        "price_low": 13.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "[4 ft Round Table for 6 People](https://kikosbouncerentals.com/product/4-ft-round-table-for-6-people/)\n------------------------------------------------------------------------------------------------------\n\n$13.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "table_rectangular_6ft",
-        "price_low": 8.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "[6 ft Rectangular Table for 8 people](https://kikosbouncerentals.com/product/6-ft-rectangular-table/)\n-----------------------------------------------------------------------------------------------------\n\n$8.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "bounce_house_avengers_combo",
-        "price_low": 220.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "[Avengers Bounce House Combo](https://kikosbouncerentals.com/product/avengers-bounce-house-combo/)\n--------------------------------------------------------------------------------------------------\n\n$220.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
         "item_type": "bounce_house_mini_game",
@@ -13012,33 +12775,6 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "bar_17ft_oval_classic",
-        "price_low": 2400.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### 17' Oval Classic Bar\n\nPrice$2,400.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "bar_14ft_modular_classic",
-        "price_low": 1050.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### 14' Modular Classic Bar\n\nPrice$1,050.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "bar_14ft_modular_fluted",
-        "price_low": 1150.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### 14' Modular Fluted Bar\n\nPrice$1,150.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "bar_grand_estate",
         "price_low": 1450.0,
         "price_high": null,
@@ -13066,33 +12802,6 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "lamp_white_table",
-        "price_low": 16.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### White Table Lamp\n\nPrice$16.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "riser_stage_8ft_white_cylinder",
-        "price_low": 600.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### 8' White Cylinder Riser / Stage\n\nPrice$600.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "dance_floor_white_acrylic_20x20",
-        "price_low": 900.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### White Acrylic Dance Floor\n\nPrice$900.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "aisle_steps_modern_white",
         "price_low": 150.0,
         "price_high": null,
@@ -13102,29 +12811,11 @@
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
       {
-        "item_type": "bar_back_display_arched_7ft",
-        "price_low": 550.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### Arched Bar Back Display\n\nPrice$550.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
         "item_type": "coffee_table_white_fluted_round",
         "price_low": 166.0,
         "price_high": null,
         "unit": "per event",
         "source_snippet": "### White Fluted Round Coffee Table\n\nPrice$166.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "sofa_cream_boucle_sherpa",
-        "price_low": 400.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### Cream Boucle Sherpa Sofa\n\nPrice$400.00",
         "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
       },
@@ -13145,117 +12836,6 @@
         "source_snippet": "### White Faux Fur Square Throw Pillow\n\nPrice$16.00",
         "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
         "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      },
-      {
-        "item_type": "tree_9ft_white_pre_lit",
-        "price_low": 120.0,
-        "price_high": null,
-        "unit": "per event",
-        "source_snippet": "### 9' White Pre-Lit Tree\n\nPrice$120.00",
-        "extracted_by_model": "refresh/nvidia/nvidia/nemotron-3-ultra-550b-a55b",
-        "last_checked": "2026-11-07T15:10:41.846204+00:00"
-      }
-    ]
-  },
-  {
-    "name": "Buckeye Party Rental",
-    "metro": "Columbus",
-    "address": "3996 Columbia St, Hilliard, OH 43026",
-    "city": "Hilliard",
-    "state": "Ohio",
-    "postal_code": "43026",
-    "lat": 40.032668,
-    "lng": -83.158668,
-    "phone": "(614) 876-0762",
-    "website": "http://accpartyrental.com/",
-    "rating": null,
-    "review_count": null,
-    "category": "Party equipment rental service",
-    "photo_url": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=euKzCmwKqPO9DN6WHoOQow&cb_client=search.gws-prod.gps&w=408&h=240&yaw=150.43938&pitch=0&thumbfov=100",
-    "delivery_available": "unknown",
-    "setup_included": "unknown",
-    "weekend_surcharge": "unknown",
-    "pricing": [
-      {
-        "item_type": "propane_tank_100lb",
-        "price_low": 145.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "$ 145.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_10x10_first_aid",
-        "price_low": 185.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 185.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_10x10_high_peak",
-        "price_low": 145.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 145.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_10x10_hydration",
-        "price_low": 185.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 185.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_10x20_high_peak",
-        "price_low": 255.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 255.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_fan_12",
-        "price_low": 25.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "$ 25.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "tent_15x20_high_peak",
-        "price_low": 295.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 295.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "generator_20kw_diesel",
-        "price_low": 575.0,
-        "price_high": null,
-        "unit": "per day",
-        "source_snippet": "$ 575.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
-      },
-      {
-        "item_type": "propane_tank_20lb",
-        "price_low": 575.0,
-        "price_high": null,
-        "unit": "each",
-        "source_snippet": "$ 575.00",
-        "extracted_by_model": "openrouter/openai/gpt-oss-20b:free",
-        "last_checked": "2026-11-04T18:58:15.982334+00:00"
       }
     ]
   },

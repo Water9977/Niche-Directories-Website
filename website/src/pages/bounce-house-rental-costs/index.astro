@@ -22,8 +22,9 @@ import {
   type SubtypeSpec,
   dataYear,
   metroDirectory,
+  latestChecked,
 } from '../../lib/categories';
-import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../lib/seo';
 
 // Bounce houses have the most price points of any category after tables and
 // chairs and, until this page, no page of their own. Water slides are folded
@@ -74,7 +75,8 @@ const perDay = bounceQuote.find((r) => r.label.startsWith('Quoted per day'));
 const perEvent = bounceQuote.find((r) => r.label.startsWith('Quoted per event'));
 const directory = metroDirectory().filter((m) => bounceMetros.some((b) => b.meta.slug === m.slug));
 const title = `How Much to Rent a Bounce House? Real ${year} Prices | ERC`;
-const description = `A bounce house typically starts at about $${fmtMoney(Math.round(bStats.typicalStart))} to rent; combo units with a slide cost more. Real published prices from ${bStats.companies} companies, per event and per day.`;
+const descStart = standard ? standard.stats.typicalStart : bStats.typicalStart;
+const description = `A standard bounce house typically starts at about $${fmtMoney(Math.round(descStart))} to rent; combo units with a slide cost more. Real published prices from ${bStats.companies} companies, per event and per day.`;
 const breadcrumbs = [
   { label: 'Home', href: '/' },
   { label: 'Bounce House Rental Cost', href: '/bounce-house-rental-costs/' },
@@ -122,12 +124,15 @@ const faqs: { q: string; a: string }[] = [
     a: 'Rain, storms and strong wind. Operators commonly deflate and stop using inflatables in sustained wind, often somewhere around 15 to 20 miles per hour, but the limit is set by the manufacturer and the company. Ask about the weather and rescheduling policy before you pay a deposit.',
   },
 ];
-const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+const checkedOn = latestChecked();
+const checkedLabel = new Date(checkedOn + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonLd(title, 'https://eventrentalcosts.com/bounce-house-rental-costs/', checkedOn)];
 ---
 <BaseLayout title={title} description={description} path="/bounce-house-rental-costs/" jsonLd={jsonLd}>
   <div class="container narrow">
     <Breadcrumbs items={breadcrumbs} />
     <h1>How much does a bounce house rental cost?</h1>
+    <p class="checked-note">Prices last checked {checkedLabel}.</p>
 
     <p class="intro">
       <strong>Short answer:</strong>

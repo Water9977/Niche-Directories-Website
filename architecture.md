@@ -5,6 +5,27 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-18 — Session 35: claude-seo audit, trust and data-hygiene fixes (live)
+
+Ran the claude-seo `/seo audit` against the live site with seven read-only agents (technical, content/E-E-A-T, schema, sitemap, performance, GEO, SXO). Technical scored 84/100 with no critical issues; content scored 48/100; AI-search readiness ~62. Every finding was verified against the data/source before acting; two were wrong or by design and were not "fixed" (the report's `/methodology/` 404, which the homepage links to `/about/` instead; and listing pages being `noindex`, an earlier session's deliberate Wave 1 decision, so the sitemap is 18 URLs).
+
+**Fixed (all live, verified):**
+- **My own bug:** the 2026-11-07 `--add-new` pass wrote 27 rows that repeated existing rows at the same price (Hoosier tents, tables, linens; Brincolines, Sage Hill). Deleted the 27 (price_history logged, backup `directory-backup-20261118-123247.db`). `refresh_pricing.py` now skips a new item when the listing already has the same price with the same size or mostly the same name (`_duplicates_existing_row`).
+- **Duplicate listing:** Buckeye Party Rental = ACC Rental (same address, phone, price rows; it compared itself against its twin and carried a wrong 20 lb propane row at $575). Added to `SUPERSEDED_LISTINGS`, 301 to `/listing/acc-rental-hilliard/`.
+- **Off-niche listing:** Bumper Jumpers (indoor play centre; child admission, socks, mining ticket) removed from the export; its 301 already existed while the tent guide still linked to it.
+- **Unsourced statistic removed:** "$508 million a year across an estimated 13,900+ weddings" (Charlotte, `metros.ts`) had no source.
+- **About page made accurate:** dropped "official business filings" (we use Google Maps place records) and "automated monthly recertification" (the pass is run by hand, about monthly); now says what is done and that unconfirmable prices are removed or kept with their older date.
+- **Schema:** removed `aggregateRating` from listing LocalBusiness JSON-LD (it is Google's rating from reviews this site did not collect; the rating stays visible on the page). Added a visible "Prices last checked <date>" line and `WebPage.dateModified` (same date) on the four guides.
+- **Consistency:** homepage hero, description and body all use the same company count (104); bounce guide meta description now matches its intro ($189 standard unit).
+- Published listings 106 -> 104.
+
+**Not done, needs a decision:**
+- Cloudflare returns 403 to PerplexityBot, GPTBot and ClaudeBot (CCBot too) although robots.txt allows them: a Cloudflare AI-bot setting, owner's call.
+- Listing pages are `noindex`; the technical audit suggests indexing those with 10+ verified rows (49 of them). Earlier session chose noindex for AdSense thin-content reasons; revisit with GSC data.
+- SXO suggestions: add "Rentals" and a companies-near-you block at the top of the table & chair guide; "wedding" framing for metro titles; trim the tent guide's non-tent sections.
+- Performance numbers (LCP/INP/CLS) not measured: PageSpeed API quota hit and no CrUX key. TTFB 0.31-0.34 s, ~5-7 KB HTML. gtag.js and adsbygoogle are >90% of bytes.
+- Smaller: square logo for Organization schema, `@id` on Organization/WebSite, `/contact/` page, 307 -> 301 on no-slash URLs, `/favicon.ico` 404, `lastmod` in sitemap, hotlinked listing photos.
+
 ### 2026-11-14 — Session 35: Claude-SEO Overhaul, Wave 1 Indexing Lockdown & Technical Guardrails (Live Build)
 
 Modeled on the Kanha high-performance technical SEO framework and audited deterministically via the `AgricIDaniel/claude-seo` toolkit (`page_checks.py` and `content_quality.py`). Addressed repeated AdSense "Low-value content" rejections and low search click-throughs (~14 clicks/mo, 12.9k impressions):

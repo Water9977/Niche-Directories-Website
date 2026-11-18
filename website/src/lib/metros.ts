@@ -23,7 +23,7 @@ export const METROS: MetroMeta[] = [
     name: 'Charlotte, NC',
     state: 'NC',
     blurb:
-      "Charlotte's wedding and event market moves roughly $508 million a year across an estimated 13,900+ weddings, on top of corporate events, festivals, and backyard parties from NoDa to South End to Ballantyne and the surrounding towns of Concord, Huntersville, Mooresville, Indian Trail, and Monroe.",
+      "Charlotte's event market covers weddings, corporate events, festivals, and backyard parties from NoDa to South End to Ballantyne and the surrounding towns of Concord, Huntersville, Mooresville, Indian Trail, and Monroe.",
   },
   {
     key: 'Raleigh-Durham',

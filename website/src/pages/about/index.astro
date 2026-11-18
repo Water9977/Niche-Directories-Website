@@ -76,7 +76,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), aboutSchema];
     </p>
     <ol>
       <li>
-        <strong>Primary Ingestion:</strong> We map all registered party, tent, table, and event equipment rental businesses in each target metropolitan statistical area (MSA) via official business filings and Google Maps place records. We filter out non-inventory businesses such as caterers, DJs, venues, and retail supply stores.
+        <strong>Primary Ingestion:</strong> We find party, tent, table, and event equipment rental businesses in each target metropolitan statistical area (MSA) from Google Maps place records, and confirm each one has a working website and a real street address. We filter out non-inventory businesses such as caterers, DJs, venues, and retail supply stores.
       </li>
       <li>
         <strong>Direct Source Scraping:</strong> We crawl the public inventory and pricing pages directly on each supplier's primary domain. We never rely on third-party scrapers, user forums, or estimated averages.
@@ -85,7 +85,7 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), aboutSchema];
         <strong>Snippet-Level Price Matching:</strong> Every price point must match a verbatim sentence or tabular row on the supplier's website. If a company quotes only via private phone consultations or gated forms ("Request a Quote"), their pricing is classified as unverified and omitted from our comparison tables.
       </li>
       <li>
-        <strong>Monthly Recertification:</strong> Our automated verification system re-crawls active supplier websites monthly to confirm that rates, delivery fees, and equipment specifications remain live and accurate.
+        <strong>Ongoing Re-verification:</strong> About once a month we re-check every published price against the supplier's own website, and each listing shows the date its prices were last checked. A price we can no longer find on the supplier's site is removed or kept with its older check date, never shown as freshly verified. Businesses whose sites stop publishing prices, or stop working, are taken off the directory.
       </li>
     </ol>
 

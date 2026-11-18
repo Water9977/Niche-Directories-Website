@@ -55,6 +55,16 @@ NAME_EXCLUDE_KEYWORDS = ["glamping", "rent-a-center", "rent a center", "aaron's 
 #   near-identical 70+ row pages is duplicate content. Kept the real brand.
 SUPERSEDED_LISTINGS = {
     "bounce house rentals cleveland tn": "duplicate Maps entry of Partytime Inflatable (same website and catalog)",
+    # 2026-11-18: same address (3996 Columbia St, Hilliard), same phone and the same
+    # price rows as ACC Rental (181 Google reviews); this entry has none. Its page also
+    # compared prices against its own twin. It carried one bad row (a 20 lb propane
+    # tank at the 100 lb tank's $575).
+    "buckeye party rental": "duplicate Maps entry of ACC Rental (same address, phone and catalog)",
+    # 2026-11-18: an indoor play centre, not an equipment rental. Its rows are child
+    # admission, socks and a mining ticket plus three jump-party packages. It already
+    # had a 301 in _redirects (from the 24 Oct removal) while still being linked from
+    # the tent guide, so the redirect and the data disagreed.
+    "bumper jumpers": "indoor play centre, not a rental business (admission and socks pricing)",
 }
 NAME_EXCLUDE_KEYWORDS = NAME_EXCLUDE_KEYWORDS + list(SUPERSEDED_LISTINGS)
 

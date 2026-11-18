@@ -27,9 +27,7 @@ function streetOnly(fullAddress: string): string {
   return idx === -1 ? fullAddress : fullAddress.slice(0, idx).trim();
 }
 
-/** LocalBusiness schema for a single listing — only includes rating/review fields
- * when we actually have real values, per the brief's rule against fabricated
- * aggregateRating. */
+/** LocalBusiness schema for a single listing. */
 export function localBusinessJsonLd(listing: Listing, url: string) {
   const block: Record<string, unknown> = {
     '@context': 'https://schema.org',
@@ -50,14 +48,15 @@ export function localBusinessJsonLd(listing: Listing, url: string) {
   if (listing.lat != null && listing.lng != null) {
     block.geo = { '@type': 'GeoCoordinates', latitude: listing.lat, longitude: listing.lng };
   }
-  if (listing.rating != null && listing.review_count != null && listing.review_count > 0) {
-    block.aggregateRating = {
-      '@type': 'AggregateRating',
-      ratingValue: listing.rating,
-      reviewCount: listing.review_count,
-    };
-  }
+  // No aggregateRating on purpose (2026-11-18): the rating is Google's, from reviews this
+  // site did not collect, and Google's review-snippet policy does not allow marking up
+  // third-party ratings. The rating is still shown, labelled as Google's, on the page.
   return block;
+}
+
+/** WebPage with a dateModified that matches the "prices last checked" date printed on the page. */
+export function webPageJsonLd(name: string, url: string, dateModified: string) {
+  return { '@context': 'https://schema.org', '@type': 'WebPage', name, url, dateModified };
 }
 
 /** Trim text to at most `max` characters, cutting at a word boundary and

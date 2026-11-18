@@ -15,8 +15,9 @@ import {
   type SubtypeSpec,
   dataYear,
   metroDirectory,
+  latestChecked,
 } from '../../lib/categories';
-import { breadcrumbJsonLd, faqPageJsonLd } from '../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../lib/seo';
 
 // Tables and chairs are the two categories with the most real data in the
 // directory (163 and 131 price points before cleanup) and, until this page,
@@ -115,12 +116,15 @@ const faqs: { q: string; a: string }[] = [
       : 'Many do, and some include delivery within a set radius. Check the company’s listing for its policy.',
   },
 ];
-const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs)];
+const checkedOn = latestChecked();
+const checkedLabel = new Date(checkedOn + 'T12:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonLd(title, 'https://eventrentalcosts.com/table-and-chair-rental-costs/', checkedOn)];
 ---
 <BaseLayout title={title} description={description} path="/table-and-chair-rental-costs/" jsonLd={jsonLd}>
   <div class="container narrow">
     <Breadcrumbs items={breadcrumbs} />
     <h1>How much does table and chair rental cost?</h1>
+    <p class="checked-note">Prices last checked {checkedLabel}.</p>
 
     {chairEach != null && tableEach != null && (
       <p class="intro">
