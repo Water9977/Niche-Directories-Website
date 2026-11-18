@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbJsonLd } from '../../lib/seo';
+
+const title = 'Contact EventRentalCosts.com | Corrections & Vendor Requests';
+const description = 'How to reach EventRentalCosts.com: report a wrong price, ask us to update or remove a company listing, or send a question about how the directory works.';
+const breadcrumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Contact', href: '/contact/' },
+];
+const jsonLd = [breadcrumbJsonLd(breadcrumbs)];
+---
+<BaseLayout title={title} description={description} path="/contact/" jsonLd={jsonLd}>
+  <div class="container narrow">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>Contact us</h1>
+    <p>
+      EventRentalCosts.com is a price comparison directory for party and event rentals. Every
+      price on it comes from the rental company's own website, so most messages we get are
+      corrections. Email
+      {' '}<a href="mailto:contact@eventrentalcosts.com">contact@eventrentalcosts.com</a> and
+      include the page address and what is wrong or missing.
+    </p>
+
+    <h2>Report a wrong or outdated price</h2>
+    <p>
+      If a price on one of our pages no longer matches the company's website, send us the page
+      and a link to where the company publishes the current price. We check it against their site
+      and update or remove the row. We only publish prices a company has published itself.
+    </p>
+
+    <h2>Rental companies: update or remove your listing</h2>
+    <p>
+      If you run a listed business, you can ask us to refresh your prices after you update your
+      rate sheet, to fix your business details, or to remove your listing entirely. Write from an
+      address at your company's domain, or tell us where on your site we can confirm you own it.
+      Listings cannot be bought and paid placement does not exist here.
+    </p>
+
+    <h2>Questions about how the directory works</h2>
+    <p>
+      How we find companies, check prices and decide what to leave out is explained on the
+      {' '}<a href="/about/">About &amp; Methodology</a> page. If something there is unclear, ask
+      and we will answer by email.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .narrow { max-width: 720px; }
+  h2 { margin-top: var(--space-8); }
+</style>

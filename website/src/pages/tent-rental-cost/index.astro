@@ -257,64 +257,43 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonL
       </p>
     </section>
 
-    {bounceHouse && (
+    {(tableRange || bounceHouse || photoBooth || waterSlide) && (
       <section>
-        <h2>Bounce house rental cost (if you need more than a tent)</h2>
+        <h2>Renting more than a tent?</h2>
         <p>
-          Real published bounce house pricing across our directory runs about
-          {' '}<strong>{formatPriceRange(bounceHouse, fmt)}</strong>, based on
-          {' '}{bounceHouse.count} published price points. Combo units with a slide typically cost
-          more than a standalone bounce house. The
-          {' '}<a href="/bounce-house-rental-costs/">bounce house rental cost guide</a> breaks
-          this down by unit type and by metro.
+          Most events need more than a tent. Real published prices for the rest of the order, each
+          with its own guide:
         </p>
-      </section>
-    )}
-
-    {photoBooth && (
-      <section>
-        <h2>Photo booth rental cost</h2>
-        <p>
-          Real published photo booth pricing across our directory runs about
-          {' '}<strong>{formatPriceRange(photoBooth, fmt)}</strong>
-          {' '}({photoBooth.count} published price point{photoBooth.count === 1 ? '' : 's'}).
-          360 booths and mirror booths typically price above a standard enclosed booth; most
-          companies quote per event or per hour.
-        </p>
-      </section>
-    )}
-
-    {waterSlide && (
-      <section>
-        <h2>Water slide rental cost</h2>
-        <p>
-          Real published water slide pricing runs about
-          {' '}<strong>{formatPriceRange(waterSlide, fmt)}</strong>
-          {' '}({waterSlide.count} published price point{waterSlide.count === 1 ? '' : 's'}) —
-          taller dual-lane slides and slide/pool combos sit at the higher end.
-        </p>
-      </section>
-    )}
-
-    {(chairMin != null || tableRange) && (
-      <section>
-        <h2>What about tables and chairs?</h2>
-        <p>
-          Table and chair rental is almost always priced per-item, not as a package.
-          {chairMin != null && (
-            <> Real folding chair rates in our data start around <strong>${fmt(chairMin)} each</strong>.</>
-          )}
+        <ul>
           {tableRange && (
-            <>
-              {' '}Table prices — banquet, cocktail, round, and more — run{' '}
-              <strong>{formatPriceRange(tableRange, fmt)}</strong> each,
-              based on {tableRange.count} real published table prices.
-            </>
+            <li>
+              <a href="/table-and-chair-rental-costs/">Tables and chairs</a>: tables run
+              {' '}<strong>{formatPriceRange(tableRange, fmt)}</strong> each{chairMin != null && (
+                <>, and folding chairs start around <strong>${fmt(chairMin)}</strong> each</>
+              )}.
+            </li>
           )}
-          {' '}See a metro page below for full per-company pricing tables, or the
-          {' '}<a href="/table-and-chair-rental-costs/">table and chair rental cost guide</a> for
-          prices by type and by metro.
-        </p>
+          {bounceHouse && (
+            <li>
+              <a href="/bounce-house-rental-costs/">Bounce houses</a>: about
+              {' '}<strong>{formatPriceRange(bounceHouse, fmt)}</strong>
+              {' '}({bounceHouse.count} published price points).
+            </li>
+          )}
+          {photoBooth && (
+            <li>
+              <a href="/photo-booth-rental-costs/">Photo booths</a>: about
+              {' '}<strong>{formatPriceRange(photoBooth, fmt)}</strong>
+              {' '}({photoBooth.count} published price point{photoBooth.count === 1 ? '' : 's'}).
+            </li>
+          )}
+          {waterSlide && (
+            <li>
+              Water slides: about <strong>{formatPriceRange(waterSlide, fmt)}</strong>; see the
+              {' '}<a href="/bounce-house-rental-costs/">bounce house and water slide guide</a>.
+            </li>
+          )}
+        </ul>
       </section>
     )}
 

@@ -73,7 +73,7 @@ const examples = chairEach != null && tableEach != null
     })
   : [];
 const ex50 = examples.find((e) => e.guests === 50);
-const title = `Table & Chair Rental Cost ${year}: Prices per Item | ERC`;
+const title = `Table & Chair Rentals ${year}: Real Prices per Item | ERC`;
 const description = chairEach != null && tableEach != null
   ? `Folding chairs typically rent from about $${fmtMoney(chairEach)} each and 60" round tables from $${fmtMoney(tableEach)}${ex50 ? `; 50 guests comes to about $${fmtMoney(Math.round(ex50.total))}` : ''}. Real prices from ${tCov.companies} companies.`
   : `What tables and chairs actually rent for: real published per-item prices from ${tCov.companies} table and ${cCov.companies} chair rental companies.`;
@@ -135,6 +135,19 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonL
       </p>
     )}
 
+    {directory.length > 0 && (
+      <section class="near-you">
+        <h2>Table and chair rental companies near you</h2>
+        <p>
+          Looking for somewhere to rent? Compare every company we track in your area, with each
+          one's own published prices:
+          {' '}{directory.map((m, i) => (
+            <><a href={`/${m.slug}/`}>{m.name}</a>{i < directory.length - 1 ? ' · ' : ''}</>
+          ))}
+        </p>
+      </section>
+    )}
+
     {examples.length > 0 && (
       <section class="examples">
         <h2>What tables and chairs cost for your guest count</h2>
@@ -160,18 +173,6 @@ const jsonLd = [breadcrumbJsonLd(breadcrumbs), faqPageJsonLd(faqs), webPageJsonL
             </tbody>
           </table>
         </div>
-      </section>
-    )}
-
-    {directory.length > 0 && (
-      <section class="near-you">
-        <h2>Table and chair rental companies near you</h2>
-        <p>
-          Compare every company we track in your area, with each one's own published prices:
-          {' '}{directory.map((m, i) => (
-            <><a href={`/${m.slug}/`}>{m.name}</a>{i < directory.length - 1 ? ' · ' : ''}</>
-          ))}
-        </p>
       </section>
     )}
 

@@ -5,6 +5,16 @@ _Living source of truth. Update every session. Never let this drift from actual 
 
 ## Changelog (newest first)
 
+### 2026-11-18 — Session 35 (cont.): search-intent changes and trust pages (live)
+
+Applied the SXO findings that did not need new data or an owner decision:
+- **Table & chair guide:** title now "Table & Chair Rentals <year>: Real Prices per Item | ERC"; the "companies near you" block moved above the guest-count table (the head query "table and chair rentals" is a rent-it-now intent; the SERP is rental-company pages).
+- **Metro pages:** "Wedding" leads the title and H1 ("<Metro> Wedding & Party Rental Prices: N Real Rates", shorter form for long metro names, all <= 60 chars). Matches the queries that earn the metros' impressions (wedding rentals / wedding tents / party tent rentals + city).
+- **Tent guide:** the four off-topic sections (bounce house, photo booth, water slide, tables and chairs) condensed into one "Renting more than a tent?" list that links to each guide. Less duplicate text, a more focused page for "tent rental cost".
+- **New `/contact/` page** (corrections, vendor update/removal requests, methodology questions; email only, no form, no promises about turnaround), linked from the footer and in the sitemap. The audit flagged its absence as a trust gap.
+
+Not done on purpose: a tent-size-by-guest-count table (needs a cited capacity rule, not invented); wedding package estimates per metro (needs per-metro data); a named person/bio on About (needs the owner to provide it); the Cloudflare AI-bot setting (owner's account); indexing listing pages (earlier noindex decision, revisit with GSC data).
+
 ### 2026-11-18 — Session 35: claude-seo audit, trust and data-hygiene fixes (live)
 
 Ran the claude-seo `/seo audit` against the live site with seven read-only agents (technical, content/E-E-A-T, schema, sitemap, performance, GEO, SXO). Technical scored 84/100 with no critical issues; content scored 48/100; AI-search readiness ~62. Every finding was verified against the data/source before acting; two were wrong or by design and were not "fixed" (the report's `/methodology/` 404, which the homepage links to `/about/` instead; and listing pages being `noindex`, an earlier session's deliberate Wave 1 decision, so the sitemap is 18 URLs).

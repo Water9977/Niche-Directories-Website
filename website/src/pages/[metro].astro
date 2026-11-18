@@ -55,8 +55,12 @@ const weddingMax = weddingTents.length ? Math.max(...weddingTents.map((t) => t.h
 
 const fmt = (n: number) => (n % 1 === 0 ? n.toFixed(0) : n.toFixed(2));
 
-const baseTitle = `${meta.name} Party & Tent Rental Prices: ${listings.length} Real Rates`;
-const title = baseTitle.length <= 60 ? baseTitle : `${meta.name} Event Rental Prices: ${listings.length} Rates`;
+// 2026-11-18 SXO check: the metro queries that earn impressions are "wedding rentals in
+// <city>", "wedding tents <city>" and "party tent rentals <city>", so "Wedding" leads the
+// title. Longer metro names fall back to a shorter form that still keeps the word.
+const baseTitle = `${meta.name} Wedding & Party Rental Prices: ${listings.length} Real Rates`;
+const shortTitle = `${meta.name} Wedding Rental Prices: ${listings.length} Real Rates`;
+const title = baseTitle.length <= 60 ? baseTitle : shortTitle.length <= 60 ? shortTitle : `${meta.name} Event Rental Prices: ${listings.length} Rates`;
 const description = `Compare real party, wedding & tent rental prices in ${meta.name} from ${listings.length} verified local companies. View real rates for tents, tables, and chairs.`;
 
 const breadcrumbs = [
@@ -135,7 +139,7 @@ const jsonLd = [
 <BaseLayout title={title} description={description} path={`/${meta.slug}/`} jsonLd={jsonLd}>
   <div class="container">
     <Breadcrumbs items={breadcrumbs} />
-    <h1>Party &amp; Tent Rental Prices in {meta.name}</h1>
+    <h1>Wedding, Party &amp; Tent Rental Prices in {meta.name}</h1>
 
     <p class="intro">
       {/* Real GSC data (2026-08-22) showed "wedding rentals in [city]" pulling
